@@ -1,55 +1,79 @@
 self.__precacheManifest = [
   {
-    "revision": "4213ce21c650eebcc8765b799f9838b7",
-    "url": "/portfolio/static/media/main-view.4213ce21.png"
+    "revision": "2b9f0b447a7f0f885b7683b750bab0f6",
+    "url": "/portfolio/static/media/USM.2b9f0b44.png"
   },
   {
-    "revision": "52f3757c6e89ccbc5be3",
-    "url": "/portfolio/static/css/main.34a85cd0.chunk.css"
+    "revision": "e4034c91025fc116f905",
+    "url": "/portfolio/static/css/main.cf899de6.chunk.css"
   },
   {
     "revision": "53ebc025fca807d4dbea",
     "url": "/portfolio/static/js/runtime~main.f308c8e6.js"
   },
   {
-    "revision": "f845dbaf3eaa8d99547a",
-    "url": "/portfolio/static/js/2.e44d25b8.chunk.js"
+    "revision": "947ac084d303ba8c9b85",
+    "url": "/portfolio/static/js/2.cad411f6.chunk.js"
+  },
+  {
+    "revision": "546f67de07c8dddf3baabbfcfec66c2b",
+    "url": "/portfolio/static/media/opi-main.546f67de.png"
+  },
+  {
+    "revision": "bc9ce17f6747162774b7f67e2675ed29",
+    "url": "/portfolio/static/media/me.bc9ce17f.jpg"
   },
   {
     "revision": "648504a9230a4b55dd0181f49a04f1a6",
     "url": "/portfolio/static/media/web.648504a9.png"
   },
   {
-    "revision": "c973ea5a7e79ae024fb7837b397a2ccb",
-    "url": "/portfolio/static/media/main.c973ea5a.png"
-  },
-  {
     "revision": "0432f01c4404161864fcd06c1ae57b11",
     "url": "/portfolio/static/media/dogo.0432f01c.png"
+  },
+  {
+    "revision": "c973ea5a7e79ae024fb7837b397a2ccb",
+    "url": "/portfolio/static/media/main.c973ea5a.png"
   },
   {
     "revision": "8f026041adea98602579a9df4fd190e8",
     "url": "/portfolio/static/media/main3.8f026041.png"
   },
   {
-    "revision": "c8123052d040cbefcc12583902757c2b",
-    "url": "/portfolio/static/media/main.c8123052.png"
-  },
-  {
     "revision": "0133d5563034d3332df490b0977be771",
     "url": "/portfolio/static/media/main.0133d556.png"
+  },
+  {
+    "revision": "c8123052d040cbefcc12583902757c2b",
+    "url": "/portfolio/static/media/main.c8123052.png"
   },
   {
     "revision": "1d4e20bb3664da793b9a40d8c76eb58c",
     "url": "/portfolio/static/media/sunwise-main.1d4e20bb.jpg"
   },
   {
-    "revision": "90580850b8ca96d29a6462a44c595b1b",
-    "url": "/portfolio/static/media/photo.90580850.png"
+    "revision": "047b2d63c0bb331465e97a4d8e44632e",
+    "url": "/portfolio/static/media/me-2.047b2d63.jpg"
   },
   {
-    "revision": "59840adc7383b0a7e80d1a60d5185e54",
-    "url": "/portfolio/static/media/cv-katarzyna-zukowska.59840adc.pdf"
+    "revision": "e343ab4e675289690b1b042f0793822b",
+    "url": "/portfolio/static/media/cv-katarzyna-zukowska.e343ab4e.pdf"
+  },
+  {
+    "revision": "08fc10eefd755d2e99aca2fcd3f7470d",
+    "url": "/portfolio/static/media/words2.08fc10ee.png"
+  },
+  {
+    "revision": "000d79f7ae1c4e9de245a88cbdbc85c5",
+    "url": "/portfolio/static/media/designSystem.000d79f7.png"
+  },
+  {
+    "revision": "cd76822e6ad84d493f2514c4ceae814a",
+    "url": "/portfolio/static/media/activities.cd76822e.png"
+  },
+  {
+    "revision": "f646d45c00b8162cf123062dc33b53c0",
+    "url": "/portfolio/static/media/bubbles.f646d45c.png"
   },
   {
     "revision": "d416da0d711f22ae4b686c168f8670e1",
@@ -96,8 +120,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/1.a6648266.png"
   },
   {
-    "revision": "2b9f0b447a7f0f885b7683b750bab0f6",
-    "url": "/portfolio/static/media/USM.2b9f0b44.png"
+    "revision": "e4034c91025fc116f905",
+    "url": "/portfolio/static/js/main.eac544d8.chunk.js"
   },
   {
     "revision": "8b14f7e6bea3a06b3ad51bd2f91989df",
@@ -108,8 +132,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/results-mapped.5335062d.png"
   },
   {
-    "revision": "52f3757c6e89ccbc5be3",
-    "url": "/portfolio/static/js/main.17eddfb7.chunk.js"
+    "revision": "4213ce21c650eebcc8765b799f9838b7",
+    "url": "/portfolio/static/media/main-view.4213ce21.png"
   },
   {
     "revision": "c0a09a5a2d62a24695d03c6ac59f62c7",
@@ -216,7 +240,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/img.fffce63d.png"
   },
   {
-    "revision": "fdbea467828e2db9ea7b869516f738a6",
+    "revision": "dc6c4832aa93234b1cb933e6131292c4",
     "url": "/portfolio/index.html"
   }
 ];
