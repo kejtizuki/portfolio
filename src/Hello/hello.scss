@@ -1,19 +1,24 @@
 @import "../assets/styles/main.scss";
 
+.helloContainer {
+  // padding: 0px 100px 0px 100px;
 .hello {
-  height: 750px;
+  height: 650px;
   background-color: white;
   display: flex;
   align-items: center;
+  flex-direction: row;
   justify-content: center;
 
   .hello-description {
-    width: 900px;
-    text-align: center;
-    font-size: 24px;
+    width: 100%;
+    text-align: left;
+    font-size: 36px;
     line-height: 1.5;
+    margin-left: 150px;
     .icons {
       margin-top: 40px;
+      margin-left: -10px;
       img {
         width: 25px;
         height: auto;
@@ -21,11 +26,18 @@
       }
     }
   }
-
-  .workLink {
-    display: flex;
-    align-items: center;
+  .profile {
+    width: 400px;
   }
+
+  #workLink {
+    font-size: 14px;
+  }
+  .linkHighlight {
+    background-color: #EAF257;
+    text-decoration: none;
+  }
+}
 }
 
 .myTooltip {

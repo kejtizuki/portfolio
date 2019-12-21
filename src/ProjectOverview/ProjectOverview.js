@@ -26,6 +26,7 @@ class ProjectOverview extends React.Component {
         keywords,
         tools,
         longDesc,
+        type
       } = this.props;
 
     const headerClasses = classNames({
@@ -36,7 +37,8 @@ class ProjectOverview extends React.Component {
       'mikeller': title === 'Mikeller app',
       'coordinates': title === 'Parallel coordinates',
       'costa': title === 'New Costa cruise experience',
-      'ah': title === 'Augmented Hearing'
+      'ah': title === 'Augmented Hearing',
+      'opi': title === 'Dementia Support App'
 
     });
 
@@ -60,6 +62,8 @@ class ProjectOverview extends React.Component {
         <h2 className="title">Details</h2>
         <h4 className="title">Role</h4>
         <p>{keywords}</p>
+        <h4 className="title">Type</h4>
+        <p>{type}</p>
         <h4 className="title">Tools</h4>
         <p>{tools}</p>
         </div>

@@ -36,7 +36,7 @@ interesting stories about the data.
         <div className="col7"><h2 className="title">Goal</h2><p>The goal of the project was to implement parallel coordinates
           visualization allowing for multiple brushing techniques. Different types of brushing
           techniques were introduced and tested during the user tests. Besides that some improvements to original version
-          are proposed in order to reduce visual clutter and increase the readability of the chart. 
+          are proposed in order to reduce visual clutter and increase the readability of the chart.
         </p></div>
         <div className="col3"></div>
         </div>
@@ -117,6 +117,55 @@ by clicking anywhere close to their surrounding area.
         </div>
 
         <img src={require("./../assets/img/Coordinates/line-brush.png")} className="mainImg"/>
+
+        <div className="row">
+        <div className="col7"><h2 className="title">Results</h2><p>Five types of brushing techniques were implemented in order to
+          interact with the parallel coordinates graph. To research the usability
+of each of them, the users were given specific technical tasks to
+solve, that required the use of each brushing technique. The tasks were based on cars database.
+Testing was done without introducing
+the subjects to how brushing techniques work, letting them figure
+it out by themselves. Our main assumption when choosing not to
+provide any hints was to check whether brushing techniques are
+intuitive enough.
+<br /><br />
+
+First question was to <i>name the heaviest car</i>. The correct way of
+answering this question was to use direct selection of a polyline.
+All of the users performed this task correctly.
+The users also performed well in the tasks asking to name a car
+with a certain number of cylinders. It proved that the subjects have
+good understanding of the simple brushing technique.
+<br /><br />
+If it comes to multiple brushing, the performance was slightly
+worse. The question regarding this technique was: <i>’How many cars
+have a displacement between 0-150 cc or above 350 cc?’</i>. 55% of users
+answered it correctly. 100% of the subjects answered the second
+question concerning multiple brushing correctly. Therefore, it can
+be concluded that the understanding of multiple brushing was also
+good. Additionally, it is worth mentioning that during the live
+feedback session many users stated that single brushing can be
+replaced by multiple brushing.
+<br /><br />
+Next question was: <i>’Use line brushing to find out how many cars
+have a displacement > 350 cc and economy > 35 mpg’.</i> The intention
+with this question was to gain some insight on line brushing. 30%
+of the subjects stated that this technique did not work for them.
+Moreover, another 30% of the users answered the question incorrectly.
+Evidently, there was 60% of subjects who did not understand
+the technique, or were unable to use it correctly.
+<br /><br />
+During face-to-face interviews we noticed that subjects had
+major problems when using the line brush. The common way of
+using this technique is to highlight the sets of lines between the
+two vertical axes. During the life testing, users
+tried to use this brush similarly to multiple brush, drawing lines on
+the axis. Using line brush in this way reduced its
+properties and led to confusion of the subjects.
+
+        </p>
+        </div>
+      </div>
       </div>
     )
   }

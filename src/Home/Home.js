@@ -7,14 +7,33 @@ import Skill from '../Skill/Skill';
 import Footer from '../Footer/Footer';
 import { BrowserRouter as Link, Router, Route } from "react-router-dom";
 import '../index.scss';
+import { CSSTransitionGroup } from 'react-transition-group' // ES6
+
+// const CSSTransitionGroup = require('react-transition-group/CSSTransitionGroup')
 
 
 class Home extends Component {
   render() {
     return (
+
       <div className="App">
+        <Navbar />
+        <CSSTransitionGroup
+            transitionName="example"
+            transitionEnterTimeout={500}
+            transitionLeaveTimeout={300}>
         <Hello />
         <div className="gridContainer">
+          <Link to="/dementiaSupport">
+          <Project title="Dementia Support App" image={require("../assets/img/OPI/opi-main.png")}
+          className="gridCellCentered"
+          description="An app designed to support dementia patient's relatives."
+          keywords="UX, UI, Concept, Prototyping"
+          history={this.props.history}
+          redirect="dementiaSupport"
+          />
+          </Link>
+
           <Link to="/augmentedHearing">
           <Project title="Augmented Hearing" image={require("../assets/img/AH/web.png")}
           className="gridCellCentered"
@@ -25,6 +44,11 @@ class Home extends Component {
           />
           </Link>
 
+
+        </div>
+
+        <div className="gridContainer">
+
           <Link to="/sunwise">
           <Project title="SunWise" image={require("../assets/img/SunWise/sunwise-main1.jpg")}
           className="gridCellCentered"
@@ -34,18 +58,6 @@ class Home extends Component {
           redirect="sunWise"
           />
           </Link>
-
-        </div>
-
-        <div className="gridContainer">
-
-
-          <Project title="SF movies visualization" image={require("../assets/img/SF/main.png")}
-            description="Visualization of movies locations over years in San Francisco"
-            keywords="Data Visualization, Coding"
-            history={this.props.history}
-            redirect="SFdataVis"
-          />
 
 
           <Link to="/dogs">
@@ -61,6 +73,15 @@ class Home extends Component {
         </div>
 
         <div className="gridContainer">
+
+          <Project title="SF movies visualization" image={require("../assets/img/SF/main.png")}
+            description="Visualization of movies locations over years in San Francisco"
+            keywords="Data Visualization, Coding"
+            history={this.props.history}
+            redirect="SFdataVis"
+          />
+
+
         <Project title="Brushing techniques for parallel coordinates" image={require("../assets/img/DataVis/main3.png")}
           description="Research and user testing of different brushing techniques for parallel coordinates"
           keywords="UI, UX, Data Visualization, Coding, Research"
@@ -68,14 +89,6 @@ class Home extends Component {
           redirect="parallelCoordinates"
         />
 
-        <Project
-          image={require("../assets/img/Costa/main.png")}
-          title="New Costa cruise experience"
-          history={this.props.history}
-          description="Experience costa"
-          keywords="UI, Ideation, Concept, Prototyping"
-          redirect="costa"
-        />
         </div>
 
         <div className="gridContainer">
@@ -86,11 +99,20 @@ class Home extends Component {
         redirect="mikellerApp"
         />
 
+        <Project
+          image={require("../assets/img/Costa/main.png")}
+          title="New Costa cruise experience"
+          history={this.props.history}
+          description="Experience costa"
+          keywords="UI, Ideation, Concept, Prototyping"
+          redirect="costa"
+        />
+
         </div>
 
 
         <Experience />
-
+      </CSSTransitionGroup>
 
       </div>
     );
