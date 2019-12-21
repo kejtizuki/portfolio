@@ -32,7 +32,7 @@ class About extends React.Component {
        onMouseOut={e => (e.currentTarget.src = require('./../assets/img/me.jpg'))}/>
             </div>
             <div className="col5">
-              <h1>Hi! I'm Kasia Żukowska</h1>
+              <h1>Hi! I'm Kasia</h1>
               <p>I'm on the last semester of MSc Digital Media Engineering at DTU, working on my thesis in data viz area.
                 I have previously received a BSc in Computer Science from AGH University of Science and Technology.
                 Currently I work at Issuu as UI/UX Designer. Previously I interned at Designit as UX Designer.
