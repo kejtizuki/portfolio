@@ -2,7 +2,7 @@
   "name": "mywebsite",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kejtizuki2.github.io/portfolio",
+  "homepage": "https://kejtizuki.github.io/portfolio",
   "dependencies": {
     "classnames": "^2.2.6",
     "d3-geo": "^1.11.6",
