@@ -38,7 +38,8 @@ class ProjectOverview extends React.Component {
       'coordinates': title === 'Parallel coordinates',
       'costa': title === 'New Costa cruise experience',
       'ah': title === 'Augmented Hearing',
-      'opi': title === 'Dementia Support App'
+      'opi': title === 'Dementia Support App',
+      'thesis': title === 'Medical time series data visualization'
 
     });
 

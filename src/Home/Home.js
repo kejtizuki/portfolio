@@ -24,13 +24,14 @@ class Home extends Component {
             transitionLeaveTimeout={300}>
         <Hello />
         <div className="gridContainer">
-          <Link to="/dementiaSupport">
-          <Project title="Dementia Support App" image={require("../assets/img/OPI/opi-main.png")}
+
+          <Link to="/time-series">
+          <Project title="Medical time series data visualization" image={require("../assets/img/Thesis/dataVizPreview2.png")}
           className="gridCellCentered"
-          description="An app designed to support dementia patient's relatives."
-          keywords="UX, UI, Concept, Prototyping"
+          description="Medical time series data visualization"
+          keywords="Concept, UI, UX, Coding, Data Viz, Web design"
           history={this.props.history}
-          redirect="dementiaSupport"
+          redirect="time-series"
           />
           </Link>
 
@@ -49,6 +50,16 @@ class Home extends Component {
 
         <div className="gridContainer">
 
+          <Link to="/dementiaSupport">
+          <Project title="Dementia Support App" image={require("../assets/img/OPI/opi-main.png")}
+          className="gridCellCentered"
+          description="An app designed to support dementia patient's relatives."
+          keywords="UX, UI, Concept, Prototyping"
+          history={this.props.history}
+          redirect="dementiaSupport"
+          />
+          </Link>
+
           <Link to="/sunwise">
           <Project title="SunWise" image={require("../assets/img/SunWise/sunwise-main1.jpg")}
           className="gridCellCentered"
@@ -59,6 +70,9 @@ class Home extends Component {
           />
           </Link>
 
+        </div>
+
+        <div className="gridContainer">
 
           <Link to="/dogs">
           <Project title="Dogs training app" image={require("../assets/img/Dogs/dogo.png")}
@@ -70,10 +84,6 @@ class Home extends Component {
           />
           </Link>
 
-        </div>
-
-        <div className="gridContainer">
-
           <Project title="SF movies visualization" image={require("../assets/img/SF/main.png")}
             description="Visualization of movies locations over years in San Francisco"
             keywords="Data Visualization, Coding"
@@ -81,6 +91,9 @@ class Home extends Component {
             redirect="SFdataVis"
           />
 
+        </div>
+
+        <div className="gridContainer">
 
         <Project title="Brushing techniques for parallel coordinates" image={require("../assets/img/DataVis/main3.png")}
           description="Research and user testing of different brushing techniques for parallel coordinates"
@@ -89,23 +102,13 @@ class Home extends Component {
           redirect="parallelCoordinates"
         />
 
-        </div>
 
-        <div className="gridContainer">
+
         <Project title="Mikeller friends" image={require("../assets/img/Mikeller/main.png")}
         description="Mikeller app"
         keywords="UX, Prototyping"
         history={this.props.history}
         redirect="mikellerApp"
-        />
-
-        <Project
-          image={require("../assets/img/Costa/main.png")}
-          title="New Costa cruise experience"
-          history={this.props.history}
-          description="Experience costa"
-          keywords="UI, Ideation, Concept, Prototyping"
-          redirect="costa"
         />
 
         </div>

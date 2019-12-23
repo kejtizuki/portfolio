@@ -14,6 +14,7 @@ import ProjectMikeller from './ProjectMikeller/ProjectMikeller';
 import ProjectDogs from './ProjectDogs/ProjectDogs';
 import ProjectSF from './ProjectSF/ProjectSF';
 import ProjectCosta from './ProjectCosta/ProjectCosta';
+import ProjectThesis from './ProjectThesis/ProjectThesis';
 import ProjectAH from './ProjectAH/ProjectAH';
 import ProjectCoordinates from './ProjectCoordinates/ProjectCoordinates';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -29,16 +30,18 @@ class App extends Component {
 
     return (
       <Router basename={process.env.PUBLIC_URL}>
-        {/* <Route exact path="/sunWise" component={() => <div><ProjectOverview
-          bgImage={require("./assets/img/Thesis/preview.png")}
-          title="Thesis"
+         <Route exact path="/time-series" component={() => <div><ProjectOverview
+          bgImage={require("./assets/img/Thesis/dataVizPreview.png")}
+          title="Medical time series data visualization"
           history={this.props.history}
-          description="Protect your skin from high UV index. Know when to stop sunbathing."
-          keywords="UX, Digital Design, User Testing"
-          tools="Adobe Photoshop, Adobe Illustrator"
-          longDesc=""
-  /> <ProjectSunWise /></div>}
-        /> */}
+          description="How can time-series data be visualized?"
+          keywords="Concept, UI, UX, Coding, Data Viz, Web design"
+          tools="Sketch, Principle, d3.js, React"
+          longDesc="In my MSc thesis I researched the problem of visualizig time-series data in context of healthcare data. Visualizing time-series data
+          can be complicated since it involves looking on different time granularities. This project proposes the modular design that displays one visualization
+          at once and allows the users to easily navigate between different visualizations, without cluttering the data. This is work in progress, the description will be provided soon :)"
+  /> <ProjectThesis /></div>}
+        />
 
       <Route exact path="/" component={Home} />
       <Route exact path="/about" component={About} />
