@@ -16,6 +16,7 @@ import ProjectSF from './ProjectSF/ProjectSF';
 import ProjectCosta from './ProjectCosta/ProjectCosta';
 import ProjectThesis from './ProjectThesis/ProjectThesis';
 import ProjectAH from './ProjectAH/ProjectAH';
+import ProjectIssuu from './ProjectIssuu/ProjectIssuu';
 import ProjectCoordinates from './ProjectCoordinates/ProjectCoordinates';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './index.scss';
@@ -37,11 +38,24 @@ class App extends Component {
           description="How can time-series data be visualized?"
           keywords="Concept, UI, UX, Coding, Data Viz, Web design"
           tools="Sketch, Principle, d3.js, React"
+          type="Individual, MSc thesis"
+          website={<a href='www.kejtizuki.github.io/time-series-thesis'>Demo</a>}
           longDesc="In my MSc thesis I researched the problem of visualizig time-series data in context of healthcare data. Visualizing time-series data
           can be complicated since it involves looking on different time granularities. This project proposes the modular design that displays one visualization
-          at once and allows the users to easily navigate between different visualizations, without cluttering the data. This is work in progress, the description will be provided soon :)"
+          at a time and allows the users to easily navigate between different visualizations, without cluttering the data. "
   /> <ProjectThesis /></div>}
         />
+
+        <Route exact path="/issuu" component={() => <div><ProjectOverview
+         bgImage={require("./assets/img/IssuuPoster/posterPreview.png")}
+         title="My work at Issuu"
+         history={this.props.history}
+         description="Some of the projects I work on at Issuu."
+         keywords="UI, UX, Web design"
+         tools="Sketch, Principle"
+         longDesc="Currently I work as UI/UX Designer at Issuu. I work on improving the product both on mobile and desktop side."
+ /> <ProjectIssuu /></div>}
+       />
 
       <Route exact path="/" component={Home} />
       <Route exact path="/about" component={About} />
@@ -135,7 +149,7 @@ augment awareness of the brand and the cruise product and get past cruisers inv
       />
 
       <Route exact path="/augmentedHearing" component={() => <div><ProjectOverview
-        bgImage={require("./assets/img/AH/web.png")}
+        bgImage={require("./assets/img/AH/preset-fast.gif")}
         title="Augmented Hearing"
         history={this.props.history}
         description="Augmented hearing app created as a digital tool to interact with a hearing aid."

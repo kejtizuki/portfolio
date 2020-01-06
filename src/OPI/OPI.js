@@ -9,6 +9,17 @@ class OPI extends React.Component {
     return(
       <div className="projectContainer">
         <img src={require("./../assets/img/OPI/opi-main.png")} className="mainImg"/>
+
+        <div className="row">
+          <div className="col7"><h2 className="title">My role in the project</h2>
+          <p>
+          The project was part of my internship as UX Designer at Designit. I was responsible for the UX and most of the UI part (the screens presented on this page
+          are designed by me). I also created the Design System. The rest of the team (3 other designers + PM) was working on Branding, Motion Design and Business Design. All of us presented the proejct to the client
+          and participated in a workshop regarding the cleint's vision and ideas at the beginning of the project.
+          </p>
+          </div>
+        </div>
+
         <div className="row">
           <div className="col7"><h2 className="title">Problem</h2>
           <p>
@@ -41,7 +52,7 @@ class OPI extends React.Component {
 
         <div className="row margin40">
         <div className="col7"><h2 className="title">Design system</h2>
-        <p>The tone we want to keep should be:<ul>
+        <p>The tone that we wanted to keep:<ul>
           <li>Clear</li>
           <li>Informative</li>
           <li>No more information than needed</li>
@@ -53,14 +64,17 @@ class OPI extends React.Component {
 
           <div className="row">
           <div className="col7"><h2 className="title">Activities</h2>
-          <p></p>
+          <p>The family should have an overview of activities taking place in their location as they don't have much time to look for the events on their own.
+          The overview provides an option to filter or explore the events.</p>
           </div>
           </div>
           <img className="mainImg" src={require('./../assets/img/OPI/activities.png')} />
 
           <div className="row">
           <div className="col7"><h2 className="title">Bubbles</h2>
-          <p></p>
+          <p>The idea behind the Bubbles was that the users are part of the community, allowing them to do activities together, in a certain group of interested people.
+          The difference between the Activities and Bubbles was that activities are more formal, organized events. Bubbles should provide an access to forum and
+          give an option to connect with the people who have similar expectations or interests.</p>
           </div>
           </div>
           <img className="mainImg" src={require('./../assets/img/OPI/bubbles.png')} />

@@ -60,6 +60,20 @@ class Home extends Component {
           />
           </Link>
 
+          <Link to="/issuu">
+          <Project title="My work at Issuu" image={require("../assets/img/IssuuPoster/posterPreview.png")}
+          className="gridCellCentered"
+          description="Some of the projects I work on at Issuu."
+          keywords="UI, UX, Web Design, Mobile design"
+          history={this.props.history}
+          redirect="issuu"
+          />
+          </Link>
+
+        </div>
+
+        <div className="gridContainer">
+
           <Link to="/sunwise">
           <Project title="SunWise" image={require("../assets/img/SunWise/sunwise-main1.jpg")}
           className="gridCellCentered"
@@ -69,10 +83,6 @@ class Home extends Component {
           redirect="sunWise"
           />
           </Link>
-
-        </div>
-
-        <div className="gridContainer">
 
           <Link to="/dogs">
           <Project title="Dogs training app" image={require("../assets/img/Dogs/dogo.png")}
@@ -84,16 +94,18 @@ class Home extends Component {
           />
           </Link>
 
-          <Project title="SF movies visualization" image={require("../assets/img/SF/main.png")}
-            description="Visualization of movies locations over years in San Francisco"
-            keywords="Data Visualization, Coding"
-            history={this.props.history}
-            redirect="SFdataVis"
-          />
 
         </div>
 
         <div className="gridContainer">
+
+
+        <Project title="SF movies visualization" image={require("../assets/img/SF/main.png")}
+          description="Visualization of movies locations over years in San Francisco"
+          keywords="Data Visualization, Coding"
+          history={this.props.history}
+          redirect="SFdataVis"
+        />
 
         <Project title="Brushing techniques for parallel coordinates" image={require("../assets/img/DataVis/main3.png")}
           description="Research and user testing of different brushing techniques for parallel coordinates"
@@ -102,7 +114,10 @@ class Home extends Component {
           redirect="parallelCoordinates"
         />
 
+        </div>
 
+
+        <div className="gridContainer">
 
         <Project title="Mikeller friends" image={require("../assets/img/Mikeller/main.png")}
         description="Mikeller app"
@@ -110,6 +125,7 @@ class Home extends Component {
         history={this.props.history}
         redirect="mikellerApp"
         />
+
 
         </div>
 

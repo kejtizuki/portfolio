@@ -13,7 +13,8 @@ export default class Hello extends React.Component {
         <ReactTooltip className="myTooltip"/>
         <div className="hello-description">
           Hi! My name is <a href="mailto:kejtizuki@gmail.com" className="linkHighlight">Kasia Żukowska</a>, I’m a
-          UX Designer and coder.<br />
+          UX Designer <br />
+          and data vizualization enthusiast.<br />
           {/* <Typewriter
           options={{
             strings: ['UX Designer', 'Digital Designer', 'Frontend developer', 'Data vis enthusiast'],
@@ -24,7 +25,7 @@ export default class Hello extends React.Component {
           Currently working as UI/UX Designer
           at <a href="https://www.issuu.com/" className="link">Issuu, Copenhagen</a>.
           <p id="workLink">
-          Scroll to explore
+          Scroll down to explore
         </p>
           {/* <div className="icons">
             <a href="https://www.linkedin.com/in/katarzyna-%C5%BCukowska-23398194/" data-tip="My digital CV"><img src={require("./../assets/img/001-linkedin.png")} alt="linkedin"/></a>
