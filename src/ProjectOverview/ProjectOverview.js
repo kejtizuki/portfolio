@@ -41,7 +41,7 @@ class ProjectOverview extends React.Component {
       'ah': title === 'Augmented Hearing',
       'opi': title === 'Dementia Support App',
       'thesis': title === 'Medical time series data visualization',
-      'issuu': title === 'My work at Issuu'
+      'issuu': title === 'Improving Issuu analytics page'
     });
 
     return(

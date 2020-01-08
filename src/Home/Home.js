@@ -61,10 +61,10 @@ class Home extends Component {
           </Link>
 
           <Link to="/issuu">
-          <Project title="My work at Issuu" image={require("../assets/img/IssuuPoster/posterPreview.png")}
+          <Project title="Improving Issuu analytics page" image={require("../assets/img/IssuuPoster/posterPreview.png")}
           className="gridCellCentered"
-          description="Some of the projects I work on at Issuu."
-          keywords="UI, UX, Web Design, Mobile design"
+          description="Redesign of data dashboard for Issuu"
+          keywords="UI, UX, Web Design, Data visualization"
           history={this.props.history}
           redirect="issuu"
           />

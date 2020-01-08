@@ -6,9 +6,17 @@
   padding: 60px;
   .header {
     width: 100%;
-    height: 50px;
+    height: 60px;
+    display: flex;
     .title {
       font-size: 36px;
+    }
+    .logoHolder {
+      margin-block-start: 0.83em;
+      margin-block-end: 0.83em;
+    }
+    .experienceLogo {
+      width: 40px;
     }
   }
   .experience-explained {

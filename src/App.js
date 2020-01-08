@@ -48,12 +48,12 @@ class App extends Component {
 
         <Route exact path="/issuu" component={() => <div><ProjectOverview
          bgImage={require("./assets/img/IssuuPoster/posterPreview.png")}
-         title="My work at Issuu"
+         title="Improving Issuu analytics page"
          history={this.props.history}
-         description="Some of the projects I work on at Issuu."
-         keywords="UI, UX, Web design"
+         description="Redesign of data dashboard for Issuu"
+         keywords="UI, UX, Web design, Data visualization"
          tools="Sketch, Principle"
-         longDesc="Currently I work as UI/UX Designer at Issuu. I work on improving the product both on mobile and desktop side."
+         longDesc="I was the main designer responsible for redesigning Issuu's stats page. This project is currently being built, I can present the results on the request."
  /> <ProjectIssuu /></div>}
        />
 
