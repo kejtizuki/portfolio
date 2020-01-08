@@ -14,7 +14,7 @@ export default class Hello extends React.Component {
         <div className="hello-description">
           Hi! My name is <a href="mailto:kejtizuki@gmail.com" className="linkHighlight">Kasia Żukowska</a>, I’m a
           UX Designer <br />
-          and data vizualization enthusiast.<br />
+          and data visualization enthusiast.<br />
           {/* <Typewriter
           options={{
             strings: ['UX Designer', 'Digital Designer', 'Frontend developer', 'Data vis enthusiast'],
