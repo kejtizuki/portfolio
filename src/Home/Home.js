@@ -26,7 +26,7 @@ class Home extends Component {
         <div className="gridContainer">
 
           <Link to="/time-series">
-          <Project title="Medical time series data visualization" image={require("../assets/img/Thesis/dataVizPreview2.png")}
+          <Project title="Medical time series data visualization" image={require("../assets/img/Thesis/preview-perspective.png")}
           className="gridCellCentered"
           description="Medical time series data visualization"
           keywords="Concept, UI, UX, Coding, Data Viz, Web design"

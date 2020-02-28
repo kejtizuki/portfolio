@@ -39,7 +39,7 @@ class About extends React.Component {
                 I like solving complex problems, prototyping and data design. </p>
                 <br /><br />
 
-                When I'm not working I am x probably doing yoga, windsurfing, travelling or taking analog photos.
+                When I'm not working I am probably doing yoga, windsurfing, travelling or taking analog photos.
                 <ul>
                   <li><a href="https://www.linkedin.com/in/katarzyna-%C5%BCukowska-23398194/" data-tip="My digital CV">Linkedin</a></li>
                   <li><a href="https://github.com/kejtizuki" data-tip="Code playground">Github</a></li>
