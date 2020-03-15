@@ -32,8 +32,21 @@ a {
 }
 
 .gridContainer {
+  padding: 0px 30px 0px 30px;
   display: flex;
   flex-direction: row;
   .gridCellCentered {
   }
+}
+
+.gridRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.gridContainerLayout {
+  display: flex;
+  flex-direction: row;
 }

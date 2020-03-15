@@ -7,7 +7,7 @@ import OPI from './OPI/OPI';
 import Skill from './Skill/Skill';
 import About from './About/About';
 import Footer from './Footer/Footer';
-import Home from './Home/Home';
+import Home from './Home/Home33';
 import ProjectOverview from './ProjectOverview/ProjectOverview';
 import ProjectSunWise from './ProjectSunWise/ProjectSunWise';
 import ProjectMikeller from './ProjectMikeller/ProjectMikeller';
