@@ -36,10 +36,11 @@ class Project extends React.Component {
 
         <div class='column' onClick={this.handleOnClick}>
 
-            <div className="imgFit" style={{ backgroundImage: `url(${image})` }}></div>
+            <div className="imgFit" style={{ backgroundImage: `url(${image})` }}>
+            </div>
             <div className="textContainer" >
               <div className="headerTop">
-                <h1 className="title">{title}</h1>
+                <h3 className="title">{title}</h3>
                 <p>{description}</p>
               </div>
 
