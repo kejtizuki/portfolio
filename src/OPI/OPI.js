@@ -79,6 +79,17 @@ class OPI extends React.Component {
           </div>
           <img className="mainImg" src={require('./../assets/img/OPI/bubbles.png')} />
 
+          <div className="row">
+          <div className="col7"><h2 className="title">Laws and rules</h2>
+          <p>
+          Taking into account the different ways people process information,
+          Rules & Laws should be as accessible as possible.
+          The set up includes a video explaining Rules & Laws options available,
+          key points that can be read, and an expanded text page for detailed information</p>
+          </div>
+          </div>
+          <img className="mainImg" src={require('./../assets/img/OPI/forum.png')} />
+
       </div>
     )
   }
