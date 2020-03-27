@@ -21,7 +21,7 @@ class Experience extends React.Component {
   render() {
 
     const list = [
-      {id: 0, name: "Issuu", url: "https://issuu.com/", description: "My current main task is redesigning Issuu's analytics page. Besides that, I'm creating animations for Visual Stories templates in Principle and working on tasks related to Visual Design.",
+      {id: 0, name: "Issuu", url: "https://issuu.com/", description: "Redesigned Issuu's analytics page, taking into account conversion rates and upgrades for premium plan. Currently working on the new design system and new creation tool. Animating UI elements to create beautiful and interactive experience.",
       img: require("../assets/img/IssuuPoster/logo.png")},
       {id: 1, name: "Designit", url: "https://designit.com/", description: "I'm responsible for various tasks related to UI design, preparation of user interviews and design research. Projects I took part in include: design of smart office application (user testing, UX design, preparing remote interviews), redesign of data-driven platform (UX/UI design), research of smart home solutions for people with disabilitie, concept and prototype of the app for dementia patient's relatives. During my daily tasks I use Sketch, Invision, Illustrator and Principle.",
       img: require("../assets/img/designitLogo.png")},
@@ -46,13 +46,13 @@ class Experience extends React.Component {
       <div className="experience">
         <div className="header">
           <div className="col3"><h2 className="title">Experience</h2></div>
-          <div className="col7 logoHolder"><h2><img src={list[this.state.currentIndex].img} className="experienceLogo"/></h2></div>
+          <div className="col7Experience"><h2><img src={list[this.state.currentIndex].img} className="experienceLogo"/></h2></div>
         </div>
         <div className="experience-explained">
-        <div className="listView">
+        <div className="listView col3">
           <ul>{listMapped}</ul>
         </div>
-        <div className="description">
+        <div className="description col7Experience">
           {list[this.state.currentIndex].description}
           <br /><br />
           <a href={list[this.state.currentIndex].url}>{list[this.state.currentIndex].url}</a>

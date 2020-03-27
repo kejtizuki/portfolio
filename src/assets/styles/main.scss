@@ -53,6 +53,7 @@ $text-color: #292B2C;
 }
 .col3 {
   width: 33%;
+  padding-right: 30px;
 }
 .col4 {
   width: 40%;
@@ -67,6 +68,11 @@ $text-color: #292B2C;
 }
 .col7 {
   width: 75%;
+}
+.col7Experience {
+  width: 75%;
+  padding-left: 30px;
+  box-sizing: border-box;
 }
 .colMax {
   width: 100%;
