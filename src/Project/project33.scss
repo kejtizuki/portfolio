@@ -14,7 +14,7 @@
 
 .imgFit {
   width: 100%;
-  height: 420px;
+  height: 380px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -29,17 +29,50 @@
     -o-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    // background-blend-mode: multiply;
 }
 }
+
+.columnGrid {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+
 
 .column {
   display: flex;
   flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-  padding: 30px 30px 30px 30px;
+  width: 25%;
+  // padding: 0px 40px 00px 0px;
   background-color: white;
   border-radius: 4px;
+  box-sizing: border-box;
+  padding-right: 32px;
+  // border: 1px solid #E9E9EC;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .textContainer {
+    padding: 20px 0px 20px 0px;
+  }
+}
+
+.paddingLeft {
+  margin-left: 40px;
+}
+
+.column2 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-right: 32px;
+  margin: 0px;
+  background-color: white;
+  border-radius: 4px;
+  box-sizing: border-box;
   // border: 1px solid #E9E9EC;
 
   &:hover {
@@ -59,4 +92,75 @@
 .green-column {
     height: 100px;
     background-color: green;
+}
+
+.sunwise {
+  background-color: #4572DF;
+  color: white;
+  &:hover {
+    background-blend-mode: multiply;
+}
+}
+
+.dogs {
+  background-color: #F4C349;
+  &:hover {
+    background-blend-mode: multiply;
+}
+}
+.sfData {
+  background-color: #F3FA8A;
+  &:hover {
+    background-blend-mode: multiply;
+}
+}
+.mikeller {
+  background-color: #F9EDBC;
+  &:hover {
+    background-blend-mode: multiply;
+}
+}
+.coordinates {
+  background-color: #a2d6c9;
+  &:hover {
+    background-blend-mode: multiply;
+}
+}
+.costa {
+  background-color: #20565f;
+  &:hover {
+    background-blend-mode: multiply;
+}
+  color: white;
+}
+
+.opi {
+  background-color: #905fce;
+  color: white;
+  &:hover {
+    background-blend-mode: multiply;
+}
+}
+
+.thesis {
+  background-color: #F3F7F6;
+  &:hover {
+    background-blend-mode: multiply;
+}
+  // color: white;
+}
+
+.ah {
+  background-color: #ecede7;
+  &:hover {
+    background-blend-mode: multiply;
+}
+}
+
+.issuu {
+  background-color: #FF645A;
+  &:hover {
+    background-blend-mode: multiply;
+}
+  color: white;
 }

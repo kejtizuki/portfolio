@@ -1,9 +1,9 @@
 @import "../assets/styles/main.scss";
 
 .experience {
-  height: 450px;
+  height: 550px;
   background-color: white;
-  padding: 80px;
+  padding: 64px;
   .header {
     width: 100%;
     height: 80px;
@@ -40,12 +40,12 @@
       }
     }
     .description {
-      padding-top: 22px;
+      // padding-top: 22px;
       // width: 70%;
       line-height: 1.3;
       font-size: 18px;
       height: 250px;
-      padding-left: 30px;
+      // padding-left: 30px;
     }
   }
 }

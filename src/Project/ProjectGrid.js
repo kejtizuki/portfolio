@@ -1,5 +1,6 @@
 import React from 'react';
 import './project33.scss';
+var classNames = require('classnames');
 
 class Project extends React.Component {
 
@@ -31,12 +32,27 @@ class Project extends React.Component {
         keywords
       } = this.props;
 
+      const headerClasses = classNames({
+        'projectHeader': true,
+        'sunwise': title === 'SunWise',
+        'dogs': title === 'Dogs training app',
+        'sfData': title === 'San Francisco Data Visualization',
+        'mikeller': title === 'Mikeller app',
+        'coordinates': title === 'Parallel coordinates',
+        'costa': title === 'New Costa cruise experience',
+        'ah': title === 'Augmented Hearing',
+        'opi': title === 'Dementia Support App',
+        'thesis': title === 'Medical time series data visualization',
+        'issuu': title === 'Improving Issuu analytics page'
+      });
+
+
     return(
 
 
         <div onClick={this.handleOnClick}>
 
-            <div className="imgFit" style={{ backgroundImage: `url(${image})` }}>
+            <div className={' imgFit'} style={{ backgroundImage: `url(${image})` }}>
             </div>
             <div className="textContainer" >
               <div className="headerTop">
