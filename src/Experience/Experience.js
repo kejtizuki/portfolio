@@ -46,13 +46,14 @@ class Experience extends React.Component {
       <div className="experience">
         <div className="header">
           <div className="col3"><h2 className="title">Experience</h2></div>
-          <div className="col7Experience"><h2><img src={list[this.state.currentIndex].img} className="experienceLogo"/></h2></div>
         </div>
         <div className="experience-explained">
         <div className="listView col3">
           <ul>{listMapped}</ul>
         </div>
         <div className="description col7Experience">
+          <img src={list[this.state.currentIndex].img} className="experienceLogo"/>
+          <br /><br />
           {list[this.state.currentIndex].description}
           <br /><br />
           <a href={list[this.state.currentIndex].url}>{list[this.state.currentIndex].url}</a>

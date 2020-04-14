@@ -7,7 +7,7 @@ import OPI from './OPI/OPI';
 import Skill from './Skill/Skill';
 import About from './About/About';
 import Footer from './Footer/Footer';
-import Home from './Home/Home33';
+import Home from './Home/HomeGrid';
 import ProjectOverview from './ProjectOverview/ProjectOverview';
 import ProjectSunWise from './ProjectSunWise/ProjectSunWise';
 import ProjectMikeller from './ProjectMikeller/ProjectMikeller';
@@ -74,7 +74,7 @@ sun overexposure by allowing users to track the time they
 spend outdoors in relation to the UV Index levels. The project was developed as a part of Personal Data Interaction class at DTU."
 /> <ProjectSunWise /></div>}
       />
-      <Route exact path="/dogsApp" component={() => <div><ProjectOverview
+      {/* <Route exact path="/dogsApp" component={() => <div><ProjectOverview
         bgImage={require("./assets/img/Dogs/dogo.png")}
         title="Dogs training app"
         history={this.props.history}
@@ -88,7 +88,7 @@ spend outdoors in relation to the UV Index levels. The project was developed as 
         leading to depression and often poorly behaved dogs. The app makes sure that your dog stays happy, while it provides the owner with a way to
         track its progress and mental health."
       /><ProjectDogs /></div>}
-      />
+      /> */}
 
       <Route exact path="/parallelCoordinates" component={() => <div><ProjectOverview
         bgImage={require("./assets/img/DataVis/main3.png")}
@@ -109,7 +109,7 @@ coordinates and presents five types of brushing that are specifically
 designed to filter the data in different ways."
       /><ProjectCoordinates /></div>}
       />
-      <Route exact path="/SFdataVis" component={() => <div><ProjectOverview
+      {/* <Route exact path="/SFdataVis" component={() => <div><ProjectOverview
         bgImage={require("./assets/img/SF/main.png")}
         title="San Francisco Data Visualization"
         history={this.props.history}
@@ -120,7 +120,7 @@ designed to filter the data in different ways."
         longDesc="The project was developed as a group assignment for the Data Visualization class at DTU.
         The visualization is interactive and presents movie locations across the years in San Francisco area."
       /><ProjectSF /></div>}
-      />
+      /> */}
       <Route exact path="/mikellerApp" component={() => <div><ProjectOverview
         bgImage={require("./assets/img/Mikeller/main.png")}
         title="Mikeller app"
