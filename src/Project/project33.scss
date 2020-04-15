@@ -1,4 +1,5 @@
 @import "../assets/styles/main.scss";
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,600,700&display=swap');
 
 .rowGrid {
   display: flex;
@@ -62,6 +63,11 @@
 
 .paddingLeft {
   margin-left: 40px;
+}
+
+.keyword {
+  font-family: 'Roboto Mono';
+  z-index: 200;
 }
 
 .column2 {

@@ -50,7 +50,7 @@ class Project extends React.Component {
     return(
 
 
-        <div onClick={this.handleOnClick}>
+        <div onClick={this.handleOnClick} onMouseOver={this.imageHover} onMouseOut={this.imageHover}>
 
             <div className={' imgFit'} style={{ backgroundImage: `url(${image})` }}>
             </div>
