@@ -44,18 +44,22 @@ class Experience extends React.Component {
 
     return(
       <div className="experience">
-        <div className="header">
-          <div className="col3"><h2 className="title">Experience</h2></div>
+      <div className="column"></div>
+        <div className="header gridContainer">
+          <div className="column"><h2 className="title">Experience</h2></div>
+
         </div>
-        <div className="experience-explained">
-        <div className="listView col3">
+        <div className="experience-explained gridContainer">
+        <div className="listView column">
           <ul>{listMapped}</ul>
+
+          <a href={require("./../assets/downloads/cv-katarzyna-zukowska.pdf")} download className="btn">
+            Download my CV
+          </a>
         </div>
-        <div className="description col7Experience">
-          <img src={list[this.state.currentIndex].img} className="experienceLogo"/>
-          <br /><br />
+        <div className="description column3">
           {list[this.state.currentIndex].description}
-          <br /><br />
+          <br /><br/>
           <a href={list[this.state.currentIndex].url}>{list[this.state.currentIndex].url}</a>
           <br /><br/>
           {
@@ -65,9 +69,6 @@ class Experience extends React.Component {
           }
         </div>
         </div>
-        <a href={require("./../assets/downloads/cv-katarzyna-zukowska.pdf")} download className="btn">
-          Download my CV
-        </a>
 
       </div>
     )

@@ -8,7 +8,7 @@ class ProjectIssuu extends React.Component {
 
     return(
       <div className="projectContainer">
-        <img src={require("./../assets/img/IssuuPoster/posterPreview.png")} className="mainImg"/>
+        <img src={require("./../assets/img/IssuuPoster/stats.png")} className="mainImg"/>
 
       </div>
     )
