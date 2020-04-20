@@ -37,7 +37,23 @@ class Home extends Component {
           </Link>
           </div>
 
-          <div class='column'>
+          <div class='column2'>
+          <Link to="/issuu">
+          <Project title="Improving Issuu analytics page" image={require("../assets/img/IssuuPoster/scrollStats.gif")}
+          className="gridCellCentered"
+          description="Redesign of data dashboard for Issuu"
+          keywords="UI, UX, Web Design, Data visualization"
+          history={this.props.history}
+          redirect="issuu"
+          />
+          </Link>
+          </div>
+
+        </div>
+
+        <div className="gridContainer">
+
+          <div class='column2'>
           <Link to="/augmentedHearing">
           <Project title="Augmented Hearing" image={require("../assets/img/AH/preset-fast.gif")}
           className="gridCellCentered"
@@ -49,57 +65,45 @@ class Home extends Component {
           </Link>
           </div>
 
-          <div class='column'>
-          <Link to="/issuu">
-          <Project title="Improving Issuu analytics page" image={require("../assets/img/IssuuPoster/posterPreview.png")}
+          <div class='column2'>
+          <Link to="/dementiaSupport">
+          <Project title="Dementia Support App" image={require("../assets/img/OPI/opi-main.png")}
           className="gridCellCentered"
-          description="Redesign of data dashboard for Issuu"
-          keywords="UI, UX, Web Design, Data visualization"
+          description="An app designed to support dementia patient's relatives."
+          keywords="UX, UI, Concept, Prototyping"
           history={this.props.history}
-          redirect="issuu"
+          redirect="dementiaSupport"
           />
           </Link>
-        </div>
-
-
+          </div>
 
         </div>
 
         <div className="gridContainer">
-        <div class='column '>
-        <Project title="Brushing techniques for parallel coordinates" image={require("../assets/img/DataVis/main3.png")}
-        description="Research and user testing of different brushing techniques for parallel coordinates"
-        keywords="UI, UX, Data Visualization, Coding, Research"
-        history={this.props.history}
-        redirect="parallelCoordinates"
-        />
-        </div>
 
-        <div class='column'>
-        <Link to="/sunwise">
-        <Project title="SunWise" image={require("../assets/img/SunWise/sunwise-main1.jpg")}
-        className="gridCellCentered"
-        description="SunWise helps you sunbathe in a safe way by collecting the UV index data."
-        keywords="UX, UI, User Testing, Interaction Design"
-        history={this.props.history}
-        redirect="sunWise"
-        />
-        </Link>
-        </div>
+          <div class='column2'>
+          <Link to="/sunwise">
+          <Project title="SunWise" image={require("../assets/img/SunWise/sunwise-main1.jpg")}
+          className="gridCellCentered"
+          description="SunWise helps you sunbathe in a safe way by collecting the UV index data."
+          keywords="UX, UI, User Testing, Interaction Design"
+          history={this.props.history}
+          redirect="sunWise"
+          />
+          </Link>
+          </div>
 
-      <div class='column2'>
-      <Link to="/dementiaSupport">
-      <Project title="Dementia Support App" image={require("../assets/img/OPI/opi-main.png")}
-      className="gridCellCentered"
-      description="An app designed to support dementia patient's relatives."
-      keywords="UX, UI, Concept, Prototyping"
-      history={this.props.history}
-      redirect="dementiaSupport"
-      />
-      </Link>
+          <div class='column2'>
+          <Project title="Brushing techniques for parallel coordinates" image={require("../assets/img/DataVis/main3.png")}
+          description="Research and user testing of different brushing techniques for parallel coordinates"
+          keywords="UI, UX, Data Visualization, Coding, Research"
+          history={this.props.history}
+          redirect="parallelCoordinates"
+          />
+          </div>
+
       </div>
 
-    </div>
 
 
 
