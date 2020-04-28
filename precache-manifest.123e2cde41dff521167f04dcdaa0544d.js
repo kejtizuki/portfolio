@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "c8123052d040cbefcc12583902757c2b",
-    "url": "/portfolio/static/media/main.c8123052.png"
+    "revision": "91f5e6d72dc607a7671e2e4edc2363a9",
+    "url": "/portfolio/static/media/distributions3.91f5e6d7.gif"
   },
   {
-    "revision": "e7b108f330e12555c096",
-    "url": "/portfolio/static/css/main.f58113f0.chunk.css"
+    "revision": "310790c5d971ce572186",
+    "url": "/portfolio/static/css/main.face57dd.chunk.css"
   },
   {
     "revision": "53ebc025fca807d4dbea",
@@ -22,6 +22,14 @@ self.__precacheManifest = [
   {
     "revision": "bc9ce17f6747162774b7f67e2675ed29",
     "url": "/portfolio/static/media/me.bc9ce17f.jpg"
+  },
+  {
+    "revision": "fd1a73d23531da86395050a9d509a70f",
+    "url": "/portfolio/static/media/PlantinInfantMTStd.fd1a73d2.otf"
+  },
+  {
+    "revision": "ed557f50ecfa97ffc1112ec44f27450a",
+    "url": "/portfolio/static/media/FaktumTest-Bold.ed557f50.otf"
   },
   {
     "revision": "55f6a2e5f5a298c9be918951a61ef175",
@@ -148,12 +156,12 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/sf-map.c0a09a5a.gif"
   },
   {
-    "revision": "91f5e6d72dc607a7671e2e4edc2363a9",
-    "url": "/portfolio/static/media/distributions3.91f5e6d7.gif"
+    "revision": "310790c5d971ce572186",
+    "url": "/portfolio/static/js/main.45c99bde.chunk.js"
   },
   {
-    "revision": "e7b108f330e12555c096",
-    "url": "/portfolio/static/js/main.e8b59768.chunk.js"
+    "revision": "c8123052d040cbefcc12583902757c2b",
+    "url": "/portfolio/static/media/main.c8123052.png"
   },
   {
     "revision": "4257d1b77ba370604de5efb298eb0874",
@@ -304,7 +312,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/img.fffce63d.png"
   },
   {
-    "revision": "e8c6538a3ebeb002fe37c048e4108f19",
+    "revision": "d310a2781cd3daec2e3366e884d7d537",
     "url": "/portfolio/index.html"
   }
 ];
