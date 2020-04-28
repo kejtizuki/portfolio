@@ -19,16 +19,11 @@
 }
 
 @font-face {
-  font-family: Faktum;
-  src: require('./../FaktumTest-Bold.otf') format("opentype");
-}
-
-@font-face {
   font-family: Chivo;
   src: require('./../Chivo.ttf');
 }
 
-$font-stack: 'Noto Sans', 'Karla';
+$font-stack: 'IBM Plex Sans';
 $header-font: 'IBM Plex Sans';
 $background-color: #FFF4EC;
 $text-color: #292B2C;

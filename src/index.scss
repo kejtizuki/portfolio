@@ -2,6 +2,16 @@
 
 @import "./Hello/hello.scss";
 
+@font-face {
+  font-family: 'Plantin';
+  src: local('Plantin'), url('assets/PlantinInfantMTStd.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Faktum';
+  src: local('Plantin'), url('assets/FaktumTest-Bold.otf') format("opentype");
+}
+
 
 html, body {
   margin: 0;

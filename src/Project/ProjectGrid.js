@@ -56,7 +56,7 @@ class Project extends React.Component {
             </div>
             <div className="textContainer" >
               <div className="headerTop">
-                <h3 className="title">{title}</h3>
+                <h2 className="title">{title}</h2>
                 <p>{description}</p>
               </div>
 
