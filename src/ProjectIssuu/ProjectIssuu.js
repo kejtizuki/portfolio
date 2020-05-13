@@ -10,6 +10,8 @@ class ProjectIssuu extends React.Component {
       <div className="projectContainer">
         <img src={require("./../assets/img/IssuuPoster/stats.png")} className="mainImg"/>
 
+        <img src={require("./../assets/img/IssuuPoster/performance-interaction.gif")} className="mainImg"/>
+
       </div>
     )
   }
