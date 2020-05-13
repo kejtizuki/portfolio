@@ -4,16 +4,16 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/distributions3.91f5e6d7.gif"
   },
   {
-    "revision": "310790c5d971ce572186",
-    "url": "/portfolio/static/css/main.face57dd.chunk.css"
+    "revision": "e18069172a8f09da5d6a",
+    "url": "/portfolio/static/css/main.9b46b618.chunk.css"
   },
   {
     "revision": "53ebc025fca807d4dbea",
     "url": "/portfolio/static/js/runtime~main.f308c8e6.js"
   },
   {
-    "revision": "c3978a70454f4ea35d84",
-    "url": "/portfolio/static/js/2.c1304b76.chunk.js"
+    "revision": "a586a163f67e29db7b4c",
+    "url": "/portfolio/static/js/2.cb6c5a44.chunk.js"
   },
   {
     "revision": "546f67de07c8dddf3baabbfcfec66c2b",
@@ -42,6 +42,10 @@ self.__precacheManifest = [
   {
     "revision": "1d4e20bb3664da793b9a40d8c76eb58c",
     "url": "/portfolio/static/media/sunwise-main.1d4e20bb.jpg"
+  },
+  {
+    "revision": "90580850b8ca96d29a6462a44c595b1b",
+    "url": "/portfolio/static/media/photo.90580850.png"
   },
   {
     "revision": "047b2d63c0bb331465e97a4d8e44632e",
@@ -156,8 +160,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/sf-map.c0a09a5a.gif"
   },
   {
-    "revision": "310790c5d971ce572186",
-    "url": "/portfolio/static/js/main.45c99bde.chunk.js"
+    "revision": "e18069172a8f09da5d6a",
+    "url": "/portfolio/static/js/main.fbd09d37.chunk.js"
   },
   {
     "revision": "c8123052d040cbefcc12583902757c2b",
@@ -264,6 +268,10 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/stats.901b906b.png"
   },
   {
+    "revision": "03b42420fcae0ba98dc8bd4bfe04024d",
+    "url": "/portfolio/static/media/performance-interaction.03b42420.gif"
+  },
+  {
     "revision": "5ed2f6039b38fdf8a82d10f10dd2e6d9",
     "url": "/portfolio/static/media/main.5ed2f603.png"
   },
@@ -312,7 +320,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/img.fffce63d.png"
   },
   {
-    "revision": "d310a2781cd3daec2e3366e884d7d537",
+    "revision": "e29d83471b690270a91d2bfbc5e2fa68",
     "url": "/portfolio/index.html"
   }
 ];
