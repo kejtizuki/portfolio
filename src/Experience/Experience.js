@@ -57,7 +57,7 @@ class Experience extends React.Component {
             Download my CV
           </a>
         </div>
-        <div className="description column3">
+        <div className="description column2">
           {list[this.state.currentIndex].description}
           <br /><br/>
           <a href={list[this.state.currentIndex].url}>{list[this.state.currentIndex].url}</a>

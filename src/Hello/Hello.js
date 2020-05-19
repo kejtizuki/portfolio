@@ -13,8 +13,7 @@ export default class Hello extends React.Component {
         <ReactTooltip className="myTooltip"/>
         <div className="hello-description">
           Hi! My name is <a href="mailto:kejtizuki@gmail.com" className="linkHighlight">Kasia Żukowska</a>, I’m a
-          UX Designer <br />
-          and data visualization enthusiast.<br />
+          digital designer <br />with multidisciplinary background.<br />
           {/* <Typewriter
           options={{
             strings: ['UX Designer', 'Digital Designer', 'Frontend developer', 'Data vis enthusiast'],
@@ -22,8 +21,8 @@ export default class Hello extends React.Component {
             loop: true,
           }}
           /> */}
-          Currently working as UI/UX Designer
-          at <a href="https://www.issuu.com/" className="link">Issuu, Copenhagen</a>.
+          I currently work as UI/UX Designer
+          at <a href="https://www.issuu.com/" className="linkHighlight">Issuu, Copenhagen</a>.
           <p id="workLink">
           Scroll down to explore
         </p>

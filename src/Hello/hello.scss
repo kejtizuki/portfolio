@@ -10,7 +10,7 @@
   align-items: center;
   flex-direction: row;
   justify-content: center;
-  font-family: $font-stack;
+  font-family: $header-font;
 
   .hello-description {
     width: 100%;
@@ -36,8 +36,10 @@
     font-size: 14px;
   }
   .linkHighlight {
-    background-color: #EAF257;
+    // color: white;
+    background-color: #eaf257;
     text-decoration: none;
+    font-family: $font-stack;
   }
 }
 }

@@ -53,7 +53,7 @@ class App extends Component {
          description="Redesign of data dashboard for Issuu"
          keywords="UI, UX, Web design, Data visualization"
          tools="Sketch, Principle"
-         longDesc="I was the main designer responsible for redesigning Issuu's stats page. This project is currently being built, I can present the results on the request."
+         longDesc="I was the main designer responsible for redesigning Issuu's stats page. The project went through multiple iterations resulting in a simple and easy to interact with interface."
  /> <ProjectIssuu /></div>}
        />
 
