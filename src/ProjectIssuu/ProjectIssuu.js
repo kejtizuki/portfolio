@@ -50,9 +50,10 @@ class ProjectIssuu extends React.Component {
         <div className="col3"></div>
         </div>
 
-        <img src={require("./../assets/img/IssuuPoster/interaction-scroll.gif")} className="mainImg"/>
-
-        <img src={require("./../assets/img/IssuuPoster/page-performance.png")} className="mainImg"/>
+        <div className='row'>
+        <div className='col5'>  <img src={require("./../assets/img/IssuuPoster/interaction-scroll.gif")} className="mainImg"/></div>
+        <div className='col5 margin20'>  <img src={require("./../assets/img/IssuuPoster/page-performance.png")} className="mainImg"/></div>
+        </div>
 
       </div>
     )
