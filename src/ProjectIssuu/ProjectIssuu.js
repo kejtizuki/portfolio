@@ -45,8 +45,9 @@ class ProjectIssuu extends React.Component {
         <img src={require("./../assets/img/IssuuPoster/performance-interaction.gif")} className="mainImg"/>
 
         <div className="row">
-        <div className="col7"><h2 className="title">Page performance</h2>  <p>Designing page performance chart was not an obvious task. On one hand, the visual format
-        of pages had a great potential. On the other this approach was quite time-consuming in terms of development time. The first approach took into account this aspect and focused on presenting the pages previews. </p></div>
+        <div className="col7"><h2 className="title">Page performance</h2>  <p>The graphic format (left)
+        of pages had a great potential in terms of visual presentation, however it required more development time and commitment.
+        This design was instead replaced by simpler version (right) which shows the data on a bar chart. The page preview is displayed on hover on a bar. </p></div>
         <div className="col3"></div>
         </div>
 
