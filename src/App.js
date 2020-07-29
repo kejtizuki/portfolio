@@ -36,7 +36,7 @@ class App extends Component {
           title="Medical time series data visualization"
           history={this.props.history}
           description="How can time-series data be visualized?"
-          keywords="Concept, UI, UX, Coding, Data Viz, Web design"
+          keywords="Concept,UI,UX,Coding,Data Viz,Web design"
           tools="Sketch, Principle, d3.js, React"
           type="Individual, MSc thesis"
           website={<a href='www.kejtizuki.github.io/time-series-thesis'>Demo</a>}
@@ -51,7 +51,8 @@ class App extends Component {
          title="Improving Issuu analytics page"
          history={this.props.history}
          description="Redesign of data dashboard for Issuu"
-         keywords="UI, UX, Web design, Data visualization"
+         keywords="UI,UX,Web design,Product design,Data visualization"
+         type="Product Design, Issuu"
          tools="Sketch, Principle"
          longDesc="I was the main designer responsible for redesigning Issuu's stats page. The project went through multiple iterations resulting in a simple and easy to interact with interface."
  /> <ProjectIssuu /></div>}
@@ -64,7 +65,7 @@ class App extends Component {
         title="SunWise"
         history={this.props.history}
         description="Protect your skin from high UV index. Know when to stop sunbathing."
-        keywords="UX, UI, User Testing"
+        keywords="UX,UI,User Testing"
         tools="Adobe Photoshop, Adobe Illustrator"
         type="Group project (3 people)"
         longDesc="This project aims to
@@ -95,7 +96,7 @@ spend outdoors in relation to the UV Index levels. The project was developed as 
         title="Parallel coordinates"
         history={this.props.history}
         description="Research and user testing of different brushing techniques for parallel coordinates"
-        keywords="Data Visualization, Web Design, UX Design"
+        keywords="Data Visualization,Web Design,UX Design"
         tools="Python, HTML, CSS, D3.js"
         type="Group project (2 people)"
         longDesc="Even though parallel coordinates can successfully solve
@@ -153,7 +154,7 @@ augment awareness of the brand and the cruise product and get past cruisers inv
         title="Augmented Hearing"
         history={this.props.history}
         description="Augmented hearing app created as a digital tool to interact with a hearing aid."
-        keywords="UI, UX, Concept, Prototyping"
+        keywords="UI,UX,Concept,Prototyping"
         tools="Sketch, Principle"
         type="Individual project"
         longDesc='Protect and augment your hearing via a smartphone - controlled device to distinguish conversation in loud music environments.'
@@ -165,7 +166,7 @@ augment awareness of the brand and the cruise product and get past cruisers inv
         title="Dementia Support App"
         history={this.props.history}
         description="An app designed to support dementia patient's relatives."
-        keywords="UI, UX, Concept, Prototyping"
+        keywords="UI,UX,Concept,Prototyping"
         tools="Sketch"
         type="Group project (5 people)"
         longDesc='The app was designed during one week Sprint at Designit together with municipalities and companies working with dementia disease. The main goal of the app is to support the dementia patients relatives. The app provides support forum, community access and easily explained information on available help options.'

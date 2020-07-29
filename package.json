@@ -8,6 +8,7 @@
     "d3-geo": "^1.11.6",
     "node-sass": "^4.11.0",
     "react": "^16.8.4",
+    "react-animated-css": "^1.2.1",
     "react-d3": "^0.4.0",
     "react-dom": "^16.8.4",
     "react-router-dom": "^5.0.0",

@@ -3,15 +3,9 @@
 @import "./Hello/hello.scss";
 
 @font-face {
-  font-family: 'Plantin';
-  src: local('Plantin'), url('assets/PlantinInfantMTStd.otf') format('opentype');
+  font-family: 'Telegraf';
+  src: local('Radnika'), url('assets/Telegraf-Regular.otf') format("opentype");
 }
-
-@font-face {
-  font-family: 'Faktum';
-  src: local('Plantin'), url('assets/FaktumTest-Bold.otf') format("opentype");
-}
-
 
 html, body {
   margin: 0;
@@ -43,7 +37,16 @@ a {
 
 .gridContainer {
   padding: 0px 64px 0px 64px;
-  margin: 32px 0px 32px 0px;
+  // margin: 32px 0px 32px 0px;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  .gridCellCentered {
+  }
+}
+
+.gridContainerRow {
+  padding: 30px 48px 30px 48px;
   display: flex;
   flex-direction: row;
   align-content: flex-start;

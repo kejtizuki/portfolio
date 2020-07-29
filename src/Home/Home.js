@@ -29,7 +29,7 @@ class Home extends Component {
           <Project title="Medical time series data visualization" image={require("../assets/img/Thesis/preview-perspective.png")}
           className="gridCellCentered"
           description="Medical time series data visualization"
-          keywords="Concept, UI, UX, Coding, Data Viz, Web design"
+          keywords="Concept,UI,UX,Coding,Data Viz,Web design"
           history={this.props.history}
           redirect="time-series"
           />
@@ -39,7 +39,7 @@ class Home extends Component {
           <Project title="Augmented Hearing" image={require("../assets/img/AH/web.png")}
           className="gridCellCentered"
           description="Augmented hearing app created as a digital tool to interact with a hearing aid."
-          keywords="UI, UX, Concept, Prototyping"
+          keywords="UI,UX,Concept,Prototyping"
           history={this.props.history}
           redirect="augmentedHearing"
           />
@@ -54,7 +54,7 @@ class Home extends Component {
           <Project title="Dementia Support App" image={require("../assets/img/OPI/opi-main.png")}
           className="gridCellCentered"
           description="An app designed to support dementia patient's relatives."
-          keywords="UX, UI, Concept, Prototyping"
+          keywords="UX,UI,Concept,Prototyping"
           history={this.props.history}
           redirect="dementiaSupport"
           />
@@ -64,7 +64,7 @@ class Home extends Component {
           <Project title="Improving Issuu analytics page" image={require("../assets/img/IssuuPoster/posterPreview.png")}
           className="gridCellCentered"
           description="Redesign of data dashboard for Issuu"
-          keywords="UI, UX, Web Design, Data visualization"
+          keywords="UI,UX,Web Design,Data visualization"
           history={this.props.history}
           redirect="issuu"
           />
@@ -78,7 +78,7 @@ class Home extends Component {
           <Project title="SunWise" image={require("../assets/img/SunWise/sunwise-main1.jpg")}
           className="gridCellCentered"
           description="SunWise helps you sunbathe in a safe way by collecting the UV index data."
-          keywords="UX, UI, User Testing, Interaction Design"
+          keywords="UX,UI,User Testing,Interaction Design"
           history={this.props.history}
           redirect="sunWise"
           />

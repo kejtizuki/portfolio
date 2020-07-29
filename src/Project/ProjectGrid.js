@@ -32,6 +32,10 @@ class Project extends React.Component {
         keywords
       } = this.props;
 
+
+      console.log('keywords', keywords)
+
+
       const headerClasses = classNames({
         'projectHeader': true,
         'sunwise': title === 'SunWise',
@@ -47,17 +51,27 @@ class Project extends React.Component {
       });
 
 
+      console.log('keywords', typeof(keywords))
+      const keywordsMap = keywords.split(",").map((elem, index) => {return <span className='keyword' key={index}>{elem}</span>})
+
     return(
 
+        <div>
 
-        <div onClick={this.handleOnClick} onMouseOver={this.imageHover} onMouseOut={this.imageHover}>
-
+            <div className='box' onClick={this.handleOnClick} onMouseOver={this.imageHover} onMouseOut={this.imageHover}>
             <div className={' imgFit'} style={{ backgroundImage: `url(${image})` }}>
             </div>
+
+            {
+              (this.state.isHovered === true) &&
+              <div className='keywordsContainer fade'>{keywordsMap}</div>
+            }
+            </div>
+
             <div className="textContainer" >
               <div className="headerTop">
                 <h2 className="title">{title}</h2>
-                <p>{description}</p>
+                <p className='overviewDesc'>{description}</p>
               </div>
 
           </div>
