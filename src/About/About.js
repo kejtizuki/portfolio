@@ -21,7 +21,7 @@ class About extends React.Component {
             <div className="column2">
             <img src={require("./../assets/img/me-bw-2.jpg")} alt="me" className="smallImg" />
             </div>
-            <div className="column2">
+            <div className="column2 aboutMeText">
 
             <h1 className='title'>I'm interested in the process of creating seemless interactive experiences, starting from design research and finishing on polished user interface. </h1>
 
