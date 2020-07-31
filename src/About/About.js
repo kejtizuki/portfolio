@@ -19,7 +19,7 @@ class About extends React.Component {
       <Navbar />
         <div className="gridContainer aboutMeRow">
             <div className="column2">
-            <img src={require("./../assets/img/me-bw-2.jpg")} alt="me" className="smallImg" />
+            <img src={require("./../assets/img/me-palm.jpg")} alt="me" className="smallImg" />
             </div>
             <div className="column2 aboutMeText">
 
