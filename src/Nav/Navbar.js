@@ -12,9 +12,13 @@ class Navbar extends React.Component {
     return(
       <div className="navigation">
       <ul>
+      <Link to="/">
+        <li>Projects</li>
+      </Link>
       <Link to="/about">
         <li>About</li>
       </Link>
+
     </ul>
     </div>
     )

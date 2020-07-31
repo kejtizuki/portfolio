@@ -17,6 +17,7 @@ import ProjectCosta from './ProjectCosta/ProjectCosta';
 import ProjectThesis from './ProjectThesis/ProjectThesis';
 import ProjectAH from './ProjectAH/ProjectAH';
 import ProjectIssuu from './ProjectIssuu/ProjectIssuu';
+import ProjectIssuuCreate from './ProjectIssuuCreate/ProjectIssuuCreate';
 import ProjectCoordinates from './ProjectCoordinates/ProjectCoordinates';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './index.scss';
@@ -57,6 +58,18 @@ class App extends Component {
          longDesc="I was the main designer responsible for redesigning Issuu's stats page. The project went through multiple iterations resulting in a simple and easy to interact with interface."
  /> <ProjectIssuu /></div>}
        />
+
+       <Route exact path="/issuuCreate" component={() => <div><ProjectOverview
+        bgImage={require("./assets/img/IssuuCreate/page-rail-issuu.gif")}
+        title="Issuu Create editor for real estate agents"
+        history={this.props.history}
+        description="..."
+        keywords="UI, UX, Web design, Product design"
+        type="Product Design, Issuu"
+        tools="Sketch, Principle"
+        longDesc=""
+/> <ProjectIssuuCreate /></div>}
+      />
 
       <Route exact path="/" component={Home} />
       <Route exact path="/about" component={About} />

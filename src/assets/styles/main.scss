@@ -44,9 +44,6 @@ $highlight-color: #637381;
   line-height: 1.5;
 }
 
-
-
-
 #dogsProject {
   background-color: white !important;
 }
@@ -170,6 +167,7 @@ h1 {
   font-weight: 500;
   font-family: $header-font;
   font-size: 28px;
+  margin: 0;
 }
 
 .icons {
@@ -191,7 +189,7 @@ h1 {
 }
 
 .transformAndFade {
-  animation: transform-keyframes 0.5s, fade-in-keyframes 0.5s;
+  animation: transform-keyframes 0.3s, fade-in-keyframes 0.5s;
 }
 
 @keyframes fade-in-keyframes {

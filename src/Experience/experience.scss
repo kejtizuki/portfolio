@@ -1,10 +1,7 @@
 @import "../assets/styles/main.scss";
 
 .experience {
-  // height: 650px;
   background-color: #F8F6F5;
-  // padding: 64px;
-
   .header {
     width: 100%;
     height: 80px;
@@ -14,39 +11,7 @@
     font-size: 36px;
     margin-top: 30px;
   }
-  //
-  // .experienceLogo {
-  //   width: 40px;
-  // }
-  // .experience-explained {
-  //   // display: flex;
-  //   // flex-direction: row;
-  //   margin-top: 20px;
-  //   .listView {
-  //     // width: 30%;
-  //     font-size: 24px;
-  //     font-family: $header-font;
-  //     // line-height: 1.5;
-  //     ul {
-  //       list-style: none;
-  //       padding: 0;
-  //       margin: 0 0 20px 0;
-  //       .listView-elem {
-  //         display: inline-block;
-  //         margin: 0;
-  //         margin-bottom: 10px;
-  //       }
-  //     }
-  //   }
-  //   .description {
-  //     // padding-top: 22px;
-  //     // width: 70%;
-  //     line-height: 1.3;
-  //     font-size: 18px;
-  //     height: 250px;
-  //     // padding-left: 30px;
-  //   }
-  // }
+
 }
 
 .active {
@@ -56,11 +21,15 @@
 
 .experienceRow {
   border-bottom: 1px solid #c7cacc;
+  &:hover {
+    -webkit-transition: color 0.2s ease;
+    -moz-transition: color 0.2s ease;
+    -o-transition: color 0.2s ease;
+    -ms-transition: color 0.2s ease;
+    transition: color 0.2s ease;
+    color: #c7cacc;
+  }
 }
-
-
-
-/////////////
 
 .experienceList {
   margin-top: 30px !important;

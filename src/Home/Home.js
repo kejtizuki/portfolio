@@ -50,16 +50,6 @@ class Home extends Component {
 
         <div className="gridContainer">
 
-          <Link to="/dementiaSupport">
-          <Project title="Dementia Support App" image={require("../assets/img/OPI/opi-main.png")}
-          className="gridCellCentered"
-          description="An app designed to support dementia patient's relatives."
-          keywords="UX,UI,Concept,Prototyping"
-          history={this.props.history}
-          redirect="dementiaSupport"
-          />
-          </Link>
-
           <Link to="/issuu">
           <Project title="Improving Issuu analytics page" image={require("../assets/img/IssuuPoster/posterPreview.png")}
           className="gridCellCentered"
@@ -67,6 +57,16 @@ class Home extends Component {
           keywords="UI,UX,Web Design,Data visualization"
           history={this.props.history}
           redirect="issuu"
+          />
+          </Link>
+
+          <Link to="/dementiaSupport">
+          <Project title="Dementia Support App" image={require("../assets/img/OPI/opi-main.png")}
+          className="gridCellCentered"
+          description="An app designed to support dementia patient's relatives."
+          keywords="UX,UI,Concept,Prototyping"
+          history={this.props.history}
+          redirect="dementiaSupport"
           />
           </Link>
 

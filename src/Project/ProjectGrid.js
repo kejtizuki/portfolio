@@ -51,7 +51,8 @@ class Project extends React.Component {
       });
 
 
-      console.log('keywords', typeof(keywords))
+      console.log('keywords', keywords.split(","))
+
       const keywordsMap = keywords.split(",").map((elem, index) => {return <span className='keyword' key={index}>{elem}</span>})
 
     return(
@@ -64,7 +65,7 @@ class Project extends React.Component {
 
             {
               (this.state.isHovered === true) &&
-              <div className='keywordsContainer fade'>{keywordsMap}</div>
+              <div className='keywordsContainer transformAndFade'>{keywordsMap}</div>
             }
             </div>
 
