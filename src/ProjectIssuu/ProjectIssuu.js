@@ -70,6 +70,14 @@ class ProjectIssuu extends React.Component {
         <div className='col5 margin20'>  <img src={require("./../assets/img/IssuuPoster/page-performance.png")} className="mainImg"/></div>
         </div>
 
+        <div className="row">
+        <div className="col7"><h2 className="title">Links</h2>  <p></p></div>
+        <div className="col3"></div>
+        </div>
+
+        <img src={require("./../assets/img/IssuuPoster/links.png")} className="mainImg"/>
+
+
       </div>
     )
   }
