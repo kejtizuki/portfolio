@@ -71,11 +71,16 @@ class ProjectIssuu extends React.Component {
         </div>
 
         <div className="row">
-        <div className="col7"><h2 className="title">Links</h2>  <p></p></div>
+        <div className="col7"><h2 className="title">Links</h2>  <p>The users should be able to filter links based on keywords, page number or link type, see the totla number of impressions and reads.
+        To fullfill these requirements I designed a table with filtering in the header. It's also possible to sort the table based on a clicked value. Simple bars in Impressions and Clicks make it easier
+        to visually compare the numbers.</p></div>
         <div className="col3"></div>
         </div>
 
         <img src={require("./../assets/img/IssuuPoster/links.png")} className="mainImg"/>
+
+        <h2 className="title">Map</h2>
+        <img src={require("./../assets/img/IssuuPoster/map.png")} className="mainImg"/>
 
 
       </div>
