@@ -57,7 +57,7 @@ class Project extends React.Component {
 
     return(
 
-        <div>
+        <div className='project'>
 
             <div className='box' onClick={this.handleOnClick} onMouseOver={this.imageHover} onMouseOut={this.imageHover}>
             <div className={' imgFit'} style={{ backgroundImage: `url(${image})` }}>

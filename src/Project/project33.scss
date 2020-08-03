@@ -50,6 +50,12 @@
   grid-column-end: 2;
 }
 
+.project {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 
 .column {
   display: flex;
@@ -61,10 +67,6 @@
   box-sizing: border-box;
   padding-right: 32px;
   // border: 1px solid #E9E9EC;
-
-  &:hover {
-    cursor: pointer;
-  }
 }
 
 .paddingLeft {
@@ -87,10 +89,6 @@
   box-sizing: border-box;
   // border: 1px solid #E9E9EC;
 
-  &:hover {
-    cursor: pointer;
-  }
-
   .textContainer {
     padding: 10px 0px 40px 0px;
   }
@@ -106,10 +104,6 @@
   border-radius: 4px;
   box-sizing: border-box;
   // border: 1px solid #E9E9EC;
-
-  &:hover {
-    cursor: pointer;
-  }
 }
 
 .blue-column {
@@ -206,6 +200,7 @@
   top: 20px;
   margin: 20px;
   z-index: 1000;
+  word-break: keep-all;
 }
 
 .keyword {
