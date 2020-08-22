@@ -83,13 +83,17 @@ class Home extends Component {
         <div className="gridContainer">
 
 
+
         <div class='column2'>
-        <Project title="Brushing techniques for parallel coordinates" image={require("../assets/img/DataVis/main3.png")}
-        description="Research and user testing of different brushing techniques for parallel coordinates"
-        keywords="UI,UX,Data Visualization,Coding,Research"
+        <Link to="/issuuCreate">
+        <Project title="Issuu Create editor for real estate agents" image={require("../assets/img/IssuuCreate/addPages.gif")}
+        className="gridCellCentered"
+        description="Create automated social media stories"
+        keywords="UI, UX, Web Design, Product design"
         history={this.props.history}
-        redirect="parallelCoordinates"
+        redirect="issuuCreate"
         />
+        </Link>
         </div>
 
         <div class='column2'>
