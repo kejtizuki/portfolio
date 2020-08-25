@@ -8,7 +8,14 @@ class ProjectAH extends React.Component {
 
     return(
       <div className="projectContainer">
-        <img src={require("./../assets/img/AH/webmain.png")} className="mainImg"/>
+
+        <div className="cardsFlowBg center">
+          <div className="margin40">
+          <img src={require("./../assets/img/AH/prototype-choose-filter.gif")} className="prototypeImgSmall gifImgBorder "/>
+          <img src={require("./../assets/img/AH/prototype-preset-card.gif")} className="prototypeImgSmall margin40Left gifImgBorder"/>
+          <img src={require("./../assets/img/AH/volume.gif")} className="prototypeImgSmall margin40Left gifImgBorder"/>
+          </div>
+        </div>
 
         <div className="row">
         <div className="col7"><h2 className="title">Problem</h2>  <p>This project focuses on couple of proplems related to
@@ -35,14 +42,14 @@ that it displays statistics about user's time spent in loud environments and hea
 
 
         <h2 className="title">Wireframes / Flow</h2>
-        <img src={require("./../assets/img/AH/uxmap.png")} className="mainImg"/>
+        <img src={require("./../assets/img/AH/uxmap.png")} className="mainImg "/>
 
         <img src={require("./../assets/img/AH/presetsView.png")} className="mainImg"/>
 
         <div className="row margin40">
-          <div className="col5"><img src={require("./../assets/img/AH/prototype-choose-filter.gif")} className="prototypeImg"/><img src={require("./../assets/img/AH/prototype-preset-card.gif")} className="prototypeImg"/>
+          <div className="col7"><img src={require("./../assets/img/AH/prototype-choose-filter.gif")} className="prototypeImg gifImgBorder"/><img src={require("./../assets/img/AH/prototype-preset-card.gif")} className="prototypeImg margin40Left gifImgBorder"/>
           </div>
-          <div className="col5 padding80Left verticalCenter"><h2 className="title">Presets</h2>
+          <div className="col3 verticalCenter"><h2 className="title">Presets</h2>
           Presets can be accessed either home screen or from the preset list.
           Home screen shortcut allows user to choose preferred preset without entering the list view. The app
           learns on user's actions and remembers the presets that are used most often. It suggests 4 most often used filters, each form

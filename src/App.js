@@ -55,7 +55,7 @@ class App extends Component {
          keywords="UI,UX,Web design,Product design,Data visualization"
          type="Product Design, Issuu"
          tools="Sketch, Principle"
-         longDesc="I was the main designer responsible for redesigning Issuu's stats page. The project went through multiple iterations resulting in a simple and easy to interact with interface."
+         longDesc="As UX Designer, I collaborated closely with the developers and a Product Manager to create a smooth data dashboard experience. The project went through few iterations resulting in a simple and easy to interact with interface."
  /> <ProjectIssuu /></div>}
        />
 
@@ -63,7 +63,7 @@ class App extends Component {
         bgImage={require("./assets/img/IssuuCreate/page-rail-issuu.gif")}
         title="Issuu Create editor for real estate agents"
         history={this.props.history}
-        description="..."
+        description="Create automated social media stories"
         keywords="UI, UX, Web design, Product design"
         type="Product Design, Issuu"
         tools="Sketch, Principle"

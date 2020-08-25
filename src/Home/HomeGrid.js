@@ -86,7 +86,7 @@ class Home extends Component {
 
         <div class='column2'>
         <Link to="/issuuCreate">
-        <Project title="Issuu Create editor for real estate agents" image={require("../assets/img/IssuuCreate/addPages.gif")}
+        <Project title="Issuu Create editor for real estate agents" image={require("../assets/img/IssuuCreate/createPreview4.png")}
         className="gridCellCentered"
         description="Create automated social media stories"
         keywords="UI, UX, Web Design, Product design"
