@@ -30,7 +30,7 @@ class About extends React.Component {
             I started out my career as frontend developer but quickly realized that design is something I really love and want to commit to.
             <br /><br />
             Working in various companies, from a startup through a creative agency to a corporation, made me understand different approaches and perspectives to solving a problem.
-            Having frontend background makes it easier for me to communicate with the developers and understand the coding restrictions. :)
+            Having frontend background makes it easier for me to communicate with the developers and understand the coding restrictions.
             <br /><br /></p>
 
 

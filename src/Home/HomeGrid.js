@@ -55,6 +55,19 @@ class Home extends Component {
         <div className="gridContainer">
 
         <div class='column2'>
+
+        <Link to="/augmentedHearing">
+        <Project title="Augmented Hearing" image={require("../assets/img/AH/preview-ah.gif")}
+        className="gridCellCentered"
+        description="Augmented hearing app created as a digital tool to interact with a hearing aid."
+        keywords="UI,UX,Concept,Prototyping"
+        history={this.props.history}
+        redirect="augmentedHearing"
+        />
+        </Link>
+        </div>
+
+        <div class='column2'>
         <Link to="/dementiaSupport">
         <Project title="Dementia Support App" image={require("../assets/img/OPI/opi-main.png")}
         className="gridCellCentered"
@@ -62,18 +75,6 @@ class Home extends Component {
         keywords="UX,UI,Concept,Prototyping"
         history={this.props.history}
         redirect="dementiaSupport"
-        />
-        </Link>
-        </div>
-
-        <div class='column2'>
-        <Link to="/augmentedHearing">
-        <Project title="Augmented Hearing" image={require("../assets/img/AH/preset-fast.gif")}
-        className="gridCellCentered"
-        description="Augmented hearing app created as a digital tool to interact with a hearing aid."
-        keywords="UI,UX,Concept,Prototyping"
-        history={this.props.history}
-        redirect="augmentedHearing"
         />
         </Link>
         </div>
