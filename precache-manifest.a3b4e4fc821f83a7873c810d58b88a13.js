@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "3b1cf2cb854647e52064",
-    "url": "/portfolio/static/css/main.637004de.chunk.css"
+    "revision": "3da8b10120f31c824d21",
+    "url": "/portfolio/static/css/main.ac7b8ccb.chunk.css"
   },
   {
-    "revision": "3b1cf2cb854647e52064",
-    "url": "/portfolio/static/js/main.c355c617.chunk.js"
+    "revision": "3da8b10120f31c824d21",
+    "url": "/portfolio/static/js/main.50d70da3.chunk.js"
   },
   {
     "revision": "53ebc025fca807d4dbea",
@@ -276,6 +276,10 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/page-performance.0c35a1a9.png"
   },
   {
+    "revision": "5f0ce67c560cb4a45684b868c63178f0",
+    "url": "/portfolio/static/media/linksVersions.5f0ce67c.png"
+  },
+  {
     "revision": "cca1f314cca8e5e5e935a50ad67907e6",
     "url": "/portfolio/static/media/links.cca1f314.png"
   },
@@ -348,7 +352,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/FaktumTest-Bold.ed557f50.otf"
   },
   {
-    "revision": "b252400206d13ec7b62c92620968efb7",
+    "revision": "3871605a97e4c15e4c51555c28f3585e",
     "url": "/portfolio/index.html"
   }
 ];
