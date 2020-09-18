@@ -28,10 +28,31 @@
       }
     }
   }
+
+@media (max-width: 600px) {
+  .projectTitle {
+    h1 {
+      margin: 0 24px 0px 24px;
+    }
+  }
+}
   .projectDescription {
     margin-left: 80px;
   }
+
+  @media (max-width: 600px) {
+    .projectDescription {
+      margin-left: 54px;
+    }
+  }
 }
+
+@media (max-width: 600px) {
+  .projectHeader {
+    padding: 12px;
+  }
+}
+
 
 .sunwise {
   background-color: #4572DF;
@@ -100,6 +121,14 @@
   }
 }
 
+@media (max-width: 600px) {
+  .basicContainer {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .number {
   // color: ;
 }
@@ -120,6 +149,12 @@
   // @media screen and (max-width: 1200px) {
   .screenView {
     width: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .projectContainer {
+    padding: 10px 12px 10px 12px;
   }
 }
 

@@ -15,14 +15,19 @@
     display: flex;
     justify-content: flex-end;
     list-style: none;
+    a {
+      text-decoration: none !important;
+      margin: 0px 30px 0px 30px;
+      padding-bottom: 3px;
+    }
+    .activeLink {
+      border-bottom: 2px solid $text-color;
+    }
+
     li {
 
-        margin-right: 30px;
-
-      a {
-        text-decoration: none;
-        opacity: 1;
-      }
+      opacity: 1;
+      font-weight: bold;
     }
   }
 }

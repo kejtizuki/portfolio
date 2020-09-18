@@ -6,9 +6,12 @@ var classNames = require('classnames');
 
 class Navbar extends React.Component {
 
+  constructor(props) {
+    super(props)
+    console.log('nav', props.history.location.pathname)
+  }
 
   render() {
-
     return(
       <div className="navigation">
       <ul>

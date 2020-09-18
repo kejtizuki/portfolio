@@ -45,6 +45,14 @@ a {
   }
 }
 
+@media (max-width: 600px) {
+  .gridContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 12px 0px 12px;
+}
+}
+
 .gridContainerRow {
   padding: 30px 48px 30px 48px;
   display: flex;

@@ -1,10 +1,10 @@
 @import "../assets/styles/main.scss";
 
-.helloContainer {
-  // padding: 0px 100px 0px 100px;
+
+
 
 .hello {
-  height: 630px;
+  height: 600px;
   background-color: white;
   display: flex;
   align-items: center;
@@ -18,6 +18,15 @@
     font-size: 36px;
     line-height: 1.5;
     margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  @media (max-width: 600px) {
+      .hello-description {
+          margin-left: 12px;
+          margin-right: 12px;
+          font-size: 24px;
+      }
   }
   .profile {
     width: 300px;
@@ -38,6 +47,11 @@
     padding-left: 3px;
   }
 }
+
+@media (max-width: 600px) {
+    .hello {
+      height: 400px;
+    }
 }
 
 .myTooltip {

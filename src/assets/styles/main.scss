@@ -54,6 +54,13 @@ $highlight-color: #637381;
   margin: 0px 0px 40px 0px;
   align-items: flex-start;
 }
+
+@media (max-width: 600px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .col2 {
   width: 25%;
 }
@@ -61,6 +68,14 @@ $highlight-color: #637381;
   width: 33%;
   padding-right: 30px;
 }
+
+@media (max-width: 600px) {
+  .col3 {
+    width: 100%;
+    padding-right: 12px;
+  }
+}
+
 .col4 {
   width: 40%;
   padding-right: 40px;
@@ -75,6 +90,14 @@ $highlight-color: #637381;
 .col7 {
   width: 75%;
 }
+
+@media (max-width: 600px) {
+  .col7, .col5 {
+    width: 100%;
+    padding-right: 12px;
+  }
+}
+
 .col7Experience {
   width: 75%;
   padding-left: 30px;
