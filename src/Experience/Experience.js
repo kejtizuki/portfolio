@@ -32,9 +32,6 @@ class Experience extends React.Component {
     },
       {id: 4, name: "IBM", url: "https://ibm.com/", description: "My major tasks were related to the implementation of frontend part of the website designed for IBM Finance Department. Besides the development, I crafted the user interface of the platform, designed interaction patterns and researched use cases. I participated in all stages of the development.",
       img: require("../assets/img/ibmLogo.png"), role: "Web UI developer"},
-
-      {id: 5, name: "SoInteractive", url: 'http://sointeractive.pl/', description: "Developed a Smart Office project. The goal of the project was to implement two websites based on the REST architecture. I created an administrator panel for managing data and the website dedicated for end users.",
-      img: require("../assets/img/soiLogo.png"), role: "Frontend intern"}
     ]
 
     const listMapped = list.map((e, index) =>
