@@ -1,8 +1,8 @@
 @import "../assets/styles/main.scss";
 
 .experience {
-  background-color: #F8F6F5;
-  height: 670px;
+  background-color: #f4f6f0;
+  height: 780px;
   .header {
     width: 100%;
     height: 80px;
@@ -21,19 +21,19 @@
 }
 
 .experienceRow {
-  border-bottom: 1px solid #c7cacc;
+  border-bottom: 1px solid #d8dbd4;
   &:hover {
     -webkit-transition: color 0.2s ease;
     -moz-transition: color 0.2s ease;
     -o-transition: color 0.2s ease;
     -ms-transition: color 0.2s ease;
     transition: color 0.2s ease;
-    color: #c7cacc;
+    color: #d8dbd4;
   }
 }
 
 .experienceList {
-  margin-top: 30px !important;
+  margin-top: 50px !important;
 }
 
 .listTitle {
@@ -50,4 +50,11 @@
 
 .seeMore {
   align-items: flex-end;
+}
+
+.widebtn {
+  border: 1px solid black;
+  background-color: transparent;
+  padding: 15px;
+  border-radius: 32px;
 }

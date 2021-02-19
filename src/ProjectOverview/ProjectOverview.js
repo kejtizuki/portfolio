@@ -42,7 +42,8 @@ class ProjectOverview extends React.Component {
       'opi': title === 'Dementia Support App',
       'thesis': title === 'Medical time series data visualization',
       'issuu': title === 'Improving Issuu analytics page',
-      'issuuCreate': title === 'Issuu Create editor for real estate agents'
+      'issuuCreate': title === 'Issuu Create editor for real estate agents',
+      'issuuReader': title === 'Consuming content on Issuu'
     });
 
     return(

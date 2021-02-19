@@ -36,7 +36,7 @@ class ProjectSunWise extends React.Component {
         implies working on real data sets in order to understand how the visualizations will look and work when implemented.
         Thus, it is hard to go through multiple validation tests before coding, since each graph requires different data processing.
         Each iteration was thoroughly planned and discussed with my supervisor. During the design phase I created an interactive prototype in
-        Sketch and Principle using hard coded data. The prototype was validated during quick, informal user testing sessions and based on it
+        Sketch and Principle using hard coded data. The designed prototype was validated during quick, informal user testing sessions and based on the received feedback
         the final website was implemented.
         </p>
         </div>
@@ -48,10 +48,10 @@ class ProjectSunWise extends React.Component {
 
         <div className="row margin40">
         <div className="col7"><h2 className="title">Introduction</h2>
-        <p>The users need some form of introduction to the visualization. As time can be presented in so many different forms the system is a bit complex for the first time users.
-        The assumption was that most of the people who would potentially use the app are not familiar with data visualization tehniques and therefore need to be introduced and
-        presented with the main features of the website. Thus, I present a very short animated introduction, that would get the users interested and inform them about the information they
-        are going to look at. Also, the users can be introduced to the systme by the guiding tooltips. </p>
+        <p>The users need some form of introduction to the visualization. As time can be presented in so many different forms the system can be a bit complex for the first time users.
+        The assumption was that most of the people who would potentially use this app are not familiar with the data visualization tehniques and therefore need to be introduced or
+        presented to the main features of the website. Thus, I prepared a very short animated introduction, that would get the users interested and inform them about the information they
+        are going to look at. Another method that would help the users familiarize with the visualization would be a tutorial presented in a form of guiding tooltips. </p>
         </div>
         <div className="col3"></div>
         </div>
@@ -60,11 +60,11 @@ class ProjectSunWise extends React.Component {
 
         <div className="row margin40">
         <div className="col7"><h2 className="title">Yearly overview</h2>
-        <p>Yearly overview was created as part of Principle prototype, but not developed further in d3.js. Designing this view with the use of
-        one dataset was enough to explore the possible interactions and questions the users might ask. Some of the questions I was trying to answer were:
+        <p>The yearly overview was created as part of design prototype, but not developed further in d3.js. Designing this view with the use of
+        one dataset was enough to explore the possible interactions and questions that the users might ask. Some of the questions I was trying to answer were:
         Should the users see every single day from the yearly dataset?
         Should the yearly overview focus only on presenting the intensity of symptoms on each day, or present the data grouped into months in order to give a general yearly overview?
-        Does it make sense to see the distributions of weekdays in months? How can the users switch between all these views that belong to one bigger overview? </p>
+        Does it make sense to see the distributions of weekdays in months? How can the users switch between all smaller overviews that belong to one bigger group? </p>
         </div>
         <div className="col3"></div>
         </div>
@@ -74,9 +74,9 @@ class ProjectSunWise extends React.Component {
         <div className="row margin40">
         <div className="col7"><h2 className="title">Calendar view</h2>
         <p>
-        Using the clendar, the users can see an overview of their symptoms accross the months. The calemndar cells contain simplified version of a
+        Using the clendar, the users can see an overview of their symptoms accross the months. The calemndar cells contain a simplified version of a
         daily radial chart, allowing to quickly recognize the drops and peaks in the symptom recordings. The users can turn the heatmap on or off according to their
-        preference.
+        preference. The heatmap helps to recognize the days with the highest symptoms recordings.
         </p>
         </div>
         <div className="col3"></div>

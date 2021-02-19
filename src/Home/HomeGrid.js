@@ -25,7 +25,7 @@ class Home extends Component {
         <Hello />
         <div className="gridContainer">
 
-          <div class='column2'>
+          <div className='column2'>
           <Link to="/time-series">
           <Project title="Medical time series data visualization" image={require("../assets/img/Thesis/preview-perspective.png")}
           className="gridCellCentered"
@@ -37,15 +37,14 @@ class Home extends Component {
           </Link>
           </div>
 
-
-          <div class='column2'>
-          <Link to="/issuu">
-          <Project title="Improving Issuu analytics page" image={require("../assets/img/IssuuPoster/scrollStats.gif")}
+          <div className='column2'>
+          <Link to="/issuuReader">
+          <Project title="Consuming content on Issuu" image={require("../assets/img/IssuuCreate/ASpreview.png")}
           className="gridCellCentered"
-          description="Redesign of data dashboard for Issuu"
-          keywords="UI,UX,Web Design,Data visualization"
+          description="Reader"
+          keywords="Concept,UI,UX,Product,Prototyping,Resaerch"
           history={this.props.history}
-          redirect="issuu"
+          redirect="issuuReader"
           />
           </Link>
           </div>
@@ -54,25 +53,24 @@ class Home extends Component {
 
         <div className="gridContainer">
 
-        <div class='column2'>
-
-        <Link to="/augmentedHearing">
-        <Project title="Augmented Hearing" image={require("../assets/img/AH/preview-ah.gif")}
+        <div className='column2'>
+        <Link to="/issuu">
+        <Project title="Improving Issuu analytics page" image={require("../assets/img/IssuuPoster/scrollStats.gif")}
         className="gridCellCentered"
-        description="Augmented hearing app created as a digital tool to interact with a hearing aid."
-        keywords="UI,UX,Concept,Prototyping"
+        description="Redesign of data dashboard for Issuu"
+        keywords="UI,UX,Web Design,Data viz,Product"
         history={this.props.history}
-        redirect="augmentedHearing"
+        redirect="issuu"
         />
         </Link>
         </div>
 
-        <div class='column2'>
+        <div className='column2'>
         <Link to="/dementiaSupport">
         <Project title="Dementia Support App" image={require("../assets/img/OPI/opi-main.png")}
         className="gridCellCentered"
         description="An app designed to support dementia patient's relatives."
-        keywords="UX,UI,Concept,Prototyping"
+        keywords="UX,UI,Concept,Design System"
         history={this.props.history}
         redirect="dementiaSupport"
         />
@@ -84,20 +82,21 @@ class Home extends Component {
         <div className="gridContainer">
 
 
-
-        <div class='column2'>
-        <Link to="/issuuCreate">
-        <Project title="Issuu Create editor for real estate agents" image={require("../assets/img/IssuuCreate/createPreview4.png")}
+        <div className='column2'>
+        <Link to="/augmentedHearing">
+        <Project title="Augmented Hearing" image={require("../assets/img/AH/preview-ah.gif")}
         className="gridCellCentered"
-        description="Create automated social media stories"
-        keywords="UI, UX, Web Design, Product design"
+        description="Augmented hearing app created as a digital tool to interact with a hearing aid."
+        keywords="UI,UX,Concept,Motion"
         history={this.props.history}
-        redirect="issuuCreate"
+        redirect="augmentedHearing"
         />
         </Link>
         </div>
 
-        <div class='column2'>
+
+
+        <div className='column2'>
           <Project title="SunWise" image={require("../assets/img/SunWise/sunwise-main1.jpg")}
           className="gridCellCentered"
           description="SunWise helps you sunbathe in a safe way by collecting the UV index data."
@@ -106,6 +105,9 @@ class Home extends Component {
           redirect="sunWise"
           />
         </div>
+
+
+
 
 
 

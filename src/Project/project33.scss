@@ -38,11 +38,11 @@
   background-position: 50% 50%;
   -webkit-filter: brightness(100%);
   overflow: hidden;
-  border-radius: 4px;
+  border-radius: 8px;
   position: relative;
 
   &:hover, &:before {
-
+    box-shadow: 0px 3px 30px 0px rgba(0,0,0,0.2);
     -webkit-filter: brightness(40%);
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -67,6 +67,7 @@
 .project {
   &:hover {
     cursor: pointer;
+    border-radius: 8px;
   }
 }
 
@@ -85,11 +86,6 @@
 
 .paddingLeft {
   margin-left: 40px;
-}
-
-.keyword {
-  font-family: 'Roboto Mono';
-  z-index: 200;
 }
 
 .column2 {
@@ -116,7 +112,7 @@
     padding: 0px;
     margin: 0px;
     // background-color: white;
-    border-radius: 4px;
+    border-radius: 8px;
     box-sizing: border-box;
     // border: 1px solid #E9E9EC;
   }
@@ -129,7 +125,7 @@
   padding-right: 32px;
   margin: 0px;
   // background-color: white;
-  border-radius: 4px;
+  border-radius: 8px;
   box-sizing: border-box;
   // border: 1px solid #E9E9EC;
 }
@@ -193,7 +189,7 @@
 }
 
 .thesis {
-  background-color: #F3F7F6;
+  background-color: #39accc;
   &:hover {
     background-blend-mode: multiply;
 }
@@ -201,7 +197,7 @@
 }
 
 .ah {
-  background-color: #ecede7;
+  background-color: #fdc95a;
   &:hover {
     background-blend-mode: multiply;
 }
@@ -215,14 +211,26 @@
   color: white;
 }
 
+.issuuReader {
+background-color: #f7b2aa;
+  &:hover {
+    background-blend-mode: multiply;
+}
+}
+
 .box {
   position: relative;
+  border-radius: 8px;
+    &:hover {
+      .imgFit {
+        opacity: 0;
+      }
+    }
 }
 
 .keywordsContainer {
   position: absolute;
   z-index: 999;
-  margin: 0 auto;
   left: 0;
   right: 0;
   top: 20px;
@@ -232,9 +240,10 @@
 }
 
 .keyword {
+  font-size: 14px;
   color: white;
-  border: 1px solid white;
-  border-radius: 12px;
-  padding: 3px 10px 3px 10px;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 6px 14px 6px 14px;
   margin: 0px 5px 0px 5px;
 }

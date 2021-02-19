@@ -21,7 +21,7 @@ class Experience extends React.Component {
   render() {
 
     const list = [
-      {id: 0, name: "Issuu", url: "https://issuu.com/", description: "At Issuu I work with existing and new products. I Redesigned Issuu's analytics page, taking into account conversion rates and upgrades for premium plan. I am responsible for building design system using Invision DSM (Design System Manager) and contribute to building Sketch Library. Designed interactive Create tool for building animated social media assets (stories, posts) for real estate agents. On a daily basis I do user interviews, design interaction flows, craft Issuu's product UI and work on design research.",
+      {id: 0, name: "Issuu", url: "https://issuu.com/", description: "Currently building Issuu’s design system. Past projects include: built Issuu's rebranding - collaborated closely with one more designer. Improved the reading experience on the platform. Redesigned Issuu's analytics page, taking into account conversion rates and upgrades for premium plan. Designed the editor for building animated social media assets.",
       img: require("../assets/img/IssuuPoster/logo.png"), role: "UX Designer"},
       {id: 1, name: "Designit", url: "https://designit.com/", description: "I was responsible for various tasks related to UI design, user interviews and design research. Projects I took part in include: design of smart office application (user testing, UX design, preparing remote interviews), redesign of data-driven platform (UX/UI design), research of smart home solutions for people with disabilitie, concept and prototype of the app for dementia patient's relatives. During my daily tasks I use Sketch, Invision, Illustrator and Principle.",
       img: require("../assets/img/designitLogo.png"), role: "UX Design Intern"},
@@ -82,6 +82,12 @@ class Experience extends React.Component {
           <div className="column2"><div className="title">Experience</div></div>
           <div className="column2 experienceList">{listExperiences}
           </div>
+
+      </div>
+      <div className="gridContainer">
+
+          <div className="column2"></div>
+          <div className="column2"><button className='widebtn'>Download my CV</button></div>
 
       </div>
       </div>

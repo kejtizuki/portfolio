@@ -18,6 +18,8 @@ import ProjectThesis from './ProjectThesis/ProjectThesis';
 import ProjectAH from './ProjectAH/ProjectAH';
 import ProjectIssuu from './ProjectIssuu/ProjectIssuu';
 import ProjectIssuuCreate from './ProjectIssuuCreate/ProjectIssuuCreate';
+import ProjectIssuuReader from './ProjectIssuuReader/ProjectIssuuReader';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import ProjectCoordinates from './ProjectCoordinates/ProjectCoordinates';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './index.scss';
@@ -32,6 +34,7 @@ class App extends Component {
 
     return (
       <Router basename={process.env.PUBLIC_URL}>
+         <ScrollToTop />
          <Route exact path="/time-series" component={() => <div><ProjectOverview
           bgImage={require("./assets/img/Thesis/dataVizPreview.png")}
           title="Medical time series data visualization"
@@ -70,6 +73,19 @@ class App extends Component {
         longDesc=""
 /> <ProjectIssuuCreate /></div>}
       />
+
+
+      <Route exact path="/issuuReader" component={() => <div><ProjectOverview
+       bgImage={require("./assets/img/IssuuCreate/page-rail-issuu.gif")}
+       title="Consuming content on Issuu"
+       history={this.props.history}
+       description="Reader"
+       keywords="UI, UX, Product design, Mobile design, UX Resaerch"
+       type="Product Design, Issuu"
+       tools="Sketch, Principle"
+       longDesc="65% of Issuu Readers use their mobile phones to consume content on the platform. Having that in mind we decided to optimize reading experience on mobile device and at the same time allow for other content consumption."
+     /> <ProjectIssuuReader /></div>}
+     />
 
       <Route exact path="/" component={Home} />
       <Route exact path="/about" component={About} />

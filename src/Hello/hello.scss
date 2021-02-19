@@ -1,24 +1,25 @@
 @import "../assets/styles/main.scss";
 
 
-
-
 .hello {
-  height: 600px;
+  height: 550px;
   background-color: white;
   display: flex;
   align-items: center;
   flex-direction: row;
-  justify-content: center;
+  justify-content: left;
   font-family: $header-font;
 
+
   .hello-description {
-    width: 100%;
+    width: 60%;
     text-align: left;
     font-size: 36px;
+    font-weight: 400;
     line-height: 1.5;
     margin-left: 80px;
     margin-right: 80px;
+    margin-top: -50px;
   }
 
   @media (max-width: 600px) {
@@ -41,9 +42,6 @@
     color: white;
     text-decoration: none;
     font-family: $header-font;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
     padding-left: 3px;
   }
 }
@@ -55,5 +53,6 @@
 }
 
 .myTooltip {
+  z-index: 7000;
   // background-color: #EAF257 !important;
 }
