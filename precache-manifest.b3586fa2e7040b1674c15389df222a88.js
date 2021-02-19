@@ -1,27 +1,35 @@
 self.__precacheManifest = [
   {
-    "revision": "d8f61254679b7a1ce130",
-    "url": "/portfolio/static/css/main.f124aed9.chunk.css"
+    "revision": "fb784ee78daed2a34c899d1fa747cf02",
+    "url": "/portfolio/static/media/web.fb784ee7.png"
   },
   {
-    "revision": "d8f61254679b7a1ce130",
-    "url": "/portfolio/static/js/main.2f222d06.chunk.js"
+    "revision": "c62ed5f2ec675d494bb2",
+    "url": "/portfolio/static/css/main.e8b49517.chunk.css"
   },
   {
     "revision": "53ebc025fca807d4dbea",
     "url": "/portfolio/static/js/runtime~main.f308c8e6.js"
   },
   {
-    "revision": "684c8d138bcda12a5ec1",
-    "url": "/portfolio/static/js/2.ef8ba224.chunk.js"
+    "revision": "363f875c957614e96cc0",
+    "url": "/portfolio/static/js/2.59a6b273.chunk.js"
   },
   {
     "revision": "546f67de07c8dddf3baabbfcfec66c2b",
     "url": "/portfolio/static/media/opi-main.546f67de.png"
   },
   {
+    "revision": "f19a09f545acf10f37a07d912bea0f63",
+    "url": "/portfolio/static/media/page-rail-issuu.f19a09f5.gif"
+  },
+  {
     "revision": "e23affd710be91bdef94a227a44bf2e0",
     "url": "/portfolio/static/media/Telegraf-Regular.e23affd7.otf"
+  },
+  {
+    "revision": "f0819de303ca59c45dbc3fe5e23410ce",
+    "url": "/portfolio/static/media/ASpreview.f0819de3.png"
   },
   {
     "revision": "1d4e20bb3664da793b9a40d8c76eb58c",
@@ -40,16 +48,12 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/volume.51d7aa4a.gif"
   },
   {
-    "revision": "f19a09f545acf10f37a07d912bea0f63",
-    "url": "/portfolio/static/media/page-rail-issuu.f19a09f5.gif"
-  },
-  {
     "revision": "90580850b8ca96d29a6462a44c595b1b",
     "url": "/portfolio/static/media/photo.90580850.png"
   },
   {
-    "revision": "185cb86862a9451a7ad105a460f3be63",
-    "url": "/portfolio/static/media/me-palm.185cb868.jpg"
+    "revision": "993c9802223a831a162fd6beb261e3f1",
+    "url": "/portfolio/static/media/meWinter.993c9802.JPG"
   },
   {
     "revision": "eb8263e9b10522d58dc7bde959509453",
@@ -94,10 +98,6 @@ self.__precacheManifest = [
   {
     "revision": "e69823b9bfab45bf9999dfb86786e364",
     "url": "/portfolio/static/media/preview-ah.e69823b9.gif"
-  },
-  {
-    "revision": "075bd543754c7b6f775c09751f48ed79",
-    "url": "/portfolio/static/media/createPreview4.075bd543.png"
   },
   {
     "revision": "d416da0d711f22ae4b686c168f8670e1",
@@ -176,8 +176,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/mvp.4257d1b7.png"
   },
   {
-    "revision": "fb784ee78daed2a34c899d1fa747cf02",
-    "url": "/portfolio/static/media/web.fb784ee7.png"
+    "revision": "c62ed5f2ec675d494bb2",
+    "url": "/portfolio/static/js/main.abcd525a.chunk.js"
   },
   {
     "revision": "df5970680fcfdb163be0a8a9cb628c08",
@@ -352,7 +352,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/FaktumTest-Bold.ed557f50.otf"
   },
   {
-    "revision": "a7ba30fba30678ec43d4ae6c26851b2e",
+    "revision": "d7a5ed1a8fc03989d188ac1a2c3c6280",
     "url": "/portfolio/index.html"
   }
 ];
