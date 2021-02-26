@@ -21,7 +21,7 @@ class Experience extends React.Component {
   render() {
 
     const list = [
-      {id: 0, name: "Issuu", url: "https://issuu.com/", description: "Currently building Issuu’s design system. Past projects include: built Issuu's rebranding - collaborated closely with one more designer. Improved the reading experience on the platform. Redesigned Issuu's analytics page, taking into account conversion rates and upgrades for premium plan. Designed the editor for building animated social media assets.",
+      {id: 0, name: "Issuu", url: "https://issuu.com/", description: "Currently building Issuu’s design system. Past projects include: built Issuu's rebranding - collaborated closely with lead designer. Improved the reading experience on the platform. Redesigned Issuu's analytics page, taking into account conversion rates and upgrades for premium plan. Designed the editor for building animated social media assets.",
       img: require("../assets/img/IssuuPoster/logo.png"), role: "UX Designer"},
       {id: 1, name: "Designit", url: "https://designit.com/", description: "I was responsible for various tasks related to UI design, user interviews and design research. Projects I took part in include: design of smart office application (user testing, UX design, preparing remote interviews), redesign of data-driven platform (UX/UI design), research of smart home solutions for people with disabilitie, concept and prototype of the app for dementia patient's relatives. During my daily tasks I use Sketch, Invision, Illustrator and Principle.",
       img: require("../assets/img/designitLogo.png"), role: "UX Design Intern"},
