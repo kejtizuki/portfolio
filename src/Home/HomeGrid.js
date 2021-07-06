@@ -26,15 +26,13 @@ class Home extends Component {
         <div className="gridContainer">
 
           <div className='column2'>
-          <Link to="/time-series">
-          <Project title="Medical time series data visualization" image={require("../assets/img/Thesis/preview-perspective.png")}
-          className="gridCellCentered"
-          description="Medical time series data visualization"
-          keywords="Concept,UI,UX,Coding,Data Viz,Web design"
-          history={this.props.history}
-          redirect="time-series"
-          />
-          </Link>
+            <Project title="Issuu Brand Refresh and Design System" image={require("../assets/img/BrandRefresh/cover5.png")}
+            className="gridCellCentered"
+            description="New strategy and visual guidelines for Issuu's evolving product and mission"
+            keywords="Branding,Strategy,Art Direction,UI,Concept"
+            history={this.props.history}
+            redirect="issuuBranding"
+            />
           </div>
 
           <div className='column2'>
@@ -42,12 +40,42 @@ class Home extends Component {
           <Project title="Consuming content on Issuu" image={require("../assets/img/IssuuCreate/ASpreview.png")}
           className="gridCellCentered"
           description="Reader"
-          keywords="Concept,UI,UX,Product,Prototyping,Resaerch"
+          keywords="Resaerch,Concept,Product Design"
           history={this.props.history}
           redirect="issuuReader"
           />
           </Link>
           </div>
+
+
+        </div>
+
+        <div className="gridContainer">
+
+        <div className='column2'>
+        <Link to="/time-series">
+        <Project title="Medical time series data visualization" image={require("../assets/img/Thesis/preview-perspective.png")}
+        className="gridCellCentered"
+        description="Medical time series data visualization"
+        keywords="Concept,UI,UX,Coding,Data Viz,Research"
+        history={this.props.history}
+        redirect="time-series"
+        />
+        </Link>
+        </div>
+
+
+        <div className='column2'>
+        <Link to="/augmentedHearing">
+        <Project title="Augmented Hearing" image={require("../assets/img/AH/preview-ah.gif")}
+        className="gridCellCentered"
+        description="Augmented hearing app created as a digital tool to interact with a hearing aid."
+        keywords="UI,UX,Concept,Motion"
+        history={this.props.history}
+        redirect="augmentedHearing"
+        />
+        </Link>
+        </div>
 
         </div>
 
@@ -76,36 +104,6 @@ class Home extends Component {
         />
         </Link>
         </div>
-
-        </div>
-
-        <div className="gridContainer">
-
-
-        <div className='column2'>
-        <Link to="/augmentedHearing">
-        <Project title="Augmented Hearing" image={require("../assets/img/AH/preview-ah.gif")}
-        className="gridCellCentered"
-        description="Augmented hearing app created as a digital tool to interact with a hearing aid."
-        keywords="UI,UX,Concept,Motion"
-        history={this.props.history}
-        redirect="augmentedHearing"
-        />
-        </Link>
-        </div>
-
-
-
-        <div className='column2'>
-          <Project title="SunWise" image={require("../assets/img/SunWise/sunwise-main1.jpg")}
-          className="gridCellCentered"
-          description="SunWise helps you sunbathe in a safe way by collecting the UV index data."
-          keywords="UX,UI,User Testing,Interaction Design"
-          history={this.props.history}
-          redirect="sunWise"
-          />
-        </div>
-
 
 
 

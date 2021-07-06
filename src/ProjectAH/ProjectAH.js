@@ -12,7 +12,7 @@ class ProjectAH extends React.Component {
         <div className="cardsFlowBg center">
           <div className="margin40">
           <img src={require("./../assets/img/AH/prototype-choose-filter.gif")} className="prototypeImgSmall gifImgBorder "/>
-          <img src={require("./../assets/img/AH/prototype-preset-card.gif")} className="prototypeImgSmall margin40Left gifImgBorder"/>
+          <img src={require("./../assets/img/AH/prototype-preset-card-expand.gif")} className="prototypeImgSmall margin40Left gifImgBorder"/>
           <img src={require("./../assets/img/AH/volume.gif")} className="prototypeImgSmall margin40Left gifImgBorder"/>
           </div>
         </div>
@@ -47,7 +47,7 @@ that it displays statistics about user's time spent in loud environments and hea
         <img src={require("./../assets/img/AH/presetsView.png")} className="mainImg"/>
 
         <div className="row margin40">
-          <div className="col7"><img src={require("./../assets/img/AH/prototype-choose-filter.gif")} className="prototypeImg gifImgBorder"/><img src={require("./../assets/img/AH/prototype-preset-card.gif")} className="prototypeImg margin40Left gifImgBorder"/>
+          <div className="col7"><img src={require("./../assets/img/AH/prototype-choose-filter.gif")} className="prototypeImg gifImgBorder"/><img src={require("./../assets/img/AH/prototype-preset-card-expand.gif")} className="prototypeImg margin40Left gifImgBorder"/>
           </div>
           <div className="col3 verticalCenter"><h2 className="title">Presets</h2>
           Presets can be accessed either home screen or from the preset list.

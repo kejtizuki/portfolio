@@ -38,20 +38,21 @@ class Project extends React.Component {
       console.log('keywords', keywords)
 
 
-      const headerClasses = classNames({
-        'projectHeader': true,
-        'sunwise': title === 'SunWise',
-        'dogs': title === 'Dogs training app',
-        'sfData': title === 'San Francisco Data Visualization',
-        'mikeller': title === 'Mikeller app',
-        'coordinates': title === 'Parallel coordinates',
-        'costa': title === 'New Costa cruise experience',
-        'ah': title === 'Augmented Hearing',
-        'opi': title === 'Dementia Support App',
-        'thesis': title === 'Medical time series data visualization',
-        'issuu': title === 'Improving Issuu analytics page',
-        'issuuReader': title === 'Consuming content on Issuu'
-      });
+      // const headerClasses = classNames({
+      //   'projectHeader': true,
+      //   'sunwise': title === 'SunWise',
+      //   'dogs': title === 'Dogs training app',
+      //   'sfData': title === 'San Francisco Data Visualization',
+      //   'mikeller': title === 'Mikeller app',
+      //   'coordinates': title === 'Parallel coordinates',
+      //   'costa': title === 'New Costa cruise experience',
+      //   'ah': title === 'Augmented Hearing',
+      //   'opi': title === 'Dementia Support App',
+      //   'thesis': title === 'Medical time series data visualization',
+      //   'issuu': title === 'Improving Issuu analytics page',
+      //   'issuuReader': title === 'Consuming content on Issuu',
+      //   'issuuBranding': title === 'Issuu Brand Refresh'
+      // });
 
 
       console.log('keywords', keywords.split(","))
@@ -71,7 +72,8 @@ class Project extends React.Component {
         'thesis': title === 'Medical time series data visualization',
         'issuu': title === 'Improving Issuu analytics page',
         'issuuCreate': title === 'Issuu Create editor for real estate agents',
-        'issuuReader': title === 'Consuming content on Issuu'
+        'issuuReader': title === 'Consuming content on Issuu',
+        'issuuBranding': title === 'Issuu Brand Refresh and Design System'
       });
 
 

@@ -19,6 +19,7 @@ import ProjectAH from './ProjectAH/ProjectAH';
 import ProjectIssuu from './ProjectIssuu/ProjectIssuu';
 import ProjectIssuuCreate from './ProjectIssuuCreate/ProjectIssuuCreate';
 import ProjectIssuuReader from './ProjectIssuuReader/ProjectIssuuReader';
+import BrandRefreshIssuu from './BrandRefreshIssuu/BrandRefreshIssuu';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import ProjectCoordinates from './ProjectCoordinates/ProjectCoordinates';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -55,8 +56,8 @@ class App extends Component {
          title="Improving Issuu analytics page"
          history={this.props.history}
          description="Redesign of data dashboard for Issuu"
-         keywords="UI,UX,Web design,Product design,Data visualization"
-         type="Product Design, Issuu"
+         keywords="UX Designer (UI, UX, Web design, Product design, Data visualizatio)"
+         type="Product Design"
          tools="Sketch, Principle"
          longDesc="As UX Designer, I collaborated closely with the developers and a Product Manager to create a smooth data dashboard experience. The project went through few iterations resulting in a simple and easy to interact with interface."
  /> <ProjectIssuu /></div>}
@@ -80,10 +81,10 @@ class App extends Component {
        title="Consuming content on Issuu"
        history={this.props.history}
        description="Reader"
-       keywords="UI, UX, Product design, Mobile design, UX Resaerch"
-       type="Product Design, Issuu"
+       keywords="UX Designer (Resaerch, Concept, Interaction Design)"
+       type="Cross-functional teamwork, Product Design. Close collaboration with PM"
        tools="Sketch, Principle"
-       longDesc="65% of Issuu Readers use their mobile phones to consume content on the platform. Having that in mind we decided to optimize reading experience on mobile device and at the same time allow for other content consumption."
+       longDesc="65% of Issuu readers are coming from a Mobile device (75% in US) and our reader is not customised for this type of devices. To read a publication on mobile phone the users have to zoom in and reading longer pieces of text is problematic. "
      /> <ProjectIssuuReader /></div>}
      />
 
@@ -104,6 +105,8 @@ sun overexposure by allowing users to track the time they
 spend outdoors in relation to the UV Index levels. The project was developed as a part of Personal Data Interaction class at DTU."
 /> <ProjectSunWise /></div>}
       />
+
+
       {/* <Route exact path="/dogsApp" component={() => <div><ProjectOverview
         bgImage={require("./assets/img/Dogs/dogo.png")}
         title="Dogs training app"
@@ -185,8 +188,8 @@ augment awareness of the brand and the cruise product and get past cruisers inv
         description="Augmented hearing app created as a digital tool to interact with a hearing aid."
         keywords="UI,UX,Concept,Prototyping"
         tools="Sketch, Principle"
-        type="Individual project"
-        longDesc='Protect and augment your hearing via a smartphone - controlled device to distinguish conversation in loud music environments.'
+        type="Individual self-initiated project"
+        longDesc='Protect and augment your hearing via a smartphone - controlled device to distinguish conversation in loud music environments. The goal of the project was to play with motion design and explore interaction patterns.'
       /><ProjectAH /></div>}
       />
 
@@ -195,12 +198,25 @@ augment awareness of the brand and the cruise product and get past cruisers inv
         title="Dementia Support App"
         history={this.props.history}
         description="An app designed to support dementia patient's relatives."
-        keywords="UI,UX,Concept,Prototyping"
+        keywords="UI/UX Designer: responsible for UI, UX, Concept, Prototyping"
         tools="Sketch"
-        type="Group project (5 people)"
+        type="Client work done in a team of 5 design interns"
         longDesc='The app was designed during one week Sprint at Designit together with municipalities and companies working with dementia disease. The main goal of the app is to support the dementia patients relatives. The app provides support forum, community access and easily explained information on available help options.'
       /><OPI /></div>}
       />
+
+      <Route exact path="/issuuBranding" component={() => <div><ProjectOverview
+        bgImage={require("./assets/img/BrandRefresh/cover.png")}
+        title="Issuu Brand Refresh and Design System"
+        history={this.props.history}
+        description="New strategy and visual guidelines for Issuu's evolving product and mission"
+        keywords="Designer (Concept, Branding, Strategy, Art Direction, UI)"
+        tools="Figma"
+        type="Collaborating with a Lead Designer"
+        longDesc='Issuu needed a new look and feel as the product grew and our services expanded. The components used accross time lacked consistancy and the visuals needed to be refreshed. '
+      /><BrandRefreshIssuu /></div>}
+      />
+
       <Footer />
 
     </Router>

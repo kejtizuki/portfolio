@@ -181,7 +181,7 @@
 }
 
 .opi {
-  background-color: #905fce;
+  background-color: #905FCE;
   color: white;
   &:hover {
     background-blend-mode: multiply;
@@ -189,7 +189,7 @@
 }
 
 .thesis {
-  background-color: #39accc;
+  background-color: #53ACC7;
   &:hover {
     background-blend-mode: multiply;
 }
@@ -197,14 +197,21 @@
 }
 
 .ah {
-  background-color: #fdc95a;
+  background-color: #f7c560;
+  &:hover {
+    background-blend-mode: multiply;
+}
+}
+
+.issuuBranding {
+  background-color: #6b5e9b;
   &:hover {
     background-blend-mode: multiply;
 }
 }
 
 .issuu {
-  background-color: #FF645A;
+  background-color: #B29661;
   &:hover {
     background-blend-mode: multiply;
 }
@@ -212,7 +219,7 @@
 }
 
 .issuuReader {
-background-color: #f7b2aa;
+background-color: #e9a39a;
   &:hover {
     background-blend-mode: multiply;
 }
