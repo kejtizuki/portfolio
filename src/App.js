@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Hello from './Hello/Hello';
 import Navbar from './Nav/Navbar';
-import Project from './Project/Project';
 import Experience from './Experience/Experience';
 import OPI from './OPI/OPI';
 import Skill from './Skill/Skill';
@@ -80,7 +79,7 @@ class App extends Component {
        bgImage={require("./assets/img/IssuuCreate/page-rail-issuu.gif")}
        title="Consuming content on Issuu"
        history={this.props.history}
-       description="Reader"
+       description="Understanding reading experience on Issuu mobile"
        keywords="UX Designer (Resaerch, Concept, Interaction Design)"
        type="Cross-functional teamwork, Product Design. Close collaboration with PM"
        tools="Sketch, Principle"

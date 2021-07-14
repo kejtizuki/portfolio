@@ -146,7 +146,17 @@ class BrandRefreshIssuu extends React.Component {
       <img src={require("./../assets/img/BrandRefresh/contrastAndTextUsage3.png")} className="mainImg"/>
 
 
+      <div className="row justifyCenter margin80">
+      <div className="col5"><h2 className="title">Typography system</h2>
+      <p>
+
+      </p>
       </div>
+      </div>
+
+      </div>
+
+      <img src={require("./../assets/img/BrandRefresh/typographyMarketing3.png")} className="mainImg"/>
 
       </div>
     )

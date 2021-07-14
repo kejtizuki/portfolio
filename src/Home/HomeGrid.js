@@ -39,7 +39,7 @@ class Home extends Component {
           <Link to="/issuuReader">
           <Project title="Consuming content on Issuu" image={require("../assets/img/IssuuCreate/ASpreview.png")}
           className="gridCellCentered"
-          description="Reader"
+          description="Understanding reading experience on Issuu mobile"
           keywords="Resaerch,Concept,Product Design"
           history={this.props.history}
           redirect="issuuReader"
