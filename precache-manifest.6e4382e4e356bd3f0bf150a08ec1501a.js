@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/daily.a5adbb0b.gif"
   },
   {
-    "revision": "7ddab89388c604049ee2",
+    "revision": "6e9e275f641d23c831a5",
     "url": "/portfolio/static/css/main.b1e80ee9.chunk.css"
   },
   {
@@ -216,8 +216,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/weekly.c2fabd55.png"
   },
   {
-    "revision": "7ddab89388c604049ee2",
-    "url": "/portfolio/static/js/main.3e516fc0.chunk.js"
+    "revision": "6e9e275f641d23c831a5",
+    "url": "/portfolio/static/js/main.1c02433c.chunk.js"
   },
   {
     "revision": "de431ba2e80f36f2935c040f3b20a3ed",
@@ -432,7 +432,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/FaktumTest-Bold.ed557f50.otf"
   },
   {
-    "revision": "ccfec8b78dc6368b499788a2577f113c",
+    "revision": "1a854a5302e8c136b0766962e08b6107",
     "url": "/portfolio/index.html"
   }
 ];
