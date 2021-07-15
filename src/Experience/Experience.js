@@ -27,7 +27,7 @@ class Experience extends React.Component {
       img: require("../assets/img/designitLogo.png"), role: "UX Design Intern"},
       {id: 2, name: "Dixa", url: "https://dixa.com/", description: "Contributed to developing customer service software. Took part in the redesign process of the platform. Coded tha main functionalities of the platform using HTML, CSS and React. Responsible for CSS animations, responsive views and styled components library. I collaborated closely with the developers and designers to create a uniform experience. ",
       img: require("../assets/img/dixaLogo.jpg"), role: "Frontend developer"},
-      {id: 3, name: "Cachet", publication: "JMIR", url: "https://www.cachet.dk/.com/", description: "I participated in design and development of Internet-based Cognitive Assessment Tool (ICAT) - a web-based tool that assesses verbal memory, working memory, and psychomotor speed. The platform was created to conduct digital assessment of cognition in affective disorders. I worked on digitalisation of the test that is usually conducted as face-to-face exercise. Besides being responsible for frontend development I participated in brainstorming sessions, I sketched mockups on paper and worked on the creation of flowcharts. ",
+      {id: 3, name: "Cachet", publication: "JMIR", url: "https://www.cachet.dk/.com/", url2: "https://formative.jmir.org/2019/3/e13898/", description: "I participated in design and development of Internet-based Cognitive Assessment Tool (ICAT) - a web-based tool that assesses verbal memory, working memory, and psychomotor speed. The platform was created to conduct digital assessment of cognition in affective disorders. I worked on digitalisation of the test that is usually conducted as face-to-face exercise. Besides being responsible for frontend development I participated in brainstorming sessions, I sketched mockups on paper and worked on the creation of flowcharts. ",
       img: require("../assets/img/cachetLogo.png"), role: "Student assistant"
     },
       {id: 4, name: "IBM", url: "https://ibm.com/", description: "My major tasks were related to the implementation of frontend part of the website designed for IBM Finance Department. Besides the development, I crafted the user interface of the platform, designed interaction patterns and researched use cases. I participated in all stages of the development.",
@@ -63,7 +63,10 @@ class Experience extends React.Component {
 
             {e.description}
             <br /><br/>
-            <a href={list[this.state.currentIndex].url}>{list[this.state.currentIndex].url}</a>
+            <a href={list[this.state.currentIndex].url}>{list[this.state.currentIndex].url}</a><br />
+            {
+              (list[this.state.currentIndex].url2 ? <a href={list[this.state.currentIndex].url2}>Published paper</a> : "")
+            }
 
             </div>
 
