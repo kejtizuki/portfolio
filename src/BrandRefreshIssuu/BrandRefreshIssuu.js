@@ -1,6 +1,7 @@
 import React from 'react';
 import './../ProjectOverview/projectOverview.scss';
 import { BrowserRouter as Link, withRouter } from "react-router-dom";
+import bgImg from './../assets/img/BrandRefresh/outcomeBg.png';
 
 class BrandRefreshIssuu extends React.Component {
 
@@ -187,8 +188,12 @@ class BrandRefreshIssuu extends React.Component {
 
       </div>
 
-      <div className='citation'>
-
+      <div className='citation' style={{
+        backgroundImage: `url(${bgImg})` ,
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat'
+      }}>
 
       <div className="row justifyCenter">
       <div className="col5 padding40 margin80"><h2 className="title center whiteTxt">Outcome</h2>

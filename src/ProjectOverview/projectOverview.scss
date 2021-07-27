@@ -23,6 +23,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      position: fixed;
+      top: 44px;
       &:hover {
         cursor: pointer;
       }
@@ -40,7 +42,7 @@
   }
 }
   .projectDescription {
-    margin-left: 80px;
+    margin-left: 54px;
   }
 
   @media (max-width: 600px) {
