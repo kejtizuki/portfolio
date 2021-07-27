@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "a5adbb0b46641fefaf931f741a2a6c76",
-    "url": "/portfolio/static/media/daily.a5adbb0b.gif"
+    "revision": "de431ba2e80f36f2935c040f3b20a3ed",
+    "url": "/portfolio/static/media/uxmap.de431ba2.png"
   },
   {
-    "revision": "04fa8a2cfe821cad8714",
-    "url": "/portfolio/static/css/main.b1e80ee9.chunk.css"
+    "revision": "d895a317b2599d1354ed",
+    "url": "/portfolio/static/css/main.f955c884.chunk.css"
   },
   {
     "revision": "53ebc025fca807d4dbea",
@@ -216,12 +216,12 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/weekly.c2fabd55.png"
   },
   {
-    "revision": "04fa8a2cfe821cad8714",
-    "url": "/portfolio/static/js/main.e79fae2f.chunk.js"
+    "revision": "a5adbb0b46641fefaf931f741a2a6c76",
+    "url": "/portfolio/static/media/daily.a5adbb0b.gif"
   },
   {
-    "revision": "de431ba2e80f36f2935c040f3b20a3ed",
-    "url": "/portfolio/static/media/uxmap.de431ba2.png"
+    "revision": "d895a317b2599d1354ed",
+    "url": "/portfolio/static/js/main.312b0212.chunk.js"
   },
   {
     "revision": "9cf934c18ee97d61b02858837fcc9647",
@@ -364,6 +364,14 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/typographyMarketing3.ee6a63d8.png"
   },
   {
+    "revision": "feb528d62b559b692e6049e615fcfbd9",
+    "url": "/portfolio/static/media/lineLength.feb528d6.png"
+  },
+  {
+    "revision": "d1c0b5421bbb76a69b998881f0b0012a",
+    "url": "/portfolio/static/media/lineHeightWhite.d1c0b542.png"
+  },
+  {
     "revision": "5ed2f6039b38fdf8a82d10f10dd2e6d9",
     "url": "/portfolio/static/media/main.5ed2f603.png"
   },
@@ -432,7 +440,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/FaktumTest-Bold.ed557f50.otf"
   },
   {
-    "revision": "0a60b6e365c73ae76dfb12876e08f1df",
+    "revision": "25554a314dcd4d9748c6cffc1bd509cf",
     "url": "/portfolio/index.html"
   }
 ];
