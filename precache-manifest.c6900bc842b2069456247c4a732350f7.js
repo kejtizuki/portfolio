@@ -4,16 +4,16 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/uxmap.de431ba2.png"
   },
   {
-    "revision": "22bcf77e775ca2fef4e1",
-    "url": "/portfolio/static/css/main.005ed1cc.chunk.css"
+    "revision": "92e3ba7f0bca57c56f4a",
+    "url": "/portfolio/static/css/main.9fe4500d.chunk.css"
   },
   {
     "revision": "53ebc025fca807d4dbea",
     "url": "/portfolio/static/js/runtime~main.f308c8e6.js"
   },
   {
-    "revision": "66254c0fbc7dc9cb2ace",
-    "url": "/portfolio/static/js/2.7e9c9fc6.chunk.js"
+    "revision": "36211aa26f9059bc47a6",
+    "url": "/portfolio/static/js/2.79046de0.chunk.js"
   },
   {
     "revision": "546f67de07c8dddf3baabbfcfec66c2b",
@@ -41,11 +41,15 @@ self.__precacheManifest = [
   },
   {
     "revision": "9c46e1f62e9eebb1e9c4c258ec31d058",
-    "url": "/portfolio/static/media/prototype-preset-card-expand.9c46e1f6.gif"
+    "url": "/portfolio/static/media/preset-card-expand.9c46e1f6.gif"
   },
   {
     "revision": "51d7aa4a16f88ee20016db943b20e98a",
     "url": "/portfolio/static/media/volume.51d7aa4a.gif"
+  },
+  {
+    "revision": "5ca75fbddfb71e1e077400a419414edb",
+    "url": "/portfolio/static/media/outcomeBg.5ca75fbd.png"
   },
   {
     "revision": "90580850b8ca96d29a6462a44c595b1b",
@@ -220,8 +224,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/daily.a5adbb0b.gif"
   },
   {
-    "revision": "22bcf77e775ca2fef4e1",
-    "url": "/portfolio/static/js/main.c94ee385.chunk.js"
+    "revision": "92e3ba7f0bca57c56f4a",
+    "url": "/portfolio/static/js/main.3c3e4205.chunk.js"
   },
   {
     "revision": "9cf934c18ee97d61b02858837fcc9647",
@@ -440,7 +444,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/FaktumTest-Bold.ed557f50.otf"
   },
   {
-    "revision": "66a9a35197b3c0ec3fef04108f346209",
+    "revision": "b42ef10e38616139eff0701d81e13781",
     "url": "/portfolio/index.html"
   }
 ];
