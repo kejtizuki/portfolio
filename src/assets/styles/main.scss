@@ -254,3 +254,32 @@ h1 {
   from {transform: translateY(-7px)}
   to {transform: translateY(0px)}
 }
+
+.citation {
+  background-color: #363565;
+  padding: 20px 0px 20px 0px;
+}
+
+.citationTxt {
+    margin: 40px 0px 40px 0px;
+    font-size: 24px;
+    color: white;
+    line-height: 1.4;
+    width: 50%;
+}
+
+.citationTxtSmall {
+    margin: 40px 0px 40px 0px;
+    font-size: 16px;
+    color: white;
+    line-height: 1.4;
+    width: 50%;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.whiteTxt {
+  color: white;
+}

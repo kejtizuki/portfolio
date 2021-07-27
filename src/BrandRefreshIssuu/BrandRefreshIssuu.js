@@ -149,7 +149,9 @@ class BrandRefreshIssuu extends React.Component {
       <div className="row justifyCenter margin80">
       <div className="col5"><h2 className="title">Typography system</h2>
       <p>
-
+      We developed two typography systems - one for Marketing Landing Pages and the other for Product. After extensive resaerch period in which we tested different solutions we understood that
+      Marketing Pages need a really good solution in terms of responsive design. We chose to go with Utopia which is a system allowing fonts to scale in a fluid way. We chose quite standard approach
+      in Product: we used static font sizes and defined CSS classes for headers and paragraphs. 
       </p>
       </div>
       </div>
@@ -158,7 +160,49 @@ class BrandRefreshIssuu extends React.Component {
 
       <img src={require("./../assets/img/BrandRefresh/typographyMarketing3.png")} className="mainImg"/>
 
+      <div className="projectContainer">
+      <div className="row">
+      <div className="col7 marginRight80">
+      <img src={require("./../assets/img/BrandRefresh/lineLength.png")} className="mainImg"/>
+
       </div>
+      <div className="col3">
+      <h3>Line length</h3>
+      <p>Line length should not be too short but neither too long. For standard paragraphs use the line length between 45 - 60 characters. For longer body text use lines no longer then 85 characters.</p>
+      </div>
+      </div>
+
+      <div className="row margin80">
+      <div className="col3 marginRight80">
+      <h3>Line height</h3>
+      <p>Incrementing the line height while decreasing font size makes the text easier to read, therefore we included this rule in the brand guide. </p>
+
+
+      </div>
+      <div className="col7">
+
+      <img src={require("./../assets/img/BrandRefresh/lineHeightWhite.png")} className="mainImg"/>
+      </div>
+      </div>
+
+      </div>
+
+      <div className='citation'>
+
+
+      <div className="row justifyCenter">
+      <div className="col5 padding40 margin80"><h2 className="title center whiteTxt">Outcome</h2>
+      <p className='whiteTxt center margin40'>
+      The new brand guide was a collaborative effort. It was crucial to include the team members in multiple iterations. The final
+      presentation was received warmly and the management decided to implement the proposed rebranding. The rebranding was rolled out first in the Marketing Landing Pages while the team worked on building teh new Design System for the Product (still WIP).
+      </p>
+      </div>
+      </div>
+
+      </div>
+
+      </div>
+
     )
   }
 }

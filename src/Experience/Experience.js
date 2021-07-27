@@ -28,7 +28,7 @@ class Experience extends React.Component {
       {id: 2, name: "Dixa", url: "https://dixa.com/", description: "Contributed to developing customer service software. Coded tha main functionalities of the platform using HTML, CSS and React. Responsible for CSS animations, responsive views and styled components library. Collaborated closely with the developers and designers to create a uniform experience. ",
       img: require("../assets/img/dixaLogo.jpg"), role: "Frontend developer"},
       {id: 3, name: "Cachet", publication: "JMIR", url: "https://www.cachet.dk/.com/", url2: "https://formative.jmir.org/2019/3/e13898/", description: "Participated in the design and development of Internet-based Cognitive Assessment Tool (ICAT) - a web-based tool that assesses verbal memory, working memory, and psychomotor speed. The platform was created to conduct digital assessment of cognition in affective disorders. Worked on digitalisation of the test that is usually conducted as face-to-face exercise. Besides being responsible for frontend development I participated in brainstorming sessions, created wireframes and flowcharts. ",
-      img: require("../assets/img/cachetLogo.png"), role: "Student assistant"
+      img: require("../assets/img/cachetLogo.png"), role: "Student research assistant"
     },
       {id: 4, name: "IBM", url: "https://ibm.com/", description: "My major tasks were related to the frontend implementation of the website designed for IBM Finance Department. Besides the development, I crafted the user interface of the platform, designed interaction patterns and researched use cases. I participated in all stages of the development.",
       img: require("../assets/img/ibmLogo.png"), role: "Web UI developer"},
