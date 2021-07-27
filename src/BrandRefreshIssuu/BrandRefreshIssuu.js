@@ -151,7 +151,7 @@ class BrandRefreshIssuu extends React.Component {
       <p>
       We developed two typography systems - one for Marketing Landing Pages and the other for Product. After extensive resaerch period in which we tested different solutions we understood that
       Marketing Pages need a really good solution in terms of responsive design. We chose to go with Utopia which is a system allowing fonts to scale in a fluid way. We chose quite standard approach
-      in Product: we used static font sizes and defined CSS classes for headers and paragraphs. 
+      in Product: we used static font sizes and defined CSS classes for headers and paragraphs.
       </p>
       </div>
       </div>
@@ -161,9 +161,9 @@ class BrandRefreshIssuu extends React.Component {
       <img src={require("./../assets/img/BrandRefresh/typographyMarketing3.png")} className="mainImg"/>
 
       <div className="projectContainer">
-      <div className="row">
+      <div className="row margin80">
       <div className="col7 marginRight80">
-      <img src={require("./../assets/img/BrandRefresh/lineLength.png")} className="mainImg"/>
+      <img src={require("./../assets/img/BrandRefresh/lineLength2.png")} className="mainImgNoMargin imgShadow"/>
 
       </div>
       <div className="col3">
@@ -181,7 +181,7 @@ class BrandRefreshIssuu extends React.Component {
       </div>
       <div className="col7">
 
-      <img src={require("./../assets/img/BrandRefresh/lineHeightWhite.png")} className="mainImg"/>
+      <img src={require("./../assets/img/BrandRefresh/lineHeight2.png")} className="mainImgNoMargin imgShadow"/>
       </div>
       </div>
 

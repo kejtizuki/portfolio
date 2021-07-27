@@ -113,6 +113,13 @@
   color: white;
 }
 
+.imgShadow {
+  border-radius: 16px;
+  -webkit-box-shadow: 0px 2px 44px 0px rgba(0,0,0,0.08);
+  -moz-box-shadow: 0px 2px 44px 0px rgba(0,0,0,0.08);
+  box-shadow: 0px 2px 44px 0px rgba(0,0,0,0.08);
+}
+
 
 .basicContainer {
   padding: $project-padding;
@@ -151,6 +158,11 @@
   width: 100%;
   height: auto;
   margin: 40px 0px 40px 0px;
+}
+
+.mainImgNoMargin {
+  width: 100%;
+  height: auto;
 }
 
 .smallImg {
