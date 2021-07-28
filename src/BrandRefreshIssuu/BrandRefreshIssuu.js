@@ -208,8 +208,19 @@ class BrandRefreshIssuu extends React.Component {
       </div>
       </div>
 
+      <div className="row justifyCenter margin80">
+      <div className="col5"><h2 className="title">Design System</h2>
+      <p>
+      After implementing the new branding into the Landing Pages we started building our new Design System. This project is a continous work in progress and many team members are included.
+      Building Design System is a complex task and requires very close collaboration between Designers and Developers. I've been leading the development of some components (for instance: buttons, input fields, text styles, cards).
+      </p>
+      </div>
+      </div>
+
 
       </div>
+
+      <img src={require("./../assets/img/BrandRefresh/ds.png")} className="mainImgNoMargin"/>
 
       <div className='citation' style={{
         backgroundImage: `url(${bgImg})` ,
