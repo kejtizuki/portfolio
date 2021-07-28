@@ -186,6 +186,29 @@ class BrandRefreshIssuu extends React.Component {
       </div>
       </div>
 
+      <div className="row justifyCenter margin80">
+      <div className="col5"><h2 className="title">Shapes</h2>
+      <p>
+      All the shapes should belong to the same square grid. A shape size is defined by multiplying a square unit by integer numbers. The grid should be build based off the square unit of a size of 1/18 of the layout width.
+      The minimum size of a shape should be equal to 1 square (1/18 of the layout width). The maximum shape size should be equal to 6 squares (6/18 = 1/3 of the layout width).
+      </p>
+      </div>
+      </div>
+
+
+
+      <div className="row margin80">
+      <div className="col5">
+      <img src={require("./../assets/img/BrandRefresh/shapes1.png")} className="mainImgNoMargin"/>
+
+      </div>
+      <div className="col5">
+
+      <img src={require("./../assets/img/BrandRefresh/shapes2.png")} className="mainImgNoMargin margin20"/>
+      </div>
+      </div>
+
+
       </div>
 
       <div className='citation' style={{
