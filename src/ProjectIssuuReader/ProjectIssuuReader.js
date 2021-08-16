@@ -58,6 +58,18 @@ class ProjectIssuuReader extends React.Component {
         <img src={require("./../assets/img/IssuuCreate/projectPlan.png")} className="mainImg margin160"/>
 
 
+        <div className="row justifyCenter margin80">
+        <div className="col5"><h2 className="title">Design Sprint</h2>
+        <p>
+        After implementing the new branding into the Landing Pages we started building our new Design System. This project is a continous work in progress and many team members are included.
+        Building Design System is a complex task and requires very close collaboration between Designers and Developers. I've been leading the development of some components (for instance: buttons, input fields, text styles, cards).
+        </p>
+        </div>
+        </div>
+
+        <img src={require("./../assets/img/IssuuCreate/sketch.jpg")} className="mainImg margin160"/>
+
+
         <h2 className="title">Article Stories</h2>
         <div className="row">
           <div className="col5 verticalCenter">

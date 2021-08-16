@@ -2,7 +2,7 @@ import React from 'react';
 import './../ProjectOverview/projectOverview.scss';
 import { BrowserRouter as Link, withRouter } from "react-router-dom";
 
-class ProjectIssuu extends React.Component {
+class IssuuStats extends React.Component {
 
   render() {
 
@@ -106,4 +106,4 @@ class ProjectIssuu extends React.Component {
   }
 }
 
-export default withRouter(ProjectIssuu);
+export default withRouter(IssuuStats);

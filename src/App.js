@@ -15,7 +15,7 @@ import ProjectSF from './ProjectSF/ProjectSF';
 import ProjectCosta from './ProjectCosta/ProjectCosta';
 import ProjectThesis from './ProjectThesis/ProjectThesis';
 import ProjectAH from './ProjectAH/ProjectAH';
-import ProjectIssuu from './ProjectIssuu/ProjectIssuu';
+import IssuuStats from './IssuuStats/IssuuStats';
 import ProjectIssuuCreate from './ProjectIssuuCreate/ProjectIssuuCreate';
 import ProjectIssuuReader from './ProjectIssuuReader/ProjectIssuuReader';
 import BrandRefreshIssuu from './BrandRefreshIssuu/BrandRefreshIssuu';
@@ -59,7 +59,7 @@ class App extends Component {
          type="Product Design"
          tools="Sketch, Principle"
          longDesc="As UX Designer, I collaborated closely with the developers and a Product Manager to create a smooth data dashboard experience. The project went through few iterations resulting in a simple and easy to interact with interface."
- /> <ProjectIssuu /></div>}
+ /> <IssuuStats /></div>}
        />
 
        <Route exact path="/issuuCreate" component={() => <div><ProjectOverview

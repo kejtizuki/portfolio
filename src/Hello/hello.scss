@@ -37,14 +37,18 @@
     font-size: 14px;
   }
   .linkHighlight {
-    // color: white;
-    background-color: $highlight-color;
-    color: white;
-    text-decoration: none;
+    color: black;
+    // background-color: #cfc0fe;
+    // color: #6b6bdb;
+    text-decoration: underline;
+    font-style: italic;
     font-family: $header-font;
     padding-left: 3px;
     // font-weight: 300;
     // text-decoration: underline;
+    &:hover {
+      color: #524293;
+    }
   }
 }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import './../ProjectOverview/projectOverview.scss';
 import { BrowserRouter as Link, withRouter } from "react-router-dom";
-import bgImg from './../assets/img/BrandRefresh/outcomeBg.png';
+import bgImg from './../assets/img/BrandRefresh/outcomeBg2.png';
 
 class BrandRefreshIssuu extends React.Component {
 
@@ -50,7 +50,7 @@ class BrandRefreshIssuu extends React.Component {
       We started the project by asking our colleagues to fill in the questionaire. The purpose of it was to understand how do the employees and management see Issuu and where would they want the company to be in the future.
       We collected the keywords from the survey and grouped them together to understand how can we replace the negative ones with the positives.
 
-      We also run an internal workshop in which we analysed the look and feel of our competitors. That allowed us to deepluy understand the meening and message behind the visuals, both on marketing and product sides.
+      We also run an internal workshop in which we analysed the look and feel of our competitors. That allowed us to deeply understand the meening and message behind the visuals, both on marketing and product sides.
 
       </p>
       </div>
@@ -151,8 +151,8 @@ class BrandRefreshIssuu extends React.Component {
       <div className="col5"><h2 className="title">Typography system</h2>
       <p>
       We developed two typography systems - one for Marketing Landing Pages and the other for Product. After extensive resaerch period in which we tested different solutions we understood that
-      Marketing Pages need a really good solution in terms of responsive design. We chose to go with Utopia which is a system allowing fonts to scale in a fluid way. We chose quite standard approach
-      in Product: we used static font sizes and defined CSS classes for headers and paragraphs.
+      Marketing Pages need a really good solution and fully responsive design. We chose to go with Utopia which is a system allowing fonts to scale in a fluid way. We chose quite standard approach
+      in Product: we used static font sizes and defined CSS classes for headers and paragraphs. These decisions allowed us to have full control of both systems.
       </p>
       </div>
       </div>
@@ -169,14 +169,14 @@ class BrandRefreshIssuu extends React.Component {
       </div>
       <div className="col3">
       <h3>Line length</h3>
-      <p>Line length should not be too short but neither too long. For standard paragraphs use the line length between 45 - 60 characters. For longer body text use lines no longer then 85 characters.</p>
+      <p>In order for text to look good and be readable we defined line length rules. It should not be too short but neither too long. For standard paragraphs use the line length between 45 - 60 characters. For longer body text use lines no longer then 85 characters.</p>
       </div>
       </div>
 
       <div className="row margin80">
       <div className="col3 marginRight80">
       <h3>Line height</h3>
-      <p>Incrementing the line height while decreasing font size makes the text easier to read, therefore we included this rule in the brand guide. </p>
+      <p>Incrementing the line height while decreasing font size. It makes the text easier to read, therefore we included this rule in the brand guide. </p>
 
 
       </div>
@@ -212,7 +212,11 @@ class BrandRefreshIssuu extends React.Component {
       <div className="col5"><h2 className="title">Design System</h2>
       <p>
       After implementing the new branding into the Landing Pages we started building our new Design System. This project is a continous work in progress and many team members are included.
-      Building Design System is a complex task and requires very close collaboration between Designers and Developers. I've been leading the development of some components (for instance: buttons, input fields, text styles, cards).
+      Building Design System is a complex task and requires very close collaboration between Designers and Developers.
+      </p>
+
+      <p>
+      I've been leading the development of some components (for instance: buttons, input fields, text styles, cards, color component) which included designing the components in different states and leading the developers team who implemented them .
       </p>
       </div>
       </div>
