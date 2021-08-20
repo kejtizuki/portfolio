@@ -24,6 +24,9 @@ a {
   &:visited {
     color: $text-color;
   }
+  &:hover {
+    color: #905FCE;
+  }
 }
 
 .icon {
