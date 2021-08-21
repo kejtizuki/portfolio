@@ -224,7 +224,7 @@ class BrandRefreshIssuu extends React.Component {
 
       </div>
 
-      <img src={require("./../assets/img/BrandRefresh/ds.png")} className="mainImgNoMargin"/>
+      <img src={require("./../assets/img/BrandRefresh/ds3.png")} className="mainImgNoMargin"/>
 
       <div className='citation' style={{
         backgroundImage: `url(${bgImg})` ,

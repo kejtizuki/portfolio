@@ -1,0 +1,32 @@
+@import "../../assets/styles/main.scss";
+
+.authenticate{
+
+  height: 550px;
+  // justify-content: left;
+  font-family: $header-font;
+
+  .inputField {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+
+    .inputLabel {
+      font-size: 12px;
+      font-weight: bold;
+      justify-content: left;
+    }
+
+    .inputTxt {
+      padding: 16px;
+      border-radius: 8px;
+      border: 2px solid #7828e0;
+      margin: 4px 0px 16px 0px;
+    }
+  }
+
+  .inputSubmit {
+    width: 320px;
+  }
+
+}

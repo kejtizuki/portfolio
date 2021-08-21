@@ -5,6 +5,7 @@ import Project from '../Project/ProjectGrid';
 import Experience from '../Experience/Experience';
 import Skill from '../Skill/Skill';
 import Footer from '../Footer/Footer';
+import Authenticate from '.././components/authenticate/authenticate';
 import { BrowserRouter as Link, Router, Route } from "react-router-dom";
 import '../index.scss';
 import { CSSTransitionGroup } from 'react-transition-group' // ES6
@@ -23,6 +24,22 @@ class Home extends Component {
             transitionEnterTimeout={500}
             transitionLeaveTimeout={300}>
         <Hello />
+
+        <div className="gridContainer">
+
+          <div className='column100 bigColumn'>
+            <Project title="Creator Content editors" image={require("../assets/img/CreatorContent/try1.png")}
+            className="gridCellCentered"
+            description="DESC XXXx"
+            keywords="Z,X,C"
+            history={this.props.history}
+            redirect="authenticate"
+            />
+          </div>
+          </div>
+
+
+
         <div className="gridContainer">
 
           <div className='column2'>

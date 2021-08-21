@@ -20,6 +20,7 @@ import ProjectIssuuCreate from './ProjectIssuuCreate/ProjectIssuuCreate';
 import ProjectIssuuReader from './ProjectIssuuReader/ProjectIssuuReader';
 import BrandRefreshIssuu from './BrandRefreshIssuu/BrandRefreshIssuu';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+import Authenticate from './components/authenticate/authenticate';
 import ProjectCoordinates from './ProjectCoordinates/ProjectCoordinates';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './index.scss';
@@ -61,6 +62,9 @@ class App extends Component {
          longDesc="As UX Designer, I collaborated closely with the developers and a Product Manager to create a smooth data dashboard experience. The project went through few iterations resulting in a simple and easy to interact with interface."
  /> <IssuuStats /></div>}
        />
+
+       <Route exact path="/authenticate" component={() => <div><Authenticate /></div>}
+      />
 
        <Route exact path="/issuuCreate" component={() => <div><ProjectOverview
         bgImage={require("./assets/img/IssuuCreate/page-rail-issuu.gif")}

@@ -283,3 +283,18 @@ h1 {
 .whiteTxt {
   color: white;
 }
+
+
+.widebtn {
+  border: 2px solid black;
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 32px;
+  font-size: 16px;
+  &:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in;
+  }
+}
