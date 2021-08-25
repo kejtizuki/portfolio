@@ -57,7 +57,7 @@ class Experience extends React.Component {
       {
       (index === this.state.currentIndex) &&
         <div className='row transformAndFade'>
-          <div className=''>
+          <div className='experienceDescription'>
 
             <div>
 

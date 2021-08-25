@@ -73,7 +73,8 @@ class Project extends React.Component {
         'issuu': title === 'Improving Issuu analytics page',
         'issuuCreate': title === 'Issuu Create editor for real estate agents',
         'issuuReader': title === 'Consuming content on Issuu',
-        'issuuBranding': title === 'Issuu Brand Refresh and Design System'
+        'issuuBranding': title === 'Issuu Brand Refresh and Design System',
+        'contentEditors': title === 'Creator Content editors'
       });
 
 
@@ -90,9 +91,9 @@ class Project extends React.Component {
             </div>
 
 
-            <div className="textContainer" >
+            <div className="textContainer margin40" >
               <div className="headerTop">
-                <h2 className="title">{title}</h2>
+                <h1 className="title">{title}</h1>
                 <p className='overviewDesc'>{description}</p>
               </div>
 

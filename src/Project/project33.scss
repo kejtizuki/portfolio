@@ -28,6 +28,7 @@
 
 .overviewDesc {
   color: $highlight-color;
+  width: 75%;
 }
 
 .imgFit {
@@ -100,6 +101,12 @@
   // border: 1px solid #E9E9EC;
 
   .textContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // width: 75%;
+    position: relative;
+    // left: 25%;
     padding: 10px 0px 40px 0px;
   }
 }
@@ -190,6 +197,14 @@
 
 .thesis {
   background-color: #53ACC7;
+  &:hover {
+    background-blend-mode: multiply;
+}
+  // color: white;
+}
+
+.contentEditors {
+  background-color: #32344A;
   &:hover {
     background-blend-mode: multiply;
 }

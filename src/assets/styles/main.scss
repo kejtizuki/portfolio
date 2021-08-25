@@ -32,8 +32,9 @@
 // $header-font: orpheuspro, 'IBM Plex Sans';
 $font-stack: 'DM Sans', 'Telegraf-Regular';
 $header-font: 'DM Sans';
-$text-color: #292B2C;
+$text-color: black;
 $highlight-color: #637381;
+$link-color: #7828e0;
 
 $project-padding: 40px 200px 40px 200px;
 // $highlight-color: #ffbf1e;
@@ -45,7 +46,7 @@ $project-padding: 40px 200px 40px 200px;
 
 .title {
   font-family: $header-font;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.5;
 }
 

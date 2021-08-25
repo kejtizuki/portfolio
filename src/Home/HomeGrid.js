@@ -27,10 +27,20 @@ class Home extends Component {
 
         <div className="gridContainer">
 
-          <div className='column100 bigColumn'>
-            <Project title="Creator Content editors" image={require("../assets/img/CreatorContent/try1.png")}
+            <div className='column2'>
+              <Project title="Issuu Brand Refresh and Design System" image={require("../assets/img/BrandRefresh/cover5.png")}
+              className="gridCellCentered"
+              description="New strategy and visual guidelines for Issuu's evolving product and mission"
+              keywords="Branding,Strategy,Art Direction,UI,Concept"
+              history={this.props.history}
+              redirect="issuuBranding"
+              />
+            </div>
+
+          <div className='column2'>
+            <Project title="Creator Content editors" image={require("../assets/img/editor/cover2.png")}
             className="gridCellCentered"
-            description="DESC XXXx"
+            description=""
             keywords="Z,X,C"
             history={this.props.history}
             redirect="authenticate"
@@ -40,17 +50,22 @@ class Home extends Component {
 
 
 
-        <div className="gridContainer">
+        <div className="gridContainer margin40">
+
 
           <div className='column2'>
-            <Project title="Issuu Brand Refresh and Design System" image={require("../assets/img/BrandRefresh/cover5.png")}
-            className="gridCellCentered"
-            description="New strategy and visual guidelines for Issuu's evolving product and mission"
-            keywords="Branding,Strategy,Art Direction,UI,Concept"
-            history={this.props.history}
-            redirect="issuuBranding"
-            />
+          <Link to="/time-series">
+          <Project title="Medical time series data visualization" image={require("../assets/img/Thesis/preview-perspective.png")}
+          className="gridCellCentered"
+          description="Medical time series data visualization"
+          keywords="Concept,UI,UX,Coding,Data Viz,Research"
+          history={this.props.history}
+          redirect="time-series"
+          />
+          </Link>
           </div>
+
+
 
           <div className='column2'>
           <Link to="/issuuReader">
@@ -64,23 +79,22 @@ class Home extends Component {
           </Link>
           </div>
 
-
         </div>
 
-        <div className="gridContainer">
+        <div className="gridContainer margin40">
+
 
         <div className='column2'>
-        <Link to="/time-series">
-        <Project title="Medical time series data visualization" image={require("../assets/img/Thesis/preview-perspective.png")}
+        <Link to="/dementiaSupport">
+        <Project title="Dementia Support App" image={require("../assets/img/OPI/opi-main.png")}
         className="gridCellCentered"
-        description="Medical time series data visualization"
-        keywords="Concept,UI,UX,Coding,Data Viz,Research"
+        description="An app designed to support dementia patient's relatives."
+        keywords="UX,UI,Concept,Design System"
         history={this.props.history}
-        redirect="time-series"
+        redirect="dementiaSupport"
         />
         </Link>
         </div>
-
 
         <div className='column2'>
         <Link to="/augmentedHearing">
@@ -96,7 +110,7 @@ class Home extends Component {
 
         </div>
 
-        <div className="gridContainer">
+        <div className="gridContainer margin40">
 
         <div className='column2'>
         <Link to="/issuu">
@@ -109,20 +123,6 @@ class Home extends Component {
         />
         </Link>
         </div>
-
-        <div className='column2'>
-        <Link to="/dementiaSupport">
-        <Project title="Dementia Support App" image={require("../assets/img/OPI/opi-main.png")}
-        className="gridCellCentered"
-        description="An app designed to support dementia patient's relatives."
-        keywords="UX,UI,Concept,Design System"
-        history={this.props.history}
-        redirect="dementiaSupport"
-        />
-        </Link>
-        </div>
-
-
 
 
 
