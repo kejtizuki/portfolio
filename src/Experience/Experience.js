@@ -90,7 +90,7 @@ class Experience extends React.Component {
       <div className="gridContainer">
 
           <div className="column2"></div>
-          <div className="column2"><button className='widebtn'>Download my CV</button></div>
+          <div className="column2"><a href="../assets/downloads/cv-kasia-zukowska.pdf" download className='widebtn'>Download my CV</a></div>
 
       </div>
       </div>

@@ -41,7 +41,7 @@ class Home extends Component {
             <Project title="Creator Content editors" image={require("../assets/img/editor/cover2.png")}
             className="gridCellCentered"
             description=""
-            keywords="Z,X,C"
+            keywords="Product Design"
             history={this.props.history}
             redirect="authenticate"
             />

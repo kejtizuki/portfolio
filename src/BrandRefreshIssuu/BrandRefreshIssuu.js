@@ -49,9 +49,6 @@ class BrandRefreshIssuu extends React.Component {
       <p>
       We started the project by asking our colleagues to fill in the questionaire. The purpose of it was to understand how do the employees and management see Issuu and where would they want the company to be in the future.
       We collected the keywords from the survey and grouped them together to understand how can we replace the negative ones with the positives.
-
-      We also run an internal workshop in which we analysed the look and feel of our competitors. That allowed us to deeply understand the meening and message behind the visuals, both on marketing and product sides.
-
       </p>
       </div>
       </div>
@@ -73,7 +70,7 @@ class BrandRefreshIssuu extends React.Component {
       <div className="row justifyCenter margin80">
       <div className="col5 "><h2 className="title">Alignment Workshop</h2>
       <p>
-      During the workshop developers, designers and PMs brought the examples of products and their landing pages. We analysed the branding
+      During the workshop developers, designers and PMs brought the examples of products and their marketing pages. We analysed the branding
       and worked on understanding the brands through keywords. After that we worked together on exploring which keywords describe Issuu now and where
       do we want to be in the future. We agreed that we want to move from utilitarian and old-fashioned look and make it more expressive, modern,
       friendly, professional but creative and fresh.</p>
@@ -97,7 +94,7 @@ class BrandRefreshIssuu extends React.Component {
         our landing page.
         </p>
         <p>
-        This first exploration allowed us to understand which branding elements we wanted to include in our final brandbook. We decided to keep
+        This first exploration allowed us to understand which branding elements we wanted to include in our final brandbook. After the first round we decided on
         the primary font, use of gradients, shapes and cards. The elements that required reworking were mainly color palette, secondary font and grid system.
         </p>
 
@@ -151,8 +148,10 @@ class BrandRefreshIssuu extends React.Component {
       <div className="col5"><h2 className="title">Typography system</h2>
       <p>
       We developed two typography systems - one for Marketing Landing Pages and the other for Product. After extensive resaerch period in which we tested different solutions we understood that
-      Marketing Pages need a really good solution and fully responsive design. We chose to go with Utopia which is a system allowing fonts to scale in a fluid way. We chose quite standard approach
-      in Product: we used static font sizes and defined CSS classes for headers and paragraphs. These decisions allowed us to have full control of both systems.
+      Marketing Pages needed fully responsive solution. We chose to go with Utopia which is a system allowing fonts to scale in a fluid way.
+      </p>
+      <p>
+      We chose quite standard approach in Product: we used static font sizes and defined CSS classes for headers and paragraphs. These decisions allowed us to have full control of both systems.
       </p>
       </div>
       </div>
@@ -189,8 +188,7 @@ class BrandRefreshIssuu extends React.Component {
       <div className="row justifyCenter margin80">
       <div className="col5"><h2 className="title">Shapes</h2>
       <p>
-      All the shapes should belong to the same square grid. A shape size is defined by multiplying a square unit by integer numbers. The grid should be build based off the square unit of a size of 1/18 of the layout width.
-      The minimum size of a shape should be equal to 1 square (1/18 of the layout width). The maximum shape size should be equal to 6 squares (6/18 = 1/3 of the layout width).
+      Shapes are based on the square grid and fit really well with Issuu's logo. We included them as a part of our brand guide to provide direction for further iconography and graphics development.
       </p>
       </div>
       </div>
@@ -211,12 +209,12 @@ class BrandRefreshIssuu extends React.Component {
       <div className="row justifyCenter margin80">
       <div className="col5"><h2 className="title">Design System</h2>
       <p>
-      After implementing the new branding into the Landing Pages we started building our new Design System. This project is a continous work in progress and many team members are included.
-      Building Design System is a complex task and requires very close collaboration between Designers and Developers.
+      After implementing the new branding into the Landing Pages we started building our new Design System. It started as 20% time project and after few months expanded into a bigger effort. Although all team members are very engaged, the company doesn't have enough resaurces to have the dedicated team that would focus solely on building the DS.
+      Besides this challenge we also have to deal with a lot of tech debt during the development which makes the rollouts rather slow. At the moment the DS project is a continous effort and work in progress.
       </p>
 
       <p>
-      I've been leading the development of some components (for instance: buttons, input fields, text styles, cards, color component) which included designing the components in different states and leading the developers team who implemented them .
+      I've been leading the development of some components (for instance: buttons, input fields, text styles, cards, color component) which included designing the components taking into account all the states and leading the developers team who implemented them.
       </p>
       </div>
       </div>
@@ -237,7 +235,7 @@ class BrandRefreshIssuu extends React.Component {
       <div className="col5 padding40 margin80"><h2 className="title center whiteTxt">Outcome</h2>
       <p className='whiteTxt center margin40'>
       The new brand guide was a collaborative effort. It was crucial to include the team members in multiple iterations. The final
-      presentation was received warmly and the management decided to implement the proposed rebranding. The rebranding was rolled out first in the Marketing Landing Pages while the team worked on building teh new Design System for the Product (still WIP).
+      presentation was received warmly and the management decided to go with the implementation of the proposed rebranding. The rebranding was first rolled out in the Marketing Landing Pages and the team has been working on rolling the new Design System in the Product (still WIP).
       </p>
       </div>
       </div>
