@@ -19,10 +19,11 @@ import IssuuStats from './IssuuStats/IssuuStats';
 import ProjectIssuuCreate from './ProjectIssuuCreate/ProjectIssuuCreate';
 import ProjectIssuuReader from './ProjectIssuuReader/ProjectIssuuReader';
 import BrandRefreshIssuu from './BrandRefreshIssuu/BrandRefreshIssuu';
+import CreatorContent from './CreatorContent/creatorContent';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import Authenticate from './components/authenticate/authenticate';
 import ProjectCoordinates from './ProjectCoordinates/ProjectCoordinates';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Redirect } from "react-router-dom";
 import './index.scss';
 
 
@@ -32,6 +33,7 @@ class App extends Component {
 
     const dogsDesc = <a href="https://www.behance.net/gallery/72991077/Dogs-training-app">This page is currently being built. See the project description under this link.</a>
     const mikellerDesc = <a href="https://www.behance.net/gallery/72186697/Mikeller-Friends-App">This page is currently being built. See the project description under this link.</a>
+    const loggedIn = false
 
     return (
       <Router basename={process.env.PUBLIC_URL}>
@@ -63,9 +65,6 @@ class App extends Component {
  /> <IssuuStats /></div>}
        />
 
-       <Route exact path="/authenticate" component={() => <div><Authenticate /></div>}
-      />
-
        <Route exact path="/issuuCreate" component={() => <div><ProjectOverview
         bgImage={require("./assets/img/IssuuCreate/page-rail-issuu.gif")}
         title="Issuu Create editor for real estate agents"
@@ -78,6 +77,21 @@ class App extends Component {
 /> <ProjectIssuuCreate /></div>}
       />
 
+
+      <Route exact path="/authenticate" component={() => <div><Authenticate/></div>}
+     />
+
+     <Route exact path="/creatorContent" component={() => <div><ProjectOverview
+         bgImage={require("./assets/img/CreatorContent/cover2.png")}
+         title="Issuu Creator Content space"
+         history={this.props.history}
+         description="A place to repurpose Issuu's publication into new formats"
+         keywords="Product design"
+         type="Product Design, Issuu"
+         tools="Figma"
+         longDesc="Creators that publish their content on Issuu need to constantly promote their businesses on social media. Issuu needed a space where they can easily re-create and share social content without using other tools."
+    /> <CreatorContent /></div>}
+       />
 
       <Route exact path="/issuuReader" component={() => <div><ProjectOverview
        bgImage={require("./assets/img/IssuuCreate/page-rail-issuu.gif")}
@@ -223,6 +237,7 @@ augment awareness of the brand and the cruise product and get past cruisers inv
       <Footer />
 
     </Router>
+
     );
   }
 }

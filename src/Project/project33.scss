@@ -39,7 +39,7 @@
   background-position: 50% 50%;
   -webkit-filter: brightness(100%);
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 16px;
   position: relative;
 
   &:hover, &:before {
@@ -68,7 +68,7 @@
 .project {
   &:hover {
     cursor: pointer;
-    border-radius: 8px;
+    border-radius: 16px;
   }
 }
 
@@ -242,7 +242,7 @@ background-color: #e9a39a;
 
 .box {
   position: relative;
-  border-radius: 8px;
+  border-radius: 16px;
     &:hover {
       .imgFit {
         opacity: 0;

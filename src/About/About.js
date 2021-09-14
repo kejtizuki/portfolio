@@ -19,14 +19,14 @@ class About extends React.Component {
       <Navbar />
         <div className="gridContainer aboutMeRow">
             <div className="column2">
-            <img src={require("./../assets/img/meWinter.JPG")} alt="me" className="smallImg" />
+            <img src={require("./../assets/img/meWinter.JPG")} alt="me" className="smallImg aboutSectionPhoto" />
             </div>
             <div className="column2 aboutMeText">
 
             <h1 className='title'>I design seemless interactive experiences, starting on design research and finishing on polished user interface. </h1>
 
             <br /><br />
-            <p>I'm a UX Designer currently working at Issuu, Copenhagen. I started out my career as frontend developer but quickly realized that design is something I really love and want to commit to.
+            <p>I'm a Product Designer currently working at Issuu, Copenhagen. I started out my career as frontend developer but quickly realized that understanding users and designing for their and business needs .
             <br /><br />
             Working in various companies, from a startup through a creative agency to a corporation, made me understand different approaches and perspectives to solving a problem.
             Having frontend background makes it easier for me to communicate with the developers and understand the coding restrictions.

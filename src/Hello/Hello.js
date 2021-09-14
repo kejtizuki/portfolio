@@ -13,7 +13,7 @@ export default class Hello extends React.Component {
         <ReactTooltip className="myTooltip"/>
         <div className="hello-description">
           Hi! My name is <a href="mailto:kejtizuki@gmail.com" className="linkHighlight">Kasia Żukowska</a>, I’m a
-          UX designer. <br /> I enjoy building interactive experiences and digital products. Currently
+          Product Designer. <br /> I enjoy building interactive experiences and digital products. Currently
           at <a href="https://www.issuu.com/" className="linkHighlight">Issuu, Copenhagen</a>.
           <p id="workLink">
           Scroll down to explore

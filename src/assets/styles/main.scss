@@ -18,6 +18,8 @@
 @import url("https://use.typekit.net/vnb5nbm.css");
 @import url("https://use.typekit.net/vnb5nbm.css");
 
+@import "~video-react/styles/scss/video-react";
+
 @font-face {
   font-family: Akkurat;
   src: require('./../Akkurat.ttf');
@@ -283,6 +285,10 @@ h1 {
 
 .whiteTxt {
   color: white;
+}
+
+.strongTxt {
+    font-weight: bold;
 }
 
 

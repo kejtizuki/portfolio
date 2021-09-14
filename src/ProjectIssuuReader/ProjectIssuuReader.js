@@ -12,7 +12,7 @@ class ProjectIssuuReader extends React.Component {
         <img src={require("./../assets/img/IssuuCreate/ASpreview.png")} className="mainImg"/>
 
         <div className="row">
-        <div className="col7"><h2 className="title">Some definitions you need to know to read the case study</h2>
+        <div className="col7"><h2 className="title">Introduction</h2>
         <p>
         Issuu is a platform where a lot of content is published in the form of pdfs. The pdfs are displayed inside the <span className="strong">Reader</span>. The Reader
         can be accessed both on Desktop and Mobile, however it has some specific limitations on mobile devices. The text is small and almost always requires the user to
@@ -39,9 +39,9 @@ class ProjectIssuuReader extends React.Component {
         </p>
         <p>
         - Make it easier to find articles to read on Issuu both on web and mobile  <br />
-        - Test and improve interactions with Issuu reader on mobile <br />
+        - Understand and improve interactions with Issuu Reader on mobile <br />
         - Allow an easy consumption of different content types (magazines, brochures, flyers, booklets, lookbooks... etc) on mobile phones<br />
-        - Increase the median time spent in reader fullscreen mode. When we started the project the median time was 2.2 minutes per month per reader in fullscreen mode
+        - Increase the median time spent in the reader's fullscreen mode. When we started the project the median time was 2.2 minutes per month per reader in fullscreen mode
         </p>
         </div>
         <div className="col3">

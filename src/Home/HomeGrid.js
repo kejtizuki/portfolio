@@ -28,6 +28,16 @@ class Home extends Component {
         <div className="gridContainer">
 
             <div className='column2'>
+              <Project title="Issuu Creator Content space" image={require("../assets/img/CreatorContent/cover2.png")}
+              className="gridCellCentered"
+              description="A place to repurpose Issuu's publication into new formats"
+              keywords="Product Design"
+              history={this.props.history}
+              redirect="authenticate"
+              />
+            </div>
+
+            <div className='column2'>
               <Project title="Issuu Brand Refresh and Design System" image={require("../assets/img/BrandRefresh/cover5.png")}
               className="gridCellCentered"
               description="New strategy and visual guidelines for Issuu's evolving product and mission"
@@ -37,15 +47,6 @@ class Home extends Component {
               />
             </div>
 
-          <div className='column2'>
-            <Project title="Creator Content editors" image={require("../assets/img/editor/cover2.png")}
-            className="gridCellCentered"
-            description=""
-            keywords="Product Design"
-            history={this.props.history}
-            redirect="authenticate"
-            />
-          </div>
           </div>
 
 

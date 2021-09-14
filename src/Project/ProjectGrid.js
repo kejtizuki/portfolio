@@ -74,7 +74,7 @@ class Project extends React.Component {
         'issuuCreate': title === 'Issuu Create editor for real estate agents',
         'issuuReader': title === 'Consuming content on Issuu',
         'issuuBranding': title === 'Issuu Brand Refresh and Design System',
-        'contentEditors': title === 'Creator Content editors'
+        'contentEditors': title === 'Issuu Creator Content space'
       });
 
 
