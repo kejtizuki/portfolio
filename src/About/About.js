@@ -26,10 +26,14 @@ class About extends React.Component {
             <h1 className='title'>I design seemless interactive experiences, starting on design research and finishing on polished user interface. </h1>
 
             <br /><br />
-            <p>I'm a Product Designer currently working at Issuu, Copenhagen. I started out my career as frontend developer but quickly switched into design roles.</p>
             <p>
-            I look at products holistically, taking into account business and user needs. Coherent visual language is really important to me and I strive to deliver intuitive and systematic design.
+            I’m a Product Designer with experience in all phases of the end-to-end design process.
+            Coherent visual language is really important to me and I strive to deliver intuitive and systematic design.
             Having frontend background makes it easier for me to communicate with the developers and understand the coding restrictions.
+            </p>
+            <p>
+            I believe great design comes from great user research and that these two are strongly tied together.
+            I have the habit of testing and iterating on my design solutions. In addition, I also love crafting user interfaces.
             </p>
             </div>
             </div>
