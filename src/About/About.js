@@ -26,20 +26,50 @@ class About extends React.Component {
             <h1 className='title'>I design seemless interactive experiences, starting on design research and finishing on polished user interface. </h1>
 
             <br /><br />
-            <p>I'm a Product Designer currently working at Issuu, Copenhagen. I started out my career as frontend developer but quickly realized that understanding users and designing for their and business needs .
-            <br /><br />
-            Working in various companies, from a startup through a creative agency to a corporation, made me understand different approaches and perspectives to solving a problem.
+            <p>I'm a Product Designer currently working at Issuu, Copenhagen. I started out my career as frontend developer but quickly switched into design roles.</p>
+            <p>
+            I look at products holistically, taking into account business and user needs. Coherent visual language is really important to me and I strive to deliver intuitive and systematic design.
             Having frontend background makes it easier for me to communicate with the developers and understand the coding restrictions.
-            <br /><br /></p>
-
-
+            </p>
             </div>
             </div>
-            {/* <div className="col5">
-              <h1>When I'm not working</h1>
-              <p>Most likely I'll be travelling! Here is my personal travel map where I pin the places I've been to.</p>
-            </div> */}
-        {/* <div className="center"><WorldMap width={960} height={500}/></div> */}
+
+            <div className="projectContainer">
+
+           <h1 className='title margin80'>Six facts about me</h1>
+            <div className="gridContainer aboutMeRow">
+
+            <div className='col3 padding20'>
+            <img src={require("./../assets/img/me.jpg")} alt="me" className="photoWidth aboutSectionPhoto" />
+            <p>In my free time I practice yoga, usually vinyasa and hatha</p>
+            </div>
+            <div className='col3 padding20'>
+            <img src={require("./../assets/img/dreams3.png")} alt="me" className="photoWidth aboutSectionPhoto" />
+            <p>I'm building a sustainable clothing brand together with my friends</p>
+            </div>
+            <div className='col3 padding20'>
+            <img src={require("./../assets/img/photos2.png")} alt="me" className="photoWidth aboutSectionPhoto" />
+            <p>I love taking photos, especially portraits. Here is a collection of <a href='https://kejtizuki.cargo.site/'>my works</a></p>
+            </div>
+            </div>
+
+            <div className="gridContainer aboutMeRow">
+
+            <div className='col3 padding20'>
+            <img src={require("./../assets/img/color.png")} alt="me" className="photoWidth aboutSectionPhoto" />
+            <p>Here is my favourite color and chewing gum</p>
+            </div>
+            <div className='col3 padding20'>
+            <img src={require("./../assets/img/psychology.jpeg")} alt="me" className="photoWidth aboutSectionPhoto" />
+            <p>I'm into psychology. Recently I've been listening to <a href='https://hubermanlab.com/category/podcast-episodes/'>Huberman Lab podcast</a>, <a href='https://open.spotify.com/show/7yq7L2H5VwxzbtKMXawCY4?si=CPGVYOe9Q7CUIfkpZyg-3A&dl_branch=1'>Mozna zwariowac (polish)</a> and <a href='https://open.spotify.com/show/3i5TCKhc6GY42pOWkpWveG?si=tnjQ1CV0QyKxunjkecXUpg&dl_branch=1'>The Happiness Lab</a></p>
+            </div>
+
+            <div className='col3 padding20'>
+            <iframe src="https://open.spotify.com/embed/playlist/1OBU92ZuzqkiyH6syhTs66" width="100%" height="386" frameBorder="0" className='aboutSectionPhoto' allowtransparency="true" allow="encrypted-media"></iframe>
+            <p>I like house music</p>
+            </div>
+            </div>
+            </div>
       </div>
     )
   }

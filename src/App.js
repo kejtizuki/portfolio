@@ -65,18 +65,6 @@ class App extends Component {
  /> <IssuuStats /></div>}
        />
 
-       <Route exact path="/issuuCreate" component={() => <div><ProjectOverview
-        bgImage={require("./assets/img/IssuuCreate/page-rail-issuu.gif")}
-        title="Issuu Create editor for real estate agents"
-        history={this.props.history}
-        description="Create automated social media stories"
-        keywords="UI, UX, Web design, Product design"
-        type="Product Design, Issuu"
-        tools="Sketch, Principle"
-        longDesc=""
-/> <ProjectIssuuCreate /></div>}
-      />
-
 
       <Route exact path="/authenticate" component={() => <div><Authenticate/></div>}
      />
@@ -86,8 +74,8 @@ class App extends Component {
          title="Issuu Creator Content space"
          history={this.props.history}
          description="A place to repurpose Issuu's publication into new formats"
-         keywords="Product design"
-         type="Product Design, Issuu"
+         keywords="Product designer (end-to-end process)"
+         type="Product Design, Issuu. Cross-functional collaboration with PM and Developers "
          tools="Figma"
          longDesc="Creators that publish their content on Issuu need to constantly promote their businesses on social media. Issuu needed a space where they can easily re-create and share social content without using other tools."
     /> <CreatorContent /></div>}
@@ -99,7 +87,7 @@ class App extends Component {
        history={this.props.history}
        description="Understanding reading experience on Issuu mobile"
        keywords="UX Designer (Resaerch, Concept, Interaction Design)"
-       type="Cross-functional teamwork, Product Design. Close collaboration with PM"
+       type="Product Design, Issuu. Cross-functional collaboration with PM and Developers"
        tools="Sketch, Principle"
        longDesc="65% of Issuu readers are coming from a Mobile device (75% in US) and our reader is not customised for this type of devices. To read a publication on mobile phone the users have to zoom in and reading longer pieces of text is problematic. "
      /> <ProjectIssuuReader /></div>}
@@ -229,7 +217,7 @@ augment awareness of the brand and the cruise product and get past cruisers inv
         description="New strategy and visual guidelines for Issuu's evolving product and mission"
         keywords="Designer (Concept, Branding, Strategy, Art Direction, UI)"
         tools="Figma"
-        type="Collaborating with a Lead Designer"
+        type="Collaboration with a Lead Designer"
         longDesc='Issuu needed a new look and feel as the product grew and our services expanded. The components used accross time lacked consistancy and the visuals needed to be refreshed. '
       /><BrandRefreshIssuu /></div>}
       />

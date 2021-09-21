@@ -18,7 +18,7 @@ class CreatorContent extends React.Component {
       <div className="row justifyCenter">
       <div className="col5 "><h2 className="title">Hypothesis</h2>
       <p>
-        Having all social content in one place will help our customers save time and effort that they normally spend on recreating assets.
+        <span className='strongTxt'>Having all social content in one place will help our customers save time and effort</span> that they normally spend on recreating assets.
         The documents published on Issuu are already professionally designed but the Publishers still need to work on adjusting this content for different social media channels.
         Allowing them to easily <span className='strongTxt'>repurpose</span> their content directly on Issuu will help them bring traffic to their publications without additional effort.
       </p>
@@ -31,22 +31,21 @@ class CreatorContent extends React.Component {
 
 
       <div className="row justifyCenter">
-      <div className="col5 "><h2 className="title">Intro</h2>
+      <div className="col5 "><h2 className="title">Introduction</h2>
       <p>
-        When I started working on this project Issuu already worked on a social post creator tool that unfortunately didn't get into release.
-        One of my tasks was to <span className='strongTxt'>redefine</span> this editor and understand what can we do to make it easier to use.
+        When I started working on this project Issuu already had a social post editor that unfortunately didn't get into release.
+        One of my tasks was to <span className='strongTxt'>redefine</span> this tool and understand what can we do to make it easier to use.
       </p>
 
       <p>
         The old editor allowed our users to create social posts based on the templates.
-        The templates however could not be modified as much as needed and they were not attractive enough. The UX of the editor was also difficult to understand.
-        It was mainly build to create multi-page social stories. In order to understand what went wrong with this project we started problem definition from scratch.
+        The templates, however, could not be modified as much as needed. The UX of the editor was also difficult to follow.
+        First, it was built to create multi-page social stories. Second, the templates were very restricted and hard to edit. These problems stood out to us in a first glance after analysing the competitors' editors. In order to understand what exactly was needed in our new editor we started <span className='strongTxt'>problem definition</span> from scratch.
       </p>
 
       <p>
         With the new design and redefinition of the existing tool we wanted to <span className='strongTxt'>keep up to the existing standards in the web ediotr's space</span>.
-        During our research we kept hearing from our users that they'd love to have a tool
-        to create social content and they had certain <span className='strongTxt'>expectations</span> of how they'd like to use this tool. The gifs below present the UX of an old editor.
+        The gifs below present the UX of an old editor.
       </p>
       </div>
       </div>
@@ -69,7 +68,7 @@ class CreatorContent extends React.Component {
       <img src={require("./../assets/img/CreatorContent/simpleJourney.png")} className="mainImg"/>
 
       <p>
-      We analysed existing research insights and came up with the consolidated problem space that was mapped into the user journey.
+      After analysing existing research insights we came up with the consolidated problem space that was mapped into the user journey.
       </p>
       </div>
       </div>
@@ -90,7 +89,7 @@ class CreatorContent extends React.Component {
       <div className="row justifyCenter">
       <div className="col5 "><h2 className="title">Discovery</h2>
       <p>
-      We started Discovery process with understanding the social post Creation. We knew that the first thing to build was the <span className='strongTxt'>Editor</span> that would allow our Creators to easily build <span className='strongTxt'>social content</span>.
+      We started Discovery process with understanding the process of social post creation. We knew that the first thing to build was the <span className='strongTxt'>Editor</span> that would allow our Creators to easily build <span className='strongTxt'>social content</span>.
       </p>
 
       <p>
@@ -100,9 +99,8 @@ class CreatorContent extends React.Component {
 
       <p>
       Every team member suggested their feature ideas and later on we grouped them together and voted on the most wanted features.
-      After the workshop we analysed existing editors together with our vision and we built a <span className='strongTxt'>User Story Map</span>.
-      We proposed 2 options with slightly different sets of features and discussed them with the developers. We wanted to get the MVP option that would
-      be realistic to develop in a few months. We ended up with the final USM.
+      After the workshop we analysed existing web content editors together with our vision and we built a <span className='strongTxt'>User Story Map</span>.
+
       </p>
 
       </div>
@@ -111,7 +109,7 @@ class CreatorContent extends React.Component {
       <img src={require("./../assets/img/CreatorContent/USM.png")} className="mainImg"/>
 
       <div className="row justifyCenter">
-      <div className="col5 "><h2 className="title">App structure</h2>
+      <div className="col5 "><h1 className="title">App structure</h1>
       <p>
       After understanding the set of features that go into the MVP I designed the structure that can easily be modified and expanded to accommodate the future iterations.
       </p>
@@ -192,9 +190,30 @@ class CreatorContent extends React.Component {
     </Player>
 
     <div className="row justifyCenter margin80">
+    <div className="col5 "><h2 className="title">Pages</h2>
+    <p>
+    It's possible to add multiple pages to create GIFs or multi-page posts. After adding pages each apge can be modified separately.
+    This feature is not a part of the MVP, but was designed for later iterations.
+    </p>
+    </div>
+    </div>
+
+    <Player
+     playsInline
+     autoPlay
+     poster={require("./../assets/img/CreatorContent/pages.png")}
+     src={require("./../assets/img/CreatorContent/pages.mov")}
+     className='contentShadow'>
+     <ControlBar autoHide={false} disableCompletely={true}/>
+     <BigPlayButton position="center" />
+     <PlayToggle />
+
+   </Player>
+
+    <div className="row justifyCenter margin80">
     <div className="col5 "><h2 className="title">Image options</h2>
     <p>
-    Image can be resized and masked. 
+    Image can be resized and masked.
     </p>
     </div>
     </div>
@@ -205,8 +224,8 @@ class CreatorContent extends React.Component {
     <div className="col5 "><h2 className="title">Uploads</h2>
     <p>
     Uploading flow was already implemented in the old editor and therefore was not highly prioritised for the new MVP. The upload modal
-    was redesigned to fit the new brand. However for the <span className='strongTxt'>future</span> we want to make it more seemless. Uploading should
-    modal should not be the focus but should happen in the background. Dragging and dropping photos in the editor directly is one of the next steps.
+    was redesigned to fit the new brand. In the <span className='strongTxt'>future iterations</span> we want to make it more seemless. Uploading should
+    not be the focus blocking the screen but should happen in the background. Dragging and dropping photos in the editor directly is one of the next steps.
     </p>
     </div>
     </div>
@@ -239,29 +258,28 @@ class CreatorContent extends React.Component {
     <div className="row justifyCenter margin80">
     <div className="col5 "><h2 className="title">Prototype testing</h2>
     <p>
-    Before moving to development I tested the prototype on usertesting.com (7 users) and with 4 Issuu Publishers.
-    The usertesting.com was strictly focused on usability. The user had to complete tasks such as changing the template, modify it, add images to the canvas and downlaoding.
+    Before moving to development I tested the prototype on usertesting.com (7 users) and led 4 interviews with Issuu Publishers.
+    The online testing (usertesting.com) was strictly focused on usability. The user had to complete tasks such as change the template, modify it, add images to the canvas and download.
     </p>
     Positives:
     <ul>
-    <li>7/7 Users understood with the canvas interactions and that the template can be modified directly.</li>
-    <li>6/7 understood how Document Photos work and easily interacted with them.</li>
+    <li>7/7 Users understood with the <span className='strongTxt'>canvas interactions</span> and that the template can be modified directly</li>
+    <li>6/7 understood how <span className='strongTxt'>Document Photos</span> work and easily interacted with them</li>
     </ul>
     Other: <br/>
     <ul>
-    <li>3/7 did not understand the difference between Story and Post. That was a good indication that in the future iterations we need to implement a form of tutorial or guidance. </li>
-    <li>2/7 wanted to start from a blank page. We already planned the future iteration taking this into account but it was a good indication that this functionality might be needed in the future. </li>
+    <li>3/7 did not understand the difference between <span className='strongTxt'>Story and Post</span>. That was a good indication that in the future iterations we need to provide some kind of tutorial or guidance. </li>
+    <li>2/7 wanted to start from a <span className='strongTxt'>blank page</span>, without using the template</li>
     </ul>
 
     <p>
-    Testing with Issuu Publishers was a bit broader and included validating the need for the Editor. It also focused on understanding the workflow of publishing and sharing content.
+    Interviewing Issuu Publishers was a bit broader and focused on understanding of their process with content creation and sharing.
     </p>
-
-
     </div>
     </div>
 
 
+    <img src={require("./../assets/img/CreatorContent/keyTakeaways.jpg")} className="mainImg"/>
 
 
       </div>
