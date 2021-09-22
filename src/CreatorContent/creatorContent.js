@@ -254,6 +254,24 @@ class CreatorContent extends React.Component {
     </div>
     </div>
 
+    <div className="row justifyCenter margin80">
+    <div className="col5 "><h2 className="title">Document photos</h2>
+    <p>
+    </p>
+    </div>
+    </div>
+
+    <Player
+     playsInline
+     poster={require("./../assets/img/CreatorContent/documentPhotos2.png")}
+     src={require("./../assets/img/CreatorContent/documentPhotos2.mov")}
+     className='contentShadow whitePlayer'>
+     <ControlBar autoHide={false} disableCompletely={true}/>
+     <BigPlayButton position="center" />
+     <PlayToggle />
+
+   </Player>
+
 
     <div className="row justifyCenter margin80">
     <div className="col5 "><h2 className="title">Prototype testing</h2>
