@@ -211,9 +211,47 @@ class ProjectIssuuReader extends React.Component {
         </div>
       </div>
 
+      <img src={require("./../assets/img/IssuuCreate/smartNav-takeaways.png")} className="mainImg"/>
+      <img src={require("./../assets/img/IssuuCreate/internalTesting.png")} className="mainImg"/>
+
 
 
       </div>
+
+      <img src={require("./../assets/img/IssuuCreate/focus.png")} className="mainImg"/>
+
+      <div className="projectContainer">
+      <div className="row margin80">
+        <div className="col5 verticalCenter">
+          <h2 className="title">Solution - Smart Zoom and Linear Scroll</h2>
+          <p>Smart Zoom</p>
+          <p>Double tap gesture zooms in to the width of the tapped column. To leave the zoomed in mode the user has to double tap again. </p>
+          <p>Linear Scroll</p>
+          <p>When scrolling, the position is locked so that the text doesn’t change its position while scrolling down and reading.</p>
+        </div>
+
+        <div className="col5 verticalCenter center margin40Left justifyCenter">
+
+        <div className='prototypeImg gifImgBorder'>
+        <Player
+         playsInline
+         poster={require("./../assets/img/IssuuCreate/smartZoom.png")}
+         src={require("./../assets/img/IssuuCreate/smartZoom.mov")}
+         className="greyPlayer">
+         <ControlBar autoHide={false} disableCompletely={true}/>
+         <BigPlayButton position="center" />
+         <PlayToggle />
+
+       </Player>
+       </div>
+
+        </div>
+      </div>
+
+      <img src={require("./../assets/img/IssuuCreate/articleStoriesAccessibility.png")} className="mainImg"/>
+
+      </div>
+
 
   </div>
     )
