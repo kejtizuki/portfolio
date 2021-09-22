@@ -1,6 +1,7 @@
 import React from 'react';
 import './../ProjectIssuuReader/projectIssuuReader.scss';
 import { BrowserRouter as Link, withRouter } from "react-router-dom";
+import { Player, ControlBar, PlayToggle, BigPlayButton, ReplayControl } from 'video-react';
 
 class ProjectIssuuReader extends React.Component {
 
@@ -8,61 +9,92 @@ class ProjectIssuuReader extends React.Component {
 
     return(
       <div>
+      <img src={require("./../assets/img/IssuuCreate/ASpreview.png")} className="mainImg"/>
+
       <div className="projectContainer">
-        <img src={require("./../assets/img/IssuuCreate/ASpreview.png")} className="mainImg"/>
 
-        <div className="row">
-        <div className="col7"><h2 className="title">Introduction</h2>
-        <p>
-        Issuu is a platform where a lot of content is published in the form of pdfs. The pdfs are displayed inside the <span className="strong">Reader</span>. The Reader
-        can be accessed both on Desktop and Mobile, however it has some specific limitations on mobile devices. The text is small and almost always requires the user to
-        use a zoom in gesture in order to read something.
-        </p>
-        <p>
-        Besides letting the users read the whole publication inside the Reader, Issuu offers Article Stories. They're short pieces of content that can be accessed via link. The
-        text is parsed from a pdf into html and therefore the font size allows for easy reading on mobile.
-        Article Stories are created semi-automatically - they require some editing on the creator side. The output is a link that includes the article text and some images.
+        <div className="row margin80">
+        <div className="col5 verticalCenter center justifyCenter">
 
-        </p>
+        <div className='prototypeImg gifImgBorder'>
+        <Player
+         playsInline
+         poster={require("./../assets/img/IssuuCreate/reader1.png")}
+         src={require("./../assets/img/IssuuCreate/reader.mov")}
+         className="greyPlayer">
+         <ControlBar autoHide={false} disableCompletely={true}/>
+         <BigPlayButton position="center" />
+         <PlayToggle />
+
+       </Player>
+       </div>
 
         </div>
-        <div className="col3">
-        </div>
+
+          <div className="col5 verticalCenter">
+            <h2 className="title">Introduction</h2>
+            <p>
+            Issuu is a platform where a lot of content is published in the form of pdfs. The pdfs are displayed inside the <span className="strongTxt">Reader</span>. The Reader
+            can be accessed both on Desktop and Mobile, however it has some specific limitations on mobile devices. The text is small and almost always requires the user to
+            use a zoom in gesture to be able read.
+            </p>
+
+            <p>
+            The video presents interacting with a pdf when I started working on the project.
+            </p>
+          </div>
+
+
         </div>
 
 
-        <div className="row">
-        <div className="col7"><h2 className="title">Goals of the project</h2>
+        <div className="row justifyCenter margin80">
+        <div className="col5"><h2 className="title">Goals of the project</h2>
         <p>
-        I joined the project as UX Designer and worked closely with the Developers focused on machine learning part of the project and a Project Manager.
+        I joined the project as UX Designer and worked closely with Project Manager and the Developers focused on machine learning.
         There were few goals of the project:
         </p>
         <p>
-        - Make it easier to find articles to read on Issuu both on web and mobile  <br />
-        - Understand and improve interactions with Issuu Reader on mobile <br />
-        - Allow an easy consumption of different content types (magazines, brochures, flyers, booklets, lookbooks... etc) on mobile phones<br />
-        - Increase the median time spent in the reader's fullscreen mode. When we started the project the median time was 2.2 minutes per month per reader in fullscreen mode
+        - Understand and improve <span className='strongTxt'>interactions</span> with Issuu Reader on mobile <br />
+        - Allow an easy <span className='strongTxt'>consumption of different content types</span> (magazines, brochures, flyers, booklets, lookbooks... etc) on mobile<br />
+        - Make it easier to <span className='strongTxt'>discover</span> articles to read on Issuu both on web and mobile  <br />
+        - Increase the <span className='strongTxt'>median time</span> spent in the Reader's fullscreen mode. When we started the project the median time was 2.2 minutes per month per reader in fullscreen mode
         </p>
         </div>
-        <div className="col3">
-        </div>
         </div>
 
 
-        <h2 className="title">Content Types on Issuu</h2>
-        <img src={require("./../assets/img/IssuuCreate/content1big.png")} className="mainImg"/>
-        <img src={require("./../assets/img/IssuuCreate/content2big.png")} className="mainImg"/>
 
-        <h2 className="title">Project Plan</h2>
+        <img src={require("./../assets/img/IssuuCreate/content1big.png")} className="mainImgNoMargin"/>
+        <img src={require("./../assets/img/IssuuCreate/content2big.png")} className="mainImgNoMargin"/>
 
-        <img src={require("./../assets/img/IssuuCreate/projectPlan.png")} className="mainImg margin160"/>
+
+        <div className="row justifyCenter margin80">
+        <div className="col5"><h2 className="title">Project Plan</h2>
+        <p>
+        <p>
+        We kicked off the project with understanding existing research and gathering what we know about the mobile reading experience.
+        After that we ran one week Design Sprint. The most fun part was sketching possible solutions.
+        </p>
+        <p>
+        Later on we ideated on different possible solutions and worked in an iterative manner on validating and testing both design and functional prototypes.
+        </p>
+        </p>
+        </div>
+        </div>
+        <img src={require("./../assets/img/IssuuCreate/projectPlan.png")} className="mainImg margin80"/>
 
 
         <div className="row justifyCenter margin80">
         <div className="col5"><h2 className="title">Design Sprint</h2>
         <p>
-        After implementing the new branding into the Landing Pages we started building our new Design System. This project is a continous work in progress and many team members are included.
-        Building Design System is a complex task and requires very close collaboration between Designers and Developers. I've been leading the development of some components (for instance: buttons, input fields, text styles, cards).
+        Working together with the Developers
+        was really exciting as they had very good understanding of opportunities and limitations that the Reader had.
+        </p>
+        <p>
+        Below there is a sketch that I drew during the design sprint. My idea was to create two modes: original and reading.
+        I proposed having publication <span className='strongTxt'>pages easily visible</span>, <span className='strongTxt'>scrolling</span> through the whole text, adding <span className='strongTxt'>accessibility settings</span> that improve readability, and
+        indicating where are the <span className='strongTxt'>interactive elements</span> in the publication.
         </p>
         </div>
         </div>
@@ -70,20 +102,20 @@ class ProjectIssuuReader extends React.Component {
         <img src={require("./../assets/img/IssuuCreate/sketch.jpg")} className="mainImg margin160"/>
 
 
-        <h2 className="title">Article Stories</h2>
+        <h2 className="title">Step 1 - Article Stories</h2>
         <div className="row">
           <div className="col5 verticalCenter">
-          We analysed an existing solution - Article Stories to understand its strengths and weaknesses. <br /><br />
+          We analysed the existing solution - Article Stories to understand its strengths and weaknesses. <br /><br />
 
           Pros: <br /><br />
           - Good to promote a specific section of a document<br />
           - Automatically generated but require some editing<br />
-          - Article Stories are mobile-friendly<br /><br />
+          - Mobile-friendly<br /><br />
 
           Cons: <br /><br />
           - Too time consuming to create/edit<br />
           - Do not support HyperLinks or video<br />
-          - Not properly integrated with the publication /  Reader 3<br />
+          - Not properly integrated with the Reader <br />
           - Do not support embeds or unlisted publications<br />
           - More suited for Editorial content<br />
           - Not the exact replica of the original PDF<br />

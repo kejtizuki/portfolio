@@ -17,8 +17,10 @@ class CreatorContent extends React.Component {
 
       <div className="row justifyCenter">
       <div className="col5 "><h2 className="title">Hypothesis</h2>
+
+      <h1>Having all social content in one place will help our customers save time and effort</h1>
       <p>
-        <span className='strongTxt'>Having all social content in one place will help our customers save time and effort</span> that they normally spend on recreating assets.
+        <span className='strongTxt'></span> that they normally spend on recreating assets.
         The documents published on Issuu are already professionally designed but the Publishers still need to work on adjusting this content for different social media channels.
         Allowing them to easily <span className='strongTxt'>repurpose</span> their content directly on Issuu will help them bring traffic to their publications without additional effort.
       </p>
@@ -158,10 +160,9 @@ class CreatorContent extends React.Component {
 
       <Player
        playsInline
-       autoPlay
        poster={require("./../assets/img/CreatorContent/templates2.png")}
        src={require("./../assets/img/CreatorContent/templates.mov")}
-       className='contentShadow'>
+       className='contentShadow whitePlayer'>
        <ControlBar autoHide={false} disableCompletely={true}/>
        <BigPlayButton position="center" />
        <PlayToggle />
@@ -179,15 +180,25 @@ class CreatorContent extends React.Component {
 
      <Player
       playsInline
-      autoPlay
       poster={require("./../assets/img/CreatorContent/textOptions.png")}
       src={require("./../assets/img/CreatorContent/textOptions.mov")}
-      className='contentShadow'>
+      className='contentShadow whitePlayer'>
       <ControlBar autoHide={false} disableCompletely={true}/>
       <BigPlayButton position="center" />
       <PlayToggle />
 
     </Player>
+
+
+    <div className="row justifyCenter margin80">
+    <div className="col5 "><h2 className="title">Image options</h2>
+    <p>
+    Image can be resized and masked.
+    </p>
+    </div>
+    </div>
+
+    <img src={require("./../assets/img/CreatorContent/imgSelected.png")} className="mainImgNoMargin contentShadow"/>
 
     <div className="row justifyCenter margin80">
     <div className="col5 "><h2 className="title">Pages</h2>
@@ -200,25 +211,14 @@ class CreatorContent extends React.Component {
 
     <Player
      playsInline
-     autoPlay
      poster={require("./../assets/img/CreatorContent/pages.png")}
      src={require("./../assets/img/CreatorContent/pages.mov")}
-     className='contentShadow'>
+     className='contentShadow whitePlayer'>
      <ControlBar autoHide={false} disableCompletely={true}/>
      <BigPlayButton position="center" />
      <PlayToggle />
 
    </Player>
-
-    <div className="row justifyCenter margin80">
-    <div className="col5 "><h2 className="title">Image options</h2>
-    <p>
-    Image can be resized and masked.
-    </p>
-    </div>
-    </div>
-
-    <img src={require("./../assets/img/CreatorContent/imgSelected.png")} className="mainImgNoMargin contentShadow"/>
 
     <div className="row justifyCenter margin80">
     <div className="col5 "><h2 className="title">Uploads</h2>
