@@ -608,7 +608,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/FaktumTest-Bold.ed557f50.otf"
   },
   {
-    "revision": "716fcb616a81792c3b7c63b2058deef9",
+    "revision": "477a743bf89d40479c2d76359dfe76cb",
     "url": "/portfolio/index.html"
   }
 ];
