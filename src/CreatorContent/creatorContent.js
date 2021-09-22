@@ -263,7 +263,7 @@ class CreatorContent extends React.Component {
 
     <Player
      playsInline
-     poster={require("./../assets/img/CreatorContent/documentPhotos2.png")}
+     poster={require("./../assets/img/CreatorContent/documentPhotos.png")}
      src={require("./../assets/img/CreatorContent/documentPhotos2.mov")}
      className='contentShadow whitePlayer'>
      <ControlBar autoHide={false} disableCompletely={true}/>
