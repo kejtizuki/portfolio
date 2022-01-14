@@ -38,6 +38,11 @@
   }
   .linkHighlight {
     color: black;
+    // background: -webkit-linear-gradient(45deg, #f7f2af, #7a4bb7, #2329dd, #638f39);
+    //
+    //
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
     // background-color: #cfc0fe;
     // color: #6b6bdb;
     text-decoration: underline;
@@ -47,7 +52,10 @@
     // font-weight: 300;
     // text-decoration: underline;
     &:hover {
-      color: #7828e0;
+      color: #904DE4;
+      // background: -webkit-linear-gradient(45deg, #f7f2af, #7a4bb7, #2329dd, #638f39);
+      // -webkit-background-clip: text;
+      // -webkit-text-fill-color: transparent;
     }
   }
 }
