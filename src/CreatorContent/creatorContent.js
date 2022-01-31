@@ -300,6 +300,7 @@ class CreatorContent extends React.Component {
     <img src={require("./../assets/img/CreatorContent/keyTakeaways.jpg")} className="mainImg"/>
 
 
+    
       </div>
       </div>
     )
