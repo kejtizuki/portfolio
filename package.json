@@ -7,17 +7,18 @@
     "classnames": "^2.2.6",
     "d3-geo": "^1.11.6",
     "node-sass": "^4.14.1",
-    "react": "^16.8.4",
+    "react": "^16.14.0",
     "react-animated-css": "^1.2.1",
     "react-d3": "^0.4.0",
-    "react-dom": "^16.8.4",
+    "react-dom": "^16.14.0",
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8",
     "react-scroll-to-component": "^1.0.2",
     "react-tooltip": "^3.10.0",
     "react-transition-group": "^1.2.1",
     "react-typing-effect": "^2.0.2",
-    "typewriter-effect": "^2.10.0"
+    "typewriter-effect": "^2.10.0",
+    "video-react": "^0.15.0"
   },
   "scripts": {
     "start": "react-scripts start",
