@@ -10,7 +10,6 @@ import Home from './Home/HomeGrid';
 import ProjectOverview from './ProjectOverview/ProjectOverview';
 import ProjectSunWise from './ProjectSunWise/ProjectSunWise';
 import ProjectMikeller from './ProjectMikeller/ProjectMikeller';
-import ProjectDogs from './ProjectDogs/ProjectDogs';
 import ProjectSF from './ProjectSF/ProjectSF';
 import ProjectCosta from './ProjectCosta/ProjectCosta';
 import ProjectThesis from './ProjectThesis/ProjectThesis';
@@ -23,6 +22,7 @@ import CreatorContent from './CreatorContent/creatorContent';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import Authenticate from './components/authenticate/authenticate';
 import ProjectCoordinates from './ProjectCoordinates/ProjectCoordinates';
+import IssuuMobile from './IssuuMobile/issuuMobile';
 import { BrowserRouter as Router, Route, Link, Redirect } from "react-router-dom";
 import './index.scss';
 
@@ -94,6 +94,8 @@ class App extends Component {
      />
 
       <Route exact path="/" component={Home} />
+
+
       <Route exact path="/about" component={About} />
       <Route exact path="/sunWise" component={() => <div><ProjectOverview
         bgImage={require("./assets/img/SunWise/sunwise-main.jpg")}
@@ -110,6 +112,18 @@ sun overexposure by allowing users to track the time they
 spend outdoors in relation to the UV Index levels. The project was developed as a part of Personal Data Interaction class at DTU."
 /> <ProjectSunWise /></div>}
       />
+
+      <Route exact path="/issuuMobile" component={() => <div><ProjectOverview
+          bgImage={require("./assets/img/IssuuMobile/preview.png")}
+          title="Redesign of Issuu mobile app"
+          history={this.props.history}
+          description="How might we redesign the app so that features are more discoverable?"
+          keywords="Product Design,Mobile,UX,UI"
+          type="Product Design, Issuu."
+          tools="Figma"
+          longDesc="The goal of the redesign was to create a better experience for digital readers who discover and read content online."
+     /> <IssuuMobile /></div>}
+        />
 
 
       {/* <Route exact path="/dogsApp" component={() => <div><ProjectOverview
@@ -181,8 +195,10 @@ designed to filter the data in different ways."
         type="Group project (2 people)"
         longDesc='The project was created as a response to 48h Reply Creative Challenge in Digital Experience category. The task was
         to create a service that can be
-leveraged also from occasional guests coming from the city port. Main assumptions were to augment onboard revenues,
-augment awareness of the brand and the cruise product and get past cruisers involved again. '
+leveraged also from occasional guests coming from the city port. Main assumptions were to augment onboard revenues
+,
+augment awareness of the brand and the cruise product
+ and get past cruisers involved again. '
       /><ProjectCosta /></div>}
       />
 

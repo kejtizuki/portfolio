@@ -37,24 +37,6 @@ class Project extends React.Component {
 
       console.log('keywords', keywords)
 
-
-      // const headerClasses = classNames({
-      //   'projectHeader': true,
-      //   'sunwise': title === 'SunWise',
-      //   'dogs': title === 'Dogs training app',
-      //   'sfData': title === 'San Francisco Data Visualization',
-      //   'mikeller': title === 'Mikeller app',
-      //   'coordinates': title === 'Parallel coordinates',
-      //   'costa': title === 'New Costa cruise experience',
-      //   'ah': title === 'Augmented Hearing',
-      //   'opi': title === 'Dementia Support App',
-      //   'thesis': title === 'Medical time series data visualization',
-      //   'issuu': title === 'Improving Issuu analytics page',
-      //   'issuuReader': title === 'Consuming content on Issuu',
-      //   'issuuBranding': title === 'Issuu Brand Refresh'
-      // });
-
-
       console.log('keywords', keywords.split(","))
 
       const keywordsMap = keywords.split(",").map((elem, index) => {return <span className='keyword' key={index}>{elem}</span>})
@@ -62,9 +44,7 @@ class Project extends React.Component {
       const projectClasses = classNames({
         'box': true,
         'sunwise': title === 'SunWise',
-        'dogs': title === 'Dogs training app',
         'sfData': title === 'San Francisco Data Visualization',
-        'mikeller': title === 'Mikeller app',
         'coordinates': title === 'Parallel coordinates',
         'costa': title === 'New Costa cruise experience',
         'ah': title === 'Augmented Hearing',
@@ -74,7 +54,8 @@ class Project extends React.Component {
         'issuuCreate': title === 'Issuu Create editor for real estate agents',
         'issuuReader': title === 'Consuming content on Issuu',
         'issuuBranding': title === 'Issuu Brand Refresh and Design System',
-        'contentEditors': title === 'Issuu Creator Content space'
+        'contentEditors': title === 'Issuu Creator Content space',
+        'mobileApp': title === 'Redesign of Issuu mobile app'
       });
 
 

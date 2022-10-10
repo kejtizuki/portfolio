@@ -34,13 +34,13 @@ class ProjectIssuuReader extends React.Component {
           <div className="col5 verticalCenter">
             <h2 className="title">Introduction</h2>
             <p>
-            Issuu is a platform where a lot of content is published in the form of pdfs. The pdfs are displayed inside the <span className="strongTxt">Reader</span>. The Reader
-            can be accessed both on Desktop and Mobile, however it has some specific limitations on mobile devices. The text is small and almost always requires the user to
-            use a zoom in gesture to be able read.
+            Issuu is a digital publishing platform where magazines, books, fleyers, catalogues and all sorts of other contents are published as pdfs. The publications are displayed inside the <span className="strongTxt">Reader</span>. The Reader
+            can be accessed both on Desktop and Mobile, however it's use is limited on mobile devices. Text is usually too small which forces the user to
+            use a zoom in gesture to read. Zooming in while reading a publication designed for print is quite problematic.
             </p>
 
             <p>
-            The video presents interacting with a pdf when I started working on the project.
+            The video presents interacting with a pdf at the time when I started working on the project.
             </p>
           </div>
 
@@ -51,7 +51,7 @@ class ProjectIssuuReader extends React.Component {
         <div className="row justifyCenter margin80">
         <div className="col5"><h2 className="title">Goals of the project</h2>
         <p>
-        I joined the project as UX Designer and worked closely with Project Manager and the Developers focused on machine learning.
+        I joined the project as UX Designer and worked closely with a Project Manager and the Developers team focused on machine learning.
         There were few goals of the project:
         </p>
         <p>
@@ -64,7 +64,9 @@ class ProjectIssuuReader extends React.Component {
         </div>
 
 
-
+        <div className="row justifyCenter">
+        <div className="col5"><h2 className="title">Example content types</h2></div>
+        </div>
         <img src={require("./../assets/img/IssuuCreate/content1big.png")} className="mainImgNoMargin"/>
         <img src={require("./../assets/img/IssuuCreate/content2big.png")} className="mainImgNoMargin"/>
 
@@ -99,18 +101,18 @@ class ProjectIssuuReader extends React.Component {
         </div>
         </div>
 
-        <img src={require("./../assets/img/IssuuCreate/sketch.jpg")} className="mainImg margin160"/>
+        <img src={require("./../assets/img/IssuuCreate/sketch.jpg")} className="mainImg margin80"/>
 
 
-        <h2 className="title">Step 1 - Article Stories</h2>
+        <h2 className="title">Article stories</h2>
         <div className="row">
           <div className="col5 verticalCenter">
-          We analysed the existing solution - Article Stories to understand its strengths and weaknesses. <br /><br />
+          We analysed the existing solution - Article Stories to understand its strengths and weaknesses. Article Stories are short pieces of content based on the articles from publications. <br /><br />
 
           Pros: <br /><br />
           - Good to promote a specific section of a document<br />
           - Automatically generated but require some editing<br />
-          - Mobile-friendly<br /><br />
+          - Mobile-friendly reading<br /><br />
 
           Cons: <br /><br />
           - Too time consuming to create/edit<br />

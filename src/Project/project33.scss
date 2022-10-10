@@ -68,7 +68,7 @@
 .project {
   &:hover {
     cursor: pointer;
-    border-radius: 16px;
+    border-radius: 46px;
   }
 }
 
@@ -155,48 +155,53 @@
 }
 }
 
-.dogs {
-  background-color: #F4C349;
-  &:hover {
-    background-blend-mode: multiply;
-}
-}
+
 .sfData {
   background-color: #F3FA8A;
   &:hover {
     background-blend-mode: multiply;
 }
 }
-.mikeller {
-  background-color: #F9EDBC;
-  &:hover {
-    background-blend-mode: multiply;
-}
-}
+
 .coordinates {
   background-color: #a2d6c9;
   &:hover {
     background-blend-mode: multiply;
 }
 }
-.costa {
-  background-color: #20565f;
-  &:hover {
-    background-blend-mode: multiply;
-}
-  color: white;
-}
+
 
 .opi {
-  background-color: #905FCE;
+  background: rgb(255,239,221);
+background: linear-gradient(90deg, rgba(255,239,221,1) 0%, rgba(183,176,255,1) 100%);
+  //background-color: #905FCE;
   color: white;
   &:hover {
     background-blend-mode: multiply;
 }
+}
+
+.mobileApp {
+  background: rgb(222,225,196);
+  background: radial-gradient(circle, rgba(222,225,196,1) 11%, #d7d7ff 27%, rgba(138,93,126,1) 40%, rgba(52,50,61,1) 55%, rgba(101,161,113,1) 68%, rgba(222,225,196,1) 78%);
+  //background: rgb(249,255,144);
+  //background: linear-gradient(0deg, rgba(249,255,144,1) 0%, rgba(254,143,228,1) 100%);
+
+
+  //background: rgb(238,241,86);
+  //background: linear-gradient(0deg, rgba(238,241,86,1) 0%, rgba(236,123,221,1) 100%);
+  &:hover {
+    background-blend-mode: multiply;
+  }
 }
 
 .thesis {
-  background-color: #53ACC7;
+  background: rgb(43,151,184);
+  background: linear-gradient(0deg, rgba(43,151,184,1) 0%, rgba(182,194,255,1) 100%);
+
+  //background: rgb(18,4,23);
+//background: linear-gradient(90deg, rgba(18,4,23,1) 41%, rgba(77,46,140,1) 45%, rgba(255,255,255,1) 49%, rgba(77,46,140,1) 54%, rgba(83,172,199,1) 57%);
+  //background-color: #53ACC7;
   &:hover {
     background-blend-mode: multiply;
 }
@@ -204,7 +209,10 @@
 }
 
 .contentEditors {
-  background-color: #32344A;
+  background: rgb(112,195,200);
+background: radial-gradient(circle, rgba(112,195,200,1) 4%, rgba(130,115,76,1) 24%, rgba(153,195,161,1) 33%, rgba(61,79,164,1) 53%, rgba(244,241,236,1) 84%);
+  //background: radial-gradient(circle, rgba(22,35,99,1) 0%, rgba(255,206,215,1) 100%);
+//background-color: #6b5e9b;
   &:hover {
     background-blend-mode: multiply;
 }
@@ -212,21 +220,38 @@
 }
 
 .ah {
-  background-color: #f7c560;
+
+background: rgb(189,200,255);
+background: radial-gradient(circle, rgba(189,200,255,1) 0%, rgba(247,197,95,1) 100%);
+
+  //background-color: #f7c560;
   &:hover {
     background-blend-mode: multiply;
 }
 }
 
 .issuuBranding {
-  background-color: #6b5e9b;
+
+  background: rgb(255,245,234);
+  background: radial-gradient(circle, rgba(255,245,234,1) 0%, rgba(95,93,228,1) 32%, rgba(255,90,71,1) 59%, rgba(255,245,234,1) 86%);
+  //background: rgb(255,249,237);
+  //background: linear-gradient(90deg, rgba(255,249,237,1) 0%, rgba(255,90,71,1) 50%, rgba(95,93,228,1) 100%);
+  //background-color: #6b5e9b;
   &:hover {
     background-blend-mode: multiply;
+  }
+  color: black;
 }
+
+.issuuBrandingOverview {
+  background-color: #333662;
+  color: white;
 }
 
 .issuu {
-  background-color: #B29661;
+  background: rgb(196,225,225);
+background: radial-gradient(circle, rgba(196,225,225,1) 11%, rgba(249,245,191,1) 24%, rgba(90,47,92,1) 47%, rgba(54,65,186,1) 55%, rgba(196,225,225,1) 78%);
+  //background-color: #B29661;
   &:hover {
     background-blend-mode: multiply;
 }
@@ -234,7 +259,10 @@
 }
 
 .issuuReader {
-background-color: #e9a39a;
+
+  background: rgb(189,253,255);
+  background: radial-gradient(circle, rgba(189,253,255,1) 3%, rgba(84,86,230,1) 63%, rgba(80,35,129,1) 77%, rgba(255,255,255,1) 99%);
+  //background-color: #e9a39a;
   &:hover {
     background-blend-mode: multiply;
 }
@@ -263,8 +291,9 @@ background-color: #e9a39a;
 
 .keyword {
   font-size: 14px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.25);
+  color: black;
+  background-color: white;
+  //background-color: rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   padding: 6px 14px 6px 14px;
   margin: 0px 5px 0px 5px;

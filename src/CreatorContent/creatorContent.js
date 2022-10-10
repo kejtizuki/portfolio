@@ -111,9 +111,11 @@ class CreatorContent extends React.Component {
       <img src={require("./../assets/img/CreatorContent/USM.png")} className="mainImg"/>
 
       <div className="row justifyCenter">
-      <div className="col5 "><h1 className="title">App structure</h1>
+      <div className="col5 "><h1 className="title">App layout</h1>
       <p>
-      After understanding the set of features that go into the MVP I designed the structure that can easily be modified and expanded to accommodate the future iterations.
+      After understanding the set of features that go into the MVP I designed the layout that can easily be modified and expanded to accommodate future iterations.
+      There are two panels on left and sight side. The leftside panel's content changes based on selected menu item. The right-side panel is used to create GIFs and
+      multi-page posts. 
       </p>
 
       </div>
@@ -300,7 +302,7 @@ class CreatorContent extends React.Component {
     <img src={require("./../assets/img/CreatorContent/keyTakeaways.jpg")} className="mainImg"/>
 
 
-    
+
       </div>
       </div>
     )

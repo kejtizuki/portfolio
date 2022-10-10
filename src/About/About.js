@@ -18,38 +18,49 @@ class About extends React.Component {
       <div className='aboutme'>
       <Navbar />
         <div className="gridContainer aboutMeRow">
-            <div className="column2">
-            <img src={require("./../assets/img/meWinter.JPG")} alt="me" className="smallImg aboutSectionPhoto" />
+            <div className="column2 padding20">
+            <img src={require("./../assets/img/meWinter.JPG")} alt="me" className="aboutSectionPhoto" />
             </div>
-            <div className="column2 aboutMeText">
+            <div className="column2 aboutMeText padding20">
 
-            <h1 className='title'>I design seemless interactive experiences, starting on design research and finishing on polished user interface. </h1>
+            <h1 className='titleM'>Hej! I'm Kasia. I'm a fan of holistic approach and I believe good design stems from strong research and collaboration.</h1>
 
             <br /><br />
             <p>
             I’m a Product Designer with experience in all phases of the end-to-end design process.
-            Coherent visual language is really important to me and I strive to deliver intuitive and systematic design.
-            Having frontend background makes it easier for me to communicate with the developers and understand the coding restrictions.
+            I strive to deliver intuitive and systematic design with coherent visual language.
+            One of the foundations in a successful design procedss is good collaboration.
+            My past frontend development experience makes the communication with engineers in the team smooth.
             </p>
             <p>
-            I believe great design comes from great user research and that these two are strongly tied together.
-            I have the habit of testing and iterating on my design solutions. In addition, I also love crafting user interfaces.
+            Another important aspect to me is user research - it's a fundation for creating intuitive flows and interfaces.
+            I have the habit of testing and iterating on my design solutions.
             </p>
             </div>
             </div>
 
-            <div className="projectContainer">
 
-           <h1 className='title margin80'>Six facts about me</h1>
+            <div className="generalContainer">
+
+
+
+            <div className='gridContainer margin80'>
+            <h1 className='titleXL'>(6) facts about me</h1>
+            </div>
+
             <div className="gridContainer aboutMeRow">
 
-            <div className='col3 padding20'>
+            <div className='col3 padding20 titleCard'>
+
             <img src={require("./../assets/img/me.jpg")} alt="me" className="photoWidth aboutSectionPhoto" />
             <p>In my free time I practice yoga, usually vinyasa and hatha</p>
+
             </div>
+
             <div className='col3 padding20'>
             <img src={require("./../assets/img/dreams3.png")} alt="me" className="photoWidth aboutSectionPhoto" />
             <p>I'm building a sustainable clothing brand together with my friends</p>
+
             </div>
             <div className='col3 padding20'>
             <img src={require("./../assets/img/photos2.png")} alt="me" className="photoWidth aboutSectionPhoto" />
@@ -57,7 +68,7 @@ class About extends React.Component {
             </div>
             </div>
 
-            <div className="gridContainer aboutMeRow">
+            <div className="gridContainer aboutMeRow margin80">
 
             <div className='col3 padding20'>
             <img src={require("./../assets/img/color.png")} alt="me" className="photoWidth aboutSectionPhoto" />
@@ -69,7 +80,7 @@ class About extends React.Component {
             </div>
 
             <div className='col3 padding20'>
-            <iframe src="https://open.spotify.com/embed/playlist/1OBU92ZuzqkiyH6syhTs66" width="100%" height="386" frameBorder="0" className='aboutSectionPhoto' allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed/playlist/1OBU92ZuzqkiyH6syhTs66" width="100%" height="542" frameBorder="0" className='aboutSectionPhoto' allowtransparency="true" allow="encrypted-media"></iframe>
             <p>I like house music</p>
             </div>
             </div>

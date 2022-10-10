@@ -1,15 +1,25 @@
 .aboutme {
-  background-color: #F8F6F5;
+
+
   margin-left: -16px;
   padding-bottom: 100px;
   // height: 800px;
+  //  background-color: #F8F6F5;
 
   .aboutMeRow {
-    margin-top: 60px;
+    margin-top: 140px;
+  }
+
+  .titleCard {
+    // background-color: black;
+    color: black;
+    // border-radius: 16px;
+    // height: 542px;
   }
 
   .aboutSectionPhoto {
     border-radius: 16px;
+    margin-right: 40px;
   }
 
   .photoWidth {

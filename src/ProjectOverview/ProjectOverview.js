@@ -33,7 +33,6 @@ class ProjectOverview extends React.Component {
     const headerClasses = classNames({
       'projectHeader': true,
       'sunwise': title === 'SunWise',
-      'dogs': title === 'Dogs training app',
       'sfData': title === 'San Francisco Data Visualization',
       'mikeller': title === 'Mikeller app',
       'coordinates': title === 'Parallel coordinates',
@@ -44,8 +43,9 @@ class ProjectOverview extends React.Component {
       'issuu': title === 'Improving Issuu analytics page',
       'issuuCreate': title === 'Issuu Create editor for real estate agents',
       'issuuReader': title === 'Consuming content on Issuu',
-      'issuuBranding': title === 'Issuu Brand Refresh and Design System',
-      'contentEditors': title === 'Issuu Creator Content space'
+      'issuuBrandingOverview': title === 'Issuu Brand Refresh and Design System',
+      'contentEditorsOverview': title === 'Issuu Creator Content space',
+      'mobileAppOverview': title === 'Redesign of Issuu mobile app'
     });
 
     return(

@@ -13,6 +13,7 @@ export default class Footer extends React.Component {
           <a className='footerLink' href="https://www.linkedin.com/in/katarzyna-%C5%BCukowska-23398194/">Linkedin</a>
           <a className='footerLink' href="https://dribbble.com/kejtizuki/shots">Dribbble</a>
           <a className='footerLink' href="https://github.com/kejtizuki">Github</a>
+          Gradient design inspired by one of my favourite artists <a href='https://culture.pl/en/artist/wojciech-fangor' className="footerLink">Wojciech Fangor</a>
         </div>
       </div>
     )
