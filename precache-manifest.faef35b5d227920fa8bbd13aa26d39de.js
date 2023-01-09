@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "ea2b95f3dfc573d48566",
-    "url": "/portfolio/static/css/main.b94cf2ca.chunk.css"
+    "revision": "f0de6be761b50d082edc",
+    "url": "/portfolio/static/css/main.d62088f2.chunk.css"
   },
   {
-    "revision": "ea2b95f3dfc573d48566",
-    "url": "/portfolio/static/js/main.acf4743c.chunk.js"
+    "revision": "f0de6be761b50d082edc",
+    "url": "/portfolio/static/js/main.15338942.chunk.js"
   },
   {
     "revision": "53ebc025fca807d4dbea",
     "url": "/portfolio/static/js/runtime~main.f308c8e6.js"
   },
   {
-    "revision": "9059f97ff41418715d9e",
-    "url": "/portfolio/static/js/2.01e3dc9d.chunk.js"
+    "revision": "2b4f1184d31621cd4a34",
+    "url": "/portfolio/static/js/2.80b05627.chunk.js"
   },
   {
     "revision": "546f67de07c8dddf3baabbfcfec66c2b",
@@ -30,6 +30,10 @@ self.__precacheManifest = [
   {
     "revision": "7ea11aed7949ae0554b866a56017153a",
     "url": "/portfolio/static/media/preview.7ea11aed.png"
+  },
+  {
+    "revision": "eb8263e9b10522d58dc7bde959509453",
+    "url": "/portfolio/static/media/logo.eb8263e9.png"
   },
   {
     "revision": "f0819de303ca59c45dbc3fe5e23410ce",
@@ -86,10 +90,6 @@ self.__precacheManifest = [
   {
     "revision": "49a8ee6020d5e58095c278c940d45dd0",
     "url": "/portfolio/static/media/psychology.49a8ee60.jpeg"
-  },
-  {
-    "revision": "eb8263e9b10522d58dc7bde959509453",
-    "url": "/portfolio/static/media/logo.eb8263e9.png"
   },
   {
     "revision": "1379ee51cfdb8db72ac2e23ad9b3079d",
@@ -596,7 +596,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/FaktumTest-Bold.ed557f50.otf"
   },
   {
-    "revision": "c7596eadce51a183e601917b204a338e",
+    "revision": "df3f878fd40587f3278b5e4cc52c7627",
     "url": "/portfolio/index.html"
   }
 ];
