@@ -12,9 +12,9 @@ export default class Hello extends React.Component {
       <div className="hello">
         <ReactTooltip className="myTooltip"/>
         <div className="hello-description">
-          Hi! My name is <a href="mailto:kejtizuki@gmail.com" className="linkHighlight">Kasia Żukowska</a>, I’m a
-          Product Designer. <br /> I enjoy building interactive experiences and digital products. Currently
-          at <a href="https://www.pleo.io/" className="linkHighlight">Pleo @Bills</a>.
+          Hi! My name is <a href="mailto:kejtizuki@gmail.com" className="linkHighlight">Kasia Żukowska</a> and I’m a
+          Product Designer. I enjoy building interactive experiences and digital products. Currently
+          at <a href="https://www.pleo.io/" className="linkHighlight">Pleo @Invoices</a>.
           <p id="workLink">
           Scroll down to explore
         </p>
