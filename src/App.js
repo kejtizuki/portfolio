@@ -24,6 +24,7 @@ import Authenticate from './components/authenticate/authenticate';
 import ProjectCoordinates from './ProjectCoordinates/ProjectCoordinates';
 import IssuuMobile from './IssuuMobile/issuuMobile';
 import { BrowserRouter as Router, Route, Link, Redirect } from "react-router-dom";
+import "@fontsource/uncut-sans";
 import './index.scss';
 
 
@@ -71,7 +72,7 @@ class App extends Component {
 
      <Route exact path="/creatorContent" component={() => <div><ProjectOverview
          bgImage={require("./assets/img/CreatorContent/cover2.png")}
-         title="Issuu Creator Content space"
+         title="Issuu graphics editor"
          history={this.props.history}
          description="A place to repurpose Issuu's publication into new formats"
          keywords="Product designer (end-to-end process)"
@@ -227,8 +228,8 @@ augment awareness of the brand and the cruise product
       />
 
       <Route exact path="/issuuBranding" component={() => <div><ProjectOverview
-        bgImage={require("./assets/img/BrandRefresh/cover.png")}
-        title="Issuu Brand Refresh and Design System"
+        bgImage={require("./assets/img/BrandRefresh/supportingGraphics.png")}
+        title="Issuu brand refresh and design system"
         history={this.props.history}
         description="New strategy and visual guidelines for Issuu's evolving product and mission"
         keywords="Designer (Concept, Branding, Strategy, Art Direction, UI)"

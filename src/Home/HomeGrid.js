@@ -30,7 +30,7 @@ class Home extends Component {
         <div className="gridContainer">
 
             <div className='column2'>
-              <Project title="Issuu Creator Content space" image={require("../assets/img/CreatorContent/cover2.png")}
+              <Project title="Issuu graphics editor" image={require("../assets/img/CreatorContent/cover2.png")}
               className="gridCellCentered"
               description="A place to repurpose Issuu's publication into new formats"
               keywords="Product Design,UX,UI"
@@ -40,7 +40,7 @@ class Home extends Component {
             </div>
 
             <div className='column2'>
-              <Project title="Issuu Brand Refresh and Design System" image={require("../assets/img/BrandRefresh/Cover6.png")}
+              <Project title="Issuu brand refresh and design system" image={require("../assets/img/BrandRefresh/supportingGraphics.png")}
               className="gridCellCentered"
               description="New strategy and visual guidelines for Issuu's evolving product and mission"
               keywords="Branding,Strategy,Art Direction,UI,Concept"
@@ -53,7 +53,7 @@ class Home extends Component {
 
 
 
-        <div className="gridContainer margin40">
+        <div className="gridContainer margin80">
 
           <div className='column2'>
             <Project title="Redesign of Issuu mobile app" image={require("../assets/img/IssuuMobile/preview.png")}
@@ -79,7 +79,7 @@ class Home extends Component {
 
         </div>
 
-        <div className="gridContainer margin40">
+        <div className="gridContainer margin80">
 
         <div className='column2'>
         <Link to="/time-series">

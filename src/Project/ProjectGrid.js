@@ -53,8 +53,8 @@ class Project extends React.Component {
         'issuu': title === 'Improving Issuu analytics page',
         'issuuCreate': title === 'Issuu Create editor for real estate agents',
         'issuuReader': title === 'Consuming content on Issuu',
-        'issuuBranding': title === 'Issuu Brand Refresh and Design System',
-        'contentEditors': title === 'Issuu Creator Content space',
+        'issuuBranding': title === 'Issuu brand refresh and design system',
+        'contentEditors': title === 'Issuu graphics editor',
         'mobileApp': title === 'Redesign of Issuu mobile app'
       });
 
@@ -65,15 +65,12 @@ class Project extends React.Component {
 
             <div onClick={this.handleOnClick} onMouseOver={this.imageHover} onMouseOut={this.imageHover} className={projectClasses} data-tip='Read'>
               <div className={' imgFit'} style={{ backgroundImage: `url(${image})` }}></div>
-              {
-                (this.state.isHovered === true) &&
-                <div className='keywordsContainer transformAndFade'>{keywordsMap}</div>
-              }
-            </div>
+            </div>              
 
-
-            <div className="textContainer margin40" >
+            <div className="margin40" >
               <div className="headerTop">
+              <div className='keywordsContainer transformAndFade'>{keywordsMap}</div>
+
                 <h1 className="title">{title}</h1>
                 <p className='overviewDesc'>{description}</p>
               </div>

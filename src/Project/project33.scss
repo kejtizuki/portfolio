@@ -155,14 +155,6 @@
 }
 }
 
-
-.sfData {
-  background-color: #F3FA8A;
-  &:hover {
-    background-blend-mode: multiply;
-}
-}
-
 .coordinates {
   background-color: #a2d6c9;
   &:hover {
@@ -172,18 +164,18 @@
 
 
 .opi {
-  background: rgb(255,239,221);
-background: linear-gradient(90deg, rgba(255,239,221,1) 0%, rgba(183,176,255,1) 100%);
+  // background: rgb(255,239,221);
+// background: linear-gradient(90deg, rgba(255,239,221,1) 0%, rgba(183,176,255,1) 100%);
   //background-color: #905FCE;
   color: white;
   &:hover {
-    background-blend-mode: multiply;
+    // background-blend-mode: multiply;
 }
 }
 
 .mobileApp {
-  background: rgb(222,225,196);
-  background: radial-gradient(circle, rgba(222,225,196,1) 11%, #d7d7ff 27%, rgba(138,93,126,1) 40%, rgba(52,50,61,1) 55%, rgba(101,161,113,1) 68%, rgba(222,225,196,1) 78%);
+  // background: rgb(222,225,196);
+  // background: radial-gradient(circle, rgba(222,225,196,1) 11%, #d7d7ff 27%, rgba(138,93,126,1) 40%, rgba(52,50,61,1) 55%, rgba(101,161,113,1) 68%, rgba(222,225,196,1) 78%);
   //background: rgb(249,255,144);
   //background: linear-gradient(0deg, rgba(249,255,144,1) 0%, rgba(254,143,228,1) 100%);
 
@@ -191,7 +183,13 @@ background: linear-gradient(90deg, rgba(255,239,221,1) 0%, rgba(183,176,255,1) 1
   //background: rgb(238,241,86);
   //background: linear-gradient(0deg, rgba(238,241,86,1) 0%, rgba(236,123,221,1) 100%);
   &:hover {
-    background-blend-mode: multiply;
+    background-image: url(../assets/img/IssuuMobile/preview.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    filter: brightness(80%);
+    z-index: 1;
+    // background-blend-mode: multiply;
   }
 }
 
@@ -221,24 +219,39 @@ background: radial-gradient(circle, rgba(112,195,200,1) 4%, rgba(130,115,76,1) 2
 
 .ah {
 
-background: rgb(189,200,255);
-background: radial-gradient(circle, rgba(189,200,255,1) 0%, rgba(247,197,95,1) 100%);
+// background: rgb(189,200,255);
+// background: radial-gradient(circle, rgba(189,200,255,1) 0%, rgba(247,197,95,1) 100%);
 
   //background-color: #f7c560;
   &:hover {
-    background-blend-mode: multiply;
+    // background-blend-mode: multiply;
+
+    background-image: url(../assets/img/AH/preview-ah.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    filter: brightness(80%);
+    z-index: 1;
 }
 }
 
 .issuuBranding {
 
-  background: rgb(255,245,234);
-  background: radial-gradient(circle, rgba(255,245,234,1) 0%, rgba(95,93,228,1) 32%, rgba(255,90,71,1) 59%, rgba(255,245,234,1) 86%);
+  // background: rgb(255,245,234);
+  // background: radial-gradient(circle, rgba(255,245,234,1) 0%, rgba(95,93,228,1) 32%, rgba(255,90,71,1) 59%, rgba(255,245,234,1) 86%);
   //background: rgb(255,249,237);
   //background: linear-gradient(90deg, rgba(255,249,237,1) 0%, rgba(255,90,71,1) 50%, rgba(95,93,228,1) 100%);
   //background-color: #6b5e9b;
   &:hover {
-    background-blend-mode: multiply;
+    // background-blend-mode: multiply;
+    // background-color: #9B9AFC;
+    background-image: url(../assets/img/BrandRefresh/supportingGraphics.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    filter: brightness(80%);
+    z-index: 1;
+
   }
   color: black;
 }
@@ -279,12 +292,12 @@ background: radial-gradient(circle, rgba(196,225,225,1) 11%, rgba(249,245,191,1)
 }
 
 .keywordsContainer {
-  position: absolute;
-  z-index: 999;
-  left: 0;
-  right: 0;
+  // position: absolute;
+  // z-index: 999;
+  // left: 0;
+  // right: 0;
   top: 20px;
-  margin: 20px;
+  margin: 20px 0px 20px 0px;
   z-index: 1000;
   word-break: keep-all;
 }
@@ -293,7 +306,7 @@ background: radial-gradient(circle, rgba(196,225,225,1) 11%, rgba(249,245,191,1)
   font-size: 14px;
   color: black;
   background-color: white;
-  //background-color: rgba(0, 0, 0, 0.25);
+  border: 1px solid black;
   border-radius: 20px;
   padding: 6px 14px 6px 14px;
   margin: 0px 5px 0px 5px;

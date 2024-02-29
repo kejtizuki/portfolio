@@ -12,12 +12,12 @@ export default class Hello extends React.Component {
       <div className="hello">
         <ReactTooltip className="myTooltip"/>
         <div className="hello-description">
-          Hi! My name is <a href="mailto:kejtizuki@gmail.com" className="linkHighlight">Kasia Żukowska</a> and I’m a
-          Product Designer. I enjoy building interactive experiences and digital products. Currently
-          at <a href="https://www.pleo.io/" className="linkHighlight">Pleo @Invoices</a>.
-          <p id="workLink">
-          Scroll down to explore
-        </p>
+          Hi there!
+          <p id="workLink" className='smallText'>
+          I'm <a href="mailto:kejtizuki@gmail.com" className="linkHighlight">Kasia Żukowska</a> Polish
+          Product Designer based in Copenhagen, DK. I enjoy building interactive experiences and digital products. Currently
+          building Invoices at <a href="https://www.pleo.io/" className="linkHighlight">Pleo</a>.
+          </p>
           <div className="icons">
             <a href="https://www.linkedin.com/in/katarzyna-%C5%BCukowska-23398194/" data-tip="My digital CV"><img src={require("./../assets/img/001-linkedin.png")} alt="linkedin"/></a>
             <a href="https://dribbble.com/kejtizuki/shots" data-tip="Dribbble"><img src={require("./../assets/img/dribbble.png")} alt="https:/google.com"/></a>
