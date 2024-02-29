@@ -2,7 +2,7 @@
   "name": "mywebsite",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kejtizuki.com",
+  "homepage": "https://kejtizuki.github.io/portfolio",
   "dependencies": {
     "@fontsource/uncut-sans": "^5.0.7",
     "classnames": "^2.2.6",
