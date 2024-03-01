@@ -1,19 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "f0de6be761b50d082edc",
-    "url": "/portfolio/static/css/main.d62088f2.chunk.css"
+    "revision": "a369fc1df82289448ac8",
+    "url": "/portfolio/static/css/main.40976746.chunk.css"
   },
   {
-    "revision": "f0de6be761b50d082edc",
-    "url": "/portfolio/static/js/main.15338942.chunk.js"
+    "revision": "a369fc1df82289448ac8",
+    "url": "/portfolio/static/js/main.8a38c6e6.chunk.js"
   },
   {
     "revision": "53ebc025fca807d4dbea",
     "url": "/portfolio/static/js/runtime~main.f308c8e6.js"
   },
   {
-    "revision": "2b4f1184d31621cd4a34",
-    "url": "/portfolio/static/js/2.80b05627.chunk.js"
+    "revision": "b519d61aab68ebf9ea0e",
+    "url": "/portfolio/static/css/2.474f1eb5.chunk.css"
+  },
+  {
+    "revision": "b519d61aab68ebf9ea0e",
+    "url": "/portfolio/static/js/2.03255dea.chunk.js"
   },
   {
     "revision": "546f67de07c8dddf3baabbfcfec66c2b",
@@ -34,6 +38,10 @@ self.__precacheManifest = [
   {
     "revision": "eb8263e9b10522d58dc7bde959509453",
     "url": "/portfolio/static/media/logo.eb8263e9.png"
+  },
+  {
+    "revision": "1798c3f4841fd056cda9d64c532b90f4",
+    "url": "/portfolio/static/media/supportingGraphics.1798c3f4.png"
   },
   {
     "revision": "f0819de303ca59c45dbc3fe5e23410ce",
@@ -118,6 +126,10 @@ self.__precacheManifest = [
   {
     "revision": "b73f1fe7c67f6ea8bc26bb5af4efd815",
     "url": "/portfolio/static/media/forum.b73f1fe7.png"
+  },
+  {
+    "revision": "e69823b9bfab45bf9999dfb86786e364",
+    "url": "/portfolio/static/media/preview-ah.e69823b9.gif"
   },
   {
     "revision": "01e8f76c2c8e1b8aefdfa2dfa1e8c998",
@@ -212,16 +224,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/keyTakeaways.78b7ff37.jpg"
   },
   {
-    "revision": "1af493c91f607c7c7670b1a2f27e76b4",
-    "url": "/portfolio/static/media/Cover6.1af493c9.png"
-  },
-  {
     "revision": "3552e447b2073bc7615590289091264c",
     "url": "/portfolio/static/media/preview-perspective.3552e447.png"
-  },
-  {
-    "revision": "e69823b9bfab45bf9999dfb86786e364",
-    "url": "/portfolio/static/media/preview-ah.e69823b9.gif"
   },
   {
     "revision": "b9f389d435fc93feb4aae0bb596e3df9",
@@ -560,6 +564,14 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/goals.3dc9b3d8.png"
   },
   {
+    "revision": "1a0a1ef28efdc4bf7679b29e46a2df40",
+    "url": "/portfolio/static/media/uncut-sans-latin-400-normal.1a0a1ef2.woff2"
+  },
+  {
+    "revision": "50f77a41103fabc2d86ce91831845b9f",
+    "url": "/portfolio/static/media/uncut-sans-latin-400-normal.50f77a41.woff"
+  },
+  {
     "revision": "dd939eeb470b6fc68a853336b38def1d",
     "url": "/portfolio/static/media/dataVizPreview.dd939eeb.png"
   },
@@ -584,10 +596,6 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/preset-fast.55f6a2e5.gif"
   },
   {
-    "revision": "cffa894e7164db506d77574fdeebe2e4",
-    "url": "/portfolio/static/media/cover.cffa894e.png"
-  },
-  {
     "revision": "fd1a73d23531da86395050a9d509a70f",
     "url": "/portfolio/static/media/PlantinInfantMTStd.fd1a73d2.otf"
   },
@@ -596,7 +604,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/FaktumTest-Bold.ed557f50.otf"
   },
   {
-    "revision": "df3f878fd40587f3278b5e4cc52c7627",
+    "revision": "8e7f9c97e26796748875986ac790072c",
     "url": "/portfolio/index.html"
   }
 ];
