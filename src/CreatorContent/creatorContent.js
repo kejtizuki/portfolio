@@ -115,7 +115,7 @@ class CreatorContent extends React.Component {
       <p>
       After understanding the set of features that go into the MVP I designed the layout that can easily be modified and expanded to accommodate future iterations.
       There are two panels on left and sight side. The leftside panel's content changes based on selected menu item. The right-side panel is used to create GIFs and
-      multi-page posts. 
+      multi-page posts.
       </p>
 
       </div>

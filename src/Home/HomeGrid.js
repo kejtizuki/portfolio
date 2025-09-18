@@ -30,7 +30,7 @@ class Home extends Component {
         <div className="gridContainer">
 
             <div className='column2'>
-              <Project title="Issuu graphics editor" image={require("../assets/img/CreatorContent/cover2.png")}
+              <Project title="Issuu graphics editor" image={require("../assets/img/CreatorContent/cover1.png")}
               className="gridCellCentered"
               description="A place to repurpose Issuu's publication into new formats"
               keywords="Product Design,UX,UI"
@@ -50,6 +50,21 @@ class Home extends Component {
             </div>
 
           </div>
+
+          <div className="gridContainer">
+
+              <div className='column2'>
+                <Project title="Pleo Invoice approvals" image={require("../assets/img/Pleo/Approvals/cover1.png")}
+                className="gridCellCentered"
+                description="Improving reviewing invoices on Pleo"
+                keywords="Product Design,UX,UI"
+                history={this.props.history}
+                redirect="invoiceApprovals"
+                />
+              </div>
+
+
+            </div>
 
 
 
@@ -94,7 +109,7 @@ class Home extends Component {
         </div>
 
 
-        <div className='column2'>
+        {/*<div className='column2'>
         <Link to="/dementiaSupport">
         <Project title="Dementia Support App" image={require("../assets/img/OPI/opi-main.png")}
         className="gridCellCentered"
@@ -104,11 +119,7 @@ class Home extends Component {
         redirect="dementiaSupport"
         />
         </Link>
-        </div>
-
-        </div>
-
-        <div className="gridContainer margin40">
+        </div>*/}
 
         <div className='column2'>
         <Link to="/augmentedHearing">
@@ -120,19 +131,10 @@ class Home extends Component {
         redirect="augmentedHearing"
         />
         </Link>
+
         </div>
 
-        <div className='column2'>
-        <Link to="/issuu">
-        <Project title="Improving Issuu analytics page" image={require("../assets/img/IssuuPoster/scrollStats.gif")}
-        className="gridCellCentered"
-        description="Redesign of data dashboard for Issuu"
-        keywords="UI,UX,Web Design,Data viz,Product"
-        history={this.props.history}
-        redirect="issuu"
-        />
-        </Link>
-        </div>
+
 
 
 

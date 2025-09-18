@@ -21,7 +21,7 @@ class Experience extends React.Component {
   render() {
 
     const list = [
-      {id: 0, name: "Pleo", url: "https://pleo.io/", description: "I'm a part of Invoices Bookkeeping team. Currently I'm building Suppliers Dashboard. I've designed bulk payments feature, suggested inputs and Invoices onboarding experience. I've also contributed to designing Invoices approvals feature (worked with another designer).",
+      {id: 0, name: "Pleo", url: "https://pleo.io/", description: "As part of the Accounts Payable team I led many projects within Invoices and Purchase Orders. ",
       img: require("../assets/img/IssuuPoster/logo.png"), role: "Product Designer"},
       {id: 1, name: "Issuu", url: "https://issuu.com/", description: "Worked on SaaS core features from discovery to delivery. Contributed to Issuu’s Design System and design Content Creation editor. Other long-term projects include: Issuu's rebranding (collaborated closely with a lead designer), improving the reading experience on the mobile platform, redesign of Issuu's analytics page (taking into account conversion rates). ",
       img: require("../assets/img/IssuuPoster/logo.png"), role: "UX Designer"},

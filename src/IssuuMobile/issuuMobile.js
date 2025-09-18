@@ -36,7 +36,7 @@ class IssuuMobile extends React.Component {
 
       </div>
 
-      <img src={require("./../assets/img/IssuuMobile/goals.png")} className="mainImg"/>
+      <img src={require("./../assets/img/IssuuMobile/mylibrary.png")} className="mainImg"/>
 
       </div>
 

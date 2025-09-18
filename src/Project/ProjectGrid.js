@@ -50,12 +50,13 @@ class Project extends React.Component {
         'ah': title === 'Augmented Hearing',
         'opi': title === 'Dementia Support App',
         'thesis': title === 'Medical time series data visualization',
-        'issuu': title === 'Improving Issuu analytics page',
+        'issuuAnalytics': title === 'Improving Issuu analytics page',
         'issuuCreate': title === 'Issuu Create editor for real estate agents',
         'issuuReader': title === 'Consuming content on Issuu',
         'issuuBranding': title === 'Issuu brand refresh and design system',
         'contentEditors': title === 'Issuu graphics editor',
-        'mobileApp': title === 'Redesign of Issuu mobile app'
+        'mobileApp': title === 'Redesign of Issuu mobile app',
+        'pleoApprovals': title === 'Pleo Invoice approvals'
       });
 
 
@@ -65,11 +66,11 @@ class Project extends React.Component {
 
             <div onClick={this.handleOnClick} onMouseOver={this.imageHover} onMouseOut={this.imageHover} className={projectClasses} data-tip='Read'>
               <div className={' imgFit'} style={{ backgroundImage: `url(${image})` }}></div>
-            </div>              
+            </div>
 
             <div className="margin40" >
               <div className="headerTop">
-              <div className='keywordsContainer transformAndFade'>{keywordsMap}</div>
+              {/* <div className='keywordsContainer transformAndFade'>{keywordsMap}</div>*/}
 
                 <h1 className="title">{title}</h1>
                 <p className='overviewDesc'>{description}</p>

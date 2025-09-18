@@ -45,7 +45,8 @@ class ProjectOverview extends React.Component {
       'issuuReader': title === 'Consuming content on Issuu',
       'issuuBrandingOverview': title === 'Issuu brand refresh and design system',
       'contentEditorsOverview': title === 'Issuu Creator Content space',
-      'mobileAppOverview': title === 'Redesign of Issuu mobile app'
+      'mobileAppOverview': title === 'Redesign of Issuu mobile app',
+      'pleoApprovals': title === 'Pleo Invoice approvals'
     });
 
     return(

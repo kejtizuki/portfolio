@@ -8,20 +8,17 @@ import About from './About/About';
 import Footer from './Footer/Footer';
 import Home from './Home/HomeGrid';
 import ProjectOverview from './ProjectOverview/ProjectOverview';
-import ProjectSunWise from './ProjectSunWise/ProjectSunWise';
 import ProjectMikeller from './ProjectMikeller/ProjectMikeller';
-import ProjectSF from './ProjectSF/ProjectSF';
-import ProjectCosta from './ProjectCosta/ProjectCosta';
 import ProjectThesis from './ProjectThesis/ProjectThesis';
 import ProjectAH from './ProjectAH/ProjectAH';
 import IssuuStats from './IssuuStats/IssuuStats';
-import ProjectIssuuCreate from './ProjectIssuuCreate/ProjectIssuuCreate';
 import ProjectIssuuReader from './ProjectIssuuReader/ProjectIssuuReader';
 import BrandRefreshIssuu from './BrandRefreshIssuu/BrandRefreshIssuu';
 import CreatorContent from './CreatorContent/creatorContent';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import Authenticate from './components/authenticate/authenticate';
 import ProjectCoordinates from './ProjectCoordinates/ProjectCoordinates';
+import InvoiceApprovals from './InvoiceApprovals/InvoiceApprovals';
 import IssuuMobile from './IssuuMobile/issuuMobile';
 import { BrowserRouter as Router, Route, Link, Redirect } from "react-router-dom";
 import "@fontsource/uncut-sans";
@@ -98,21 +95,6 @@ class App extends Component {
 
 
       <Route exact path="/about" component={About} />
-      <Route exact path="/sunWise" component={() => <div><ProjectOverview
-        bgImage={require("./assets/img/SunWise/sunwise-main.jpg")}
-        title="SunWise"
-        history={this.props.history}
-        description="Protect your skin from high UV index. Know when to stop sunbathing."
-        keywords="UX,UI,User Testing"
-        tools="Adobe Photoshop, Adobe Illustrator"
-        type="Group project (3 people)"
-        longDesc="This project aims to
-develop a mobile application that helps its users minimize the sunshine’s
-risks while still enjoying its benefits. The application prevents
-sun overexposure by allowing users to track the time they
-spend outdoors in relation to the UV Index levels. The project was developed as a part of Personal Data Interaction class at DTU."
-/> <ProjectSunWise /></div>}
-      />
 
       <Route exact path="/issuuMobile" component={() => <div><ProjectOverview
           bgImage={require("./assets/img/IssuuMobile/preview.png")}
@@ -186,22 +168,7 @@ designed to filter the data in different ways."
         based on it we came up with the concept and initial prototype."
       /><ProjectMikeller /></div>}
       />
-      <Route exact path="/costa" component={() => <div><ProjectOverview
-        bgImage={require("./assets/img/Costa/img.png")}
-        title="New Costa cruise experience"
-        history={this.props.history}
-        description="Experience costa"
-        keywords="UI, Ideation, Concept, Prototyping"
-        tools="Adobe Xd"
-        type="Group project (2 people)"
-        longDesc='The project was created as a response to 48h Reply Creative Challenge in Digital Experience category. The task was
-        to create a service that can be
-leveraged also from occasional guests coming from the city port. Main assumptions were to augment onboard revenues
-,
-augment awareness of the brand and the cruise product
- and get past cruisers involved again. '
-      /><ProjectCosta /></div>}
-      />
+
 
       <Route exact path="/augmentedHearing" component={() => <div><ProjectOverview
         bgImage={require("./assets/img/AH/preset-fast.gif")}
@@ -238,6 +205,19 @@ augment awareness of the brand and the cruise product
         longDesc='Issuu needed a new look and feel as the product grew and our services expanded. The components used accross time lacked consistancy and the visuals needed to be refreshed. '
       /><BrandRefreshIssuu /></div>}
       />
+
+      <Route exact path="/invoiceApprovals" component={() => <div><ProjectOverview
+        bgImage={require("./assets/img/Pleo/Approvals/cover1.png")}
+        title="Pleo Invoice approvals"
+        history={this.props.history}
+        description="xxxx"
+        keywords="Designer (Concept, Branding, Strategy, Art Direction, UI)"
+        tools="Figma"
+        type="xxxx"
+        longDesc='xxx'
+      /><InvoiceApprovals /></div>}
+      />
+
 
       <Footer />
 
