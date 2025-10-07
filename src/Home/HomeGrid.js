@@ -26,6 +26,21 @@ class Home extends Component {
         <Hello />
 
 
+        <div className="gridContainer">
+
+            <div className='column4'>
+              <Project title="Pleo Accounts Payables" image={require("../assets/img/Pleo/Approvals/Thumbnail2.png")}
+              className="gridCellCentered"
+              description="Scaling Pleo Invoices into Accounts Payable"
+              keywords="Product Design,UX,UI"
+              history={this.props.history}
+              redirect="invoiceApprovals"
+              />
+            </div>
+
+
+          </div>
+
 
         <div className="gridContainer">
 
@@ -50,98 +65,6 @@ class Home extends Component {
             </div>
 
           </div>
-
-          <div className="gridContainer">
-
-              <div className='column2'>
-                <Project title="Pleo Invoice approvals" image={require("../assets/img/Pleo/Approvals/cover1.png")}
-                className="gridCellCentered"
-                description="Improving reviewing invoices on Pleo"
-                keywords="Product Design,UX,UI"
-                history={this.props.history}
-                redirect="invoiceApprovals"
-                />
-              </div>
-
-
-            </div>
-
-
-
-        <div className="gridContainer margin80">
-
-          <div className='column2'>
-            <Project title="Redesign of Issuu mobile app" image={require("../assets/img/IssuuMobile/preview.png")}
-            className="gridCellCentered"
-            description="Redesign of Issuu mobile app"
-            keywords="Product Design,Mobile,UX,UI"
-            history={this.props.history}
-            redirect="issuuMobile"
-            />
-          </div>
-
-          <div className='column2'>
-          <Link to="/issuuReader">
-          <Project title="Consuming content on Issuu" image={require("../assets/img/IssuuCreate/ASpreview.png")}
-          className="gridCellCentered"
-          description="Understanding reading experience on Issuu mobile"
-          keywords="Resaerch,Concept,Product Design"
-          history={this.props.history}
-          redirect="issuuReader"
-          />
-          </Link>
-          </div>
-
-        </div>
-
-        <div className="gridContainer margin80">
-
-        <div className='column2'>
-        <Link to="/time-series">
-        <Project title="Medical time series data visualization" image={require("../assets/img/Thesis/preview-perspective.png")}
-        className="gridCellCentered"
-        description="Medical time series data visualization"
-        keywords="Concept,UI,UX,Coding,Data Viz,Research"
-        history={this.props.history}
-        redirect="time-series"
-        />
-        </Link>
-        </div>
-
-
-        {/*<div className='column2'>
-        <Link to="/dementiaSupport">
-        <Project title="Dementia Support App" image={require("../assets/img/OPI/opi-main.png")}
-        className="gridCellCentered"
-        description="An app designed to support dementia patient's relatives."
-        keywords="UX,UI,Concept,Design System,Mobile"
-        history={this.props.history}
-        redirect="dementiaSupport"
-        />
-        </Link>
-        </div>*/}
-
-        <div className='column2'>
-        <Link to="/augmentedHearing">
-        <Project title="Augmented Hearing" image={require("../assets/img/AH/preview-ah.gif")}
-        className="gridCellCentered"
-        description="Augmented hearing app created as a digital tool to interact with a hearing aid."
-        keywords="UI,UX,Concept,Motion"
-        history={this.props.history}
-        redirect="augmentedHearing"
-        />
-        </Link>
-
-        </div>
-
-
-
-
-
-      </div>
-
-
-
 
 
         <Experience />

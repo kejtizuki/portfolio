@@ -1,0 +1,19 @@
+@import "../assets/styles/main.scss";
+
+.coloredRow {
+  background-color: #444C4F;
+}
+
+.playerBlack {
+  background-color: #444C4F;
+  .video-react .video-react-play-control {
+    display: none !important;
+  }
+}
+
+.beforeAfterText {
+  position: relative;
+  top: 40px;
+  color: white;
+  font-weight: 200;
+}

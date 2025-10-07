@@ -56,8 +56,14 @@ class Project extends React.Component {
         'issuuBranding': title === 'Issuu brand refresh and design system',
         'contentEditors': title === 'Issuu graphics editor',
         'mobileApp': title === 'Redesign of Issuu mobile app',
-        'pleoApprovals': title === 'Pleo Invoice approvals'
+        'pleoAP': title === 'Pleo Accounts Payables'
       });
+
+      const imgClasses = classNames ({
+          'imgFit': title === 'Issuu brand refresh and design system' || 'Issuu graphics editor',
+          'imgLong': title === 'Pleo Accounts Payables'
+        }
+      )
 
 
     return(
@@ -65,7 +71,7 @@ class Project extends React.Component {
         <ReactTooltip className="myTooltip"/>
 
             <div onClick={this.handleOnClick} onMouseOver={this.imageHover} onMouseOut={this.imageHover} className={projectClasses} data-tip='Read'>
-              <div className={' imgFit'} style={{ backgroundImage: `url(${image})` }}></div>
+              <div className={imgClasses} style={{ backgroundImage: `url(${image})` }}></div>
             </div>
 
             <div className="margin40" >

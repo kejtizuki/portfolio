@@ -5,6 +5,7 @@ import Experience from './Experience/Experience';
 import OPI from './OPI/OPI';
 import Skill from './Skill/Skill';
 import About from './About/About';
+import UIExplo from './UIExplo/UIExplo';
 import Footer from './Footer/Footer';
 import Home from './Home/HomeGrid';
 import ProjectOverview from './ProjectOverview/ProjectOverview';
@@ -95,6 +96,8 @@ class App extends Component {
 
 
       <Route exact path="/about" component={About} />
+
+      <Route exact path="/uiexplorations" component={UIExplo} />
 
       <Route exact path="/issuuMobile" component={() => <div><ProjectOverview
           bgImage={require("./assets/img/IssuuMobile/preview.png")}
@@ -207,14 +210,14 @@ designed to filter the data in different ways."
       />
 
       <Route exact path="/invoiceApprovals" component={() => <div><ProjectOverview
-        bgImage={require("./assets/img/Pleo/Approvals/cover1.png")}
-        title="Pleo Invoice approvals"
+        bgImage={require("./assets/img/Pleo/Approvals/Thumbnail.png")}
+        title="Pleo Accounts Payables"
         history={this.props.history}
-        description="xxxx"
+        description="Scaling Invoices into Accounts Payables. "
         keywords="Designer (Concept, Branding, Strategy, Art Direction, UI)"
         tools="Figma"
-        type="xxxx"
-        longDesc='xxx'
+        type="Product Design"
+        longDesc='When I joined Pleo, Invoices offering was very basic, without advanced approval flows or pre-purchase controls. The product was offered only in UK. During my tiem at pleo I worked on various projects, adding more controls to Invoice payment process or adding market-specific features. '
       /><InvoiceApprovals /></div>}
       />
 
