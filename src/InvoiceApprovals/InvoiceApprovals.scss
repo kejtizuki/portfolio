@@ -1,11 +1,12 @@
 @import "../assets/styles/main.scss";
 
 .coloredRow {
-  background-color: #444C4F;
+  background-color: #3C4245;
 }
 
 .playerBlack {
   background-color: #444C4F;
+  border-radius: 16px !important;
   .video-react .video-react-play-control {
     display: none !important;
   }

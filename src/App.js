@@ -97,7 +97,7 @@ class App extends Component {
 
       <Route exact path="/about" component={About} />
 
-      <Route exact path="/uiexplorations" component={UIExplo} />
+      <Route exact path="/smallerprojects" component={UIExplo} />
 
       <Route exact path="/issuuMobile" component={() => <div><ProjectOverview
           bgImage={require("./assets/img/IssuuMobile/preview.png")}

@@ -107,18 +107,7 @@ class InvoiceApprovals extends React.Component {
 
       </div>
 
-      <div className='row '>
-      <div className="col5 ">
-      <Player
-        playsInline
-        src={require("./../assets/img/Pleo/Approvals/lineItems.mov")}
-        className='whitePlayer'
-      >
-        <ControlBar autoHide disableCompletely />
-        <BigPlayButton position="center" />
-      </Player>
-      </div>
-      </div>
+      
 
       </div>
 
