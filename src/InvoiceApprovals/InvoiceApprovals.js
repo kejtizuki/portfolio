@@ -93,21 +93,49 @@ class InvoiceApprovals extends React.Component {
       </div>
       </div>
 
+
       <div className='row '><img src={require("./../assets/img/Pleo/Approvals/POs.png")} className="mainImgNoMargin contentShadowSmallRadius"/></div>
 
-      <div className='row '>
-      <Player
-        playsInline
-        src={require("./../assets/img/Pleo/Approvals/POs.mov")}
-        className='contentShadow '
-      >
-        <ControlBar autoHide disableCompletely />
-        <BigPlayButton position="center" />
-      </Player>
+      <div className='row justifyCenter'>
+      <div className='col5'>
+      <h2>Layout explorations</h2>
+      <p>I explored different layout approaches to organize information in a way that felt intuitive without becoming visually heavy. </p>
+      <p>An important part of this process was collaborating with engineers early. Through these discussions, we realized the flow needed to be split into logical steps that aligned with the data model.
+      We decided on a two-step approach: create the form first, then add reviewers. This structure worked better technically and made more sense to users.</p>
+      </div>
+      </div>
+      <div className='row'>
+      <img src={require("./../assets/img/Pleo/Approvals/POs-explorations.png")} className="mainImgNoMargin"/>
 
       </div>
 
-      
+      <div className='row'>
+      <div className='col5'>
+      <h2>Final layout</h2>
+      <p>After few iterations I landed on the final layout. Two step structure provided a simple constraint. The first step was more challenging to design, as it needed to handle much more data than the second one.
+      Through user interviews, I tested different information hierarchies to understand what felt most natural. Users gravitated toward a simple progression: general details first, then line items, with address information at the end.</p>
+      <p>This sequence matched the mental model of how they think about purchase orders.</p>
+      <p>Line items required a lot of horizontal space for comfortable table interaction. I chose maximum width layout to optimise usability. Narrower layouts forced horizontal scrolling which can slow down the data entry and confuse users. </p>
+      <p>As the form is quite long, I added a simple fixed header which stays in place while the user scrolls down. This helps them to not loose context and the most important information while filling in the form.  </p>
+      </div>
+      </div>
+      <div className='row'>
+      <img src={require("./../assets/img/Pleo/Approvals/POfinal.png")} className="mainImgNoMargin"/>
+
+      </div>
+
+      <div className='row'><h2>Implemented design</h2></div>
+      <div className='row'>
+      <img src={require("./../assets/img/Pleo/Approvals/POs.gif")} className="mainImgNoMargin contentShadowSmallRadius"/>
+
+      </div>
+
+      <div className='row'>
+      <div className="col7 marginRight80">
+      <img src={require("./../assets/img/Pleo/Approvals/lineItems.gif")} className="mainImgNoMargin contentShadowSmallRadius"/>
+      </div>
+      <div className='col3'><p>I continued iterating on the line items challenge in the display view. When viewing a created purchase order, users need to read through line items quickly but occasionally edit them. I explored an interaction that supported both modes.</p></div>
+      </div>
 
       </div>
 

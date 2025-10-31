@@ -217,7 +217,7 @@ designed to filter the data in different ways."
         keywords="Designer (Concept, Branding, Strategy, Art Direction, UI)"
         tools="Figma"
         type="Product Design"
-        longDesc='When I joined Pleo, Invoices offering was very basic, without advanced approval flows or pre-purchase controls. The product was offered only in UK. During my tiem at pleo I worked on various projects, adding more controls to Invoice payment process or adding market-specific features. '
+        longDesc='When I joined Pleo, Invoices offering was very basic, without advanced approval flows or pre-purchase controls. The product was offered only in UK. During my time at Pleo I led various projects, focused on adding more security to Invoice payment process or developing market-specific features. I also contributed to creating vision for Accounts Payables product and proposed a redesign.'
       /><InvoiceApprovals /></div>}
       />
 
