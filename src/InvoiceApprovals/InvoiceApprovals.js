@@ -22,13 +22,16 @@ class InvoiceApprovals extends React.Component {
       <h1>Automating invoice reviews</h1>
       <h2>Problem</h2>
       <p>
-      Mid-sized companies needed better control mechanisms in order to pay invoices. They give the finance team confidence in paying and avoiding errors.
-      I added invoie reviews to Invoices, which meant allowing Admins to manually add reviewers in V1 and building more complex review workflow based on company settings in V2.
+      Mid-sized companies needed control mechanisms to confidently approve
+      and pay invoices without errors.
+
+      Our initial solution required manual reviewer assignment. Finance
+      managers had to open every invoice and add reviewers one by one. The process was frustrating and very manual, and it could be clearly automated.
       </p>
 
       <h2>What I did</h2>
       <p>
-      I worked on transitioning the workflow from manual to automated. In the new system, reviewers are automatically assigned to invoices based on invoice amount, tags, and team. Worked closely with Review Management team and Design Systems team to introduce the workflow to my area of the product.
+      I worked on transitioning the workflow from manual to automatic. In the new system, reviewers are automatically assigned to invoices based on the amount, tags, and team. Worked closely with Review Management team and Design Systems team to introduce the workflow to my area of the product.
       </p>
 
       <h2>Impact</h2>
@@ -37,7 +40,6 @@ class InvoiceApprovals extends React.Component {
       </div>
 
       </div>
-
 
 
 
@@ -81,15 +83,22 @@ class InvoiceApprovals extends React.Component {
       Purchase orders in company's buying flow is a way to bring more control and certainty to the process. Our customers wanted a way to get their purchase approved before the invoice is sent. This way, they can save time and hussle when invoice is due to be paid.
       </p>
 
-      <h2>What I did</h2>
+      <h2>Discovery research</h2>
       <p>
-      I led the design of our POs product from scratch, leading the entire discovery process, including customer recruitment and interviews. This involved deeply understanding user needs and pain points in pre-purchase controls. I structured and led the conversations with users, then designed the MVP, collaborating with the freelancers team. I guided the team on the usage of our design system components and tested the product multiple times pre-release so that the implementation meets our standards.
-      Led the alpha testing with customers and the following product rollout.
-
+      After analysing existing feedback from Productboard I organized 6 discover calls with Finance Managers to understand their workflows. I identified
+      patterns in how companies handle pre-purchase approvals.
+      I mapped the current workflows and scoped the MVP.
+      Before rollout, led 20 alpha tests with customers where we tested implemented solution life.
       </p>
+      <h3>Key insights</h3>
+      <li>Finance teams needed visibility into commitments before
+      invoices arrived, but existing tools were disconnected
+      from their payment systems</li>
+      <li>Pre-purchase approavals were key to paying invoices on time.</li>
+      <li>Finance teams wanted a simple tool allowing them to create purchase order, which then is sent to their Supplier. Supplier sents an invoice which needs to be matched with the PO</li>
 
       <h2>Impact</h2>
-      <p>Since February 2025, 48 companies created a purchase order. </p>
+      <p>The product is still in beta phase and customers are trying it out. We get ongoing feedback and improve the product to achieve full product-market fit.</p>
       </div>
       </div>
 
@@ -121,7 +130,19 @@ class InvoiceApprovals extends React.Component {
       </div>
       <div className='row'>
       <img src={require("./../assets/img/Pleo/Approvals/POfinal.png")} className="mainImgNoMargin"/>
+      </div>
+      <div className='row'>
+      <img src={require("./../assets/img/Pleo/Approvals/Table.png")} className="mainImgNoMargin"/>
+      </div>
+      <div className='row'>
+      <img src={require("./../assets/img/Pleo/Approvals/POfinal-review.png")} className="mainImgNoMargin"/>
+      </div>
 
+      <div className='row'>
+      <div className="col7 marginRight80">
+      <img src={require("./../assets/img/Pleo/Approvals/lineItems.gif")} className="mainImgNoMargin contentShadowSmallRadius"/>
+      </div>
+      <div className='col3'><h2>Line items display vs edit mode</h2><p>I continued iterating on the line items challenge in the display view. When viewing a created purchase order, users need to read through line items quickly but occasionally edit them. I explored an interaction that supported both modes.</p></div>
       </div>
 
       <div className='row'><h2>Implemented design</h2></div>
@@ -130,14 +151,11 @@ class InvoiceApprovals extends React.Component {
 
       </div>
 
-      <div className='row'>
-      <div className="col7 marginRight80">
-      <img src={require("./../assets/img/Pleo/Approvals/lineItems.gif")} className="mainImgNoMargin contentShadowSmallRadius"/>
-      </div>
-      <div className='col3'><p>I continued iterating on the line items challenge in the display view. When viewing a created purchase order, users need to read through line items quickly but occasionally edit them. I explored an interaction that supported both modes.</p></div>
       </div>
 
-      </div>
+      <div className='row '><img src={require("./../assets/img/Pleo/Approvals/beforeafter.png")} className="mainImgNoMargin"/></div>
+
+
 
 
 

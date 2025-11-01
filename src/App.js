@@ -97,7 +97,7 @@ class App extends Component {
 
       <Route exact path="/about" component={About} />
 
-      <Route exact path="/smallerprojects" component={UIExplo} />
+      <Route exact path="/olderprojects" component={UIExplo} />
 
       <Route exact path="/issuuMobile" component={() => <div><ProjectOverview
           bgImage={require("./assets/img/IssuuMobile/preview.png")}
@@ -217,7 +217,7 @@ designed to filter the data in different ways."
         keywords="Designer (Concept, Branding, Strategy, Art Direction, UI)"
         tools="Figma"
         type="Product Design"
-        longDesc='When I joined Pleo, Invoices offering was very basic, without advanced approval flows or pre-purchase controls. The product was offered only in UK. During my time at Pleo I led various projects, focused on adding more security to Invoice payment process or developing market-specific features. I also contributed to creating vision for Accounts Payables product and proposed a redesign.'
+        longDesc='When I joined Pleo, the Invoices product was basic — available only in the UK without advanced approval flows or pre-purchase controls. I led the design of two features that transformed our offering: automated invoice review workflows and purchase orders. These additions enabled expansion into Germany, where such controls are market requirements, and positioned Pleo to compete in the broader accounts payable space. I also contributed to defining the AP product vision and proposed a redesign for Invoices.'
       /><InvoiceApprovals /></div>}
       />
 

@@ -17,10 +17,10 @@ class Navbar extends React.Component {
       <div className="navigation">
       <ul>
       <Link to="/">
-        <li>Projects</li>
+        <li>Work</li>
       </Link>
-      <Link to="/smallerprojects">
-        <li>Smaller projects</li>
+      <Link to="/olderprojects">
+        <li>Older projects</li>
       </Link>
       <Link to="/about">
         <li>About</li>

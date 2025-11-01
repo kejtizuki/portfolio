@@ -31,7 +31,7 @@ class Home extends Component {
             <div className='column4'>
               <Project title="Pleo Accounts Payables" image={require("../assets/img/Pleo/Approvals/Thumbnail2.png")}
               className="gridCellCentered"
-              description="Scaling Pleo Invoices into Accounts Payable"
+              description="Scaling Pleo Invoices into Accounts Payables"
               keywords="Product Design,UX,UI"
               history={this.props.history}
               redirect="invoiceApprovals"
