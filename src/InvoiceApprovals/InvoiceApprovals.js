@@ -43,6 +43,7 @@ class InvoiceApprovals extends React.Component {
 
 
 
+
       <div className='row coloredRow'>
       <div className='col5'>
 
@@ -78,36 +79,56 @@ class InvoiceApprovals extends React.Component {
       <div className="col5 ">
 
       <h1>Purchase orders</h1>
+      <p>After launching automated invoice reviews, I led discovery for the next
+      phase: pre-purchase controls. The goal was to understand how companies
+      handle procurement approvals before invoices arrive.</p>
+      </div>
+      </div>
+
+      </div>
+
+      <div className='row '><img src={require("./../assets/img/Pleo/Approvals/POs.png")} className="mainImgNoMargin contentShadowSmallRadius"/></div>
+
+      <div className='projectContainer'>
+
+      <div className='row justifyCenter'>
+      <div className="col5">
       <h2>Problem</h2>
       <p>
-      Purchase orders in company's buying flow is a way to bring more control and certainty to the process. Our customers wanted a way to get their purchase approved before the invoice is sent. This way, they can save time and hussle when invoice is due to be paid.
+      Purchase orders bring control and certainty to a company's buying process.
+      Our customers wanted approval process to happen before making purchases, not after invoices
+      arrived. This would save time and eliminate delayed payments due to missing approvals.
+      Additionally, POs are a good way to control cash flow and budgeting.
       </p>
 
       <h2>Discovery research</h2>
       <p>
-      After analysing existing feedback from Productboard I organized 6 discover calls with Finance Managers to understand their workflows. I identified
-      patterns in how companies handle pre-purchase approvals.
-      I mapped the current workflows and scoped the MVP.
-      Before rollout, led 20 alpha tests with customers where we tested implemented solution life.
-      </p>
-      <h3>Key insights</h3>
-      <li>Finance teams needed visibility into commitments before
-      invoices arrived, but existing tools were disconnected
-      from their payment systems</li>
-      <li>Pre-purchase approavals were key to paying invoices on time.</li>
-      <li>Finance teams wanted a simple tool allowing them to create purchase order, which then is sent to their Supplier. Supplier sents an invoice which needs to be matched with the PO</li>
+      After analyzing existing feedback from Productboard, I conducted 6 discovery calls
+      with Finance Managers to understand their workflows. I identified
+      patterns in how companies handle pre-purchase approvals, mapped current
+      processes, and scoped the MVP.
 
+      Before rollout, I led 20 alpha tests with customers to validate the solution
+      and iterate based on real usage.
+      </p>
+      <h2>Key insights</h2>
+      <ul>
+        <li>Finance teams used Excel to get pre-purchase approvals and had to apply the same approval workflow to invoices on Pleo.
+        Having both workflows in one tool would be a big time-saver for them</li>
+        <li>Pre-purchase approvals were essential for paying invoices on
+        time</li>
+        <li>Finance teams wanted a simple workflow: create purchase order →
+        send to supplier → supplier sends invoice → match invoice to PO</li>
+      </ul>
       <h2>Impact</h2>
       <p>The product is still in beta phase and customers are trying it out. We get ongoing feedback and improve the product to achieve full product-market fit.</p>
+
       </div>
       </div>
-
-
-      <div className='row '><img src={require("./../assets/img/Pleo/Approvals/POs.png")} className="mainImgNoMargin contentShadowSmallRadius"/></div>
 
       <div className='row justifyCenter'>
       <div className='col5'>
-      <h2>Layout explorations</h2>
+      <h2>Layout explorations / PO creation</h2>
       <p>I explored different layout approaches to organize information in a way that felt intuitive without becoming visually heavy. </p>
       <p>An important part of this process was collaborating with engineers early. Through these discussions, we realized the flow needed to be split into logical steps that aligned with the data model.
       We decided on a two-step approach: create the form first, then add reviewers. This structure worked better technically and made more sense to users.</p>
@@ -137,6 +158,28 @@ class InvoiceApprovals extends React.Component {
       <div className='row'>
       <img src={require("./../assets/img/Pleo/Approvals/POfinal-review.png")} className="mainImgNoMargin"/>
       </div>
+
+      <div className='row'>
+      <div className='col5'>
+      <h2>Display mode</h2>
+      <p>Once PO gets created it's displayed on a simple list. Clicking on a list item opens PO view where the user can read-through data and see approval status. </p>
+      </div>
+      </div>
+
+      <div className='row'>
+      <img src={require("./../assets/img/Pleo/Approvals/PO-display.png")} className="mainImgNoMargin"/>
+      </div>
+
+      <div className='row minus80'>
+      <h2>Line items iterations</h2>
+      </div>
+
+      </div>
+
+      <div className='row'>
+      <img src={require("./../assets/img/Pleo/Approvals/line-items-explo.png")} className="mainImgNoMargin"/>
+      </div>
+      <div className='projectContainer'>
 
       <div className='row'>
       <div className="col7 marginRight80">

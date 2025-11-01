@@ -95,6 +95,11 @@ $general-padding: 80px 64px 80px 64px;
   width: 75%;
 }
 
+.minus80 {
+  position: relative;
+  top: 80px;
+}
+
 @media (max-width: 600px) {
   .col7, .col5 {
     width: 100%;
