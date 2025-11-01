@@ -203,19 +203,38 @@ class InvoiceApprovals extends React.Component {
 
       <div className='row'>
       <div className='col5'>
-      <h2>Ideas</h2>
-      <p>Some ideas I'm exploring</p>
+      <h1>Invoices details view ideas</h1>
+      <h2>Current invoice details view</h2>
+      <p>Here is the current details view. I'm looking into the layout and how the data is presented on the page. Currently there is some ambiguity around the invoice status, review status and the placement of action buttons. </p>
       </div>
       </div>
       <div className='row'>
-      <img src={require("./../assets/img/Pleo/Approvals/POs.gif")} className="mainImgNoMargin contentShadowSmallRadius"/>
-
+      <img src={require("./../assets/img/Pleo/Approvals/currentInvoiceFlow.gif")} className="mainImgNoMargin contentShadowSmallRadius"/>
       </div>
 
+      <div className='row'>
+      <div className='col5'>
+      <h2>Option A</h2>
+      <p>In this version I focused on having all statuses and neccessary details on top of the page, in the header. The header becomes smaller while the user scrolls down the page, but the crucial information is always visible in the fixed header view. </p>
+      <p>This prototype also features introducing section to the page, where first section is linked to main action buttons. </p>
+      </div>
+      </div>
+      <div className='row'>
+      <img src={require("./../assets/img/Pleo/Approvals/fixedHeader.gif")} className="mainImgNoMargin contentShadowSmallRadius"/>
+      </div>
+
+      <div className='row'>
+      <div className='col5'>
+      <h2>Option B</h2>
+      <p>This version has a similar structure, however review is now placed in a fixed footer. This way invoice status is clearly separated from the review status. </p>
+      </div>
+      </div>
+      <div className='row'>
+      <img src={require("./../assets/img/Pleo/Approvals/headeroption2.gif")} className="mainImgNoMargin contentShadowSmallRadius"/>
       </div>
 
 
-
+      </div>
       </div>
 
 
