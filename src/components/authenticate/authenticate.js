@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactTooltip from 'react-tooltip'
 import Typewriter from 'typewriter-effect';
-import CreatorContent from '../../CreatorContent/creatorContent'
-import ProjectOverview from '../../ProjectOverview/ProjectOverview'
+import CreatorContent from '../../CreatorContent/creatorContent';
+import InvoiceApprovals from '../../InvoiceApprovals/InvoiceApprovals';
+import ProjectOverview from '../../ProjectOverview/ProjectOverview';
 import '../../index.scss';
 import './authenticate.scss';
 import { BrowserRouter as Link, Redirect, withRouter } from "react-router-dom";
