@@ -15,6 +15,7 @@ class Authenticate extends React.Component {
       this.state = {
         password: ""
       }
+      this.submitData = this.submitData.bind(this);
   }
 
   inputPassword = (event) => {
@@ -22,14 +23,33 @@ class Authenticate extends React.Component {
     this.setState({ password: event.target.value });
   };
 
-  submitData = (event) => {
-    const { password } = this.state;
-    const matches = password === 'radiohead';
-    if (matches) {
-      console.log('match')
-      return this.props.history.push("/creatorContent");
-    }
+  submitData(event) {
+  console.log('SUBMIT FIRED');
+  event.preventDefault();
+  console.log('Form submitted');
+  console.log('Password entered:', this.state.password);
+
+  const { password } = this.state;
+  const matches = password === 'radiohead';
+
+  console.log('Does it match?', matches);
+
+  if (matches) {
+    console.log('Match! Attempting redirect...');
+    sessionStorage.setItem('pleoAuth', 'true');
+    console.log('SessionStorage set:', sessionStorage.getItem('pleoAuth'));
+
+    // Try using the full path with basename
+    const basePath = process.env.PUBLIC_URL || '';
+    window.location.href = `${basePath}/invoiceApprovals`;
+
+    // Or try this.props.history.replace instead of push
+    // this.props.history.replace('/invoiceApprovals');
+  } else {
+    console.log('No match');
+    this.setState({ error: true });
   }
+}
 
   render() {
 

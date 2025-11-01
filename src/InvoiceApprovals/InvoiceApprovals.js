@@ -198,7 +198,21 @@ class InvoiceApprovals extends React.Component {
 
       <div className='row '><img src={require("./../assets/img/Pleo/Approvals/beforeafter.png")} className="mainImgNoMargin"/></div>
 
+      <div className='projectContainer'>
 
+
+      <div className='row'>
+      <div className='col5'>
+      <h2>Ideas</h2>
+      <p>Some ideas I'm exploring</p>
+      </div>
+      </div>
+      <div className='row'>
+      <img src={require("./../assets/img/Pleo/Approvals/POs.gif")} className="mainImgNoMargin contentShadowSmallRadius"/>
+
+      </div>
+
+      </div>
 
 
 

@@ -209,17 +209,34 @@ designed to filter the data in different ways."
       /><BrandRefreshIssuu /></div>}
       />
 
-      <Route exact path="/invoiceApprovals" component={() => <div><ProjectOverview
-        bgImage={require("./assets/img/Pleo/Approvals/Thumbnail.png")}
-        title="Pleo Accounts Payables"
-        history={this.props.history}
-        description="Scaling Invoices into Accounts Payables. "
-        keywords="Designer (Concept, Branding, Strategy, Art Direction, UI)"
-        tools="Figma"
-        type="Product Design"
-        longDesc='When I joined Pleo, the Invoices product was basic — available only in the UK without advanced approval flows or pre-purchase controls. I led the design of two features that transformed our offering: automated invoice review workflows and purchase orders. These additions enabled expansion into Germany, where such controls are market requirements, and positioned Pleo to compete in the broader accounts payable space. I also contributed to defining the AP product vision and proposed a redesign for Invoices.'
-      /><InvoiceApprovals /></div>}
-      />
+
+
+      <Route exact path="/invoiceApprovals" render={() => {
+      console.log('Route hit, checking auth...');
+      const isAuthenticated = sessionStorage.getItem('pleoAuth') === 'true';
+      console.log('Is authenticated:', isAuthenticated);
+
+      if (!isAuthenticated) {
+        console.log('Not authenticated, redirecting...');
+        return <Redirect to="/authenticate" />;
+      }
+
+      console.log('Authenticated, showing content');
+      return (
+        <div>
+          <ProjectOverview
+            bgImage={require("./assets/img/Pleo/Approvals/Thumbnail.png")}
+            title="Pleo Accounts Payables"
+            description="Scaling Invoices into Accounts Payables. "
+            keywords="Designer (Concept, Branding, Strategy, Art Direction, UI)"
+            tools="Figma"
+            type="Product Design"
+            longDesc='When I joined Pleo, the Invoices product was basic — available only in the UK without advanced approval flows or pre-purchase controls. I led the design of two features that transformed our offering: automated invoice review workflows and purchase orders. These additions enabled expansion into Germany, where such controls are market requirements, and positioned Pleo to compete in the broader accounts payable space. I also contributed to defining the AP product vision and proposed a redesign for Invoices.'
+          />
+          <InvoiceApprovals />
+        </div>
+      );
+    }} />
 
 
       <Footer />
