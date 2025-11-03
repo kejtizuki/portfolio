@@ -228,7 +228,7 @@ designed to filter the data in different ways."
             bgImage={require("./assets/img/Pleo/Approvals/Thumbnail.png")}
             title="Pleo Accounts Payables"
             description="Scaling Invoices into Accounts Payables. "
-            keywords="Designer (Concept, Branding, Strategy, Art Direction, UI)"
+            keywords="end-to-end design, UI, UX"
             tools="Figma"
             type="Product Design"
             longDesc='When I joined Pleo, the Invoices product was basic — available only in the UK without advanced approval flows or pre-purchase controls. I led the design of two features that transformed our offering: automated invoice review workflows and purchase orders. These additions enabled expansion into Germany, where such controls are market requirements, and positioned Pleo to compete in the broader accounts payable space. I also contributed to defining the AP product vision and proposed a redesign for Invoices.'
