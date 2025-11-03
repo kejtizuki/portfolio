@@ -18,12 +18,6 @@ export default class Hello extends React.Component {
           Product Designer based in between Berlin and Copenhagen. I enjoy building interactive experiences and digital products. Currently
           building Invoices at <a href="https://www.pleo.io/" className="linkHighlight">Pleo</a>.
           </p>
-          <div className="icons">
-            <a href="https://www.linkedin.com/in/katarzyna-%C5%BCukowska-23398194/" data-tip="My digital CV"><img src={require("./../assets/img/001-linkedin.png")} alt="linkedin"/></a>
-            <a href="https://dribbble.com/kejtizuki/shots" data-tip="Dribbble"><img src={require("./../assets/img/dribbble.png")} alt="https:/google.com"/></a>
-            <a href="https://github.com/kejtizuki" data-tip="Code playground"><img src={require("./../assets/img/github.png")} alt="github"/></a>
-            <a href="https://kejtizuki.cargo.site" data-tip="Photography portfolio"><img src={require("./../assets/img/photo.png")} alt="photography portfolio"/></a>
-          </div>
         </div>
         {/* <div className="picture">
           <img src={require("./../assets/img/me-drinking.jpg")} className="profile"/>

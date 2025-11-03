@@ -1,5 +1,6 @@
 import React from 'react';
 import './experience.scss';
+import cvPDF from '../assets/downloads/cv-kasia-zukowska.pdf';
 
 class Experience extends React.Component {
 
@@ -89,12 +90,19 @@ class Experience extends React.Component {
           </div>
 
       </div>
+
       <div className="gridContainer">
-
-          <div className="column2"></div>
-          <div className="column2"><a href="../assets/downloads/cv-kasia-zukowska.pdf" download className='widebtn'>Download my CV</a></div>
-
+      <div className="column2"></div>
+      <div className="column2">
+      <a
+        href={cvPDF}
+        download="cv-kasia-zukowska.pdf"
+        className='widebtn'
+      >
+        Download my CV
+      </a>
       </div>
+    </div>
       </div>
     )
   }
