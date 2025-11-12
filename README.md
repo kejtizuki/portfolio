@@ -1,3 +1,18 @@
+# Portfolio - Kasia Żukowska
+
+A modern portfolio website showcasing product design work, built with React 18.
+
+## Technology Stack
+
+- **React**: 18.3.1
+- **React DOM**: 18.3.1
+- **React Router DOM**: 5.3.4
+- **React Scripts**: 4.0.3
+- **Styling**: SCSS/Sass
+- **Animations**: React Transition Group 4.4.5
+- **Video**: Video React
+- **Data Visualization**: D3-geo
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +81,33 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+## Recent Updates (2025)
+
+### React 18 Migration
+
+The portfolio has been upgraded to React 18 with the following changes:
+
+- **React & ReactDOM**: Updated from 16.14.0 to 18.3.1
+- **React Router**: Updated to 5.3.4 (maintained v5 for compatibility)
+- **React Transition Group**: Migrated from v1 to v4
+  - Replaced deprecated `CSSTransitionGroup` with `TransitionGroup` and `CSSTransition`
+- **React Scripts**: Updated to 4.0.3 with OpenSSL legacy provider for Node 17+
+- **Build System**: Replaced deprecated `node-sass` with modern `sass`
+- **Index.js**: Migrated to React 18's `createRoot` API
+- **Dependencies**: Updated all major dependencies to latest compatible versions
+
+### Key Technical Changes
+
+1. **Rendering**: Migrated from `ReactDOM.render()` to `createRoot().render()`
+2. **Transitions**: Updated all home components to use new TransitionGroup API
+3. **Strict Mode**: Wrapped app in `React.StrictMode` for better development warnings
+4. **Legacy Support**: Added `NODE_OPTIONS=--openssl-legacy-provider` for Node.js 17+ compatibility
+
+### Installation
+
+```bash
+npm install --legacy-peer-deps
+```
+
+Note: The `--legacy-peer-deps` flag is required due to some packages not yet fully supporting React 18 peer dependencies.

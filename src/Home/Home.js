@@ -7,9 +7,7 @@ import Skill from '../Skill/Skill';
 import Footer from '../Footer/Footer';
 import { BrowserRouter as Link, Router, Route } from "react-router-dom";
 import '../index.scss';
-import { CSSTransitionGroup } from 'react-transition-group' // ES6
-
-// const CSSTransitionGroup = require('react-transition-group/CSSTransitionGroup')
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 
 class Home extends Component {
@@ -18,10 +16,13 @@ class Home extends Component {
 
       <div className="App">
         <Navbar />
-        <CSSTransitionGroup
-            transitionName="example"
-            transitionEnterTimeout={500}
-            transitionLeaveTimeout={300}>
+        <TransitionGroup component={null}>
+          <CSSTransition
+            key="home-content"
+            timeout={{ enter: 500, exit: 300 }}
+            classNames="example"
+          >
+            <div>
         <Hello />
         <div className="gridContainer">
 
@@ -95,7 +96,9 @@ class Home extends Component {
         </div>
 
         <Experience />
-      </CSSTransitionGroup>
+            </div>
+          </CSSTransition>
+        </TransitionGroup>
 
       </div>
     );
