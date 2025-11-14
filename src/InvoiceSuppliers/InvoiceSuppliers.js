@@ -55,16 +55,14 @@ class InvoiceSuppliers extends React.Component {
     const { activeSection, isVisible } = this.state;
 
     const sections = [
-      { id: 'context', label: 'Context' },
-      { id: 'technical-constraints', label: 'Technical constraints' },
+      { id: 'Context and constraints', label: 'Context' },
       { id: 'existing-architecture', label: 'Existing architecture' },
-      { id: 'problem', label: 'Problem' },
-      { id: 'scale', label: 'Scale of the problem' },
-      { id: 'ux-debt', label: 'UX debt' },
-      { id: 'reframing', label: 'Reframing the problems' },
+      { id: 'problem', label: 'Problem discovery' },
+      { id: 'approach', label: 'My approach' },
       { id: 'collaborating-with-eng', label: 'Collaborating with engineers' },
-      { id: 'creation-flow', label: 'Better creation flow' },
-      { id: 'suggested-supplier', label: 'Suggestion design' }
+      { id: 'creation-flow', label: 'Redesigned creation flow' },
+      { id: 'suggested-supplier', label: 'Suggestion design' },
+      { id: 'design-pattern', label: 'Design pattern'}
     ];
 
     return(
@@ -111,7 +109,7 @@ class InvoiceSuppliers extends React.Component {
               The solution was to verify each new vendor once, then share them across all customers.
               </p>
 
-              <h2 ref={el => this.sectionRefs['technical-constraints'] = el}>Technical contraints</h2>
+              <h2>Technical contraints</h2>
               <p>When I joined the project, a legacy solution existed but it didn't scale well.
               The goal was to determine whether to rebuild the entire system or improve it within current constraints.
               After technical discovery, engineering estimated a full rebuild would require too much work (around 1 year estimated).
@@ -133,12 +131,12 @@ class InvoiceSuppliers extends React.Component {
           <div className="row justifyCenter">
             <div className="col5 ">
 
-              <h2 ref={el => this.sectionRefs['problem'] = el}>Problem</h2>
+              <h2 ref={el => this.sectionRefs['problem'] = el}>Problem discovery</h2>
               <p>When no supplier was found due to small differences between OCR data and our databases, the system created new suppliers,
               even in cases when existing supplier could be used for payment.
               </p>
 
-              <h2 ref={el => this.sectionRefs['scale'] = el}>Scale of the problem</h2>
+              <h2>Scale of the problem</h2>
 
               <div className="data-highlight-row cols-2">
                 <div className="data-card">
@@ -172,7 +170,7 @@ class InvoiceSuppliers extends React.Component {
 
           <div className="row justifyCenter">
             <div className="col5 ">
-              <h2 ref={el => this.sectionRefs['ux-debt'] = el}>UX debt</h2>
+              <h2>UX debt</h2>
               <p>Besides the matching criteria, the user experience offered no guidance to the user.
               When uploading an invoice, users struggled to know which supplier they should select or why a certain supplier was auto-selected.
               The flow to create a new supplier was hidden, with many dead-ends along the way.
@@ -184,7 +182,7 @@ class InvoiceSuppliers extends React.Component {
           <div className="row justifyCenter">
             <div className="col5 ">
 
-              <h2 ref={el => this.sectionRefs['reframing'] = el}>Reframing the problems and ideating solutions</h2>
+              <h2 ref={el => this.sectionRefs['approach'] = el}>My approach</h2>
               <p>
               Analysing the root causes of duplicates issues and UX debt led me to understand that the problem statement needed reframing,
               to allow us to tackle specific challenges in the system, one by one.
@@ -218,7 +216,7 @@ class InvoiceSuppliers extends React.Component {
           <div className="row justifyCenter">
             <div className="col5 ">
 
-              <h2 ref={el => this.sectionRefs['creation-flow'] = el}>Better creation flow</h2>
+              <h2 ref={el => this.sectionRefs['creation-flow'] = el}>Solution 1: Redesigned creation flow</h2>
 
               <p>To understand how to support the new flow best, I mapped out the old one first. Seemingly simple task was quite hard to achieve.
               The user was not guided through the flow, ending up in a few dead ends without clear exit.
@@ -237,7 +235,7 @@ class InvoiceSuppliers extends React.Component {
               <p>The new design used OCR data from the invoice pdf. The user only needs to review it and confirm the creation. This way the user
               has control over what's in the system. We removed the autocreation step as this was one of the main factors contributing to high number of supplier duplicates.</p>
               <div className="callout">
-              <p>I tested this flow with 5 users and all understood it without troubles and loved the new strucutre!</p>
+              <p>I tested this flow with 5 users and all understood it without any troubles!</p>
               </div>
             </div>
           </div>
@@ -247,7 +245,7 @@ class InvoiceSuppliers extends React.Component {
           <div className="row justifyCenter">
             <div className="col5 ">
 
-              <h2 ref={el => this.sectionRefs['suggested-supplier'] = el}>Suggestion design</h2>
+              <h2 ref={el => this.sectionRefs['suggested-supplier'] = el}>Solution 2: Suggestion design</h2>
 
               <p>
               </p>
@@ -264,6 +262,16 @@ class InvoiceSuppliers extends React.Component {
             </div>
           </div>
           <img src={require("./../assets/img/Pleo/suppliers/suggestionFinal.gif")} className="mainImgNoMargin"/>
+
+          <div className="row justifyCenter">
+            <div className="col5 ">
+
+              <h2 ref={el => this.sectionRefs['design-pattern'] = el}>Solution 3: Creating a design pattern</h2>
+
+              <p>
+              </p>
+            </div>
+            </div>
 
 
         </div>

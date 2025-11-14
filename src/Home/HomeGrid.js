@@ -20,19 +20,7 @@ class Home extends Component {
             transitionEnterTimeout={500}
             transitionLeaveTimeout={300}>
         <Hello />
-        <div className="gridContainer">
-            <div className='column4'>
-              <Project title="Pleo Accounts Payables" image={require("../assets/img/Pleo/Approvals/Thumbnail2.png")}
-              className="gridCellCentered"
-              description="Scaling Pleo Invoices into Accounts Payables"
-              keywords="Product Design,UX,UI"
-              history={this.props.history}
-              redirect="invoiceApprovals"
-              company="Pleo"
-              year="2024"
-              />
-            </div>
-          </div>
+
         <div className="gridContainer">
             <div className='column4'>
               <Project title="Reducing supplier duplicates through smarter matching and user control" image={require("../assets/img/Pleo/suppliers/cover3.png")}
@@ -46,6 +34,20 @@ class Home extends Component {
               />
             </div>
           </div>
+
+          <div className="gridContainer">
+              <div className='column4'>
+                <Project title="Pleo Accounts Payables" image={require("../assets/img/Pleo/Approvals/Thumbnail2.png")}
+                className="gridCellCentered"
+                description="Scaling Pleo Invoices into Accounts Payables"
+                keywords="Product Design,UX,UI"
+                history={this.props.history}
+                redirect="invoiceApprovals"
+                company="Pleo"
+                year="2024"
+                />
+              </div>
+            </div>
         <div className="gridContainer">
             <div className='column2'>
               <Project title="Issuu graphics editor" image={require("../assets/img/CreatorContent/cover1.png")}
