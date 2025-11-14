@@ -62,7 +62,9 @@ class InvoiceSuppliers extends React.Component {
       { id: 'scale', label: 'Scale of the problem' },
       { id: 'ux-debt', label: 'UX debt' },
       { id: 'reframing', label: 'Reframing the problems' },
-      { id: 'creation-flow', label: 'Better creation flow' }
+      { id: 'collaborating-with-eng', label: 'Collaborating with engineers' },
+      { id: 'creation-flow', label: 'Better creation flow' },
+      { id: 'suggested-supplier', label: 'Suggestion design' }
     ];
 
     return(
@@ -191,6 +193,27 @@ class InvoiceSuppliers extends React.Component {
           </div>
 
           <img src={require("./../assets/img/Pleo/suppliers/problem-solution.png")} className="mainImg"/>
+          <div className="row justifyCenter">
+            <div className="col5 ">
+              <h2 ref={el => this.sectionRefs['collaborating-with-eng'] = el}>Collaborating with engineers on matching logic</h2>
+              <p>Working closely with the engineering team, I helped redesign the matching algorithm. Before, the algorithm either auto-assigned suppliers or left
+              the supplier select empty. OCR data was used in the backend but not surfaced to the user.
+              The new approach included three confidence levels which guided product decisions:
+              <ul>
+              <li>
+              FULL_MATCH → Auto-assign supplier
+              </li>
+              <li>PARTIAL_MATCH → Suggest existing supplier to the user and highlight what's matching
+              </li>
+              <li>
+              NO_MATCH → Use the OCR data to guide the creation of the new supplier. User creates - not the backend
+              </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+          <img src={require("./../assets/img/Pleo/suppliers/suggestionFlow.png")} className="mainImg"/>
+
 
           <div className="row justifyCenter">
             <div className="col5 ">
@@ -213,12 +236,34 @@ class InvoiceSuppliers extends React.Component {
               <p>Added: clear CTA to create new supplier using OCR data, drawer to display and edit supplier data</p>
               <p>The new design used OCR data from the invoice pdf. The user only needs to review it and confirm the creation. This way the user
               has control over what's in the system. We removed the autocreation step as this was one of the main factors contributing to high number of supplier duplicates.</p>
-
+              <div className="callout">
+              <p>I tested this flow with 5 users and all understood it without troubles and loved the new strucutre!</p>
+              </div>
             </div>
           </div>
 
           <img src={require("./../assets/img/Pleo/suppliers/creationTested.gif")} className="mainImg"/>
-          <img src={require("./../assets/img/Pleo/suppliers/suggestedOCR.png")} className="mainImg"/>
+
+          <div className="row justifyCenter">
+            <div className="col5 ">
+
+              <h2 ref={el => this.sectionRefs['suggested-supplier'] = el}>Suggestion design</h2>
+
+              <p>
+              </p>
+            </div>
+
+          </div>
+
+          <div className="row" style={{ gap: '40px' }}>
+            <div className="col6">
+              <img src={require("./../assets/img/Pleo/suppliers/suggestedOCR-1.png")} className="mainImgNoMargin"/>
+            </div>
+            <div className="col6">
+              <img src={require("./../assets/img/Pleo/suppliers/suggestedOCR.png")} className="mainImgNoMargin"/>
+            </div>
+          </div>
+          <img src={require("./../assets/img/Pleo/suppliers/suggestionFinal.gif")} className="mainImgNoMargin"/>
 
 
         </div>
