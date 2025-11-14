@@ -1,14 +1,130 @@
 @import "../assets/styles/main.scss";
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,600,700&display=swap');
 
+// ============================================
+// Modern Grid Layout
+// ============================================
 .rowGrid {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  margin:0px 90px 0px 90px;
+  margin: 0px 90px 0px 90px;
 }
 
+// Project meta info (company/year line)
+.projectMeta {
+  font-size: 14px;
+  color: #6b6b6b;
+  margin-bottom: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+
+  .company {
+    color: #6b6b6b;
+  }
+
+  .separator {
+    margin: 0 0.5rem;
+    color: #c4c4c4;
+  }
+
+  .year {
+    color: #6b6b6b;
+  }
+}
+
+// Project info (title and description below image)
+.projectInfo {
+  margin-top: 1.5rem;
+
+  .title {
+    margin-bottom: 0.75rem;
+  }
+
+  .overviewDesc {
+    margin: 0;
+  }
+}
+
+.gridContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 80px 80px;
+  display: flex;
+  gap: 32px;
+
+  @media (max-width: 1024px) {
+    padding: 60px 40px;
+    gap: 24px;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 50px 20px;
+    gap: 32px;
+  }
+}
+
+// Column layouts
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  box-sizing: border-box;
+  padding-right: 32px;
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.column2 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  box-sizing: border-box;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+
+  .textContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px 40px 0px;
+  }
+}
+
+.column3 {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  padding-right: 32px;
+  margin: 0px;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+.column4 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  margin: 0px;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+.paddingLeft {
+  margin-left: 40px;
+}
+
+// ============================================
+// Image Containers
+// ============================================
 .imgFlex {
   width: 100%;
 }
@@ -16,19 +132,10 @@
 .imgContainer {
   width: 100%;
   height: 420px;
-}
 
-@media (max-width: 600px) {
-  .imgContainer {
-    width: 100%;
+  @media (max-width: 600px) {
     height: 250px;
   }
-}
-
-
-.overviewDesc {
-  color: $highlight-color;
-  width: 75%;
 }
 
 .imgFit {
@@ -51,7 +158,11 @@
     -ms-transition: all 0.5s ease;
     transition: all 0.5s ease;
     z-index: 1;
-}
+  }
+
+  @media (max-width: 600px) {
+    height: 250px;
+  }
 }
 
 .imgLong {
@@ -74,263 +185,33 @@
     -ms-transition: all 0.5s ease;
     transition: all 0.5s ease;
     z-index: 1;
-}
-}
-
-@media (max-width: 600px) {
-  .imgFit {
-    height: 250px;
   }
 }
 
-.columnGrid {
-  grid-column-start: 1;
-  grid-column-end: 2;
-}
-
+// ============================================
+// Project Cards
+// ============================================
 .project {
+  margin-bottom: 80px;
   &:hover {
     cursor: pointer;
-    border-radius: 46px;
   }
-}
-
-
-.column {
-  display: flex;
-  flex-direction: row;
-  width: 25%;
-  // padding: 0px 40px 00px 0px;
-  // background-color: white;
-  border-radius: 4px;
-  box-sizing: border-box;
-  padding-right: 32px;
-  // border: 1px solid #E9E9EC;
-}
-
-.paddingLeft {
-  margin-left: 40px;
-}
-
-.column2 {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  padding: 0px 16px 0px 16px;
-  margin: 0px;
-  // background-color: white;
-  border-radius: 4px;
-  box-sizing: border-box;
-  // border: 1px solid #E9E9EC;
-
-  .textContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    // width: 75%;
-    position: relative;
-    // left: 25%;
-    padding: 10px 0px 40px 0px;
-  }
-}
-
-@media (max-width: 600px) {
-  .column2 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-    // background-color: white;
-    border-radius: 8px;
-    box-sizing: border-box;
-    // border: 1px solid #E9E9EC;
-  }
-}
-
-.column3 {
-  display: flex;
-  flex-direction: column;
-  width: 75%;
-  padding-right: 32px;
-  margin: 0px;
-  // background-color: white;
-  border-radius: 8px;
-  box-sizing: border-box;
-  // border: 1px solid #E9E9EC;
-}
-
-.column4 {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding-right: 32px;
-  margin: 0px;
-  // background-color: white;
-  border-radius: 8px;
-  box-sizing: border-box;
-  // border: 1px solid #E9E9EC;
-}
-
-.blue-column {
-  background-color: blue;
-  height: 100px;
-}
-
-.green-column {
-    height: 100px;
-    background-color: green;
-}
-
-.sunwise {
-  background-color: #4572DF;
-  color: white;
-  &:hover {
-    background-blend-mode: multiply;
-}
-}
-
-.coordinates {
-  background-color: #a2d6c9;
-  &:hover {
-    background-blend-mode: multiply;
-}
-}
-
-.pleoAP {
-  background-color: #FFDEE2;
-  &:hover {
-    background-image: url(../assets/img/Pleo/Approvals/Thumbnail2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    filter: brightness(80%);
-    z-index: 1;
-    // background-blend-mode: multiply;
-  }
-}
-
-
-.opi {
-  // background: rgb(255,239,221);
-// background: linear-gradient(90deg, rgba(255,239,221,1) 0%, rgba(183,176,255,1) 100%);
-  //background-color: #905FCE;
-  color: white;
-  &:hover {
-    // background-blend-mode: multiply;
-}
-}
-
-.mobileApp {
-  &:hover {
-    background-image: url(../assets/img/IssuuMobile/preview.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    filter: brightness(80%);
-    z-index: 1;
-  }
-}
-
-.thesis {
-  background: rgb(43,151,184);
-  background: linear-gradient(0deg, rgba(43,151,184,1) 0%, rgba(182,194,255,1) 100%);
-  &:hover {
-    background-blend-mode: multiply;
-}
-  // color: white;
-}
-
-.contentEditors {
-  &:hover {
-    background-image: url(../assets/img/CreatorContent/cover1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    filter: brightness(80%);
-    z-index: 1;
-}
-}
-
-.ah {
-
-// background: rgb(189,200,255);
-// background: radial-gradient(circle, rgba(189,200,255,1) 0%, rgba(247,197,95,1) 100%);
-
-  //background-color: #f7c560;
-  &:hover {
-    // background-blend-mode: multiply;
-
-    background-image: url(../assets/img/AH/preview-ah.gif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    filter: brightness(80%);
-    z-index: 1;
-}
-}
-
-.issuuBranding {
-
-  // background: rgb(255,245,234);
-  // background: radial-gradient(circle, rgba(255,245,234,1) 0%, rgba(95,93,228,1) 32%, rgba(255,90,71,1) 59%, rgba(255,245,234,1) 86%);
-  //background: rgb(255,249,237);
-  //background: linear-gradient(90deg, rgba(255,249,237,1) 0%, rgba(255,90,71,1) 50%, rgba(95,93,228,1) 100%);
-  //background-color: #6b5e9b;
-  &:hover {
-    // background-blend-mode: multiply;
-    // background-color: #9B9AFC;
-    background-image: url(../assets/img/BrandRefresh/supportingGraphics.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    filter: brightness(80%);
-    z-index: 1;
-
-  }
-  color: black;
-}
-
-.issuuBrandingOverview {
-  background-color: #333662;
-  color: white;
-}
-
-.issuuAnalytics {
-  background: rgb(196,225,225);
-background: radial-gradient(circle, rgba(196,225,225,1) 11%, rgba(249,245,191,1) 24%, rgba(90,47,92,1) 47%, rgba(54,65,186,1) 55%, rgba(196,225,225,1) 78%);
-  //background-color: #B29661;
-  &:hover {
-    background-blend-mode: multiply;
-}
-  color: white;
-}
-
-.issuuReader {
-
-  background: rgb(189,253,255);
-  background: radial-gradient(circle, rgba(189,253,255,1) 3%, rgba(84,86,230,1) 63%, rgba(80,35,129,1) 77%, rgba(255,255,255,1) 99%);
-  //background-color: #e9a39a;
-  &:hover {
-    background-blend-mode: multiply;
-}
 }
 
 .box {
   position: relative;
   border-radius: 16px;
-    &:hover {
-      .imgFit {
-        opacity: 0;
-      }
-    }
 }
 
+.overviewDesc {
+  color: $highlight-color;
+  width: 75%;
+}
+
+// ============================================
+// Keywords/Tags
+// ============================================
 .keywordsContainer {
-  // position: absolute;
-  // z-index: 999;
-  // left: 0;
-  // right: 0;
   top: 20px;
   margin: 20px 0px 20px 0px;
   z-index: 1000;
@@ -345,4 +226,86 @@ background: radial-gradient(circle, rgba(196,225,225,1) 11%, rgba(249,245,191,1)
   border-radius: 20px;
   padding: 6px 14px 6px 14px;
   margin: 0px 5px 0px 5px;
+}
+
+// ============================================
+// Project Backgrounds & Hover States
+// ============================================
+.columnGrid {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.blue-column {
+  background-color: blue;
+  height: 100px;
+}
+
+.green-column {
+  height: 100px;
+  background-color: green;
+}
+
+.sunwise {
+  background-color: #4572DF;
+  color: white;
+  &:hover {
+    background-blend-mode: multiply;
+  }
+}
+
+.coordinates {
+  background-color: #a2d6c9;
+  &:hover {
+    background-blend-mode: multiply;
+  }
+}
+
+.pleoAP {
+  background-color: #FFDEE2;
+}
+
+.pleoSuppliers {
+  background-color: #FFDEE2;
+}
+
+.opi {
+  color: white;
+}
+
+.mobileApp {
+  // Removed hover effect
+}
+
+.thesis {
+  background: rgb(43,151,184);
+  background: linear-gradient(0deg, rgba(43,151,184,1) 0%, rgba(182,194,255,1) 100%);
+}
+
+.contentEditors {
+  // Removed hover effect
+}
+
+.ah {
+  // Removed hover effect
+}
+
+.issuuBranding {
+  color: black;
+}
+
+.issuuBrandingOverview {
+  background-color: #333662;
+  color: white;
+}
+
+.issuuAnalytics {
+  background: rgb(196,225,225);
+  background: radial-gradient(circle, rgba(196,225,225,1) 11%, rgba(249,245,191,1) 24%, rgba(90,47,92,1) 47%, rgba(54,65,186,1) 55%, rgba(196,225,225,1) 78%);
+  color: white;
+}
+
+.issuuReader {
+  background: rgb(189,253,255);
+  background: radial-gradient(circle, rgba(189,253,255,1) 3%, rgba(84,86,230,1) 63%, rgba(80,35,129,1) 77%, rgba(255,255,255,1) 99%);
 }

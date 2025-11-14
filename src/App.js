@@ -20,6 +20,7 @@ import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import Authenticate from './components/authenticate/authenticate';
 import ProjectCoordinates from './ProjectCoordinates/ProjectCoordinates';
 import InvoiceApprovals from './InvoiceApprovals/InvoiceApprovals';
+import InvoiceSuppliers from './InvoiceSuppliers/InvoiceSuppliers';
 import IssuuMobile from './IssuuMobile/issuuMobile';
 import { BrowserRouter as Router, Route, Link, Redirect } from "react-router-dom";
 import "@fontsource/uncut-sans";
@@ -209,34 +210,61 @@ designed to filter the data in different ways."
       /><BrandRefreshIssuu /></div>}
       />
 
+      <Route exact path="/invoiceApprovals" render={({ location }) => {
+        console.log('Route hit, checking auth...');
+        const isAuthenticated = sessionStorage.getItem('pleoAuth') === 'true';
+        console.log('Is authenticated:', isAuthenticated);
 
+        if (!isAuthenticated) {
+          console.log('Not authenticated, redirecting...');
+          return <Redirect to={{
+            pathname: '/authenticate',
+            state: { from: location }
+          }} />;
+        }
 
-      <Route exact path="/invoiceApprovals" render={() => {
-      console.log('Route hit, checking auth...');
-      const isAuthenticated = sessionStorage.getItem('pleoAuth') === 'true';
-      console.log('Is authenticated:', isAuthenticated);
+        console.log('Authenticated, showing content');
+        return (
+          <div>
+            <ProjectOverview
+              bgImage={require("./assets/img/Pleo/Approvals/Thumbnail.png")}
+              title="Pleo Accounts Payables"
+              description="Scaling Invoices into Accounts Payables. "
+              keywords="end-to-end design, UI, UX"
+              tools="Figma"
+              type="Product Design"
+              longDesc='When I joined Pleo, the Invoices product was basic — available only in the UK without advanced approval flows or pre-purchase controls. I led the design of two features that transformed our offering: automated invoice review workflows and purchase orders. These additions enabled expansion into Germany, where such controls are market requirements, and positioned Pleo to compete in the broader accounts payable space. I also contributed to defining the AP product vision and proposed a redesign for Invoices.'
+            />
+            <InvoiceApprovals />
+          </div>
+        );
+      }} />
 
-      if (!isAuthenticated) {
-        console.log('Not authenticated, redirecting...');
-        return <Redirect to="/authenticate" />;
-      }
+      <Route exact path="/invoiceSuppliers" render={({ location }) => {
+        const isAuthenticated = sessionStorage.getItem('pleoAuth') === 'true';
 
-      console.log('Authenticated, showing content');
-      return (
-        <div>
-          <ProjectOverview
-            bgImage={require("./assets/img/Pleo/Approvals/Thumbnail.png")}
-            title="Pleo Accounts Payables"
-            description="Scaling Invoices into Accounts Payables. "
-            keywords="end-to-end design, UI, UX"
-            tools="Figma"
-            type="Product Design"
-            longDesc='When I joined Pleo, the Invoices product was basic — available only in the UK without advanced approval flows or pre-purchase controls. I led the design of two features that transformed our offering: automated invoice review workflows and purchase orders. These additions enabled expansion into Germany, where such controls are market requirements, and positioned Pleo to compete in the broader accounts payable space. I also contributed to defining the AP product vision and proposed a redesign for Invoices.'
-          />
-          <InvoiceApprovals />
-        </div>
-      );
-    }} />
+        if (!isAuthenticated) {
+          return <Redirect to={{
+            pathname: '/authenticate',
+            state: { from: location }
+          }} />;
+        }
+
+        return (
+          <div>
+            <ProjectOverview
+              bgImage={require("./assets/img/Pleo/suppliers/cover.png")}
+              title="Auto-matching & suggesting supplier payment data"
+              description=""
+              keywords="Product Design, data-heavy project"
+              tools="Figma"
+              type="Product Design"
+              longDesc='Redesigning how users select and manage supplier payment details during invoice processing to reduce duplicates and increase confidence. '
+            />
+            <InvoiceSuppliers />
+          </div>
+        );
+      }} />
 
 
       <Footer />

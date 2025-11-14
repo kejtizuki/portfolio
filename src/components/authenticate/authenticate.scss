@@ -1,32 +1,65 @@
 @import "../../assets/styles/main.scss";
 
-.authenticate{
-
-  height: 550px;
-  // justify-content: left;
+.authenticate {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: $header-font;
+  background-color: #f4f6f0;
+
+  h1 {
+    margin-bottom: 2rem;
+    text-align: left;
+  }
 
   .inputField {
     display: flex;
     flex-direction: column;
-    width: 320px;
-
-    .inputLabel {
-      font-size: 12px;
-      font-weight: bold;
-      justify-content: left;
-    }
+    width: 500px;
 
     .inputTxt {
-      padding: 16px;
+      padding: 20px 24px;
       border-radius: 8px;
-      border: 2px solid #7828e0;
-      margin: 4px 0px 16px 0px;
+      border: 2px solid black;
+      margin: 0px 0px 16px 0px;
+      font-size: 18px;
+      font-family: $font-stack;
+      transition: all 0.2s ease;
+      background-color: white;
+
+      // Custom password symbol
+      -webkit-text-security: none;
+      font-family: $font-stack;
+
+      &::-webkit-credentials-auto-fill-button {
+        visibility: hidden;
+        pointer-events: none;
+        position: absolute;
+      }
+
+      &:focus {
+        outline: none;
+        border-color: black;
+        box-shadow: 0 0 0 3px rgba(107, 76, 230, 0.1);
+      }
+
+      &::placeholder {
+        color: #9a9a9a;
+      }
+    }
+
+    .error-message {
+      color: #d32f2f;
+      font-size: 14px;
+      margin-top: 0.5rem;
     }
   }
 
   .inputSubmit {
-    width: 320px;
+    width: 500px;
+    margin-top: 1rem;
+    border-color: black;
+    color: black;
   }
-
 }

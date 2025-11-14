@@ -29,7 +29,7 @@ class About extends React.Component {
             <p>
             I’m a Product Designer with experience in all phases of the end-to-end design process.
             I strive to deliver intuitive and systematic design with coherent visual language.
-            One of the foundations in a successful design procedss is good collaboration.
+            One of the foundations in a successful design process is good collaboration.
             My past frontend development experience makes the communication with engineers in the team smooth.
             </p>
             <p>

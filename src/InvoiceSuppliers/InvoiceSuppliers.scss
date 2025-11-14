@@ -1,0 +1,277 @@
+// Floating Table of Contents
+.floating-toc {
+  position: fixed;
+  left: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  animation: fadeIn 0.3s ease-in;
+  background: #f8f8f8;
+  border-radius: 8px;
+  padding: 1rem 0.75rem;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin: 0.5rem 0;
+  }
+
+  a {
+    display: block;
+    padding: 0.25rem 0.5rem;
+    color: #9a9a9a;
+    text-decoration: none;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0;
+    border-left: 2px solid transparent;
+    transition: all 0.2s ease;
+    cursor: pointer;
+
+    &:hover {
+      color: #4a4a4a;
+      border-left-color: #c4c4c4;
+    }
+
+    &.active {
+      color: #1a1a1a;
+      border-left-color: #1a1a1a;
+      font-weight: 500;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50%) translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0);
+  }
+}
+
+// Hide on smaller screens
+@media (max-width: 1024px) {
+  .floating-toc {
+    display: none;
+  }
+}
+
+// Data highlight cards - flexible metric display
+.data-highlight-row {
+  display: grid;
+  gap: 1.5rem;
+  margin: 2rem 0;
+
+  // Responsive grid layouts
+  &.cols-2 {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &.cols-3 {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &.cols-4 {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+.data-card {
+  background: #f8f8f8;
+  padding: 2rem 1.5rem;
+  border-radius: 4px;
+
+  .data-label {
+    font-size: 0.875rem;
+    color: #6b6b6b;
+    margin-bottom: 0.75rem;
+    font-weight: 400;
+    line-height: 1.375;
+    letter-spacing: 0;
+    text-transform: none;
+  }
+
+  .data-value {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    line-height: 1;
+    margin-bottom: 0.25rem;
+    letter-spacing: -0.02em;
+    font-feature-settings: 'tnum' 1; // Tabular numbers for alignment
+
+    // Allow for smaller values if needed
+    &.value-sm {
+      font-size: 2.5rem;
+    }
+
+    &.value-lg {
+      font-size: 4rem;
+
+      @media (min-width: 768px) {
+        font-size: 4.5rem;
+      }
+    }
+  }
+
+  .data-unit {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #4a4a4a;
+    margin-left: 0.25rem;
+    letter-spacing: 0;
+  }
+
+  .data-description {
+    font-size: 0.75rem;
+    color: #9a9a9a;
+    margin-top: 0.5rem;
+    line-height: 1.5;
+  }
+
+  // Variant styles
+  &.card-emphasis {
+    background: #f0f0f0;
+    border: 2px solid #1a1a1a;
+  }
+
+  &.card-subtle {
+    background: #fafafa;
+  }
+
+  // Positive/negative indicators
+  .data-value.positive {
+    color: #2d7d2d;
+  }
+
+  .data-value.negative {
+    color: #d32f2f;
+  }
+}
+
+// Callout styles - minimalistic highlight for important text
+.callout {
+  background: #f8f8f8;
+  border-left: 2px solid #1a1a1a;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  font-size: 0.875rem;
+  line-height: 1.625;
+  color: #4a4a4a;
+
+  // Nested elements maintain proper spacing
+  p {
+    margin: 0;
+    font-size: 0.875rem;
+    line-height: 1.625;
+    color: #4a4a4a;
+
+    &:not(:last-child) {
+      margin-bottom: 0.75rem;
+    }
+  }
+
+  // Variants
+  &.callout-subtle {
+    background: #fafafa;
+    border-left-color: #9a9a9a;
+    color: #6b6b6b;
+
+    p {
+      color: #6b6b6b;
+    }
+  }
+
+  &.callout-emphasis {
+    background: #f5f5f5;
+    border-left-width: 3px;
+
+    p {
+      font-weight: 500;
+      color: #1a1a1a;
+    }
+  }
+
+  &.callout-inline {
+    display: inline-block;
+    padding: 0.35rem 0.75rem;
+    margin: 0 0.25rem;
+    background: #f5f5f5;
+    border-left-width: 2px;
+    vertical-align: baseline;
+    font-size: inherit;
+    line-height: inherit;
+  }
+}
+
+// Scroll animations - only animate container elements
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+
+  &.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Different animation styles for different elements
+.row.animate-on-scroll {
+  transition-duration: 0.8s;
+}
+
+.mainImg.animate-on-scroll {
+  transform: translateY(40px);
+  transition-duration: 0.9s;
+}
+
+h2.animate-on-scroll {
+  transform: translateY(20px);
+  transition-duration: 0.6s;
+}
+
+h3.animate-on-scroll {
+  transform: translateY(15px);
+  transition-duration: 0.5s;
+}
+
+// Elements that are already visible on load shouldn't animate
+.projectContainer > .row:first-child {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+// Reduce motion for users who prefer it
+@media (prefers-reduced-motion: reduce) {
+  .animate-on-scroll {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}

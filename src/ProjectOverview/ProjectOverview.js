@@ -2,23 +2,16 @@ import React from 'react';
 import './projectOverview.scss';
 import { BrowserRouter as Link, withRouter } from "react-router-dom";
 var classNames = require('classnames');
-
 class ProjectOverview extends React.Component {
-
-
   constructor(props) {
     super(props);
     console.log(props)
   }
-
   handleOnClick = () => {
     console.log("redirect home");
     this.props.history.push("/");
   };
-
-
   render() {
-
     const {
         title,
         bgImage,
@@ -27,9 +20,11 @@ class ProjectOverview extends React.Component {
         tools,
         longDesc,
         type,
-        website
+        website,
+        company,
+        year,
+        team
       } = this.props;
-
     const headerClasses = classNames({
       'projectHeader': true,
       'sunwise': title === 'SunWise',
@@ -46,9 +41,9 @@ class ProjectOverview extends React.Component {
       'issuuBrandingOverview': title === 'Issuu brand refresh and design system',
       'contentEditorsOverview': title === 'Issuu graphics editor',
       'mobileAppOverview': title === 'Redesign of Issuu mobile app',
-      'ap': title === 'Pleo Accounts Payables'
+      'ap': title === 'Pleo Accounts Payables',
+      'invoiceSuppliers': title === 'Auto-matching & suggesting supplier payment data'
     });
-
     return(
       <div>
       <div className={headerClasses}>
@@ -65,23 +60,53 @@ class ProjectOverview extends React.Component {
         <p className="projectDescription">{description}</p>
       </div>
       <div className="basicContainer">
-        <div className="col3 role">
-        <h2 className="title">Details</h2>
-        <h4 className="title">Role</h4>
-        <p>{keywords}</p>
-        <h4 className="title">Type</h4>
-        <p>{type}</p>
-        <h4 className="title">Tools</h4>
-        <p>{tools}</p>
-        {
-          this.props.website &&
-          <div>
-          <h4 className="title">Website</h4>
-          <p>{website}</p>
+        <div className="projectDetails">
+          <div className="detailsGrid">
+            {company && (
+              <div className="detailItem">
+                <div className="detailLabel">Company</div>
+                <div className="detailValue">{company}</div>
+              </div>
+            )}
+            {keywords && (
+              <div className="detailItem">
+                <div className="detailLabel">Role</div>
+                <div className="detailValue">{keywords}</div>
+              </div>
+            )}
+            {year && (
+              <div className="detailItem">
+                <div className="detailLabel">Year</div>
+                <div className="detailValue">{year}</div>
+              </div>
+            )}
+            {team && (
+              <div className="detailItem">
+                <div className="detailLabel">Team</div>
+                <div className="detailValue">{team}</div>
+              </div>
+            )}
+            {tools && (
+              <div className="detailItem">
+                <div className="detailLabel">Tools</div>
+                <div className="detailValue">{tools}</div>
+              </div>
+            )}
+            {type && (
+              <div className="detailItem">
+                <div className="detailLabel">Type</div>
+                <div className="detailValue">{type}</div>
+              </div>
+            )}
+            {website && (
+              <div className="detailItem">
+                <div className="detailLabel">Website</div>
+                <div className="detailValue">{website}</div>
+              </div>
+            )}
           </div>
-        }
         </div>
-        <div className="col7 more">
+        <div className="projectContent">
           {longDesc}
         </div>
       </div>
@@ -89,5 +114,4 @@ class ProjectOverview extends React.Component {
     )
   }
 }
-
 export default withRouter(ProjectOverview);

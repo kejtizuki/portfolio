@@ -3,44 +3,35 @@ import './project33.scss';
 import '../ProjectOverview/projectOverview.scss';
 import ReactTooltip from 'react-tooltip'
 var classNames = require('classnames');
-
 class Project extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
       isHovered: false
     }
   }
-
   imageHover = () => {
     this.setState({
       isHovered: !this.state.isHovered
     })
     console.log('state', this.state.isHovered)
   }
-
   handleOnClick = () => {
     console.log("redirect");
     this.props.history.push(this.props.redirect);
   };
-
   render() {
-
     const {
         image,
         title,
         description,
-        keywords
+        keywords,
+        company,
+        year
       } = this.props;
-
-
       console.log('keywords', keywords)
-
       console.log('keywords', keywords.split(","))
-
       const keywordsMap = keywords.split(",").map((elem, index) => {return <span className='keyword' key={index}>{elem}</span>})
-
       const projectClasses = classNames({
         'box': true,
         'sunwise': title === 'SunWise',
@@ -56,36 +47,26 @@ class Project extends React.Component {
         'issuuBranding': title === 'Issuu brand refresh and design system',
         'contentEditors': title === 'Issuu graphics editor',
         'mobileApp': title === 'Redesign of Issuu mobile app',
-        'pleoAP': title === 'Pleo Accounts Payables'
+        'pleoAP': title === 'Pleo Accounts Payables',
+        'pleoSuppliers': title === 'Auto-matching & suggesting supplier payment data'
       });
-
       const imgClasses = classNames ({
-          'imgFit': title === 'Issuu brand refresh and design system' || 'Issuu graphics editor',
-          'imgLong': title === 'Pleo Accounts Payables'
+        'imgFit': title === 'Issuu brand refresh and design system' || title === 'Issuu graphics editor',
+        'imgLong': title === 'Pleo Accounts Payables' || title === 'Auto-matching & suggesting supplier payment data'
         }
       )
-
-
     return(
         <div className='project'>
         <ReactTooltip className="myTooltip"/>
-
             <div onClick={this.handleOnClick} onMouseOver={this.imageHover} onMouseOut={this.imageHover} className={projectClasses} data-tip='Read'>
               <div className={imgClasses} style={{ backgroundImage: `url(${image})` }}></div>
             </div>
-
-            <div className="margin40" >
-              <div className="headerTop">
-              {/* <div className='keywordsContainer transformAndFade'>{keywordsMap}</div>*/}
-
-                <h1 className="title">{title}</h1>
-                <p className='overviewDesc'>{description}</p>
-              </div>
-
-          </div>
+            <div className="projectInfo">
+              <h1 className="title">{title}</h1>
+              <p className='overviewDesc'>{description}</p>
+            </div>
         </div>
     )
   }
 }
-
 export default Project;
