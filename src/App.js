@@ -254,7 +254,7 @@ designed to filter the data in different ways."
           <div>
             <ProjectOverview
               bgImage={require("./assets/img/Pleo/suppliers/cover.png")}
-              title="Auto-matching & suggesting supplier payment data"
+              title="Reducing supplier duplicates through smarter matching and user control"
               description=""
               keywords="Product Design, data-heavy project"
               tools="Figma"

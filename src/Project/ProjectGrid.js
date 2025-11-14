@@ -48,11 +48,11 @@ class Project extends React.Component {
         'contentEditors': title === 'Issuu graphics editor',
         'mobileApp': title === 'Redesign of Issuu mobile app',
         'pleoAP': title === 'Pleo Accounts Payables',
-        'pleoSuppliers': title === 'Auto-matching & suggesting supplier payment data'
+        'pleoSuppliers': title === 'Reducing supplier duplicates through smarter matching and user control'
       });
       const imgClasses = classNames ({
         'imgFit': title === 'Issuu brand refresh and design system' || title === 'Issuu graphics editor',
-        'imgLong': title === 'Pleo Accounts Payables' || title === 'Auto-matching & suggesting supplier payment data'
+        'imgLong': title === 'Pleo Accounts Payables' || title === 'Reducing supplier duplicates through smarter matching and user control'
         }
       )
     return(

@@ -35,7 +35,7 @@ class Home extends Component {
           </div>
         <div className="gridContainer">
             <div className='column4'>
-              <Project title="Auto-matching & suggesting supplier payment data" image={require("../assets/img/Pleo/suppliers/cover3.png")}
+              <Project title="Reducing supplier duplicates through smarter matching and user control" image={require("../assets/img/Pleo/suppliers/cover3.png")}
               className="gridCellCentered"
               description="Redesigning how users select and manage supplier payment details during invoice processing to reduce duplicates and increase confidence"
               keywords="Product Design, data-heavy project"

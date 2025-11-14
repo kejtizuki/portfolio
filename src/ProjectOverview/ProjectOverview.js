@@ -42,7 +42,7 @@ class ProjectOverview extends React.Component {
       'contentEditorsOverview': title === 'Issuu graphics editor',
       'mobileAppOverview': title === 'Redesign of Issuu mobile app',
       'ap': title === 'Pleo Accounts Payables',
-      'invoiceSuppliers': title === 'Auto-matching & suggesting supplier payment data'
+      'invoiceSuppliers': title === 'Reducing supplier duplicates through smarter matching and user control'
     });
     return(
       <div>
