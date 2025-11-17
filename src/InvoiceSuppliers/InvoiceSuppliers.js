@@ -322,8 +322,68 @@ class InvoiceSuppliers extends React.Component {
 
               <h2 ref={el => this.sectionRefs['results'] = el}>Results</h2>
 
+              <h3>Duplicates creation reduced</h3>
               <p>
+              Monthly duplicate suppliers dropped from ~100 to ~40 per month.
               </p>
+
+
+
+              <div className="data-highlight-row">
+                <div className="data-card">
+                  <div className="data-label">Newly created duplicates reduced by</div>
+                  <div className="data-value">
+                  60%<span className="data-unit"></span>
+                  </div>
+                </div>
+              </div>
+
+              <h3>Create new supplier completion rate</h3>
+              <p>
+              In the first week post-release majority of users saw the CTAs to create new suppliers.
+              83% successfully completed this flow. This shows high engagement with the new design and successful completion.
+              </p>
+
+              <div className="data-highlight-row">
+                <div className="data-card">
+                  <div className="data-label">New supplier creation completion</div>
+                  <div className="data-value">
+                  83%<span className="data-unit"></span>
+                  </div>
+                </div>
+              </div>
+
+              <h3>The system is getting smarter over time</h3>
+              <p>
+              One of the most encouraging outcomes was watching the system improve as it learned from users.
+              In the first week post-launch, users primarily saw "Create new supplier" CTAs as the algorithm needed to adapt.
+              When users saw suggesterd suppliers, they editted ther data.
+              By week two, the pattern reversed. The system started showing more suggestions than creation CTAs, and users edited much less.
+              The algorithm learned which suppliers were actually the same, which was exactly what we wanted.
+              </p>
+
+              <div className="row" style={{ gap: '40px' }}>
+                <div className="col6">
+                  <p>Clicked on suggested supplier</p>
+                  <img src={require("./../assets/img/Pleo/suppliers/suggestedSupplier.png")} className="mainImgNoMargin"/>
+                </div>
+                <div className="col6">
+                  <p>Clicked on create new supplier</p>
+                  <img src={require("./../assets/img/Pleo/suppliers/createdNewFromOCR.png")} className="mainImgNoMargin"/>
+                </div>
+              </div>
+
+              <div className="row" style={{ gap: '40px' }}>
+                <div className="col6">
+                  <p>Editted existing supplier</p>
+                  <img src={require("./../assets/img/Pleo/suppliers/edittedExistingSupplier.png")} className="mainImgNoMargin"/>
+                </div>
+                <div className="col6">
+                  <p>Created new supplier using supplier select</p>
+                  <img src={require("./../assets/img/Pleo/suppliers/createdNewSupplierFromDropdown.png")} className="mainImgNoMargin"/>
+                </div>
+              </div>
+
             </div>
             </div>
 
