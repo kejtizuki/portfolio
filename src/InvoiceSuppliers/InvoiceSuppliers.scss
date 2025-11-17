@@ -179,14 +179,14 @@
   border-left: 2px solid #1a1a1a;
   padding: 1rem 1.25rem;
   margin: 1.5rem 0;
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.625;
   color: #4a4a4a;
 
   // Nested elements maintain proper spacing
   p {
     margin: 0;
-    font-size: 0.875rem;
+    font-size: 1rem;
     line-height: 1.625;
     color: #4a4a4a;
 
@@ -207,7 +207,17 @@
   }
 
   &.callout-emphasis {
-    background: #f5f5f5;
+    background: #DCD7F4;
+    border-left-width: 3px;
+
+    p {
+      font-weight: 500;
+      color: #1a1a1a;
+    }
+  }
+
+  &.callout-success {
+    background: #C6ECD2;
     border-left-width: 3px;
 
     p {
@@ -274,4 +284,30 @@ h3.animate-on-scroll {
     transform: none !important;
     transition: none !important;
   }
+}
+
+.label-removed,
+.label-added,
+.label-learnt {
+  font-weight: 500;
+  font-size: 16px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-right: 8px;
+  display: inline-block;
+}
+
+.label-removed {
+  background-color: #FFE5E5;
+  color: #D32F2F;
+}
+
+.label-added {
+  background-color: #E8F5E9;
+  color: #2E7D32;
+}
+
+.label-learnt {
+  background-color: #E3F2FD;
+  color: #1565C0;
 }

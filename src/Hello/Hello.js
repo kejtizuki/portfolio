@@ -15,8 +15,8 @@ export default class Hello extends React.Component {
           Hi there!
           <p id="workLink" className='smallText'>
           I'm <a href="mailto:kejtizuki@gmail.com" className="linkHighlight">Kasia Żukowska</a> Polish
-          Product Designer based in between Berlin and Copenhagen. I enjoy building interactive experiences and digital products. Currently
-          building Invoices at <a href="https://www.pleo.io/" className="linkHighlight">Pleo</a>.
+          Product Designer based in Berlin. I enjoy building interactive experiences and digital products. Currently
+          building Accounts Payables at <a href="https://www.pleo.io/" className="linkHighlight">Pleo</a>.
           </p>
         </div>
         {/* <div className="picture">

@@ -62,7 +62,8 @@ class InvoiceSuppliers extends React.Component {
       { id: 'collaborating-with-eng', label: 'Collaborating with engineers' },
       { id: 'creation-flow', label: 'Redesigned creation flow' },
       { id: 'suggested-supplier', label: 'Suggestion design' },
-      { id: 'design-pattern', label: 'Design pattern'}
+      { id: 'design-pattern', label: 'Design pattern'},
+      { id: 'results', label: 'Results'}
     ];
 
     return(
@@ -147,8 +148,8 @@ class InvoiceSuppliers extends React.Component {
                 </div>
 
                 <div className="data-card">
-                  <div className="data-label">Customer support tickets</div>
-                  <div className="data-value">High volume</div>
+                  <div className="data-label">Customer support tickets volume</div>
+                  <div className="data-value">High</div>
                 </div>
               </div>
 
@@ -199,12 +200,12 @@ class InvoiceSuppliers extends React.Component {
               The new approach included three confidence levels which guided product decisions:
               <ul>
               <li>
-              FULL_MATCH → Auto-assign supplier
+              Full match → Auto-assign supplier
               </li>
-              <li>PARTIAL_MATCH → Suggest existing supplier to the user and highlight what's matching
+              <li>Partial match → Suggest existing supplier to the user and highlight what's matching
               </li>
               <li>
-              NO_MATCH → Use the OCR data to guide the creation of the new supplier. User creates - not the backend
+              No match → Use the OCR data to guide the creation of the new supplier. User creates - not the backend
               </li>
               </ul>
               </p>
@@ -217,11 +218,14 @@ class InvoiceSuppliers extends React.Component {
             <div className="col5 ">
 
               <h2 ref={el => this.sectionRefs['creation-flow'] = el}>Solution 1: Redesigned creation flow</h2>
-
-              <p>To understand how to support the new flow best, I mapped out the old one first. Seemingly simple task was quite hard to achieve.
-              The user was not guided through the flow, ending up in a few dead ends without clear exit.
+              <h3>Understanding the problem</h3>
+              <p>Mapping the old flow revealed it was more complex than it appeared. Users weren't guided through the process and frequently encountered dead-ends with no clear way forward.
               </p>
-              <h3>Old design below</h3>
+              <p>Old design:</p>
+              <div className="callout">
+              <p>The old IA indicated 1:1 relationship between Supplier and Invoice. It gave the wrong impression to the user as in reality one supplier can
+              have multiple invoices. </p>
+              </div>
             </div>
           </div>
 
@@ -229,14 +233,27 @@ class InvoiceSuppliers extends React.Component {
 
           <div className="row justifyCenter">
             <div className="col5 ">
-              <h3>New design</h3>
-              <p>Removed: autocreation, supplier tab (unclear IA), unnecessary nested state from supplier view</p>
-              <p>Added: clear CTA to create new supplier using OCR data, drawer to display and edit supplier data</p>
+              <h3>What I changed</h3>
+              <p><span className="label-removed">What I removed</span></p>
+              <ul>
+              <li>Autocreation in all scenarios → System no longer creates suppliers without user confirmation (one of the main sources of duplicates)</li>
+              <li>Supplier tab → Reinforced incorrect 1:1 invoice-supplier relationship</li>
+              <li>Dead-end states → Added clear next actions at every decision point</li>
+              </ul>
+              <p><span className="label-added">What I added</span></p>
+              <ul>
+              <li>Clear creation CTA → Prominent button with OCR-prefilled data for review</li>
+              <li>Supplier drawer → Shows supplier as separate entity that can serve multiple invoices</li>
+              <li>Guided flow → Users understand their options at each step</li>
+              </ul>
               <p>The new design used OCR data from the invoice pdf. The user only needs to review it and confirm the creation. This way the user
               has control over what's in the system. We removed the autocreation step as this was one of the main factors contributing to high number of supplier duplicates.</p>
               <div className="callout">
-              <p>I tested this flow with 5 users and all understood it without any troubles!</p>
+              <p>The drawer pattern was crucial as it made supplier feel like a separate entity, not nested under invoice.</p>
               </div>
+              <h3>Key decisions</h3>
+              <p>When no full match or partial match was found but OCR data from the PDF was there, we showed the CTA to create a new supplier.
+              In the past, this was one of the scenarios contributing to duplicate creation.</p>
             </div>
           </div>
 
@@ -246,27 +263,64 @@ class InvoiceSuppliers extends React.Component {
             <div className="col5 ">
 
               <h2 ref={el => this.sectionRefs['suggested-supplier'] = el}>Solution 2: Suggestion design</h2>
-
+              <h3>Early explorations</h3>
               <p>
+              I tested 3 versions of the suggestion design. My first two designs failed during usability testing.
+              Version 1 showed supplier suggestions with incomplete payment details, which confused users.
+              In Version 2, I added an informational callout to explain the situation, but users still hesitated to select this suggestion.
+              Despite understanding the explanation, they lacked confidence.
               </p>
+              <p><span className="label-learnt">What I learnt</span></p>
+              <p>Through testing, I discovered that users needed complete payment details to trust suggestions. They also wanted a clear visual overview showing which fields matched and which didn't. Most importantly, explanatory text alone couldn't compensate for incomplete data. Users needed to see the data itself to feel confident in their decision.</p>
             </div>
 
           </div>
 
           <div className="row" style={{ gap: '40px' }}>
             <div className="col6">
+              <p>Version 1</p>
               <img src={require("./../assets/img/Pleo/suppliers/suggestedOCR-1.png")} className="mainImgNoMargin"/>
             </div>
             <div className="col6">
+              <p>Version 2</p>
               <img src={require("./../assets/img/Pleo/suppliers/suggestedOCR.png")} className="mainImgNoMargin"/>
             </div>
           </div>
+          <div className="row justifyCenter">
+            <div className="col5 ">
+
+              <h3>Final suggestion pattern</h3>
+
+              <p>After a few iterations of testing, I came up with the final suggestion pattern. Users wanted to have high confidence when
+              selecting the suggestion. Adding the checkboxes with overview helped them understand what's the same on the PDF as in our database.
+              </p>
+              <p>I took the product decision to only suggest suppliers with payment details. This meant less suggestions, but higher acceptance rate.
+              </p>
+              <div className="callout">
+              <p>This design pattern was used accross the product to suggest Purchase Orders and Supplier data.</p>
+              </div>
+            </div>
+
+          </div>
+
           <img src={require("./../assets/img/Pleo/suppliers/suggestionFinal.gif")} className="mainImgNoMargin"/>
 
           <div className="row justifyCenter">
             <div className="col5 ">
 
-              <h2 ref={el => this.sectionRefs['design-pattern'] = el}>Solution 3: Creating a design pattern</h2>
+              <h2 ref={el => this.sectionRefs['design-pattern'] = el}>Solution 3: Expanding the design pattern with CTAs to add and edit details </h2>
+
+              <p>
+              </p>
+            </div>
+            </div>
+
+          <img src={require("./../assets/img/Pleo/suppliers/design-pattern.png")} className="mainImgNoMargin"/>
+
+          <div className="row justifyCenter">
+            <div className="col5 ">
+
+              <h2 ref={el => this.sectionRefs['results'] = el}>Results</h2>
 
               <p>
               </p>
