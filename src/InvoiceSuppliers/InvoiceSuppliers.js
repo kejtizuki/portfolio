@@ -98,14 +98,14 @@ class InvoiceSuppliers extends React.Component {
               <p>Company Admins managing invoices on Pleo need an easy way to select the right supplier for payment.
               At the same time, Pleo must ensure compliance by verifying all new payment details before any transaction goes through.
               </p>
-              <p>Without this compliance requirement, the system would be straightforward: use OCR to capture supplier data,
+              <p>Without this compliance requirement, the system would be straightforward: use Optical Character Recognition (OCR) to capture supplier data,
               store it in a database, and let users do basic CRUD operations. But verification adds significant complexity.</p>
               <p>We needed to build a system that could handle supplier payment verification at scale without overwhelming Pleo's
               internal legal team with manual checks.
               The solution was to verify each new vendor once, then share them across all customers.
               </p>
 
-              <h2>Technical contraints</h2>
+              <h2>Technical constraints</h2>
               <p>When I joined the project, a legacy solution existed but it didn't scale well.
               The goal was to determine whether to rebuild the entire system or improve it within current constraints.
               After technical discovery, engineering estimated a full rebuild would require too much work (around 1 year estimated).
