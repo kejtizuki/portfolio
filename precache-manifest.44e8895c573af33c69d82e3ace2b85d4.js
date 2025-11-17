@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "fa99f6094e303ca9ca66",
+    "revision": "d23a130c8edcae9cec1d",
     "url": "/portfolio/static/css/main.892c7409.chunk.css"
   },
   {
-    "revision": "fa99f6094e303ca9ca66",
-    "url": "/portfolio/static/js/main.99c3da2d.chunk.js"
+    "revision": "d23a130c8edcae9cec1d",
+    "url": "/portfolio/static/js/main.4dc3aafc.chunk.js"
   },
   {
     "revision": "53ebc025fca807d4dbea",
@@ -672,7 +672,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/FaktumTest-Bold.ed557f50.otf"
   },
   {
-    "revision": "a8a1ed3164553d082772ed61c8260b53",
+    "revision": "b983a66393eedbf9515e9ed265e59acf",
     "url": "/portfolio/index.html"
   }
 ];
