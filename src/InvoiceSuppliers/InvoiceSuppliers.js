@@ -94,11 +94,6 @@ class InvoiceSuppliers extends React.Component {
             <div className="col5 ">
 
 
-            <div className="callout callout-emphasis">
-              <h2>This is work in progress. Available in a few days. </h2>
-            </div>
-
-
               <h2 ref={el => this.sectionRefs['context'] = el}>Context</h2>
               <p>Company Admins managing invoices on Pleo need an easy way to select the right supplier for payment.
               At the same time, Pleo must ensure compliance by verifying all new payment details before any transaction goes through.
