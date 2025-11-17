@@ -26,7 +26,7 @@ class Home extends Component {
               <Project title="Reducing supplier duplicates through smarter matching and user control" image={require("../assets/img/Pleo/suppliers/cover3.png")}
               className="gridCellCentered"
               description="Redesigning how users select and manage supplier payment details during invoice processing to reduce duplicates and increase confidence"
-              keywords="Product Design, data-heavy project"
+              keywords="Lead designer"
               history={this.props.history}
               redirect="invoiceSuppliers"
               company="Pleo"
