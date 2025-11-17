@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "3bd60056342753d2012c",
-    "url": "/portfolio/static/css/main.0424e009.chunk.css"
+    "revision": "859ab3908d9dad33c598",
+    "url": "/portfolio/static/css/main.892c7409.chunk.css"
   },
   {
-    "revision": "3bd60056342753d2012c",
-    "url": "/portfolio/static/js/main.503bd884.chunk.js"
+    "revision": "859ab3908d9dad33c598",
+    "url": "/portfolio/static/js/main.5ff468b8.chunk.js"
   },
   {
     "revision": "53ebc025fca807d4dbea",
     "url": "/portfolio/static/js/runtime~main.f308c8e6.js"
   },
   {
-    "revision": "2a919bee481f12bdb7f6",
+    "revision": "1924aaab6c6955f27cd2",
     "url": "/portfolio/static/css/2.c740ebe6.chunk.css"
   },
   {
-    "revision": "2a919bee481f12bdb7f6",
-    "url": "/portfolio/static/js/2.e8b49223.chunk.js"
+    "revision": "1924aaab6c6955f27cd2",
+    "url": "/portfolio/static/js/2.24babb0d.chunk.js"
   },
   {
     "revision": "7ea11aed7949ae0554b866a56017153a",
@@ -584,8 +584,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/problem-solution.4add6390.png"
   },
   {
-    "revision": "c394ab3b832f9778aca1339ce4917cc8",
-    "url": "/portfolio/static/media/suggestionFlow.c394ab3b.png"
+    "revision": "c001e3b38b976af511117befc02a1a0f",
+    "url": "/portfolio/static/media/suggestionFlow.c001e3b3.png"
   },
   {
     "revision": "ddd165cbdf4da338b4c0e1edcb418318",
@@ -606,6 +606,10 @@ self.__precacheManifest = [
   {
     "revision": "1cd6174e279392237614dbd08e480e48",
     "url": "/portfolio/static/media/suggestionFinal.1cd6174e.gif"
+  },
+  {
+    "revision": "232d7e4e183be978e57146b7584b55eb",
+    "url": "/portfolio/static/media/design-pattern.232d7e4e.png"
   },
   {
     "revision": "3ecd6219657d850d337c2a3ccd2a2292",
@@ -652,7 +656,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/FaktumTest-Bold.ed557f50.otf"
   },
   {
-    "revision": "c97bbab48e1caffb5f07e5826f70245d",
+    "revision": "f949a601bbd8f9637c7c7df39b176411",
     "url": "/portfolio/index.html"
   }
 ];
