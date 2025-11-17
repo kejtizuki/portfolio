@@ -218,7 +218,7 @@ class InvoiceSuppliers extends React.Component {
               </p>
               <p>Old design:</p>
               <div className="callout">
-              <p>The old IA indicated 1:1 relationship between Supplier and Invoice. It gave the wrong impression to the user as in reality one supplier can
+              <p>The old Information Architecture (IA) indicated 1:1 relationship between Supplier and Invoice. It gave the wrong impression to the user as in reality one supplier can
               have multiple invoices. </p>
               </div>
             </div>
