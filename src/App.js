@@ -230,9 +230,10 @@ designed to filter the data in different ways."
               bgImage={require("./assets/img/Pleo/Approvals/Thumbnail.png")}
               title="Pleo Accounts Payables"
               description="Scaling Invoices into Accounts Payables. "
-              keywords="end-to-end design, UI, UX"
+              keywords="end-to-end design, product design"
               tools="Figma"
-              type="Product Design"
+              company="Pleo"
+              type="Worked with Staff designer, I led the projcts below"
               longDesc='When I joined Pleo, the Invoices product was basic — available only in the UK without advanced approval flows or pre-purchase controls. I led the design of two features that transformed our offering: automated invoice review workflows and purchase orders. These additions enabled expansion into Germany, where such controls are market requirements, and positioned Pleo to compete in the broader accounts payable space. I also contributed to defining the AP product vision and proposed a redesign for Invoices.'
             />
             <InvoiceApprovals />
@@ -256,9 +257,10 @@ designed to filter the data in different ways."
               bgImage={require("./assets/img/Pleo/suppliers/cover.png")}
               title="Reducing supplier duplicates through smarter matching and user control"
               description=""
-              keywords="Product Design, data-heavy project"
+              keywords="Product Design, algorithm design, framing the problem"
               tools="Figma"
-              type="Product Design"
+              type="1 lead designer (me), 2 BE Engineers, 1 FE Engineer"
+              company="Pleo"
               longDesc='Redesigning how users select and manage supplier payment details during invoice processing to reduce duplicates and increase confidence. '
             />
             <InvoiceSuppliers />

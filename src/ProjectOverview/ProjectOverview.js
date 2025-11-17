@@ -70,7 +70,7 @@ class ProjectOverview extends React.Component {
             )}
             {keywords && (
               <div className="detailItem">
-                <div className="detailLabel">Role</div>
+                <div className="detailLabel">Skills</div>
                 <div className="detailValue">{keywords}</div>
               </div>
             )}
