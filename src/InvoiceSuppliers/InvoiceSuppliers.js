@@ -265,8 +265,11 @@ class InvoiceSuppliers extends React.Component {
               In Version 2, I added an informational callout to explain the situation, but users still hesitated to select this suggestion.
               Despite understanding the explanation, they lacked confidence.
               </p>
-              <p><span className="label-learnt">What I learnt</span></p>
-              <p>Through testing, I discovered that users needed complete payment details to trust suggestions. They also wanted a clear visual overview showing which fields matched and which didn't. Most importantly, explanatory text alone couldn't compensate for incomplete data. Users needed to see the data itself to feel confident in their decision.</p>
+              <h3>What I learnt</h3>
+              <p>Through testing, I discovered that users needed complete payment details to trust suggestions. They also wanted a clear visual overview showing which fields matched and which didn't.</p>
+              <div className="callout">
+              <p>Explanatory text alone couldn't compensate for incomplete data. Users needed to see the data itself to feel confident in their decision.</p>
+              </div>
             </div>
 
           </div>
@@ -304,8 +307,8 @@ class InvoiceSuppliers extends React.Component {
             <div className="col5 ">
 
               <h2 ref={el => this.sectionRefs['design-pattern'] = el}>Solution 3: Expanding the design pattern with CTAs to add and edit details </h2>
-
               <p>
+              When users had supplier selected with missing payment details, they needed a quick way to add these details. I expanded the Create CTA to serve for this use case.
               </p>
             </div>
             </div>
