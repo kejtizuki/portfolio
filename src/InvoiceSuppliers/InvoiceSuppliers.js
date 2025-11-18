@@ -190,9 +190,13 @@ class InvoiceSuppliers extends React.Component {
           <div className="row justifyCenter">
             <div className="col5 ">
               <h2 ref={el => this.sectionRefs['collaborating-with-eng'] = el}>Collaborating with engineers on matching logic</h2>
-              <p>Working closely with the engineering team, I helped redesign the matching algorithm. Before, the algorithm either auto-assigned suppliers or left
-              the supplier select empty. OCR data was used in the backend but not surfaced to the user.
-              The new approach included three confidence levels which guided product decisions:
+              <p>Working closely with the engineering team, I helped redesign the matching algorithm.
+              Before, the algorithm either auto-assigned suppliers or left
+              the supplier select empty. OCR data was used in the backend but not surfaced to the user.</p>
+              <p>I made a simple visualistion with Claude to understand the details of the matching algorithm better.
+              The code and API specs were very complex with almost 100 combinations possible. This visualisation helped me understand the details of the algorithm quickly.</p>
+              <img src={require("./../assets/img/Pleo/suppliers/claudeAlgo.gif")} className="mainImg"/>
+              <p>The new approach included three confidence levels which guided product decisions:</p>
               <ul>
               <li>
               <span className="highlight">Full match</span> → Auto-assign supplier
@@ -204,7 +208,7 @@ class InvoiceSuppliers extends React.Component {
               <span className="highlight">No match</span> → Use the OCR data to guide the creation of the new supplier. User creates - not the backend
               </li>
               </ul>
-              </p>
+
             </div>
           </div>
           <img src={require("./../assets/img/Pleo/suppliers/suggestionFlow.png")} className="mainImg"/>
