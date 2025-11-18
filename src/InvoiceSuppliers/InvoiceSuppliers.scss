@@ -163,6 +163,10 @@
     background: #fafafa;
   }
 
+  &.card-success {
+    background: #C6ECD2;
+  }
+
   // Positive/negative indicators
   .data-value.positive {
     color: #2d7d2d;
@@ -310,4 +314,9 @@ h3.animate-on-scroll {
 .label-learnt {
   background-color: #E3F2FD;
   color: #1565C0;
+}
+
+.highlight {
+  color: #000;
+  font-weight: 500;
 }

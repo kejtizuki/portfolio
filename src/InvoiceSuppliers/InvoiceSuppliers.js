@@ -114,8 +114,8 @@ class InvoiceSuppliers extends React.Component {
               <h2 ref={el => this.sectionRefs['existing-architecture'] = el}>Existing architecture</h2>
               <p>When a user uploads an invoice, OCR extracts supplier details (name, VAT number, payment details). The matching algorithm then searches the supplier list:</p>
               <ul>
-                <li>Company-specific suppliers - Each customer's verified suppliers, including company-specific data.</li>
-                <li>Global verified suppliers - Verified suppliers shared across all customers. Once verified, any customer can use them for payments.
+                <li><span className="highlight">Company-specific suppliers</span> - Each customer's verified suppliers, including company-specific data.</li>
+                <li><span className="highlight">Global verified suppliers</span> - Verified suppliers shared across all customers. Once verified, any customer can use them for payments.
                 </li>
               </ul>
 
@@ -195,12 +195,13 @@ class InvoiceSuppliers extends React.Component {
               The new approach included three confidence levels which guided product decisions:
               <ul>
               <li>
-              Full match → Auto-assign supplier
-              </li>
-              <li>Partial match → Suggest existing supplier to the user and highlight what's matching
+              <span className="highlight">Full match</span> → Auto-assign supplier
               </li>
               <li>
-              No match → Use the OCR data to guide the creation of the new supplier. User creates - not the backend
+              <span className="highlight">Partial match</span> → Suggest existing supplier to the user and highlight what's matching
+              </li>
+              <li>
+              <span className="highlight">No match</span> → Use the OCR data to guide the creation of the new supplier. User creates - not the backend
               </li>
               </ul>
               </p>
@@ -231,15 +232,15 @@ class InvoiceSuppliers extends React.Component {
               <h3>What I changed</h3>
               <p><span className="label-removed">What I removed</span></p>
               <ul>
-              <li>Autocreation in all scenarios → System no longer creates suppliers without user confirmation (one of the main sources of duplicates)</li>
-              <li>Supplier tab → Reinforced incorrect 1:1 invoice-supplier relationship</li>
-              <li>Dead-end states → Added clear next actions at every decision point</li>
+              <li><span className="highlight">Autocreation in all scenarios</span> → System no longer creates suppliers without user confirmation (one of the main sources of duplicates)</li>
+              <li><span className="highlight">Supplier tab</span> → Reinforced incorrect 1:1 invoice-supplier relationship</li>
+              <li><span className="highlight">Dead-end states</span> → Added clear next actions at every decision point</li>
               </ul>
               <p><span className="label-added">What I added</span></p>
               <ul>
-              <li>Clear creation CTA → Prominent button with OCR-prefilled data for review</li>
-              <li>Supplier drawer → Shows supplier as separate entity that can serve multiple invoices</li>
-              <li>Guided flow → Users understand their options at each step</li>
+              <li><span className="highlight">Clear creation CTA</span> → Prominent button with OCR-prefilled data for review</li>
+              <li><span className="highlight">Supplier drawer</span> → Shows supplier as separate entity that can serve multiple invoices</li>
+              <li><span className="highlight">Guided flow</span> → Users understand their options at each step</li>
               </ul>
               <p>The new design used OCR data from the invoice pdf. The user only needs to review it and confirm the creation. This way the user
               has control over what's in the system. We removed the autocreation step as this was one of the main factors contributing to high number of supplier duplicates.</p>
