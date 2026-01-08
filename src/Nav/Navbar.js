@@ -2,7 +2,6 @@ import React from 'react';
 import './navbar.scss';
 import { BrowserRouter as Router, Route, Link, withRouter } from "react-router-dom";
 import About from '../About/About';
-import UIExplo from '../UIExplo/UIExplo';
 var classNames = require('classnames');
 
 class Navbar extends React.Component {
@@ -17,7 +16,10 @@ class Navbar extends React.Component {
       <div className="navigation">
       <ul>
       <Link to="/">
-        <li>Work</li>
+        <li>Projects</li>
+      </Link>
+      <Link to="/otherwork">
+        <li>Other work</li>
       </Link>
       <Link to="/about">
         <li>About</li>

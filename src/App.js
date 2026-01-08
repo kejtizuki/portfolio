@@ -5,7 +5,6 @@ import Experience from './Experience/Experience';
 import OPI from './OPI/OPI';
 import Skill from './Skill/Skill';
 import About from './About/About';
-import UIExplo from './UIExplo/UIExplo';
 import Footer from './Footer/Footer';
 import Home from './Home/HomeGrid';
 import ProjectOverview from './ProjectOverview/ProjectOverview';
@@ -53,6 +52,7 @@ class App extends Component {
   /> <ProjectThesis /></div>}
         />
 
+
         <Route exact path="/issuu" component={() => <div><ProjectOverview
          bgImage={require("./assets/img/IssuuPoster/posterPreview.png")}
          title="Improving Issuu analytics page"
@@ -98,7 +98,6 @@ class App extends Component {
 
       <Route exact path="/about" component={About} />
 
-      <Route exact path="/olderprojects" component={UIExplo} />
 
       <Route exact path="/issuuMobile" component={() => <div><ProjectOverview
           bgImage={require("./assets/img/IssuuMobile/preview.png")}

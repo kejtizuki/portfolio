@@ -155,7 +155,7 @@ class InvoiceSuppliers extends React.Component {
               <p>Here is an example of what one of our customers saw in their supplier list:
               </p>
               <img src={require("./../assets/img/Pleo/suppliers/duplicate.png")} className="mainImg"/>
-              <p>Working with 2 backend engineers and 1 frontend engineer, I analyzed why duplicates appeared so often.
+              <p>Working with 2 backend engineers and 1 frontend engineer, I analysed why duplicates appeared so often.
               The matching algorithm was too strict and only selected existing supplier when full match criteria were met.
               When small differences existed, the system created duplicates instead of suggesting potential matches.</p>
               <div className="callout callout-emphasis">
@@ -386,6 +386,12 @@ class InvoiceSuppliers extends React.Component {
                   <img src={require("./../assets/img/Pleo/suppliers/createdNewSupplierFromDropdown.png")} className="mainImgNoMargin"/>
                 </div>
               </div>
+
+              <h3>Next steps</h3>
+              <p>
+              We want the system to get better at auto-selecting suppliers. One possible solution is to make the rule for auto-selecting a bit less strict.
+              </p>
+
 
             </div>
             </div>
