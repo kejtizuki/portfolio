@@ -95,21 +95,21 @@ class InvoiceSuppliers extends React.Component {
 
 
               <h2 ref={el => this.sectionRefs['context'] = el}>Context</h2>
-              <p>Company Admins managing invoices on Pleo need an easy way to select the right supplier for payment.
+              <p>When paying invoices on Pleo, company admin need an easy way to select the right supplier for payment.
+              They want their invoice pdf to be processed and payment details saved in the system.
               At the same time, Pleo must ensure compliance by verifying all new payment details before any transaction goes through.
               </p>
               <p>Without this compliance requirement, the system would be straightforward: use Optical Character Recognition (OCR) to capture supplier data,
               store it in a database, and let users do basic CRUD operations. But verification adds significant complexity.</p>
-              <p>We needed to build a system that could handle supplier payment verification at scale without overwhelming Pleo's
-              internal legal team with manual checks.
-              The solution was to verify each new vendor once, then share them across all customers.
-              </p>
 
-              <h2>Technical constraints</h2>
-              <p>When I joined the project, a legacy solution existed but it didn't scale well.
-              The goal was to determine whether to rebuild the entire system or improve it within current constraints.
-              After technical discovery, engineering estimated a full rebuild would require too much work (around 1 year estimated).
-              The team agreed to work with the current data model and figure out how we could improve it. </p>
+              <div className="row" style={{ gap: '40px' }}>
+                <div className="col6">
+                  <img src={require("./../assets/img/Pleo/suppliers/userNeed.png")} className="mainImgNoMargin"/>
+                </div>
+                <div className="col6">
+                  <img src={require("./../assets/img/Pleo/suppliers/businessNeed.png")} className="mainImgNoMargin"/>
+                </div>
+              </div>
 
               <h2 ref={el => this.sectionRefs['existing-architecture'] = el}>Existing architecture</h2>
               <p>When a user uploads an invoice, OCR extracts supplier details (name, VAT number, payment details). The matching algorithm then searches the supplier list:</p>
@@ -119,10 +119,20 @@ class InvoiceSuppliers extends React.Component {
                 </li>
               </ul>
 
+              <div className="row" style={{ gap: '24px', marginTop: '2rem' }}>
+                <div style={{ flex: 1 }}>
+                  <img src={require("./../assets/img/Pleo/suppliers/OCR.png")} className="mainImgNoMargin"/>
+                </div>
+                <div style={{ flex: 1 }}>
+                  <img src={require("./../assets/img/Pleo/suppliers/CompanyList.png")} className="mainImgNoMargin"/>
+                </div>
+                <div style={{ flex: 1 }}>
+                  <img src={require("./../assets/img/Pleo/suppliers/GlobalList.png")} className="mainImgNoMargin"/>
+                </div>
+              </div>
+
             </div>
           </div>
-
-          <img src={require("./../assets/img/Pleo/suppliers/supplierModel2.png")} className="mainImg"/>
 
           <div className="row justifyCenter">
             <div className="col5 ">
@@ -246,6 +256,14 @@ class InvoiceSuppliers extends React.Component {
               <li><span className="highlight">Supplier drawer</span> → Shows supplier as separate entity that can serve multiple invoices</li>
               <li><span className="highlight">Guided flow</span> → Users understand their options at each step</li>
               </ul>
+              </div>
+              </div>
+
+                <img src={require("./../assets/img/Pleo/suppliers/IA.png")} className="mainImg"/>
+
+
+              <div className="row justifyCenter">
+                <div className="col5 ">
               <p>The new design used OCR data from the invoice pdf. The user only needs to review it and confirm the creation. This way the user
               has control over what's in the system. We removed the autocreation step as this was one of the main factors contributing to high number of supplier duplicates.</p>
               <div className="callout">
@@ -256,7 +274,7 @@ class InvoiceSuppliers extends React.Component {
               In the past, this was one of the scenarios contributing to duplicate creation.</p>
             </div>
           </div>
-
+          <img src={require("./../assets/img/Pleo/suppliers/drawer.png")} className="mainImg"/>
           <img src={require("./../assets/img/Pleo/suppliers/creationTested.gif")} className="mainImg"/>
 
           <div className="row justifyCenter">
