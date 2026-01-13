@@ -275,7 +275,7 @@ class InvoiceSuppliers extends React.Component {
             </div>
           </div>
           <img src={require("./../assets/img/Pleo/suppliers/drawer.png")} className="mainImg"/>
-          <img src={require("./../assets/img/Pleo/suppliers/creationTested.gif")} className="mainImg"/>
+          <img src={require("./../assets/img/Pleo/suppliers/creationFlow.gif")} className="mainImg"/>
 
           <div className="row justifyCenter">
             <div className="col5 ">
