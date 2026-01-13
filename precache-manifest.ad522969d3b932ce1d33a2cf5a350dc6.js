@@ -1,35 +1,27 @@
 self.__precacheManifest = [
   {
-    "revision": "106d2c433739cc359f95",
-    "url": "/portfolio/static/css/main.85b74f25.chunk.css"
+    "revision": "df8e0f2fec87e9127c78",
+    "url": "/portfolio/static/css/main.65ce7bb8.chunk.css"
   },
   {
-    "revision": "106d2c433739cc359f95",
-    "url": "/portfolio/static/js/main.10ac2f2b.chunk.js"
+    "revision": "df8e0f2fec87e9127c78",
+    "url": "/portfolio/static/js/main.5a155524.chunk.js"
   },
   {
     "revision": "53ebc025fca807d4dbea",
     "url": "/portfolio/static/js/runtime~main.f308c8e6.js"
   },
   {
-    "revision": "a499f245d328029e57c2",
-    "url": "/portfolio/static/css/2.c740ebe6.chunk.css"
+    "revision": "df5c9d43e6452cc68267",
+    "url": "/portfolio/static/css/2.474f1eb5.chunk.css"
   },
   {
-    "revision": "a499f245d328029e57c2",
-    "url": "/portfolio/static/js/2.05de77be.chunk.js"
-  },
-  {
-    "revision": "7ea11aed7949ae0554b866a56017153a",
-    "url": "/portfolio/static/media/preview.7ea11aed.png"
+    "revision": "df5c9d43e6452cc68267",
+    "url": "/portfolio/static/js/2.71446a84.chunk.js"
   },
   {
     "revision": "e23affd710be91bdef94a227a44bf2e0",
     "url": "/portfolio/static/media/Telegraf-Regular.e23affd7.otf"
-  },
-  {
-    "revision": "f0819de303ca59c45dbc3fe5e23410ce",
-    "url": "/portfolio/static/media/ASpreview.f0819de3.png"
   },
   {
     "revision": "eb8263e9b10522d58dc7bde959509453",
@@ -68,6 +60,10 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/Thumbnail.554f926d.png"
   },
   {
+    "revision": "7ea11aed7949ae0554b866a56017153a",
+    "url": "/portfolio/static/media/preview.7ea11aed.png"
+  },
+  {
     "revision": "68c0d019c52664475a645bbfd1984038",
     "url": "/portfolio/static/media/cv-kasia-zukowska.68c0d019.pdf"
   },
@@ -98,14 +94,6 @@ self.__precacheManifest = [
   {
     "revision": "c1bfb3ad61f6d68a24550df25a629c91",
     "url": "/portfolio/static/media/color.c1bfb3ad.png"
-  },
-  {
-    "revision": "3552e447b2073bc7615590289091264c",
-    "url": "/portfolio/static/media/preview-perspective.3552e447.png"
-  },
-  {
-    "revision": "e69823b9bfab45bf9999dfb86786e364",
-    "url": "/portfolio/static/media/preview-ah.e69823b9.gif"
   },
   {
     "revision": "1379ee51cfdb8db72ac2e23ad9b3079d",
@@ -250,6 +238,10 @@ self.__precacheManifest = [
   {
     "revision": "c2285327655f737f31ea7c897f09d276",
     "url": "/portfolio/static/media/map.c2285327.png"
+  },
+  {
+    "revision": "f0819de303ca59c45dbc3fe5e23410ce",
+    "url": "/portfolio/static/media/ASpreview.f0819de3.png"
   },
   {
     "revision": "371fb5eb2a1477064a2db24fbd193f7d",
@@ -572,8 +564,20 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/headeroption2.0d5d1f91.gif"
   },
   {
-    "revision": "a90a0b31b21fe0a5f01125231c7dc9f4",
-    "url": "/portfolio/static/media/supplierModel2.a90a0b31.png"
+    "revision": "fa815886b044dc5d502699281203c1fe",
+    "url": "/portfolio/static/media/userNeed.fa815886.png"
+  },
+  {
+    "revision": "be59573a5bdd7a477806562312405df5",
+    "url": "/portfolio/static/media/businessNeed.be59573a.png"
+  },
+  {
+    "revision": "3b891feb1813fd8faa452ccbedeb083e",
+    "url": "/portfolio/static/media/CompanyList.3b891feb.png"
+  },
+  {
+    "revision": "090955ff40a34eab65a4f26aea116644",
+    "url": "/portfolio/static/media/GlobalList.090955ff.png"
   },
   {
     "revision": "fb5d629f5cda35895b74ab9182def931",
@@ -594,6 +598,14 @@ self.__precacheManifest = [
   {
     "revision": "ddd165cbdf4da338b4c0e1edcb418318",
     "url": "/portfolio/static/media/oldCreationflow.ddd165cb.png"
+  },
+  {
+    "revision": "2025214f71099a794423bf397d83ce1a",
+    "url": "/portfolio/static/media/IA.2025214f.png"
+  },
+  {
+    "revision": "8374e10289c1649f4ce00d269d795865",
+    "url": "/portfolio/static/media/drawer.8374e102.png"
   },
   {
     "revision": "4f16b3c8b1916b466843fec3b92226f6",
@@ -636,12 +648,12 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/mylibrary.3ecd6219.png"
   },
   {
-    "revision": "1a0a1ef28efdc4bf7679b29e46a2df40",
-    "url": "/portfolio/static/media/uncut-sans-latin-400-normal.1a0a1ef2.woff2"
-  },
-  {
     "revision": "50f77a41103fabc2d86ce91831845b9f",
     "url": "/portfolio/static/media/uncut-sans-latin-400-normal.50f77a41.woff"
+  },
+  {
+    "revision": "1a0a1ef28efdc4bf7679b29e46a2df40",
+    "url": "/portfolio/static/media/uncut-sans-latin-400-normal.1a0a1ef2.woff2"
   },
   {
     "revision": "dd939eeb470b6fc68a853336b38def1d",
@@ -676,7 +688,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/FaktumTest-Bold.ed557f50.otf"
   },
   {
-    "revision": "bad4998b36c0af9b1cf6d5c472b31465",
+    "revision": "50c22b52e1c59c5fcf3414853eb7dd6a",
     "url": "/portfolio/index.html"
   }
 ];
