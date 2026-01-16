@@ -13,7 +13,7 @@ class CreatorContent extends React.Component {
       <img src={require("./../assets/img/CreatorContent/cover2.png")} className="mainImg"/>
 
 
-      <div className="projectContainer">
+      <div className="projectContainerWithNav">
 
       <div className="row justifyCenter">
       <div className="col5 "><h2 className="title">Hypothesis</h2>

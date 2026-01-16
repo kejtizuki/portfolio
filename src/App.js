@@ -74,9 +74,10 @@ class App extends Component {
          title="Issuu graphics editor"
          history={this.props.history}
          description="A place to repurpose Issuu's publication into new formats"
-         keywords="Product designer (end-to-end process)"
-         type="Product Design, Issuu. Cross-functional collaboration with PM and Developers "
+         keywords="end to end design"
+         type="Lead designer"
          tools="Figma"
+         company='Issuu'
          longDesc="Creators that publish their content on Issuu need to constantly promote their businesses on social media. Issuu needed a space where they can easily re-create and share social content without using other tools."
     /> <CreatorContent /></div>}
        />
@@ -232,7 +233,7 @@ designed to filter the data in different ways."
               keywords="end-to-end design, product design"
               tools="Figma"
               company="Pleo"
-              type="Worked with Staff designer, I led the projcts below"
+              type="Lead designer"
               longDesc='When I joined Pleo, the Invoices product was basic — available only in the UK without advanced approval flows or pre-purchase controls. I led the design of two features that transformed our offering: automated invoice review workflows and purchase orders. These additions enabled expansion into Germany, where such controls are market requirements, and positioned Pleo to compete in the broader accounts payable space. I also contributed to defining the AP product vision and proposed a redesign for Invoices.'
             />
             <InvoiceApprovals />

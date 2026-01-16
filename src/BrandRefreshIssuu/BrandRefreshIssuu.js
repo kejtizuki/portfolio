@@ -9,14 +9,10 @@ class BrandRefreshIssuu extends React.Component {
 
     return(
       <div>
-      <div className="projectContainer">
 
+      <img src={require("./../assets/img/BrandRefresh/ds3.png")} className="mainImg"/>
 
-      </div>
-
-      <img src={require("./../assets/img/BrandRefresh/overview.png")} className="mainImg"/>
-
-      <div className="projectContainer">
+      <div className="projectContainerWithNav">
 
       <div className="row">
       <div className="col3 marginRight80"><h2 className="title">Process</h2>
@@ -222,7 +218,7 @@ class BrandRefreshIssuu extends React.Component {
 
       </div>
 
-      <img src={require("./../assets/img/BrandRefresh/ds3.png")} className="mainImgNoMargin"/>
+      <img src={require("./../assets/img/BrandRefresh/overview.png")} className="mainImgNoMargin"/>
 
       <div className='citation' style={{
         backgroundImage: `url(${bgImg})` ,
