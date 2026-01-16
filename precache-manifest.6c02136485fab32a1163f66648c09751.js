@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "4344ca8b7a37d8ac3935",
-    "url": "/portfolio/static/css/main.65ce7bb8.chunk.css"
+    "revision": "edb213bd3e4d49a33728",
+    "url": "/portfolio/static/css/main.8808bef8.chunk.css"
   },
   {
-    "revision": "4344ca8b7a37d8ac3935",
-    "url": "/portfolio/static/js/main.d7931ec4.chunk.js"
+    "revision": "edb213bd3e4d49a33728",
+    "url": "/portfolio/static/js/main.0e7533fd.chunk.js"
   },
   {
     "revision": "53ebc025fca807d4dbea",
     "url": "/portfolio/static/js/runtime~main.f308c8e6.js"
   },
   {
-    "revision": "df5c9d43e6452cc68267",
+    "revision": "8274d4392ccb043892d1",
     "url": "/portfolio/static/css/2.474f1eb5.chunk.css"
   },
   {
-    "revision": "df5c9d43e6452cc68267",
-    "url": "/portfolio/static/js/2.71446a84.chunk.js"
+    "revision": "8274d4392ccb043892d1",
+    "url": "/portfolio/static/js/2.3e401791.chunk.js"
   },
   {
     "revision": "e23affd710be91bdef94a227a44bf2e0",
@@ -130,6 +130,10 @@ self.__precacheManifest = [
   {
     "revision": "2a50ade0f23e6ec23dbb626f70f3d04a",
     "url": "/portfolio/static/media/cover1.2a50ade0.png"
+  },
+  {
+    "revision": "8c762c24125b4fd3ac644ac1be1cd016",
+    "url": "/portfolio/static/media/arrow-left.8c762c24.png"
   },
   {
     "revision": "8c0fa561c595373452233ee63d158075",
@@ -328,8 +332,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/articleStoriesAccessibility.17e0770e.png"
   },
   {
-    "revision": "bc4fdbaadaab72455b022a2ac5f85791",
-    "url": "/portfolio/static/media/overview.bc4fdbaa.png"
+    "revision": "d2b7af46c252bb22126643a07cbec430",
+    "url": "/portfolio/static/media/ds3.d2b7af46.png"
   },
   {
     "revision": "52d5c5b25e3c371665610d84694c68bb",
@@ -372,8 +376,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/shapes2.dd448ed4.png"
   },
   {
-    "revision": "d2b7af46c252bb22126643a07cbec430",
-    "url": "/portfolio/static/media/ds3.d2b7af46.png"
+    "revision": "bc4fdbaadaab72455b022a2ac5f85791",
+    "url": "/portfolio/static/media/overview.bc4fdbaa.png"
   },
   {
     "revision": "01e8f76c2c8e1b8aefdfa2dfa1e8c998",
@@ -680,15 +684,11 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/cover.70f8706e.png"
   },
   {
-    "revision": "fd1a73d23531da86395050a9d509a70f",
-    "url": "/portfolio/static/media/PlantinInfantMTStd.fd1a73d2.otf"
-  },
-  {
     "revision": "ed557f50ecfa97ffc1112ec44f27450a",
     "url": "/portfolio/static/media/FaktumTest-Bold.ed557f50.otf"
   },
   {
-    "revision": "5383c1b4110e7ed02044c95a44b26997",
+    "revision": "cba91b551e848fb59ae38265f95cef71",
     "url": "/portfolio/index.html"
   }
 ];
