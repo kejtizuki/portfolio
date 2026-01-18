@@ -95,6 +95,7 @@ class InvoiceSuppliers extends React.Component {
 
 
               <h2 ref={el => this.sectionRefs['context'] = el}>Context</h2>
+              <div className='margin40'>
               <p>When paying invoices on Pleo, company admin need an easy way to select the right supplier for payment.
               They want their invoice pdf to be processed and payment details saved in the system.
               At the same time, Pleo must ensure compliance by verifying all new payment details before any transaction goes through.
@@ -102,7 +103,8 @@ class InvoiceSuppliers extends React.Component {
               <p>Without this compliance requirement, the system would be straightforward: use Optical Character Recognition (OCR) to capture supplier data,
               store it in a database, and let users do basic CRUD operations. But verification adds significant complexity.</p>
 
-              <div className="row" style={{ gap: '40px' }}>
+              </div>
+              <div className="row margin40" style={{ gap: '40px' }}>
                 <div className="col6">
                   <img src={require("./../assets/img/Pleo/suppliers/userNeed.png")} className="mainImgNoMargin"/>
                 </div>

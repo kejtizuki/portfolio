@@ -21,6 +21,7 @@
 
 @import "~video-react/styles/scss/video-react";
 
+
 @font-face {
   font-family: Akkurat;
   src: require('./../Akkurat.ttf');
@@ -30,11 +31,47 @@
   font-family: Chivo;
   src: require('./../Chivo.ttf');
 }
+@font-face {
+  font-family: 'Monument';
+  src: url('/fonts/PPMonumentNormal-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+// Monument Extended - Medium (500)
+@font-face {
+  font-family: 'Monument';
+  src: url('/fonts/PPMonumentNormal-Regular.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Editorial Old';
+  src: url('/fonts/PPEditorialOld-Regular.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neue Montreal';
+  src: url('/fonts/PPNeueMontreal-Book.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neue Corp';
+  src: url('/fonts/PPNeueCorp-NormalMedium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
 
 // $font-stack: 'Lato', sans-serif;
 // $header-font: orpheuspro, 'IBM Plex Sans';
-$font-stack: 'Uncut Sans';
-$header-font: 'Uncut Sans';
+$font-stack: 'Neue Corp';
+$header-font: 'Editorial Old';
 $text-color: #211f1f;
 $text-secondary: #4a4a4a;
 $highlight-color: #637381;

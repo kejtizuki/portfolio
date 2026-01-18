@@ -4,6 +4,10 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import './assets/FaktumTest-Bold.otf'
 
+import '@fontsource/uncut-sans/400.css';
+import '@fontsource/uncut-sans/500.css';
+import '@fontsource/uncut-sans/700.css';
+
 ReactDOM.render(<App />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

@@ -26,6 +26,7 @@ import "@fontsource/uncut-sans";
 import './index.scss';
 
 
+
 class App extends Component {
 
   render() {
@@ -259,7 +260,7 @@ designed to filter the data in different ways."
               description=""
               keywords="Product Design, algorithm design, framing the problem"
               tools="Figma"
-              type="1 lead designer (me), 2 BE Engineers, 1 FE Engineer"
+              type="Lead designer"
               company="Pleo"
               longDesc='Redesigning how users select and manage supplier payment details during invoice processing to reduce duplicates and increase confidence. '
             />
