@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "edb213bd3e4d49a33728",
-    "url": "/portfolio/static/css/main.8808bef8.chunk.css"
+    "revision": "55f9281876b125e4b93a",
+    "url": "/portfolio/static/css/main.32c490d1.chunk.css"
   },
   {
-    "revision": "edb213bd3e4d49a33728",
-    "url": "/portfolio/static/js/main.0e7533fd.chunk.js"
+    "revision": "55f9281876b125e4b93a",
+    "url": "/portfolio/static/js/main.7a3fe81d.chunk.js"
   },
   {
     "revision": "53ebc025fca807d4dbea",
     "url": "/portfolio/static/js/runtime~main.f308c8e6.js"
   },
   {
-    "revision": "8274d4392ccb043892d1",
-    "url": "/portfolio/static/css/2.474f1eb5.chunk.css"
+    "revision": "938c34ac12821981cf95",
+    "url": "/portfolio/static/css/2.cba49913.chunk.css"
   },
   {
-    "revision": "8274d4392ccb043892d1",
-    "url": "/portfolio/static/js/2.3e401791.chunk.js"
+    "revision": "938c34ac12821981cf95",
+    "url": "/portfolio/static/js/2.c04fc734.chunk.js"
   },
   {
     "revision": "e23affd710be91bdef94a227a44bf2e0",
@@ -652,12 +652,12 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/mylibrary.3ecd6219.png"
   },
   {
-    "revision": "50f77a41103fabc2d86ce91831845b9f",
-    "url": "/portfolio/static/media/uncut-sans-latin-400-normal.50f77a41.woff"
-  },
-  {
     "revision": "1a0a1ef28efdc4bf7679b29e46a2df40",
     "url": "/portfolio/static/media/uncut-sans-latin-400-normal.1a0a1ef2.woff2"
+  },
+  {
+    "revision": "50f77a41103fabc2d86ce91831845b9f",
+    "url": "/portfolio/static/media/uncut-sans-latin-400-normal.50f77a41.woff"
   },
   {
     "revision": "dd939eeb470b6fc68a853336b38def1d",
@@ -688,7 +688,23 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/FaktumTest-Bold.ed557f50.otf"
   },
   {
-    "revision": "cba91b551e848fb59ae38265f95cef71",
+    "revision": "880801e60a057b00807f09abca7c4993",
+    "url": "/portfolio/static/media/uncut-sans-latin-500-normal.880801e6.woff"
+  },
+  {
+    "revision": "f875aa01fd5686536d7e00cf323a1c66",
+    "url": "/portfolio/static/media/uncut-sans-latin-500-normal.f875aa01.woff2"
+  },
+  {
+    "revision": "f4c760938f2ac0a5b9b14758d5329a7a",
+    "url": "/portfolio/static/media/uncut-sans-latin-700-normal.f4c76093.woff2"
+  },
+  {
+    "revision": "6e9d57244c7f3d862b310c2eb5a7c920",
+    "url": "/portfolio/static/media/uncut-sans-latin-700-normal.6e9d5724.woff"
+  },
+  {
+    "revision": "f9bcdb8c784b011b4475002f4a9c10f0",
     "url": "/portfolio/index.html"
   }
 ];
