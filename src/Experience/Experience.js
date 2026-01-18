@@ -85,7 +85,9 @@ class Experience extends React.Component {
       <div className="experience">
       <div className="gridContainer">
 
-          <div className="column2"><div className="title">Experience</div></div>
+          <div className="column2"><div className="title">Experience</div>
+          </div>
+
           <div className="column2 experienceList">{listExperiences}
           </div>
 

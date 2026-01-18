@@ -1,3 +1,39 @@
+@font-face {
+  font-family: 'Monument';
+  src: url('./assets/fonts/PPMonumentNormal-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Monument';
+  src: url('./assets/fonts/PPMonumentNormal-Regular.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Editorial Old';
+  src: url('./assets/fonts/PPEditorialOld-Regular.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neue Montreal';
+  src: url('./assets/fonts/PPNeueMontreal-Book.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neue Corp';
+  src: url('./assets/fonts/PPNeueCorp-NormalMedium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
 @import "./assets/styles/main.scss";
 
 @import "./Hello/hello.scss";

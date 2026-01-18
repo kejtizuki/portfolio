@@ -1,3 +1,6 @@
+
+
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
@@ -7,6 +10,11 @@ import './assets/FaktumTest-Bold.otf'
 import '@fontsource/uncut-sans/400.css';
 import '@fontsource/uncut-sans/500.css';
 import '@fontsource/uncut-sans/700.css';
+
+import './assets/fonts/PPMonumentNormal-Regular.otf';
+import './assets/fonts/PPEditorialOld-Regular.otf';
+import './assets/fonts/PPNeueMontreal-Book.otf';
+import './assets/fonts/PPNeueCorp-NormalMedium.otf';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
