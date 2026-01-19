@@ -3,6 +3,7 @@ import './project33.scss';
 import '../ProjectOverview/projectOverview.scss';
 import ReactTooltip from 'react-tooltip'
 var classNames = require('classnames');
+
 class Project extends React.Component {
   constructor(props) {
     super(props);
@@ -10,16 +11,22 @@ class Project extends React.Component {
       isHovered: false
     }
   }
+
   imageHover = () => {
     this.setState({
       isHovered: !this.state.isHovered
     })
     console.log('state', this.state.isHovered)
   }
+
   handleOnClick = () => {
     console.log("redirect");
-    this.props.history.push(this.props.redirect);
+    // Don't navigate if it's a blocked project
+    if (this.props.title !== 'Redesign of Issuu mobile app') {
+      this.props.history.push(this.props.redirect);
+    }
   };
+
   render() {
     const {
         image,
@@ -29,9 +36,11 @@ class Project extends React.Component {
         company,
         year
       } = this.props;
+
       console.log('keywords', keywords)
       console.log('keywords', keywords.split(","))
       const keywordsMap = keywords.split(",").map((elem, index) => {return <span className='keyword' key={index}>{elem}</span>})
+
       const projectClasses = classNames({
         'box': true,
         'sunwise': title === 'SunWise',
@@ -48,17 +57,25 @@ class Project extends React.Component {
         'contentEditors': title === 'Issuu graphics editor',
         'mobileApp': title === 'Redesign of Issuu mobile app',
         'pleoAP': title === 'Pleo Accounts Payables',
+        'pleoPOs': title === 'Pleo Purchase Orders', // Fixed duplicate key
+        'pleoInvoices': title === 'Improving clarity on invoices page', // Fixed duplicate key
         'pleoSuppliers': title === 'Reducing supplier duplicates through smarter matching and user control'
       });
+
       const imgClasses = classNames ({
-        'imgFit': title === 'Issuu brand refresh and design system' || title === 'Issuu graphics editor',
-        'imgLong': title === 'Pleo Accounts Payables' || title === 'Reducing supplier duplicates through smarter matching and user control'
-        }
-      )
+        'imgFit': title === 'Issuu brand refresh and design system' || title === 'Issuu graphics editor' || title === 'Improving clarity on invoices page' || title === 'Redesign of Issuu mobile app',
+        'imgLong': title === 'Pleo Accounts Payables' || title === 'Reducing supplier duplicates through smarter matching and user control' || title === 'Pleo Purchase Orders',
+        'imgBlocked': title === 'Redesign of Issuu mobile app'
+      })
+
+      // Determine tooltip text based on whether project is blocked
+      const isBlocked = title === 'Redesign of Issuu mobile app';
+      const tooltipText = isBlocked ? 'Case study soon' : 'Read';
+
     return(
         <div className='project'>
         <ReactTooltip className="myTooltip"/>
-            <div onClick={this.handleOnClick} onMouseOver={this.imageHover} onMouseOut={this.imageHover} className={projectClasses} data-tip='Read'>
+            <div onClick={this.handleOnClick} onMouseOver={this.imageHover} onMouseOut={this.imageHover} className={projectClasses} data-tip={tooltipText}>
               <div className={imgClasses} style={{ backgroundImage: `url(${image})` }}></div>
             </div>
             <div className="projectInfo">

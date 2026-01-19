@@ -18,7 +18,8 @@ import CreatorContent from './CreatorContent/creatorContent';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import Authenticate from './components/authenticate/authenticate';
 import ProjectCoordinates from './ProjectCoordinates/ProjectCoordinates';
-import InvoiceApprovals from './InvoiceApprovals/InvoiceApprovals';
+import POS from './POs/POs';
+import InvoiceRedesign from './InvoiceRedesign/InvoiceRedesign';
 import InvoiceSuppliers from './InvoiceSuppliers/InvoiceSuppliers';
 import IssuuMobile from './IssuuMobile/issuuMobile';
 import { BrowserRouter as Router, Route, Link, Redirect } from "react-router-dom";
@@ -114,22 +115,6 @@ class App extends Component {
         />
 
 
-      {/* <Route exact path="/dogsApp" component={() => <div><ProjectOverview
-        bgImage={require("./assets/img/Dogs/dogo.png")}
-        title="Dogs training app"
-        history={this.props.history}
-        description="Keep your dog engaded and motivated even when you're not at home."
-        keywords="UX, UI, User Testing, Interaction Design"
-        tools="Adobe Photoshop, Adobe Illustrator"
-        type="Group project (4 people)"
-        longDesc="It is a camera based AI system that connects with a treat dispenser to a tv screen, that can provide mental and physical stimulation
-        for your dog if there are days you do not have time to give it the mental stimulation dogs need and craves.
-        When dogs are at home all day by themselves, their intelligent brains are under stimulated and they get bored,
-        leading to depression and often poorly behaved dogs. The app makes sure that your dog stays happy, while it provides the owner with a way to
-        track its progress and mental health."
-      /><ProjectDogs /></div>}
-      /> */}
-
       <Route exact path="/parallelCoordinates" component={() => <div><ProjectOverview
         bgImage={require("./assets/img/DataVis/main3.png")}
         title="Parallel coordinates"
@@ -149,30 +134,7 @@ coordinates and presents five types of brushing that are specifically
 designed to filter the data in different ways."
       /><ProjectCoordinates /></div>}
       />
-      {/* <Route exact path="/SFdataVis" component={() => <div><ProjectOverview
-        bgImage={require("./assets/img/SF/main.png")}
-        title="San Francisco Data Visualization"
-        history={this.props.history}
-        description="Visualization of movie locations over years in San Francisco"
-        keywords="Data visualization, Web design, Web development"
-        type="Group project (3 people)"
-        tools="Python, HTML, CSS, D3.js"
-        longDesc="The project was developed as a group assignment for the Data Visualization class at DTU.
-        The visualization is interactive and presents movie locations across the years in San Francisco area."
-      /><ProjectSF /></div>}
-      /> */}
-      <Route exact path="/mikellerApp" component={() => <div><ProjectOverview
-        bgImage={require("./assets/img/Mikeller/main.png")}
-        title="Mikeller app"
-        history={this.props.history}
-        description="Mikeller app"
-        keywords="UI"
-        tools="Adobe Photoshop"
-        type="Group project (3 people)"
-        longDesc="The project was created during Mikeller Challenge. We were provided with the brief and
-        based on it we came up with the concept and initial prototype."
-      /><ProjectMikeller /></div>}
-      />
+
 
 
       <Route exact path="/augmentedHearing" component={() => <div><ProjectOverview
@@ -211,13 +173,10 @@ designed to filter the data in different ways."
       /><BrandRefreshIssuu /></div>}
       />
 
-      <Route exact path="/invoiceApprovals" render={({ location }) => {
-        console.log('Route hit, checking auth...');
+      <Route exact path="/purchaseOrders" render={({ location }) => {
         const isAuthenticated = sessionStorage.getItem('pleoAuth') === 'true';
-        console.log('Is authenticated:', isAuthenticated);
 
         if (!isAuthenticated) {
-          console.log('Not authenticated, redirecting...');
           return <Redirect to={{
             pathname: '/authenticate',
             state: { from: location }
@@ -228,16 +187,43 @@ designed to filter the data in different ways."
         return (
           <div>
             <ProjectOverview
-              bgImage={require("./assets/img/Pleo/Approvals/Thumbnail.png")}
-              title="Pleo Accounts Payables"
-              description="Scaling Invoices into Accounts Payables. "
+              bgImage={require("./assets/img/Pleo/POs/Thumbnail.png")}
+              title="Pleo Purchase Orders"
+              description="Pleo Purchase Orders"
               keywords="end-to-end design, product design"
               tools="Figma"
               company="Pleo"
               type="Lead designer"
-              longDesc='When I joined Pleo, the Invoices product was basic — available only in the UK without advanced approval flows or pre-purchase controls. I led the design of two features that transformed our offering: automated invoice review workflows and purchase orders. These additions enabled expansion into Germany, where such controls are market requirements, and positioned Pleo to compete in the broader accounts payable space. I also contributed to defining the AP product vision and proposed a redesign for Invoices.'
+              longDesc=''
             />
-            <InvoiceApprovals />
+            <POS />
+          </div>
+        );
+      }} />
+
+      <Route exact path="/invoicesRedesign" render={({ location }) => {
+        const isAuthenticated = sessionStorage.getItem('pleoAuth') === 'true';
+
+        if (!isAuthenticated) {
+          return <Redirect to={{
+            pathname: '/authenticate',
+            state: { from: location }
+          }} />;
+        }
+
+        return (
+          <div>
+            <ProjectOverview
+              bgImage={require("./assets/img/Pleo/Approvals/Thumbnail.png")}
+              title="Improving clarity on invoices page"
+              description="Redesign ideas"
+              keywords="end-to-end design, product design"
+              tools="Figma"
+              company="Pleo"
+              type="Lead designer"
+              longDesc='Redesigning invoices page and details view for clarity. Making the workflow clearer and faster. '
+            />
+            <InvoiceRedesign />
           </div>
         );
       }} />

@@ -36,28 +36,62 @@ class Home extends Component {
           </div>
 
           <div className="gridContainer">
-              <div className='column4'>
-                <Project title="Pleo Accounts Payables" image={require("../assets/img/Pleo/Approvals/Thumbnail2.png")}
-                className="gridCellCentered"
-                description="Scaling Pleo Invoices into Accounts Payables"
-                keywords="Product Design,UX,UI"
-                history={this.props.history}
-                redirect="invoiceApprovals"
-                company="Pleo"
-                year="2024"
-                />
-              </div>
+          <div className='column2'>
+            <Project title="Pleo Purchase Orders"
+            image={require("../assets/img/Pleo/POs/PO-thumbnail-big.png")}
+            className="gridCellCentered"
+            description="Designing purchase orders product from scratch"
+            keywords="Product Design,UX,UI"
+            history={this.props.history}
+            redirect="purchaseOrders"
+            company="Pleo"
+            year="2025"
+            />
+          </div>
             </div>
+
+
+
+          <div className="gridContainer">
+
+                <div className='column2'>
+                  <Project title="Improving clarity on invoices page"
+                  image={require("../assets/img/Pleo/InvoicesRedesign/Thumbnail.png")}
+                  className="gridCellCentered"
+                  description="Redesigning invoices page for clarity. Making the workflow clearer and faster"
+                  keywords="Product Design,UX,UI"
+                  history={this.props.history}
+                  redirect="invoicesRedesign"
+                  company="Pleo"
+                  year="2025"
+                  />
+                </div>
+                <div className='column2'>
+                  <Project title="Issuu graphics editor" image={require("../assets/img/CreatorContent/cover1.png")}
+                  className="gridCellCentered"
+                  description="A place to repurpose Issuu's publication into new formats"
+                  keywords="Product Design,UX,UI"
+                  history={this.props.history}
+                  redirect="creatorContent"
+                  company="Issuu"
+                  year="2022"
+                  />
+                </div>
+              </div>
+
         <div className="gridContainer">
+
+
             <div className='column2'>
-              <Project title="Issuu graphics editor" image={require("../assets/img/CreatorContent/cover1.png")}
+              <Project title="Redesign of Issuu mobile app"
+              image={require("../assets/img/IssuuMobile/preview.png")}
               className="gridCellCentered"
-              description="A place to repurpose Issuu's publication into new formats"
+              description="Redesign of Issuu mobile app"
               keywords="Product Design,UX,UI"
               history={this.props.history}
-              redirect="creatorContent"
+              redirect=""
               company="Issuu"
-              year="2022"
+              year="2023"
               />
             </div>
             <div className='column2'>

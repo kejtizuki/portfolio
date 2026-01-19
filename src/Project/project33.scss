@@ -52,7 +52,7 @@
   margin: 0 auto;
   padding: 80px 80px;
   display: flex;
-  gap: 32px;
+  gap: 44px;
 
   @media (max-width: 1024px) {
     padding: 60px 40px;
@@ -162,6 +162,20 @@
 
   @media (max-width: 600px) {
     height: 250px;
+  }
+}
+
+.imgBlocked {
+  cursor: not-allowed;
+  &:hover, &:before {
+    box-shadow: none;
+    -webkit-filter: brightness(100%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    z-index: 1;
   }
 }
 
