@@ -1,7 +1,9 @@
 import React from 'react';
 import './project33.scss';
 import '../ProjectOverview/projectOverview.scss';
-import ReactTooltip from 'react-tooltip'
+import ReactTooltip from 'react-tooltip';
+import ParallaxImage from './ParallaxImage'; 
+
 var classNames = require('classnames');
 
 class Project extends React.Component {
@@ -34,12 +36,14 @@ class Project extends React.Component {
         description,
         keywords,
         company,
-        year
+        year,
+        parallaxLayers,  // NEW: Optional parallax layers
+        hoverImage       // Keep existing hover functionality
       } = this.props;
 
-      console.log('keywords', keywords)
-      console.log('keywords', keywords.split(","))
-      const keywordsMap = keywords.split(",").map((elem, index) => {return <span className='keyword' key={index}>{elem}</span>})
+      const keywordsMap = keywords.split(",").map((elem, index) => {
+        return <span className='keyword' key={index}>{elem}</span>
+      });
 
       const projectClasses = classNames({
         'box': true,
@@ -57,16 +61,25 @@ class Project extends React.Component {
         'contentEditors': title === 'Issuu graphics editor',
         'mobileApp': title === 'Redesign of Issuu mobile app',
         'pleoAP': title === 'Pleo Accounts Payables',
-        'pleoPOs': title === 'Pleo Purchase Orders', // Fixed duplicate key
-        'pleoInvoices': title === 'Improving clarity on invoices page', // Fixed duplicate key
+        'pleoPOs': title === 'Pleo Purchase Orders',
+        'pleoInvoices': title === 'Improving clarity on invoices page',
         'pleoSuppliers': title === 'Reducing supplier duplicates through smarter matching and user control'
       });
 
-      const imgClasses = classNames ({
-        'imgFit': title === 'Issuu brand refresh and design system' || title === 'Issuu graphics editor' || title === 'Improving clarity on invoices page' || title === 'Redesign of Issuu mobile app',
-        'imgLong': title === 'Pleo Accounts Payables' || title === 'Reducing supplier duplicates through smarter matching and user control' || title === 'Pleo Purchase Orders',
-        'imgBlocked': title === 'Redesign of Issuu mobile app'
-      })
+      const imgClasses = classNames({
+        'imgFit': title === 'Issuu brand refresh and design system' ||
+                  title === 'Issuu graphics editor' ||
+                  title === 'Improving clarity on invoices page' ||
+                  title === 'Redesign of Issuu mobile app',
+        'imgLong': title === 'Pleo Accounts Payables' ||
+                   title === 'Reducing supplier duplicates through smarter matching and user control' ||
+                   title === 'Pleo Purchase Orders',
+        'imgBlocked': title === 'Redesign of Issuu mobile app',
+        'hasParallax': parallaxLayers && parallaxLayers.length > 0 &&
+                       (title === 'Pleo Accounts Payables' ||
+                        title === 'Reducing supplier duplicates through smarter matching and user control' ||
+                        title === 'Pleo Purchase Orders')  // Only add parallax to imgLong projects
+      });
 
       // Determine tooltip text based on whether project is blocked
       const isBlocked = title === 'Redesign of Issuu mobile app';
@@ -74,16 +87,36 @@ class Project extends React.Component {
 
     return(
         <div className='project'>
-        <ReactTooltip className="myTooltip"/>
-            <div onClick={this.handleOnClick} onMouseOver={this.imageHover} onMouseOut={this.imageHover} className={projectClasses} data-tip={tooltipText}>
-              <div className={imgClasses} style={{ backgroundImage: `url(${image})` }}></div>
-            </div>
-            <div className="projectInfo">
-              <h1 className="title">{title}</h1>
-              <p className='overviewDesc'>{description}</p>
-            </div>
+          <ReactTooltip className="myTooltip"/>
+          <div
+            onClick={this.handleOnClick}
+            onMouseOver={this.imageHover}
+            onMouseOut={this.imageHover}
+            className={projectClasses}
+            data-tip={tooltipText}
+          >
+            {/* NEW: Render ParallaxImage if layers provided, otherwise use standard image */}
+            {parallaxLayers && parallaxLayers.length > 0 ? (
+              <div className={imgClasses}>
+                <ParallaxImage
+                  layers={parallaxLayers}
+                  className="project-parallax"
+                />
+              </div>
+            ) : (
+              <div
+                className={imgClasses}
+                style={{ backgroundImage: `url(${image})` }}
+              />
+            )}
+          </div>
+          <div className="projectInfo">
+            <h1 className="title">{title}</h1>
+            <p className='overviewDesc'>{description}</p>
+          </div>
         </div>
     )
   }
 }
+
 export default Project;

@@ -23,22 +23,34 @@ class Home extends Component {
 
         <div className="gridContainer">
             <div className='column4'>
-              <Project title="Reducing supplier duplicates through smarter matching and user control" image={require("../assets/img/Pleo/suppliers/cover3.png")}
-              className="gridCellCentered"
-              description="Redesigning how users select and manage supplier payment details during invoice processing to reduce duplicates and increase confidence"
-              keywords="Lead designer"
-              history={this.props.history}
-              redirect="invoiceSuppliers"
+
+              <Project title="Reducing supplier duplicates through smarter matching and user control"
+              description="Redesigning how users select and manage supplier payment details"
+              keywords="Product Design, algorithm design, framing the problem"
               company="Pleo"
               year="2025"
-              />
+              redirect="/invoiceSuppliers"
+              history={this.props.history}
+              parallaxLayers={[
+                {
+                  src: require("../assets/img/Pleo/suppliers/cover3-background.png"),
+                  speed: 0.2,
+                  alt: "Background"
+                },
+                {
+                  src: require("../assets/img/Pleo/suppliers/cover3-ui.png"),
+                  speed: 0.5,
+                  className: 'layer-absolute',
+                  alt: "UI elements"
+                }
+              ]}
+            />
             </div>
           </div>
 
           <div className="gridContainer">
           <div className='column2'>
             <Project title="Pleo Purchase Orders"
-            image={require("../assets/img/Pleo/POs/PO-thumbnail-big.png")}
             className="gridCellCentered"
             description="Designing purchase orders product from scratch"
             keywords="Product Design,UX,UI"
@@ -46,6 +58,19 @@ class Home extends Component {
             redirect="purchaseOrders"
             company="Pleo"
             year="2025"
+            parallaxLayers={[
+              {
+                src: require("../assets/img/Pleo/POs/PO-thumbnail-big-background.png"),
+                speed: 0.2,
+                alt: "Background"
+              },
+              {
+                src: require("../assets/img/Pleo/POs/PO-thumbnail-big-ui.png"),
+                speed: 0.5,
+                className: 'layer-absolute',
+                alt: "UI elements"
+              }
+            ]}
             />
           </div>
             </div>

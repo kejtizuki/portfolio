@@ -150,8 +150,8 @@
   position: relative;
 
   &:hover, &:before {
-    box-shadow: 0px 3px 30px 0px rgba(0,0,0,0.2);
-    -webkit-filter: brightness(80%);
+    // box-shadow: 0px 3px 30px 0px rgba(0,0,0,0.2);
+    -webkit-filter: brightness(90%);
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -181,7 +181,7 @@
 
 .imgLong {
   width: 100%;
-  height: 620px;
+  height: 560px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -191,14 +191,38 @@
   position: relative;
 
   &:hover, &:before {
-    box-shadow: 0px 3px 30px 0px rgba(0,0,0,0.2);
-    -webkit-filter: brightness(80%);
+    // box-shadow: 0px 3px 30px 0px rgba(0,0,0,0.2);
+    // -webkit-filter: brightness(80%);
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     transition: all 0.5s ease;
     z-index: 1;
+  }
+
+  // Parallax support
+  &.hasParallax {
+    background-image: none !important;
+    background-color: transparent !important;
+
+    .project-parallax {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  // Zoom background + shadow on hover
+  &.hasParallax:hover {
+    // box-shadow: 0px 3px 30px 0px rgba(0,0,0,0.2);
+
+    .parallax-layer:first-child img {
+      transform: scale(1.05);
+      -webkit-filter: brightness(90%);
+    }
   }
 }
 
