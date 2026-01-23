@@ -27,7 +27,7 @@ class About extends React.Component {
 
             <br /><br />
             <p>
-            I’m a Product Designer with experience in all phases of the end-to-end design process.
+            I'm a Product Designer with experience in all phases of the end-to-end design process.
             I strive to deliver intuitive and systematic design with coherent visual language.
             One of the foundations in a successful design process is good collaboration.
             My past frontend development experience makes the communication with engineers in the team smooth.
@@ -72,7 +72,7 @@ class About extends React.Component {
             <div className="gridContainer aboutMeRow">
 
             <div className='col3 padding20'>
-            <iframe width="100%" height="542" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1936912079&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            <iframe width="100%" scrolling="no" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1936912079&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
             <p>I love music and djing!</p>
             </div>
 
