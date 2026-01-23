@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "0aa528a0159f354c06f8",
-    "url": "/portfolio/static/css/main.d4ffeccd.chunk.css"
+    "revision": "e6daea23d4d4d0015af2",
+    "url": "/portfolio/static/css/main.75363ecd.chunk.css"
   },
   {
-    "revision": "0aa528a0159f354c06f8",
-    "url": "/portfolio/static/js/main.4fa571a8.chunk.js"
+    "revision": "e6daea23d4d4d0015af2",
+    "url": "/portfolio/static/js/main.a9756bc8.chunk.js"
   },
   {
     "revision": "53ebc025fca807d4dbea",
@@ -716,15 +716,15 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/uncut-sans-latin-500-normal.880801e6.woff"
   },
   {
-    "revision": "6e9d57244c7f3d862b310c2eb5a7c920",
-    "url": "/portfolio/static/media/uncut-sans-latin-700-normal.6e9d5724.woff"
-  },
-  {
     "revision": "f4c760938f2ac0a5b9b14758d5329a7a",
     "url": "/portfolio/static/media/uncut-sans-latin-700-normal.f4c76093.woff2"
   },
   {
-    "revision": "c9799b5feb4553b515badee822c9c9bc",
+    "revision": "6e9d57244c7f3d862b310c2eb5a7c920",
+    "url": "/portfolio/static/media/uncut-sans-latin-700-normal.6e9d5724.woff"
+  },
+  {
+    "revision": "d73d4ce6de9fe1a8b0c8a1de54f270b7",
     "url": "/portfolio/index.html"
   }
 ];
