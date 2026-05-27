@@ -1,22 +1,22 @@
 self.__precacheManifest = [
   {
-    "revision": "c6c4d81b601096b996ef",
-    "url": "/portfolio/static/css/main.75363ecd.chunk.css"
+    "revision": "f8a931c35cadb2800863",
+    "url": "/portfolio/static/css/main.4f08f670.chunk.css"
   },
   {
-    "revision": "c6c4d81b601096b996ef",
-    "url": "/portfolio/static/js/main.f8f2e1fc.chunk.js"
+    "revision": "f8a931c35cadb2800863",
+    "url": "/portfolio/static/js/main.46b7047c.chunk.js"
   },
   {
     "revision": "53ebc025fca807d4dbea",
     "url": "/portfolio/static/js/runtime~main.f308c8e6.js"
   },
   {
-    "revision": "f00bb39588262685c222",
-    "url": "/portfolio/static/css/2.cba49913.chunk.css"
+    "revision": "4a53769d971e9c9ebcc2",
+    "url": "/portfolio/static/css/2.cbd70faf.chunk.css"
   },
   {
-    "revision": "f00bb39588262685c222",
+    "revision": "4a53769d971e9c9ebcc2",
     "url": "/portfolio/static/js/2.ce263592.chunk.js"
   },
   {
@@ -708,23 +708,23 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/FaktumTest-Bold.ed557f50.otf"
   },
   {
-    "revision": "880801e60a057b00807f09abca7c4993",
-    "url": "/portfolio/static/media/uncut-sans-latin-500-normal.880801e6.woff"
-  },
-  {
     "revision": "f875aa01fd5686536d7e00cf323a1c66",
     "url": "/portfolio/static/media/uncut-sans-latin-500-normal.f875aa01.woff2"
   },
   {
-    "revision": "f4c760938f2ac0a5b9b14758d5329a7a",
-    "url": "/portfolio/static/media/uncut-sans-latin-700-normal.f4c76093.woff2"
+    "revision": "880801e60a057b00807f09abca7c4993",
+    "url": "/portfolio/static/media/uncut-sans-latin-500-normal.880801e6.woff"
   },
   {
     "revision": "6e9d57244c7f3d862b310c2eb5a7c920",
     "url": "/portfolio/static/media/uncut-sans-latin-700-normal.6e9d5724.woff"
   },
   {
-    "revision": "84ab4d1b2774f894bc90f49c24720ce4",
+    "revision": "f4c760938f2ac0a5b9b14758d5329a7a",
+    "url": "/portfolio/static/media/uncut-sans-latin-700-normal.f4c76093.woff2"
+  },
+  {
+    "revision": "311675864dbf23f607eff54b8f41c95c",
     "url": "/portfolio/index.html"
   }
 ];
