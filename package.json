@@ -8,7 +8,7 @@
     "classnames": "^2.2.6",
     "d3-geo": "^1.11.6",
     "node-sass": "npm:sass@^1.94.1",
-    "react": "^16.14.0",
+    "react": "^16.0.0",
     "react-animated-css": "^1.2.1",
     "react-d3": "^0.4.0",
     "react-dom": "^16.14.0",

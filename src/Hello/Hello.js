@@ -4,26 +4,24 @@ import './hello.scss';
 import Typewriter from 'typewriter-effect';
 
 export default class Hello extends React.Component {
-
   render() {
-
     return(
       <div className="helloContainer">
       <div className="hello">
         <ReactTooltip className="myTooltip"/>
-        <div className="hello-description">
-          Hi there!
-          <p id="workLink" className='smallText'>
-          I'm <a href="mailto:kejtizuki@gmail.com" className="linkHighlight">Kasia Żukowska</a> Polish
-          Product Designer based in Berlin. I enjoy building interactive experiences and digital products. Currently
-          building Accounts Payables at <a href="https://www.pleo.io/" className="linkHighlight">Pleo</a>.
-          </p>
+        <div className="hello-wrapper">
+          <div className="hello-greeting">
+            Hi there!
+          </div>
+          <div className="hello-description">
+            <p id="workLink" className='smallText'>
+            I'm <a href="mailto:kejtizuki@gmail.com" className="linkHighlight">Kasia Żukowska</a> Polish
+            Product Designer based in Berlin. I enjoy building interactive experiences and digital products.
+            Currently building learning experience at <a href="https://www.babbel.com/" className="linkHighlight">Babbel</a>.
+            Before that I built accounts payables space at <a href="https://www.pleo.io/" className="linkHighlight">Pleo</a>. </p>
+          </div>
         </div>
-        {/* <div className="picture">
-          <img src={require("./../assets/img/me-drinking.jpg")} className="profile"/>
-        </div> */}
       </div>
-
     </div>
     )
   }
