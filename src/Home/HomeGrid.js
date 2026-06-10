@@ -109,7 +109,7 @@ class Home extends Component {
 
             <div className='column2'>
               <Project title="Redesign of Issuu mobile app"
-              image={require("../assets/img/IssuuMobile/preview.png")}
+              image={require("../assets/img/IssuuMobile/appPreview.png")}
               className="gridCellCentered"
               description="Redesign of Issuu mobile app"
               keywords="Product Design,UX,UI"

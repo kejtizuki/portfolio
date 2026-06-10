@@ -59,7 +59,7 @@
 .aboutSectionMainPhoto {
   width: 100%;  // Fixed height
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 40px;
   display: block;
 
   @media (max-width: 768px) {
@@ -71,7 +71,7 @@
   width: 100%;
   height: 440px;  // Same height as main photo
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 27px;
   display: block;
   margin-bottom: 1rem;
 

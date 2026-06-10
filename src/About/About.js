@@ -19,7 +19,7 @@ class About extends React.Component {
       <Navbar />
         <div className="gridContainer aboutMeRow">
             <div className="column2 padding20">
-            <img src={require("./../assets/img/megrass.JPG")} alt="me" className="aboutSectionMainPhoto" />
+            <img src={require("./../assets/img/meChustka2.JPG")} alt="me" className="aboutSectionMainPhoto" />
             </div>
             <div className="column2 aboutMeText padding20">
 

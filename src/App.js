@@ -103,7 +103,7 @@ class App extends Component {
 
 
       <Route exact path="/issuuMobile" component={() => <div><ProjectOverview
-          bgImage={require("./assets/img/IssuuMobile/preview.png")}
+          bgImage={require("./assets/img/IssuuMobile/appPreview.png")}
           title="Redesign of Issuu mobile app"
           history={this.props.history}
           description="How might we redesign the app so that features are more discoverable?"
