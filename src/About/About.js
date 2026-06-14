@@ -23,18 +23,17 @@ class About extends React.Component {
             </div>
             <div className="column2 aboutMeText padding20">
 
-            <h1 className='titleM'>Hey! I'm Kasia. I love experimenting, thinking in systems and patterns and analysing problems.</h1>
+            <h1 className='titleM'>Hey, I'm Kasia. I love thinking in systems, finding patterns and getting to the bottom of problems.</h1>
 
             <br /><br />
             <p>
-            I'm a Product Designer with experience in frontend development. I started my career as frontend developer but few things made me switch to design.
-            I wanted to dive deep into the problems I'm solving, influence the visuals and interaction patterns.
-            With today's tools like Cursor or Claude Code I'm having a lot of fun
-            building ideas in code and integrating some of my technical skills into my daily work.
+            I'm a Product Designer with experience in frontend development. I started my career as a developer but wanted to dive deeper
+            into the problems I'm solving and have more influence over the visuals and interaction patterns. That's what pulled me towards design.
+            I think in systems and connect different dots together. It naturally leads to scalable patterns, interfaces that make sense without explanation and flows that make sense as the product grows.
             </p>
             <p>
-            I love smooth transitions, self-explanatory screens and flows that simply make sense (quite basic but I'd say sometimes overlooked).
-            I think in systems and connect different dots together.
+            With tools like Cursor and Claude Code I'm having a lot of fun bringing my technical skills back into daily work.
+            It strengthens my design decisions and opens an interesting experimentation field for microinteractions.
             </p>
             </div>
             </div>
