@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "56cc467cdce343d0764c",
+    "revision": "d4c490645000aca246fd",
     "url": "/portfolio/static/css/main.3159ee42.chunk.css"
   },
   {
-    "revision": "56cc467cdce343d0764c",
-    "url": "/portfolio/static/js/main.0a4bffb8.chunk.js"
+    "revision": "d4c490645000aca246fd",
+    "url": "/portfolio/static/js/main.8957cb2e.chunk.js"
   },
   {
     "revision": "53ebc025fca807d4dbea",
@@ -704,12 +704,12 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/FaktumTest-Bold.ed557f50.otf"
   },
   {
-    "revision": "f875aa01fd5686536d7e00cf323a1c66",
-    "url": "/portfolio/static/media/uncut-sans-latin-500-normal.f875aa01.woff2"
-  },
-  {
     "revision": "880801e60a057b00807f09abca7c4993",
     "url": "/portfolio/static/media/uncut-sans-latin-500-normal.880801e6.woff"
+  },
+  {
+    "revision": "f875aa01fd5686536d7e00cf323a1c66",
+    "url": "/portfolio/static/media/uncut-sans-latin-500-normal.f875aa01.woff2"
   },
   {
     "revision": "6e9d57244c7f3d862b310c2eb5a7c920",
@@ -720,7 +720,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/uncut-sans-latin-700-normal.f4c76093.woff2"
   },
   {
-    "revision": "ad12a45dedd25afd91b1eccbc4346910",
+    "revision": "c96b448bac42d2d8a7d56d15c9e1a08a",
     "url": "/portfolio/index.html"
   }
 ];
