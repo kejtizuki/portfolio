@@ -23,18 +23,18 @@ class About extends React.Component {
             </div>
             <div className="column2 aboutMeText padding20">
 
-            <h1 className='titleM'>Hey! I'm Kasia. I'm a fan of holistic approach and I believe good design stems from strong research and collaboration.</h1>
+            <h1 className='titleM'>Hey! I'm Kasia. I love experimenting, thinking in systems and patterns and analysing problems.</h1>
 
             <br /><br />
             <p>
-            I'm a Product Designer with experience in all phases of the end-to-end design process.
-            I strive to deliver intuitive and systematic design with coherent visual language.
-            One of the foundations in a successful design process is good collaboration.
-            My past frontend development experience makes the communication with engineers in the team smooth.
+            I'm a Product Designer with experience in frontend development. I started my career as frontend developer but few things made me switch to design.
+            I wanted to dive deep into the problems I'm solving, influence the visuals and interaction patterns.
+            With today's tools like Cursor or Claude Code I'm having a lot of fun
+            building ideas in code and integrating some of my technical skills into my daily work.
             </p>
             <p>
-            Another important aspect to me is user research - it's a fundation for creating intuitive flows and interfaces.
-            I have the habit of testing and iterating on my design solutions.
+            I love smooth transitions, self-explanatory screens and flows that simply make sense (quite basic but I'd say sometimes overlooked).
+            I think in systems and connect different dots together.
             </p>
             </div>
             </div>
