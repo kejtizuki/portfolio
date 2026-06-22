@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "f8ce36660d2b48034b4c",
+    "revision": "de6bef17f5a61b17fa46",
     "url": "/portfolio/static/css/main.46f3aa1f.chunk.css"
   },
   {
-    "revision": "f8ce36660d2b48034b4c",
-    "url": "/portfolio/static/js/main.f665e24a.chunk.js"
+    "revision": "de6bef17f5a61b17fa46",
+    "url": "/portfolio/static/js/main.801c511a.chunk.js"
   },
   {
     "revision": "53ebc025fca807d4dbea",
@@ -708,12 +708,12 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/FaktumTest-Bold.ed557f50.otf"
   },
   {
-    "revision": "f875aa01fd5686536d7e00cf323a1c66",
-    "url": "/portfolio/static/media/uncut-sans-latin-500-normal.f875aa01.woff2"
-  },
-  {
     "revision": "880801e60a057b00807f09abca7c4993",
     "url": "/portfolio/static/media/uncut-sans-latin-500-normal.880801e6.woff"
+  },
+  {
+    "revision": "f875aa01fd5686536d7e00cf323a1c66",
+    "url": "/portfolio/static/media/uncut-sans-latin-500-normal.f875aa01.woff2"
   },
   {
     "revision": "f4c760938f2ac0a5b9b14758d5329a7a",
@@ -724,7 +724,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/uncut-sans-latin-700-normal.6e9d5724.woff"
   },
   {
-    "revision": "86e4bb2021a62d20a231134c5ae78410",
+    "revision": "0f27bed24ae7d6929ccf1655c6e411ab",
     "url": "/portfolio/index.html"
   }
 ];
