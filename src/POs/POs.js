@@ -85,9 +85,12 @@ class POS extends React.Component {
           </nav>
         )}
 
-      <img src={require("./../assets/img/Pleo/POs/PO-thumbnail.png")} className="mainImg"/>
-
       <div className='projectContainerWithNav'>
+
+      <video className="mainImg" autoPlay loop muted>
+        <source src={require("./../assets/img/Pleo/POs/flow.mp4")} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
 
       <div className='row justifyCenter'>
       <div className="col5">

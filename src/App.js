@@ -194,7 +194,7 @@ designed to filter the data in different ways."
               tools="Figma"
               company="Pleo"
               type="Lead designer"
-              longDesc=''
+              longDesc='Designing the Purchase Orders product from scratch. I led the discovery and design, introduced a new sub-product to Pleo and released it in beta. The process included multiple testing phases.'
             />
             <POS />
           </div>
