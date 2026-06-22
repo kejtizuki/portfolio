@@ -20,7 +20,7 @@ class Experience extends React.Component {
   render() {
 
     const list = [
-      {id: 0, name: "Babbel", url: "https://babbel.com/", description: "xxx",
+      {id: 0, name: "Babbel", url: "https://babbel.com/", description: "Leading the redesign of the Babbel home screen to surface users' personalized learning plans. Pairing AI-generated content with coded prototypes to support decisions and validate concepts early. Working daily in Claude Code to build Swift prototypes, which allow me to fully define the native interactions and microinteractions.",
       img: require("../assets/img/babbel-logo.png"), role: "Senior Product Designer"},
       {id: 1, name: "Pleo", url: "https://pleo.io/", description: "Working in Invoices team, designing features which make finance processes more efficient and user-friendly. Designed approval workflows for invoice payments. Led the design of Purchase orders product from research to launch. Ran prototype testing and alpha tests with users, iterated with the dev team, and shipped a new product. Partnered with lead designer, PM, and EM on long-term vision for Accounts Payables, exploring how to empower finance teams through automation.",
       img: require("../assets/img/IssuuPoster/logo.png"), role: "Product Designer"},
