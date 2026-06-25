@@ -80,16 +80,16 @@ class Home extends Component {
           <div className="gridContainer">
 
                 <div className='column2'>
-                  <Project title="Improving clarity on invoices page"
-                  image={require("../assets/img/Pleo/InvoicesRedesign/Thumbnail.png")}
-                  className="gridCellCentered"
-                  description="Redesigning invoices page for clarity. Making the workflow clearer and faster"
-                  keywords="Product Design,UX,UI"
-                  history={this.props.history}
-                  redirect="invoicesRedesign"
-                  company="Pleo"
-                  year="2025"
-                  />
+                <Project title="Improving clarity on invoices page"
+                image={require("../assets/img/Pleo/InvoicesRedesign/thumbnail.mp4")}
+                className="gridCellCentered"
+                description="Redesigning invoices page for clarity. Making the workflow clearer and faster"
+                keywords="Product Design,UX,UI"
+                history={this.props.history}
+                redirect="invoicesRedesign"
+                company="Pleo"
+                year="2025"
+                />
                 </div>
                 <div className='column2'>
                   <Project title="Issuu graphics editor" image={require("../assets/img/CreatorContent/cover1.png")}

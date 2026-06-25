@@ -73,9 +73,9 @@ class Experience extends React.Component {
           <div className="column2"><div className="title">Experience</div></div>
           <div className="column2 experienceList">{listExperiences}</div>
         </div>
-        <div className="gridContainer">
-          <div className="column2"></div>
-          <div className="column2">
+        <div className="row cv-button">
+          <div className="column100"></div>
+          <div className="column200">
             <a href={cvPDF} download="cv-kasia-zukowska.pdf" className='widebtn'>
               Download my CV
             </a>

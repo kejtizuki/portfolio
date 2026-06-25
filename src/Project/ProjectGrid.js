@@ -2,7 +2,7 @@ import React from 'react';
 import './project33.scss';
 import '../ProjectOverview/projectOverview.scss';
 import ReactTooltip from 'react-tooltip';
-import ParallaxImage from './ParallaxImage'; 
+import ParallaxImage from './ParallaxImage';
 
 var classNames = require('classnames');
 
@@ -95,7 +95,7 @@ class Project extends React.Component {
             className={projectClasses}
             data-tip={tooltipText}
           >
-            {/* NEW: Render ParallaxImage if layers provided, otherwise use standard image */}
+            {/* Render ParallaxImage if layers provided, video if .mp4, otherwise standard image */}
             {parallaxLayers && parallaxLayers.length > 0 ? (
               <div className={imgClasses}>
                 <ParallaxImage
@@ -103,6 +103,10 @@ class Project extends React.Component {
                   className="project-parallax"
                 />
               </div>
+            ) : image && image.includes && image.includes('.mp4') ? (
+              <video className={imgClasses} autoPlay loop muted style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}>
+                <source src={image} type="video/mp4" />
+              </video>
             ) : (
               <div
                 className={imgClasses}

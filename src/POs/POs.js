@@ -57,12 +57,12 @@ class POS extends React.Component {
     const { activeSection, isVisible } = this.state;
 
     const sections = [
-      { id: 'purchase-orders', label: 'Designing purchase orders' },
+      { id: 'purchase-orders', label: 'Problem' },
       { id: 'layout-explorations', label: 'Layout explorations' },
       { id: 'final-layout', label: 'Final layout' },
       { id: 'display-mode', label: 'Display mode' },
       { id: 'line-items', label: 'Line items iterations' },
-      { id: 'implemented-design', label: 'Implemented design - PO' }
+      { id: 'implemented-design', label: 'Implemented design' }
     ];
 
     return(
@@ -87,10 +87,9 @@ class POS extends React.Component {
 
       <div className='projectContainerWithNav'>
 
-      <video className="mainImg" autoPlay loop muted>
-        <source src={require("./../assets/img/Pleo/POs/flow.mp4")} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+
+      <img src={require("./../assets/img/Pleo/POs/POPleo.png")} className="mainImgNoMargin imgWithPadding"/>
+
 
       <div className='row justifyCenter'>
       <div className="col5">
@@ -101,7 +100,11 @@ class POS extends React.Component {
       arrived. This would save time and eliminate delayed payments due to missing approvals.
       Additionally, POs are a good way to control cash flow and budgeting.
       </p>
+      </div>
+      </div>
 
+      <div className='row justifyCenter'>
+      <div className="col5">
       <h2>Discovery research</h2>
       <p>
       After analyzing existing feedback from Productboard, I conducted 6 discovery calls
@@ -160,12 +163,18 @@ class POS extends React.Component {
       <img src={require("./../assets/img/Pleo/Approvals/POfinal-review.png")} className="mainImgNoMargin"/>
       </div>
 
+      <video className="mainImg" autoPlay loop muted>
+        <source src={require("./../assets/img/Pleo/POs/flow.mp4")} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
       <div className='row'>
       <div className='col5'>
       <h2 ref={el => this.sectionRefs['display-mode'] = el}>Display mode</h2>
       <p>Once PO gets created it's displayed on a simple list. Clicking on a list item opens PO view where the user can read-through data and see approval status. </p>
       </div>
       </div>
+
 
       <div className='row'>
       <img src={require("./../assets/img/Pleo/Approvals/PO-display.png")} className="mainImgNoMargin"/>
@@ -197,6 +206,8 @@ class POS extends React.Component {
 
       </div>
       <div className='row '><img src={require("./../assets/img/Pleo/Approvals/beforeafter.png")} className="mainImgNoMargin"/></div>
+
+
 
       </div>
 

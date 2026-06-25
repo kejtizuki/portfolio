@@ -1,8 +1,10 @@
 @import "../assets/styles/main.scss";
-
 .experience {
   background-color: #f4f6f0;
   min-height: 950px; // was: height: 950px — now expands with content
+  display: flex;
+  flex-direction: column;
+
   .header {
     width: 100%;
     height: 80px;
@@ -13,12 +15,10 @@
     margin-top: 30px;
   }
 }
-
 .active {
   text-decoration: underline;
   font-weight: bold;
 }
-
 .experienceRow {
   border-bottom: 1px solid #d8dbd4;
   padding-bottom: 20px;
@@ -32,21 +32,17 @@
     cursor: pointer;
   }
 }
-
 .experienceDescription {
   padding: 0px 16px 0px 16px;
 }
-
 .experienceList {
   margin-top: 50px !important;
 }
-
 .listTitle {
   font-size: 22px;
   font-family: $header-font;
   font-weight: 400;
 }
-
 .column100 {
   display: flex;
   flex-direction: column;
@@ -61,15 +57,12 @@
   flex: 2;
   padding: 0px 16px 0px 16px;
 }
-
 .bigColumn {
   height: 500px;
 }
-
 .seeMore {
   align-items: flex-end;
 }
-
 .seeMoreCircle {
   background-color: white;
   width: 36px;
@@ -80,19 +73,35 @@
   line-height: 1;
   border-radius: 10000%;
 }
-
 .companyLogo {
   margin-top: 240px;
   opacity: 0;
   animation: fadeIn 0.4s ease-in forwards;
-
   img {
     max-width: 200px;
     height: auto;
     display: block;
   }
 }
+.cv-button {
+  margin-top: 60px; // separates the button from the experience list above it
+  margin-bottom: 80px; // visible space below the button before the footer
 
+  .column100 {
+    flex: 1;
+  }
+
+  .column200 {
+    flex: 1; // makes left spacer and right button column equal width (50/50)
+  }
+
+  .widebtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+  }
+}
 @keyframes fadeIn {
   from {
     opacity: 0;
