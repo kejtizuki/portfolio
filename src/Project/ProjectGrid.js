@@ -104,7 +104,7 @@ class Project extends React.Component {
                 />
               </div>
             ) : image && image.includes && image.includes('.mp4') ? (
-              <video className={imgClasses} autoPlay loop muted style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}>
+              <video className={imgClasses} autoPlay loop muted style={{ width: '100%', objectFit: 'cover', display: 'block' }}>
                 <source src={image} type="video/mp4" />
               </video>
             ) : (

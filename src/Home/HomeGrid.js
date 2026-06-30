@@ -81,7 +81,7 @@ class Home extends Component {
 
                 <div className='column2'>
                 <Project title="Improving clarity on invoices page"
-                image={require("../assets/img/Pleo/InvoicesRedesign/thumbnail.mp4")}
+                image={require("../assets/img/Pleo/InvoicesRedesign/invoicesChart.mp4")}
                 className="gridCellCentered"
                 description="Redesigning invoices page for clarity. Making the workflow clearer and faster"
                 keywords="Product Design,UX,UI"
