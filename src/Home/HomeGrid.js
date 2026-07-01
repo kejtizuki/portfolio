@@ -75,6 +75,33 @@ class Home extends Component {
           </div>
             </div>
 
+            <div className="gridContainer">
+            <div className='column2'>
+              <Project title="Babbel learning path"
+              className="gridCellCentered"
+              description="Designing Babbel's new home"
+              keywords="Product Design,UX,UI"
+              history={this.props.history}
+              redirect="babbel"
+              company="Babbel"
+              year="2026"
+              parallaxLayers={[
+                {
+                  src: require("../assets/img/Babbel/magic.jpg"),
+                  speed: 0.2,
+                  alt: "Background"
+                },
+                {
+                  src: require("../assets/img/Babbel/pathThree.png"),
+                  speed: 0.5,
+                  className: 'layer-absolute',
+                  alt: "UI elements"
+                }
+              ]}
+              />
+            </div>
+            </div>
+
 
 
           <div className="gridContainer">

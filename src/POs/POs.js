@@ -28,7 +28,9 @@ class POS extends React.Component {
 
     // Check if we've scrolled past the first header
     const firstSection = this.sectionRefs['purchase-orders'];
-    const shouldBeVisible = firstSection && window.scrollY >= firstSection.offsetTop - 150;
+    const footer = document.querySelector('.footer');
+    const footerInView = footer && footer.getBoundingClientRect().top <= window.innerHeight;
+    const shouldBeVisible = firstSection && window.scrollY >= firstSection.offsetTop - 150 && !footerInView;
 
     const sections = Object.keys(this.sectionRefs);
     for (let i = sections.length - 1; i >= 0; i--) {

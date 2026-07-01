@@ -21,6 +21,7 @@ import ProjectCoordinates from './ProjectCoordinates/ProjectCoordinates';
 import POS from './POs/POs';
 import InvoiceRedesign from './InvoiceRedesign/InvoiceRedesign';
 import InvoiceSuppliers from './InvoiceSuppliers/InvoiceSuppliers';
+import BabbelApp from './Babbel/BabbelApp';
 import IssuuMobile from './IssuuMobile/issuuMobile';
 import { BrowserRouter as Router, Route, Link, Redirect } from "react-router-dom";
 import "@fontsource/uncut-sans";
@@ -113,6 +114,18 @@ class App extends Component {
           longDesc="The goal of the redesign was to create a better experience for digital readers who discover and read content online."
      /> <IssuuMobile /></div>}
         />
+
+        <Route exact path="/babbel" component={() => <div><ProjectOverview
+            bgImage={require("./assets/img/IssuuMobile/appPreview.png")}
+            title="Babbel learning path"
+            history={this.props.history}
+            description="x"
+            keywords="x"
+            type="x"
+            tools="x"
+            longDesc="x"
+       /> <BabbelApp /></div>}
+          />
 
 
       <Route exact path="/parallelCoordinates" component={() => <div><ProjectOverview

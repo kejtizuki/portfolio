@@ -31,7 +31,9 @@ class InvoiceRedesign extends React.Component {
 
     // Check if we've scrolled past the first header
     const firstSection = this.sectionRefs['problem'];
-    const shouldBeVisible = firstSection && window.scrollY >= firstSection.offsetTop - 150;
+    const footer = document.querySelector('.footer');
+    const footerInView = footer && footer.getBoundingClientRect().top <= window.innerHeight;
+    const shouldBeVisible = firstSection && window.scrollY >= firstSection.offsetTop - 150 && !footerInView;
 
     const sections = Object.keys(this.sectionRefs);
     for (let i = sections.length - 1; i >= 0; i--) {
@@ -148,9 +150,6 @@ class InvoiceRedesign extends React.Component {
               </div>
             </div>
           </div>
-          <div className='row'>
-            <img src={require("./../assets/img/Pleo/Approvals/fixedHeader.gif")} className="mainImgNoMargin contentShadowSmallRadius"/>
-          </div>
 
           <div className='row justifyCenter'>
             <div className='col5'>
@@ -159,8 +158,17 @@ class InvoiceRedesign extends React.Component {
               <p>The footer pattern creates a clear visual hierarchy: header for invoice details, footer for action and review information.</p>
             </div>
           </div>
-          <div className='row'>
-            <img src={require("./../assets/img/Pleo/Approvals/headeroption2.gif")} className="mainImgNoMargin contentShadowSmallRadius"/>
+
+          {/* Option A and B images side by side - full screen width */}
+          <div className='row' style={{ gap: '40px', width: '100vw', marginLeft: 'calc(-50vw + 50%)', paddingLeft: '80px', paddingRight: '80px', boxSizing: 'border-box' }}>
+            <div className='col6'>
+              <p>Option A</p>
+              <img src={require("./../assets/img/Pleo/Approvals/fixedHeader.gif")} className="mainImgNoMargin contentShadowSmallRadius"/>
+            </div>
+            <div className='col6'>
+              <p>Option B</p>
+              <img src={require("./../assets/img/Pleo/Approvals/headeroption2.gif")} className="mainImgNoMargin contentShadowSmallRadius"/>
+            </div>
           </div>
 
         </div>

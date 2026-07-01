@@ -6,13 +6,26 @@ export default class Footer extends React.Component {
   render() {
 
     return(
-      <div className="footer gridContainerRow">
-        <div className='column2'><h1>Kasia Żukowska</h1></div>
-        <div className='column2'>
-          <div>kejtizuki@gmail.com</div>
-          <a className='footerLink' href="https://www.linkedin.com/in/k-zukowska/">Linkedin</a>
-         </div>
-      </div>
+      <footer className="footer">
+        <div className="footerContact">
+          <span className="footerName">Kasia Żukowska</span>
+        </div>
+
+        <div className="footerBottom">
+          <span className="footerCredit">*design and coded with ♡</span>
+          <div className="footerLinks">
+            <a className="footerPill" href="mailto:kejtizuki@gmail.com">Email</a>
+            <a
+              className="footerPill"
+              href="https://www.linkedin.com/in/k-zukowska/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </footer>
     )
   }
 }
