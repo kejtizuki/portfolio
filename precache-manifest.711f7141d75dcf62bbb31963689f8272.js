@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "10ab23b277970a86531a",
+    "revision": "2ca5fa631cb4aa3e2780",
     "url": "/portfolio/static/css/main.e45b7f70.chunk.css"
   },
   {
-    "revision": "10ab23b277970a86531a",
-    "url": "/portfolio/static/js/main.38934dae.chunk.js"
+    "revision": "2ca5fa631cb4aa3e2780",
+    "url": "/portfolio/static/js/main.fb925f63.chunk.js"
   },
   {
     "revision": "53ebc025fca807d4dbea",
@@ -156,8 +156,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/magic.6ce13ce0.jpg"
   },
   {
-    "revision": "e9c1ada77e58356d4bb366937076f7d4",
-    "url": "/portfolio/static/media/pathThree.e9c1ada7.png"
+    "revision": "0d00127d2dc2a7ab464ed402f178123a",
+    "url": "/portfolio/static/media/pathThree.0d00127d.png"
   },
   {
     "revision": "ab9b2dc1fbd7265750f27b20efe38cd0",
@@ -728,12 +728,12 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/FaktumTest-Bold.ed557f50.otf"
   },
   {
-    "revision": "f875aa01fd5686536d7e00cf323a1c66",
-    "url": "/portfolio/static/media/uncut-sans-latin-500-normal.f875aa01.woff2"
-  },
-  {
     "revision": "880801e60a057b00807f09abca7c4993",
     "url": "/portfolio/static/media/uncut-sans-latin-500-normal.880801e6.woff"
+  },
+  {
+    "revision": "f875aa01fd5686536d7e00cf323a1c66",
+    "url": "/portfolio/static/media/uncut-sans-latin-500-normal.f875aa01.woff2"
   },
   {
     "revision": "6e9d57244c7f3d862b310c2eb5a7c920",
@@ -744,7 +744,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/uncut-sans-latin-700-normal.f4c76093.woff2"
   },
   {
-    "revision": "573b96d053bb8384f0e7759fe2c93a58",
+    "revision": "fa465bc316d86a91e973d71cae7a4068",
     "url": "/portfolio/index.html"
   }
 ];
