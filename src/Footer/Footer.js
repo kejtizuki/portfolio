@@ -12,7 +12,7 @@ export default class Footer extends React.Component {
         </div>
 
         <div className="footerBottom">
-          <span className="footerCredit">*design and coded with ♡</span>
+          <span className="footerCredit">*designed and coded with ♡</span>
           <div className="footerLinks">
             <a className="footerPill" href="mailto:kejtizuki@gmail.com">Email</a>
             <a
