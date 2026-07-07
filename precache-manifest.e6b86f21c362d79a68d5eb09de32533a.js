@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "3d179c6b289dfbf04bc2",
-    "url": "/portfolio/static/css/main.e45b7f70.chunk.css"
+    "revision": "cea6fd71f397271c2ad5",
+    "url": "/portfolio/static/css/main.ae56f395.chunk.css"
   },
   {
-    "revision": "3d179c6b289dfbf04bc2",
-    "url": "/portfolio/static/js/main.7a2b4f39.chunk.js"
+    "revision": "cea6fd71f397271c2ad5",
+    "url": "/portfolio/static/js/main.c256ee16.chunk.js"
   },
   {
     "revision": "53ebc025fca807d4dbea",
     "url": "/portfolio/static/js/runtime~main.f308c8e6.js"
   },
   {
-    "revision": "85da3fd80fcb46c3ec23",
+    "revision": "92156dc913834a7da8a3",
     "url": "/portfolio/static/css/2.cbd70faf.chunk.css"
   },
   {
-    "revision": "85da3fd80fcb46c3ec23",
-    "url": "/portfolio/static/js/2.9c195378.chunk.js"
+    "revision": "92156dc913834a7da8a3",
+    "url": "/portfolio/static/js/2.14605b31.chunk.js"
   },
   {
     "revision": "289a0d0b91831902e0f22356cae97594",
@@ -592,6 +592,14 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/beforeafter.b4e52c73.png"
   },
   {
+    "revision": "a8983ab12b855316286f72c1af4c90c2",
+    "url": "/portfolio/static/media/invoicesListRedesigned.a8983ab1.mp4"
+  },
+  {
+    "revision": "4837eadb36301fc8c91bcc9eca375495",
+    "url": "/portfolio/static/media/listBefore.4837eadb.png"
+  },
+  {
     "revision": "42551792d05385980f36b04156da592f",
     "url": "/portfolio/static/media/currentInvoiceFlow.42551792.gif"
   },
@@ -744,7 +752,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/uncut-sans-latin-700-normal.f4c76093.woff2"
   },
   {
-    "revision": "a4aa4a7778c5045a93554beabcfe1182",
+    "revision": "555ad6cccf4854a475ec31b579cbabcc",
     "url": "/portfolio/index.html"
   }
 ];
