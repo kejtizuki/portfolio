@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
-  margin-top: 80px;
+  margin-top: 24px;
   padding-left: 80px;
   padding-right: 80px;
 }
@@ -64,6 +64,172 @@
 
     &.active {
       opacity: 1;
+    }
+  }
+}
+
+// ============================================
+// Browser Frame (wraps the Result video)
+// ============================================
+.browserFrame {
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 16px !important;
+}
+
+.browserBar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 44px;
+  padding: 0 22px;
+  background-color: #292d31;
+}
+
+.browserLeft,
+.browserRight {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.browserDots {
+  display: flex;
+  gap: 8px;
+  margin-right: 8px;
+}
+
+.browserDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+
+  &.red { background-color: #ff5f57; }
+  &.yellow { background-color: #febc2e; }
+  &.green { background-color: #28c840; }
+}
+
+.browserIcon {
+  width: 20px;
+  height: 20px;
+  color: #b7bbbe;
+  flex-shrink: 0;
+
+  &.dim { color: #6c7075; }
+  &.shield { width: 18px; height: 18px; }
+  &.refresh { width: 18px; height: 18px; }
+}
+
+.browserAddress {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #d3d6d9;
+  font-size: 14px;
+
+  .lockIcon {
+    width: 12px;
+    height: 12px;
+    color: #d3d6d9;
+  }
+}
+
+.browserMedia {
+  position: relative;
+}
+
+.browserVideo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.browserBefore {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+
+  &.active {
+    opacity: 1;
+  }
+}
+
+// ============================================
+// Hero band (full-bleed background for the first section)
+// ============================================
+.heroBand {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background-color: #DCD7F4;
+  padding: 64px 80px 96px;
+  box-sizing: border-box;
+
+  .sectionMainTitle {
+    margin-top: 0;
+  }
+
+  // .projectContainerWithNav adds an extra padding-left: 2rem (no right)
+  // at >=1025px, shifting the content box off-centre. Compensate by 1rem.
+  // Also pad the inner content to line up with the details section's
+  // content box (left: 250px + 2rem, right: 250px) so the browser mockup
+  // ends up the same width as the before/after media below.
+  @media (min-width: 1025px) {
+    margin-left: calc(-50vw + 50% - 1rem);
+    padding-left: calc(250px + 2rem);
+    padding-right: 250px;
+  }
+}
+
+// ============================================
+// Main section titles (two top-level groups)
+// ============================================
+.sectionMainTitle {
+  font-size: 44px;
+  line-height: 1.15;
+  margin-top: 120px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.projectContainerWithNav > .row:first-child .sectionMainTitle {
+  margin-top: 0;
+}
+
+// ============================================
+// Grouped floating TOC (main headers + subheaders)
+// ============================================
+.floating-toc--grouped {
+  max-width: 230px;
+
+  .toc-group {
+    margin-bottom: 0.75rem;
+  }
+
+  .toc-main {
+    font-weight: 600;
+  }
+
+  .toc-sub {
+    list-style: none;
+    margin: 0.25rem 0 0;
+    padding: 0;
+
+    li {
+      margin: 0.3rem 0;
+    }
+
+    a {
+      padding-left: 1rem;
+      font-size: 0.8125rem;
     }
   }
 }
