@@ -736,12 +736,12 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/FaktumTest-Bold.ed557f50.otf"
   },
   {
-    "revision": "880801e60a057b00807f09abca7c4993",
-    "url": "/portfolio/static/media/uncut-sans-latin-500-normal.880801e6.woff"
-  },
-  {
     "revision": "f875aa01fd5686536d7e00cf323a1c66",
     "url": "/portfolio/static/media/uncut-sans-latin-500-normal.f875aa01.woff2"
+  },
+  {
+    "revision": "880801e60a057b00807f09abca7c4993",
+    "url": "/portfolio/static/media/uncut-sans-latin-500-normal.880801e6.woff"
   },
   {
     "revision": "6e9d57244c7f3d862b310c2eb5a7c920",
@@ -752,7 +752,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/uncut-sans-latin-700-normal.f4c76093.woff2"
   },
   {
-    "revision": "555ad6cccf4854a475ec31b579cbabcc",
+    "revision": "d7bbd2a8d97ebbd3ba35138f510c5244",
     "url": "/portfolio/index.html"
   }
 ];
