@@ -77,9 +77,9 @@ class Home extends Component {
 
             <div className="gridContainer">
             <div className='column2'>
-              <Project title="Babbel learning path"
+              <Project title="Babbel: from a static course list to an adaptive learning path"
               className="gridCellCentered"
-              description="Designing Babbel's new home"
+              description="Surfacing personalised learning plans for users on the Home tab, using AI-generated content and Claude Code prototypes in Swift"
               keywords="Product Design,UX,UI"
               history={this.props.history}
               redirect="babbel"

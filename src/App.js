@@ -117,9 +117,9 @@ class App extends Component {
 
         <Route exact path="/babbel" component={() => <div><ProjectOverview
             bgImage={require("./assets/img/IssuuMobile/appPreview.png")}
-            title="Babbel learning path"
+            title="Babbel: from a static course list to an adaptive learning path"
             history={this.props.history}
-            description="x"
+            description="Surfacing personalised learning plans for users on the Home tab, using AI-generated content and Claude Code prototypes in Swift"
             keywords="x"
             type="x"
             tools="x"

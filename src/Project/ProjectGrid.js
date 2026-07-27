@@ -25,7 +25,7 @@ class Project extends React.Component {
     console.log("redirect");
     // Don't navigate if it's a blocked project
     if (this.props.title !== 'Redesign of Issuu mobile app' &&
-        this.props.title !== 'Babbel learning path') {
+        this.props.title !== 'Babbel: from a static course list to an adaptive learning path') {
       this.props.history.push(this.props.redirect);
     }
   };
@@ -75,19 +75,19 @@ class Project extends React.Component {
         'imgLong': title === 'Pleo Accounts Payables' ||
                    title === 'Reducing supplier duplicates through smarter matching and user control' ||
                    title === 'Pleo Purchase Orders' ||
-                   title === 'Babbel learning path',
+                   title === 'Babbel: from a static course list to an adaptive learning path',
         'imgBlocked': title === 'Redesign of Issuu mobile app' ||
-                      title === 'Babbel learning path',
+                      title === 'Babbel: from a static course list to an adaptive learning path',
         'hasParallax': parallaxLayers && parallaxLayers.length > 0 &&
                        (title === 'Pleo Accounts Payables' ||
                         title === 'Reducing supplier duplicates through smarter matching and user control' ||
                         title === 'Pleo Purchase Orders' ||
-                        title === 'Babbel learning path')  // Only add parallax to imgLong projects
+                        title === 'Babbel: from a static course list to an adaptive learning path')  // Only add parallax to imgLong projects
       });
 
       // Determine tooltip text based on whether project is blocked
       const isBlocked = title === 'Redesign of Issuu mobile app' ||
-                        title === 'Babbel learning path';
+                        title === 'Babbel: from a static course list to an adaptive learning path';
       const tooltipText = isBlocked ? 'Case study soon' : 'Read';
 
     return(
